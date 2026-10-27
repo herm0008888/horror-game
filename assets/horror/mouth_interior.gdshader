@@ -1,8 +1,8 @@
 shader_type spatial;
-render_mode cull_disabled;
-uniform vec4 tint : source_color = vec4(0.047,0.006,0.012,1.0);
+render_mode unshaded, cull_disabled;
+// A black cavity stays dark even when the capture light points into the mouth.
 void fragment(){
- ALBEDO = tint.rgb;
+ ALBEDO = vec3(0.0);
  ROUGHNESS = 1.0;
- SPECULAR = 0.05;
+ SPECULAR = 0.0;
 }
