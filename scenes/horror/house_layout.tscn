@@ -6,6 +6,10 @@
 [ext_resource type="Material" path="res://assets/house_materials/wall_wood.tres" id="3_2oida"]
 [ext_resource type="Material" path="res://assets/house_materials/basement_floor.tres" id="4_232vc"]
 [ext_resource type="Material" path="res://assets/house_materials/basement_wall.tres" id="5_mo72v"]
+[ext_resource type="Environment" path="res://assets/house_materials/horror_lighting.tres" id="6_378n2"]
+[ext_resource type="PackedScene" path="res://scenes/horror/house_lighting.tscn" id="7_232vc"]
+[ext_resource type="Script" path="res://scripts/horror/house_lighting.gd" id="8_mo72v"]
+[ext_resource type="Environment" path="res://assets/house_materials/normal_lighting.tres" id="10_jyoby"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_rvwrs"]
 size = Vector3(4, 0.2, 2)
@@ -3671,13 +3675,6 @@ size = Vector3(1.6, 0.16, 1.6)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tiy0r"]
 size = Vector3(1.6, 0.16, 1.6)
-
-[sub_resource type="Environment" id="Environment_0dqoa"]
-background_mode = 1
-background_color = Color(0.14117648, 0.1764706, 0.21960784, 1)
-ambient_light_source = 2
-ambient_light_color = Color(1, 1, 1, 1)
-ambient_light_energy = 0.75
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a5kxx"]
 radius = 0.25
@@ -11320,209 +11317,260 @@ text = "BOD"
 
 [node name="@OmniLight3D@807" type="OmniLight3D" parent="." unique_id=822480524]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7, -2.55, 3)
+visible = false
 light_energy = 0.4
 
 [node name="@OmniLight3D@808" type="OmniLight3D" parent="." unique_id=994339396]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7, -2.55, 8)
+visible = false
 light_energy = 0.4
 
 [node name="@OmniLight3D@809" type="OmniLight3D" parent="." unique_id=824112641]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7, -2.55, 14)
+visible = false
 light_energy = 0.4
 
-[node name="@WorldEnvironment@810" type="WorldEnvironment" parent="." unique_id=1987920714]
-environment = SubResource("Environment_0dqoa")
+[node name="Environment" type="WorldEnvironment" parent="." unique_id=1987920714]
+environment = ExtResource("6_378n2")
 
 [node name="@OmniLight3D@811" type="OmniLight3D" parent="." unique_id=314490202]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.6, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@812" type="OmniLight3D" parent="." unique_id=2090988433]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.6, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@813" type="OmniLight3D" parent="." unique_id=1082072646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.6, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@814" type="OmniLight3D" parent="." unique_id=752492637]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.6, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@815" type="OmniLight3D" parent="." unique_id=1091637599]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.6, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@816" type="OmniLight3D" parent="." unique_id=328302411]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.6, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@817" type="OmniLight3D" parent="." unique_id=906802318]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.6, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@818" type="OmniLight3D" parent="." unique_id=215096996]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.6, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@819" type="OmniLight3D" parent="." unique_id=2048920231]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -0.6, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@820" type="OmniLight3D" parent="." unique_id=2093508811]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -0.6, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@821" type="OmniLight3D" parent="." unique_id=1012920794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -0.6, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@822" type="OmniLight3D" parent="." unique_id=1878519546]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -0.6, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@823" type="OmniLight3D" parent="." unique_id=1856111921]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.6, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@824" type="OmniLight3D" parent="." unique_id=359685264]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.6, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@825" type="OmniLight3D" parent="." unique_id=116766320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.6, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@826" type="OmniLight3D" parent="." unique_id=1072506322]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.6, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@827" type="OmniLight3D" parent="." unique_id=2007510827]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.8, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@828" type="OmniLight3D" parent="." unique_id=383480373]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.8, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@829" type="OmniLight3D" parent="." unique_id=240437308]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.8, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@830" type="OmniLight3D" parent="." unique_id=1133253318]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.8, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@831" type="OmniLight3D" parent="." unique_id=367478926]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.8, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@832" type="OmniLight3D" parent="." unique_id=1718581531]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.8, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@833" type="OmniLight3D" parent="." unique_id=1291422247]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.8, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@834" type="OmniLight3D" parent="." unique_id=2137915037]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.8, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@835" type="OmniLight3D" parent="." unique_id=2009367687]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2.8, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@836" type="OmniLight3D" parent="." unique_id=1421236754]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2.8, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@837" type="OmniLight3D" parent="." unique_id=517971200]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2.8, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@838" type="OmniLight3D" parent="." unique_id=1127958176]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2.8, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@839" type="OmniLight3D" parent="." unique_id=1392406003]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.8, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@840" type="OmniLight3D" parent="." unique_id=1517364796]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.8, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@841" type="OmniLight3D" parent="." unique_id=530577713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.8, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@842" type="OmniLight3D" parent="." unique_id=1505663123]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.8, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@843" type="OmniLight3D" parent="." unique_id=765000721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.2, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@844" type="OmniLight3D" parent="." unique_id=818725673]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.2, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@845" type="OmniLight3D" parent="." unique_id=94943879]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.2, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@846" type="OmniLight3D" parent="." unique_id=1574477847]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.2, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@847" type="OmniLight3D" parent="." unique_id=2039868763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6.2, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@848" type="OmniLight3D" parent="." unique_id=453754275]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6.2, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@849" type="OmniLight3D" parent="." unique_id=729294505]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6.2, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@850" type="OmniLight3D" parent="." unique_id=94267705]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6.2, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@851" type="OmniLight3D" parent="." unique_id=959401925]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.2, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@852" type="OmniLight3D" parent="." unique_id=2121237406]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.2, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@853" type="OmniLight3D" parent="." unique_id=449767040]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.2, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@854" type="OmniLight3D" parent="." unique_id=89590448]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.2, 14)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@855" type="OmniLight3D" parent="." unique_id=1541644795]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.2, 2)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@856" type="OmniLight3D" parent="." unique_id=1462397108]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.2, 6)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@857" type="OmniLight3D" parent="." unique_id=684505562]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.2, 10)
+visible = false
 light_energy = 0.45
 
 [node name="@OmniLight3D@858" type="OmniLight3D" parent="." unique_id=643938663]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.2, 14)
+visible = false
 light_energy = 0.45
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1427407333]
@@ -11557,3 +11605,9 @@ offset_top = 52.0
 offset_right = 12.0
 offset_bottom = 52.0
 theme_override_font_sizes/font_size = 13
+
+[node name="Lighting" type="Node3D" parent="." unique_id=1627942066 instance=ExtResource("7_232vc")]
+script = ExtResource("8_mo72v")
+environment_node = NodePath("../Environment")
+horror_environment = ExtResource("6_378n2")
+normal_environment = ExtResource("10_jyoby")
