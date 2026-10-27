@@ -12,12 +12,21 @@ func run() -> void:
 	current_scene = scene
 	await frames(4)
 	for i in range(5):
+		var previous_id := scene.get_instance_id()
 		var key := InputEventKey.new()
 		key.physical_keycode = KEY_1+i
 		key.pressed = true
 		scene._unhandled_input(key)
 		await frames(5)
+		for attempt in range(120):
+			if is_instance_valid(current_scene) and current_scene.get_instance_id() != previous_id: break
+			await process_frame
+		if not is_instance_valid(current_scene) or current_scene.get_instance_id() == previous_id:
+			push_error("Situation reload timed out")
+			quit(1)
+			return
 		scene = current_scene
+		await frames(2)
 		check(scene.current_situation == i, "Number key selects situation %s" % (i+1))
 		var player: CharacterBody3D = scene.get_node("Player")
 		var enemy: CharacterBody3D = scene.get_node("Visitation")

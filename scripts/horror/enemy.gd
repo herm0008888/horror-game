@@ -17,6 +17,7 @@ var hunt: float = 0
 var gait: float = 0
 var waiting_door: Node3D
 var has_seen_player := false
+var sees_player := false
 var caught := false
 var state: String = "PATROL"
 var search_left: float = 0.0
@@ -70,26 +71,29 @@ func _physics_process(delta: float) -> void:
 	var offset := player.global_position - global_position
 	var distance := offset.length()
 	var same_floor := absf(offset.y) < 2.0
-	var visible_player := false
-	if distance < 15 and same_floor:
-		var origin := global_position + Vector3.UP * 2.3
-		var end := player.global_position + Vector3.UP * 1.2
-		var hit := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(origin, end, 1, [get_rid(), player.get_rid()]))
-		var facing := -figure.global_basis.z
-		visible_player = hit.is_empty() and (has_seen_player or facing.dot(offset.normalized()) > 0.15 or distance < 3.2)
+	var previously_visible := sees_player
+	sees_player = can_see_player()
+	var visible_player := sees_player
 	if visible_player:
 		has_seen_player = true
 		if state != "CHASE": route_path.clear()
 		state = "CHASE"
 		hunt = 7.0
 		last_seen = player.global_position
-	elif hunt > 0:
+	else:
+		if previously_visible:
+			# Discard the live chase endpoint as soon as sight is broken.
+			state = "INVESTIGATE"
+			route_path.clear()
+			repath = 0.0
+	if not visible_player and hunt > 0:
 		hunt = maxf(0, hunt - delta)
 		if hunt <= 0: begin_search()
 	if state == "SEARCH":
 		search_left -= delta
 		if search_left <= 0:
 			state = "PATROL"
+			has_seen_player = false
 			route_path.clear()
 	corner.tick(delta, visible_player)
 	repath -= delta
@@ -98,7 +102,7 @@ func _physics_process(delta: float) -> void:
 		var destination := points[patrol_index]
 		if state in ["CHASE", "INVESTIGATE"]:
 			destination = last_seen
-			if global_position.distance_to(last_seen) < 0.85 and not visible_player:
+			if global_position.distance_to(last_seen) < 0.85 and not visible_player and not corner.active:
 				begin_search()
 		elif state == "SEARCH":
 			var center := graph.get_closest_point(search_origin)
@@ -141,7 +145,7 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor(): velocity.y -= delta * 18
 	else: velocity.y = -0.5
 	move_and_slide()
-	if direction.length() > 0.1 and global_position.distance_to(previous_position) < delta * 0.10:
+	if not corner.holding and direction.length() > 0.1 and global_position.distance_to(previous_position) < delta * 0.10:
 		stuck_time += delta
 	else: stuck_time = 0.0
 	previous_position = global_position
@@ -150,20 +154,29 @@ func _physics_process(delta: float) -> void:
 		repath = 0
 		stuck_time = 0
 		if state == "PATROL": patrol_index = (patrol_index + 1) % points.size()
-	if direction.length() > 0.1:
+	if direction.length() > 0.1 and not corner.holding:
 		figure.rotation.y = lerp_angle(figure.rotation.y, atan2(-direction.x, -direction.z), delta * 8)
-	motion.animate(delta, direction.length() > 0.1, hunt > 0, figure, pose_skeleton, pose_bones, pose_rest_rotations)
+	if corner.holding:
+		figure.position = Vector3.ZERO
+		figure.rotation.z = 0.0
+	else:
+		motion.animate(delta, direction.length() > 0.1, hunt > 0, figure, pose_skeleton, pose_bones, pose_rest_rotations)
 	corner.pose_lean(pose_skeleton, pose_bones)
-	if has_seen_player:
-		track_player_head(delta)
-		eye_gaze.track(player.camera.global_position,delta)
+	if has_seen_player or state in ["INVESTIGATE", "SEARCH"]:
+		var focus := attention_target()
+		track_player_head(delta, focus)
+		if corner.holding:
+			corner.pose_head(pose_skeleton, pose_bones)
+		else:
+			motion.apply_tracked_head(pose_skeleton, pose_bones)
+		eye_gaze.track(focus,delta)
 	breath.pitch_scale = 0.84 + (0.16 if hunt > 0 else 0)
 	if distance < 1.05 and same_floor and visible_player and not player.caught:
 		caught = true
 		player.capture(self)
 
 func hear_noise(source: Vector3, radius: float) -> void:
-	if caught or state == "CHASE": return
+	if caught or sees_player: return
 	if global_position.distance_to(source) > radius: return
 	# Sound carries between floors; A* takes the stairs instead of a straight line.
 	last_seen = source
@@ -171,6 +184,9 @@ func hear_noise(source: Vector3, radius: float) -> void:
 	hunt = 12.0
 	route_path.clear()
 	repath = 0.0
+	# A sound is a clue at its source, not permission to track its owner.
+	corner.active = false
+	corner.holding = false
 
 func begin_search() -> void:
 	state = "SEARCH"
@@ -191,8 +207,40 @@ func clear_passage(start: Vector3, finish: Vector3) -> bool:
 			if not get_world_3d().direct_space_state.intersect_ray(query).is_empty(): return false
 	return true
 
-func track_player_head(delta: float) -> void:
+func sight_origin() -> Vector3:
+	if pose_skeleton and pose_bones.has("EyeLeft") and pose_bones.has("EyeRight"):
+		var left := pose_skeleton.get_bone_global_pose(pose_bones["EyeLeft"]).origin
+		var right := pose_skeleton.get_bone_global_pose(pose_bones["EyeRight"]).origin
+		return pose_skeleton.global_transform * ((left + right) * 0.5)
+	return global_position + Vector3.UP * 2.3
+
+func can_see_player() -> bool:
+	if not is_instance_valid(player): return false
+	var origin := sight_origin()
+	var target: Vector3 = player.camera.global_position
+	var offset := target - origin
+	if offset.length() > 15.0: return false
+	var flat := Vector3(offset.x, 0.0, offset.z)
+	var forward := -figure.global_basis.z
+	forward.y = 0.0
+	# Previous detection never grants rear vision or vision through walls.
+	if flat.length() > 1.05 and forward.normalized().dot(flat.normalized()) < 0.15: return false
+	# A head animation must not move the sight ray into/through solid cover.
+	var neck_query := PhysicsRayQueryParameters3D.create(global_position + Vector3.UP * 2.3, origin, 1, [get_rid(), player.get_rid()])
+	neck_query.hit_from_inside = true
+	if not get_world_3d().direct_space_state.intersect_ray(neck_query).is_empty(): return false
+	var query := PhysicsRayQueryParameters3D.create(origin, target, 1, [get_rid(), player.get_rid()])
+	query.hit_from_inside = true
+	return get_world_3d().direct_space_state.intersect_ray(query).is_empty()
+
+func attention_target() -> Vector3:
+	if sees_player: return player.camera.global_position
+	if state == "SEARCH" and not route_path.is_empty(): return route_path[0] + Vector3.UP * 1.5
+	return last_seen + Vector3.UP * 1.5
+
+func track_player_head(delta: float, target: Vector3 = Vector3.INF) -> void:
 	if not pose_skeleton or not pose_bones.has("Head"): return
+	if target == Vector3.INF: target = attention_target()
 	var index: int = pose_bones["Head"]
 	var rest := pose_skeleton.get_bone_global_rest(index)
 	var parent := pose_skeleton.get_bone_parent(index)
@@ -202,7 +250,7 @@ func track_player_head(delta: float) -> void:
 	for iteration in range(3):
 		var pose := pose_skeleton.get_bone_global_pose(index)
 		var eyes := pose_skeleton.global_transform * (pose * (rest.affine_inverse() * Vector3(0,1.905,-0.26)))
-		var direction: Vector3 = player.camera.global_position - eyes
+		var direction: Vector3 = target - eyes
 		if direction.length_squared() < 0.001: return
 		var up := Vector3.FORWARD if absf(direction.normalized().dot(Vector3.UP)) > 0.98 else Vector3.UP
 		var desired_world := Basis.looking_at(direction.normalized(), up)

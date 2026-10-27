@@ -29,12 +29,19 @@ func run() -> void:
 		corner.stare_cooldown = 100
 		var before: int = corner.peek_count
 		var maximum: float = 0
-		for frame in range(35):
-			corner.tick(1.0/60.0,false)
+		for frame in range(190):
+			# Once she is revealed, seeing the player must not cancel the stare.
+			corner.tick(1.0/60.0,frame > 90 and frame < 150)
 			maximum = maxf(maximum,corner.lean)
+			if frame == 25:
+				check(corner.holding and corner.lean < 0.01 and corner.speed_factor() == 0, "Settles motionless behind cover")
+			if frame == 65:
+				check(corner.lean > 0.1 and corner.lean < 0.9, "Reveals gradually")
+			if frame == 120:
+				check(corner.holding and corner.peek_phase == "STARE" and corner.speed_factor() == 0, "Holds gaze even when player is visible")
 		check(corner.peek_count == before+1, "Peeks at each distinct covered corner")
-		check(maximum > 0.9, "Fast full lean")
-		check(not corner.active and corner.speed_factor() > 0, "Continues chase within half a second")
+		check(maximum > 0.9, "Full lean around cover")
+		check(not corner.active and corner.speed_factor() > 0, "Resumes pursuit after withdrawing")
 		corner.cooldown = 0
 		corner.tick(1.0/60.0,false)
 		check(not corner.active, "Doesn't spam same corner")

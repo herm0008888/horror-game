@@ -1,8 +1,13 @@
 extends Node
 ## Cover anchors are authored Marker3D nodes. No teleportation or through-wall leaning.
 @export var approach_radius: float = 9.0
-@export var peek_duration: float = 0.38
-@export var cooldown_duration: float = 0.25
+@export var settle_duration: float = 0.65
+@export var lean_duration: float = 0.85
+@export var peek_duration: float = 1.15
+@export var withdraw_duration: float = 0.28
+@export var cooldown_duration: float = 2.5
+var peek_elapsed: float = 0.0
+var peek_phase: String = "IDLE"
 var active := false
 var holding := false
 var destination := Vector3.ZERO
@@ -30,8 +35,8 @@ func tick(delta: float, visible_player: bool) -> void:
 	stare_cooldown -= delta
 	freeze_left = maxf(0, freeze_left-delta)
 	burst_left = maxf(0, burst_left-delta)
-	if not enemy.has_seen_player: return
-	if visible_player and active:
+	if not active and not enemy.has_seen_player and enemy.state != "INVESTIGATE": return
+	if visible_player and active and not holding:
 		active = false
 		holding = false
 		cooldown = cooldown_duration
@@ -41,17 +46,39 @@ func tick(delta: float, visible_player: bool) -> void:
 		approach_left -= delta
 		if not holding and enemy.global_position.distance_to(destination) < 0.45:
 			holding = true
-			remaining = peek_duration
+			peek_elapsed = 0.0
+			remaining = settle_duration + lean_duration + peek_duration + withdraw_duration
+			peek_phase = "SETTLE"
 			peek_count += 1
 			recent_corners[chosen_corner] = Time.get_ticks_msec()
+			# Treat both edges of the same cover as one inspection, not a peek loop.
+			for marker in get_tree().get_nodes_in_group("creature_cover"):
+				if marker.global_position.distance_to(destination) < 4.3:
+					recent_corners[marker.get_instance_id()] = Time.get_ticks_msec()
 			freeze_left = 0
-			burst_left = 1.3
+			burst_left = 0.0
 		if holding:
+			peek_elapsed += delta
 			remaining -= delta
-			lean = move_toward(lean, 1.0 if remaining > 0.12 else 0.0, delta*14.0)
-		if (holding and remaining <= 0) or approach_left <= 0 or enemy.global_position.distance_to(enemy.player.global_position) < 2.5:
+			var reveal_end := settle_duration + lean_duration
+			var stare_end := reveal_end + peek_duration
+			if peek_elapsed < settle_duration:
+				peek_phase = "SETTLE"
+				lean = 0.0
+			elif peek_elapsed < reveal_end:
+				peek_phase = "REVEAL"
+				lean = smoothstep(settle_duration, reveal_end, peek_elapsed)
+			elif peek_elapsed < stare_end:
+				peek_phase = "STARE"
+				lean = 1.0
+			else:
+				peek_phase = "WITHDRAW"
+				lean = 1.0 - smoothstep(stare_end, stare_end + withdraw_duration, peek_elapsed)
+		if (holding and remaining <= 0) or approach_left <= 0 or (visible_player and enemy.global_position.distance_to(enemy.player.global_position) < 1.5):
 			active = false
 			holding = false
+			peek_phase = "IDLE"
+			burst_left = 1.3
 			cooldown = cooldown_duration
 			enemy.route_path.clear()
 			enemy.repath = 0
@@ -70,15 +97,26 @@ func tick(delta: float, visible_player: bool) -> void:
 	var best_distance: float = approach_radius
 	# Investigate the last seen position; cover choice doesn't reveal unseen movement.
 	var target: Vector3 = enemy.last_seen + Vector3.UP * 1.65
+	var memory_path: PackedVector3Array = enemy.plan_route(enemy.last_seen)
 	for node in get_tree().get_nodes_in_group("creature_cover"):
 		var marker := node as Marker3D
 		if Time.get_ticks_msec()-int(recent_corners.get(marker.get_instance_id(),-10000)) < 6000: continue
 		var distance: float = enemy.global_position.distance_to(marker.global_position)
-		if distance > minf(best_distance,1.0) or marker.global_position.distance_to(enemy.last_seen) < 2.5: continue
-		if marker.global_position.distance_to(enemy.last_seen) > enemy.global_position.distance_to(enemy.last_seen)+0.15: continue
+		if distance > best_distance or marker.global_position.distance_to(enemy.last_seen) < 0.65: continue
+		if absf(marker.global_position.y - enemy.global_position.y) > 0.65: continue
+		if marker.global_position.distance_to(enemy.last_seen) > enemy.global_position.distance_to(enemy.last_seen)+0.75: continue
+		if not enemy.clear_passage(enemy.global_position, marker.global_position): continue
+		# Follow the route to the remembered clue, not the player's hidden position.
+		var on_route := distance < 0.6
+		var previous: Vector3 = enemy.global_position
+		for point in memory_path:
+			if Geometry3D.get_closest_point_to_segment(marker.global_position, previous, point).distance_to(marker.global_position) < 1.0:
+				on_route = true
+			previous = point
+		if not on_route: continue
 		var origin := marker.global_position + Vector3.UP * 2.3
 		var offset: Vector3 = marker.get_meta("peek_offset", Vector3.ZERO)
-		if ray_clear(origin,target): continue
+		# Authored cover can be inspected even when the last clue was at its edge.
 		if not ray_clear(origin,origin+offset): continue
 		if not ray_clear(origin+offset,target): continue
 		best = marker
@@ -86,6 +124,7 @@ func tick(delta: float, visible_player: bool) -> void:
 	if best:
 		active = true
 		holding = false
+		peek_phase = "APPROACH"
 		destination = best.global_position
 		chosen_corner = best.get_instance_id()
 		peek_offset = best.get_meta("peek_offset", Vector3.ZERO)
@@ -98,7 +137,12 @@ func speed_factor() -> float:
 	return 1.35 if burst_left > 0 else 1.0
 
 func pose_lean(skeleton: Skeleton3D, bones: Dictionary) -> void:
-	if lean < 0.001 or not skeleton or not bones.has("Spine"): return
+	if not skeleton or not bones.has("Spine"): return
+	if holding:
+		# Anchor the feet and hanging arms; only the upper body reveals itself.
+		for bone in ["LegLeft", "LegRight", "ArmLeft", "ArmRight", "ForearmLeft", "ForearmRight"]:
+			if bones.has(bone): skeleton.set_bone_pose_rotation(bones[bone], enemy.pose_rest_rotations[bone])
+	if not holding and lean < 0.001: return
 	var index: int = bones["Spine"]
 	var parent := skeleton.get_bone_parent(index)
 	var parent_basis := skeleton.get_bone_global_pose(parent).basis.orthonormalized() if parent >= 0 else Basis.IDENTITY
@@ -110,4 +154,12 @@ func pose_lean(skeleton: Skeleton3D, bones: Dictionary) -> void:
 	var neutral_global := parent_basis * neutral_local
 	var desired := basis.inverse()*tilt*basis*neutral_global
 	skeleton.set_bone_pose_rotation(index,(parent_basis.inverse()*desired).get_rotation_quaternion())
+
+func pose_head(skeleton: Skeleton3D, bones: Dictionary) -> void:
+	if not holding or not skeleton or not bones.has("Head"): return
+	var index: int = bones["Head"]
+	var side := signf(enemy.figure.global_basis.x.dot(peek_offset))
+	# Eyes still track the player, while the head gradually cocks to one side.
+	var tilt := Quaternion.from_euler(Vector3(-0.06 * lean, 0.0, side * 0.24 * lean))
+	skeleton.set_bone_pose_rotation(index, skeleton.get_bone_pose_rotation(index) * tilt)
 
