@@ -285,5 +285,3 @@ func plan_route(destination: Vector3) -> PackedVector3Array:
 	var path := navigation.get_point_path(start,finish)
 	if path.size() > 0: path.remove_at(0)
 	return path
-
-

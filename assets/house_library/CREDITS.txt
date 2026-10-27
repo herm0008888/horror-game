@@ -1,0 +1,9 @@
+New environment library for the horror house test scene.
+All downloaded models and textures: Poly Haven, CC0 1.0.
+License: https://polyhaven.com/license
+Per-asset authors and source URLs: SOURCES.json.
+Model and material files are original 1K downloads; MD5-verified against the public API.
+Room shell, stairs, interactive doors and hatch: authored for this scene using these materials.
+No old house furniture or house textures are used.
+
+Footstep, door_creak and wind resources are newly synthesized sounds made for this test scene.

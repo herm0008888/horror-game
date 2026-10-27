@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w2v3a1ryx1i"
-path="res://.godot/imported/visitation_visitor_black_hair.png-274350d6f689ad5137045a976795a237.ctex"
+path.s3tc="res://.godot/imported/visitation_visitor_black_hair.png-274350d6f689ad5137045a976795a237.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "0ea7fb3cc9b6453bb2018e1d57ad4ad2"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/horror/visitation_visitor_black_hair.png"
-dest_files=["res://.godot/imported/visitation_visitor_black_hair.png-274350d6f689ad5137045a976795a237.ctex"]
+dest_files=["res://.godot/imported/visitation_visitor_black_hair.png-274350d6f689ad5137045a976795a237.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

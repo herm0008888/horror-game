@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnmm10csmoiuc"
-path="res://.godot/imported/visitation_visceral_eye_roughness.png-3c9d4e9feedd70413ad91a097df4fffa.ctex"
+path.s3tc="res://.godot/imported/visitation_visceral_eye_roughness.png-3c9d4e9feedd70413ad91a097df4fffa.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "e9f83a96180c4a93200f5b36c9be1384"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/horror/visitation_visceral_eye_roughness.png"
-dest_files=["res://.godot/imported/visitation_visceral_eye_roughness.png-3c9d4e9feedd70413ad91a097df4fffa.ctex"]
+dest_files=["res://.godot/imported/visitation_visceral_eye_roughness.png-3c9d4e9feedd70413ad91a097df4fffa.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
