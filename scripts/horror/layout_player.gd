@@ -5,8 +5,16 @@ var start := Vector3(6, 0.1, 14)
 @onready var capsule: CollisionShape3D = $Collision
 @onready var camera: Camera3D = $Camera
 func _ready() -> void:
+	add_to_group("horror_player")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 func _unhandled_input(event: InputEvent) -> void:
+	if (event.is_action_pressed("interact") or (event is InputEventKey and event.pressed and event.physical_keycode==KEY_E)) and not event.is_echo():
+		var ray := PhysicsRayQueryParameters3D.create(camera.global_position,camera.global_position-camera.global_basis.z*2.6,1,[get_rid()])
+		var hit := get_world_3d().direct_space_state.intersect_ray(ray)
+		if not hit.is_empty() and hit.collider.has_method("interact"):
+			hit.collider.interact()
+			get_viewport().set_input_as_handled()
+			return
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotation.y -= event.relative.x * 0.0024
 		pitch = clampf(pitch - event.relative.y * 0.0024, -1.4, 1.4)
@@ -41,3 +49,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	if position.y < -9:
 		position = start
+
+func acquire_flashlight() -> void:
+	$Camera/FlashlightRig.acquire()

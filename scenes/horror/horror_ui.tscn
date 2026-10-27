@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://scripts/horror/horror_ui.gd" id="UI"]
+[ext_resource type="Shader" path="res://assets/ui/horror_overlay.gdshader" id="Shader"]
+[sub_resource type="ShaderMaterial" id="Effect"]
+shader = ExtResource("Shader")
+[node name="HorrorUI" type="CanvasLayer"]
+layer = 8
+script = ExtResource("UI")
+[node name="Overlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+material = SubResource("Effect")

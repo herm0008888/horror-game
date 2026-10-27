@@ -1,4 +1,5 @@
 extends Node3D
+signal mode_changed(normal: bool)
 ## L switches between the authored horror lights and the original bright work lighting.
 @export var normal_lighting: bool = false
 @export_node_path("WorldEnvironment") var environment_node: NodePath
@@ -20,6 +21,7 @@ func set_normal_lighting(enabled: bool) -> void:
 	horror_lights.visible=not enabled
 	for light in get_parent().get_children():
 		if light is OmniLight3D: light.visible=enabled
+	mode_changed.emit(enabled)
 func _process(delta: float) -> void:
 	if normal_lighting or flicker_amount<=0: return
 	elapsed+=delta

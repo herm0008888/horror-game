@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_abandoned_cell.tscn" id="1_tmajy"]
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_rotten_storage.tscn" id="2_fp32j"]
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_dead_boiler_room.tscn" id="3_e27el"]
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_ruined_workshop.tscn" id="4_vixid"]
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_south_store.tscn" id="5_aumgf"]
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_escape_store.tscn" id="6_rfr3r"]
+[ext_resource type="PackedScene" path="res://scenes/horror/basement_broken_ceiling_and_frames.tscn" id="7_2hc73"]
+
+[node name="BasementDressing" type="Node3D" unique_id=1521041405]
+
+[node name="AbandonedCell" type="Node3D" parent="." unique_id=54342660 instance=ExtResource("1_tmajy")]
+
+[node name="RottenStorage" type="Node3D" parent="." unique_id=1188001163 instance=ExtResource("2_fp32j")]
+
+[node name="DeadBoilerRoom" type="Node3D" parent="." unique_id=833133729 instance=ExtResource("3_e27el")]
+
+[node name="RuinedWorkshop" type="Node3D" parent="." unique_id=400465778 instance=ExtResource("4_vixid")]
+
+[node name="SouthStore" type="Node3D" parent="." unique_id=488958292 instance=ExtResource("5_aumgf")]
+
+[node name="EscapeStore" type="Node3D" parent="." unique_id=2075403938 instance=ExtResource("6_rfr3r")]
+
+[node name="BrokenCeilingAndFrames" type="Node3D" parent="." unique_id=647806799 instance=ExtResource("7_2hc73")]

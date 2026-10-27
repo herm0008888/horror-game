@@ -19,9 +19,9 @@ func run() -> void:
 	var normal := load("res://assets/house_materials/normal_lighting.tres") as Environment if ResourceLoader.exists("res://assets/house_materials/normal_lighting.tres") else world.environment.duplicate() as Environment
 	ResourceSaver.save(normal,"res://assets/house_materials/normal_lighting.tres")
 	var horror := normal.duplicate() as Environment
-	horror.background_color=Color(0.018,0.024,0.035)
-	horror.ambient_light_color=Color(0.43,0.49,0.61)
-	horror.ambient_light_energy=0.23
+	horror.background_color=Color(0.003,0.004,0.007)
+	horror.ambient_light_color=Color(0.38,0.44,0.55)
+	horror.ambient_light_energy=0.10
 	ResourceSaver.save(horror,"res://assets/house_materials/horror_lighting.tres")
 	normal=load("res://assets/house_materials/normal_lighting.tres")
 	horror=load("res://assets/house_materials/horror_lighting.tres")
@@ -51,14 +51,14 @@ func run() -> void:
 		light.position=data[1]
 		light.rotation_degrees.x=-90
 		light.light_color=Color(0.83,0.74,0.56) if light.position.y>0 else Color(0.70,0.76,0.59)
-		light.light_energy=data[2]
-		light.spot_range=5.4
-		light.spot_angle=53
+		light.light_energy=data[2]*0.16
+		light.spot_range=3.8
+		light.spot_angle=38
 		light.spot_attenuation=1.35
 		light.spot_angle_attenuation=0.8
 		light.shadow_enabled=true
 		light.shadow_bias=0.035
-		light.set_meta("base_energy",data[2])
+		light.set_meta("base_energy",data[2]*0.16)
 		lights.add_child(light)
 	for data in [
 		["ColdWindowGround",Vector3(.18,2.0,3),Vector3(4,0.7,3)],
@@ -70,7 +70,7 @@ func run() -> void:
 		lights.add_child(light)
 		light.look_at_from_position(data[1],data[2])
 		light.light_color=Color(.35,.50,.74)
-		light.light_energy=.85
+		light.light_energy=.136
 		light.spot_range=5.8
 		light.spot_angle=40
 		light.shadow_enabled=true

@@ -1,0 +1,134 @@
+[gd_scene format=4]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/metal_tool_chest/metal_tool_chest.gltf" id="1_r8rpv"]
+[ext_resource type="PackedScene" path="res://assets/house_library/painted_wooden_table/painted_wooden_table.gltf" id="5_ojtfp"]
+[ext_resource type="PackedScene" path="res://assets/house_library/cross_pein_hammer/cross_pein_hammer.gltf" id="9_sb8yt"]
+[ext_resource type="PackedScene" path="res://assets/house_library/handsaw_wood/handsaw_wood.gltf" id="13_htq0w"]
+[ext_resource type="PackedScene" path="res://assets/house_library/painted_wooden_stool/painted_wooden_stool.gltf" id="17_a1aym"]
+[ext_resource type="PackedScene" path="res://assets/house_library/metal_trash_can/metal_trash_can.gltf" id="21_qfudn"]
+[ext_resource type="PackedScene" path="res://assets/house_library/trashbag/trashbag.gltf" id="28_irfjr"]
+[ext_resource type="PackedScene" path="res://assets/house_library/cardboard_box_01/cardboard_box_01.gltf" id="32_0varp"]
+[ext_resource type="PackedScene" path="res://assets/house_library/can_rusted/can_rusted.gltf" id="36_3cc4v"]
+[ext_resource type="Material" path="res://assets/house_materials/basement_rubble.tres" id="40_2xolt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xla83"]
+size = Vector3(1.3143431, 1.25, 0.7807821)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7tj1t"]
+size = Vector3(2.13299, 0.85, 1.0081358)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jfdbm"]
+size = Vector3(0.365616, 0.55, 0.3857921)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i06vx"]
+size = Vector3(1.4267247, 0.7, 0.42972398)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsta8"]
+size = Vector3(0.41327268, 0.45, 0.36226448)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lf4yu"]
+size = Vector3(0.7360025, 0.65, 0.98103046)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ubi7n"]
+_surfaces = [{
+"aabb": AABB(-0.17978819, 0, -0.82242215, 0.36530042, 0.21789008, 1.6604462),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 45,
+"vertex_data": PackedByteArray("AAAAAJQeXz4AAAAA6vY9PgAAAAAAAAAAJEYkPgAAAABX25A+AAAAALpEAj4AAAAAJEYkPgAAAABX25A+hwkAPgAAAADTfgc/AAAAAK09ND4AAAAAhwkAPgAAAADTfgc/AP9NPQAAAABWcUU/AAAAAFS1Oj4AAAAAAP9NPQAAAABWcUU/njCAvAAAAAC/iFY/AAAAAFBtFj4AAAAAnjCAvAAAAAC/iFY/vX2JvQAAAADA7BY/AAAAAAZq/z0AAAAAvX2JvQAAAADA7BY/lFsQvgAAAABdvsE+AAAAAFK5AD4AAAAAlFsQvgAAAABdvsE+ZRo4vgAAAACghy8+AAAAAKAqWD4AAAAAZRo4vgAAAACghy8+h2wYvgAAAACJfx++AAAAAMNB3j0AAAAAh2wYvgAAAACJfx++RK7/vQAAAACS1M2+AAAAACEz5z0AAAAARK7/vQAAAACS1M2+26efvQAAAACN7SW/AAAAAAQfEz4AAAAA26efvQAAAACN7SW/KOidvAAAAAC0xTC/AAAAAFC9MD4AAAAAKOidvAAAAAC0xTC/VEA4PQAAAABCilK/AAAAAHxTVz4AAAAAVEA4PQAAAABCilK/TPrfPQAAAADJ5Qy/AAAAABANVz4AAAAATPrfPQAAAADJ5Qy/oBIwPgAAAAByYqG+AAAAAJH6/T0AAAAAoBIwPgAAAAByYqG+6vY9PgAAAAAAAAAA+cEruONZwNNYu6/CAFDJ1Iy4JcFRTqzT/K5CyrZBY9KMuCXBUU6s0ymtrsguQWTRaqsqx5JAVtApra7ILkFk0TKgbM+qM8fM3pN/2EEmfccyoGzPqjPHzJFrEdqLLHK0tkwVwhZS96qRaxHaiyxytB9UgcjjR2es2ls1zzQ9pK4fVIHI40dnrKVXJs3BQI+tc1MZy0xEpaylVybNwUCPrWdEc8OVUMiqDjWHuwRbJKtnRHPDlVDIqnk/HMVVToiqJ0rvzuI/h6t5PxzFVU6IqnhL9tEeO8urxUz31Ds2GKx4S/bRHjvLq01VyOIpICGuul4M8kARC69NVcjiKSAhrsxTLuZyHSCsWErr284pDqvMUy7mch0grP+h+/L9CNfOncIgyrxQHNj/ofvy/QjXzuvBTcvGTiPYO8F4zL1MJNjrwU3Lxk4j2Da7AM2bR33WlLSVzUBDrNQ2uwDNm0d91li7r8IAUMnU")
+}]
+
+[node name="RuinedWorkshop" type="Node3D" unique_id=400465778]
+
+[node name="MetalToolChest" type="StaticBody3D" parent="." unique_id=2086113801]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.45, -3.4, 5)
+metadata/source = "https://polyhaven.com/a/metal_tool_chest"
+
+[node name="Model" type="Node3D" parent="MetalToolChest" unique_id=468323827 instance=ExtResource("1_r8rpv")]
+transform = Transform3D(1.9176615, 0, 0, 0, 1.9176615, 0, 0, 0, 1.9176615, 0.051282525, -0.0015514719, -0.011801576)
+
+[node name="@CollisionShape3D@18" type="CollisionShape3D" parent="MetalToolChest" unique_id=1276268736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625, 0)
+shape = SubResource("BoxShape3D_xla83")
+
+[node name="PaintedWoodenTable" type="StaticBody3D" parent="." unique_id=2009550300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1, -3.4, 0.65)
+metadata/source = "https://polyhaven.com/a/painted_wooden_table"
+
+[node name="Model" type="Node3D" parent="PaintedWoodenTable" unique_id=619249047 instance=ExtResource("5_ojtfp")]
+transform = Transform3D(0.8866755, 0, 0, 0, 0.8866755, 0, 0, 0, 0.8866755, 0.0004616974, 0.0004369636, 0.0023900873)
+
+[node name="@CollisionShape3D@19" type="CollisionShape3D" parent="PaintedWoodenTable" unique_id=1562629212]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0)
+shape = SubResource("BoxShape3D_7tj1t")
+
+[node name="CrossPeinHammer" type="Node3D" parent="." unique_id=1701854959]
+transform = Transform3D(0.87758255, 0, 0.47942555, 0, 1, 0, -0.47942555, 0, 0.87758255, 14, -2.54, 0.65)
+metadata/source = "https://polyhaven.com/a/cross_pein_hammer"
+
+[node name="Model" type="Node3D" parent="CrossPeinHammer" unique_id=1623985549 instance=ExtResource("9_sb8yt")]
+transform = Transform3D(-1.5883555e-07, -3.6337337, 0, 3.6337337, -1.5883555e-07, 0, 0, 0, 3.6337337, 0.09783, 0.16122279, -0.008434225)
+
+[node name="HandsawWood" type="Node3D" parent="." unique_id=1930666984]
+transform = Transform3D(0.87758255, 0, -0.47942555, 0, 1, 0, 0.47942555, 0, 0.87758255, 14.45, -2.54, 0.65)
+metadata/source = "https://polyhaven.com/a/handsaw_wood"
+
+[node name="Model" type="Node3D" parent="HandsawWood" unique_id=1956677308 instance=ExtResource("13_htq0w")]
+transform = Transform3D(-3.3147167e-08, -0.7583188, 0, 0.7583188, -3.3147167e-08, 0, 0, 0, 0.7583188, -0.0012663844, 0.0155724175, -0.17421827)
+
+[node name="PaintedWoodenStool" type="StaticBody3D" parent="." unique_id=886943026]
+transform = Transform3D(0.9553365, 0, 0.29552022, 0, 1, 0, -0.29552022, 0, 0.9553365, 15, -3.4, 1.6)
+metadata/source = "https://polyhaven.com/a/painted_wooden_stool"
+
+[node name="Model" type="Node3D" parent="PaintedWoodenStool" unique_id=2102590005 instance=ExtResource("17_a1aym")]
+transform = Transform3D(0.95005304, 0, 0, 0, 0.95005304, 0, 0, 0, 0.95005304, -0.004692458, 0.00093998533, -0.012570996)
+
+[node name="@CollisionShape3D@20" type="CollisionShape3D" parent="PaintedWoodenStool" unique_id=1482309238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.275, 0)
+shape = SubResource("BoxShape3D_jfdbm")
+
+[node name="MetalTrashCan" type="StaticBody3D" parent="." unique_id=242271484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, -3.4, 7)
+metadata/source = "https://polyhaven.com/a/metal_trash_can"
+
+[node name="Model" type="Node3D" parent="MetalTrashCan" unique_id=568786480 instance=ExtResource("21_qfudn")]
+transform = Transform3D(0.7724822, 0, 0, 0, 0.7724822, 0, 0, 0, 0.7724822, 0.07442973, -4.768973e-05, 6.9065294e-08)
+
+[node name="@CollisionShape3D@21" type="CollisionShape3D" parent="MetalTrashCan" unique_id=1073698423]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)
+shape = SubResource("BoxShape3D_i06vx")
+
+[node name="Trashbag" type="StaticBody3D" parent="." unique_id=999854479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8, -3.4, 7.1)
+metadata/source = "https://polyhaven.com/a/trashbag"
+
+[node name="Model" type="Node3D" parent="Trashbag" unique_id=645182552 instance=ExtResource("28_irfjr")]
+transform = Transform3D(0.7826095, 0, 0, 0, 0.7826095, 0, 0, 0, 0.7826095, -0.0027896636, 0.001138045, 0.00655304)
+
+[node name="@CollisionShape3D@22" type="CollisionShape3D" parent="Trashbag" unique_id=1874643027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.225, 0)
+shape = SubResource("BoxShape3D_bsta8")
+
+[node name="CardboardBox01" type="StaticBody3D" parent="." unique_id=600754401]
+transform = Transform3D(0.9800666, 0, 0.19866933, 0, 1, 0, -0.19866933, 0, 0.9800666, 12.5, -3.4, 10.9)
+metadata/source = "https://polyhaven.com/a/cardboard_box_01"
+
+[node name="Model" type="Node3D" parent="CardboardBox01" unique_id=902709276 instance=ExtResource("32_0varp")]
+transform = Transform3D(1.9016993, 0, 0, 0, 1.9016993, 0, 0, 0, 1.9016993, -0.0019133782, 0.012847753, -0.062473707)
+
+[node name="@CollisionShape3D@23" type="CollisionShape3D" parent="CardboardBox01" unique_id=83134664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
+shape = SubResource("BoxShape3D_lf4yu")
+
+[node name="CanRusted" type="Node3D" parent="." unique_id=882647548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, -3.4, 11.4)
+metadata/source = "https://polyhaven.com/a/can_rusted"
+
+[node name="Model" type="Node3D" parent="CanRusted" unique_id=1648925369 instance=ExtResource("36_3cc4v")]
+transform = Transform3D(1.3211979, 0, 0, 0, 1.3211979, 0, 0, 0, 1.3211979, -0.00032888266, 0.0015864721, -0.0012505524)
+
+[node name="CollapsedMasonry" type="MeshInstance3D" parent="." unique_id=1176099441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, -3.39, 9.8)
+material_override = ExtResource("40_2xolt")
+mesh = SubResource("ArrayMesh_ubi7n")

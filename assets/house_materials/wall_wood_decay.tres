@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+[ext_resource type="Shader" path="res://assets/house_materials/decay.gdshader" id="1"]
+[resource]
+shader = ExtResource("1")
+shader_parameter/decay_strength = 0.85
+shader_parameter/stain_tint = Vector3(0.24, 0.27, 0.19)

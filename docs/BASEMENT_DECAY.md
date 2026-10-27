@@ -1,0 +1,3 @@
+Kjelleren har nå 38 ujevne veggmesher, avskallet puss med synlig murverk, løse pussbiter langs veggene, rustne rør og teksturert cellegitter med nagler.
+Dekor ligger i scenes/horror/basement_decay.tscn, instansiert som BasementDecay i house_layout.tscn. Åpne den separate scenen for å flytte enkeltdeler. Veggmesher og materialer er lagret i editoren. Ingen tilfeldig generering under spilling.
+Rømningspassasjer og eksisterende kollisjoner er beholdt. Små dekorbiter har ingen kollisjon. tools/house/build_basement_decay.gd er et engangsverktøy for forfatting og nekter å kjøre på en allerede behandlet scene.
