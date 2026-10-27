@@ -297,9 +297,10 @@ shader_parameter/use_roughness = false
 shader_parameter/body_mode = true
 shader_parameter/normal_strength = 0.2
 shader_parameter/normal_tiling = 2.5
-shader_parameter/roughness_value = null
-shader_parameter/specular_value = null
-shader_parameter/coat = 0.25
+shader_parameter/roughness_value = 0.9
+shader_parameter/roughness_min = 0.9
+shader_parameter/specular_value = 0.1
+shader_parameter/coat = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wdplv"]
 render_priority = 0
@@ -313,9 +314,10 @@ shader_parameter/use_roughness = true
 shader_parameter/body_mode = null
 shader_parameter/normal_strength = null
 shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = null
-shader_parameter/specular_value = 0.35
-shader_parameter/coat = 0.08
+shader_parameter/roughness_value = 0.96
+shader_parameter/roughness_min = 0.96
+shader_parameter/specular_value = 0.06
+shader_parameter/coat = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nspt3"]
 render_priority = 0
@@ -338,9 +340,10 @@ shader_parameter/use_roughness = true
 shader_parameter/body_mode = null
 shader_parameter/normal_strength = 0.48
 shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = null
-shader_parameter/specular_value = null
-shader_parameter/coat = 0.06
+shader_parameter/roughness_value = 0.88
+shader_parameter/roughness_min = 0.88
+shader_parameter/specular_value = 0.12
+shader_parameter/coat = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6hqnl"]
 render_priority = 0
@@ -360,6 +363,7 @@ shader_parameter/body_mode = null
 shader_parameter/normal_strength = null
 shader_parameter/normal_tiling = null
 shader_parameter/roughness_value = null
+shader_parameter/roughness_min = null
 shader_parameter/specular_value = 0.65
 shader_parameter/coat = 0.85
 
@@ -376,9 +380,10 @@ shader_parameter/use_roughness = true
 shader_parameter/body_mode = null
 shader_parameter/normal_strength = 0.5
 shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = null
-shader_parameter/specular_value = 0.6
-shader_parameter/coat = 0.75
+shader_parameter/roughness_value = 0.7
+shader_parameter/roughness_min = 0.7
+shader_parameter/specular_value = 0.18
+shader_parameter/coat = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_puy04"]
 render_priority = 0
@@ -392,9 +397,10 @@ shader_parameter/use_roughness = true
 shader_parameter/body_mode = null
 shader_parameter/normal_strength = null
 shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = null
-shader_parameter/specular_value = null
-shader_parameter/coat = 0.4
+shader_parameter/roughness_value = 0.78
+shader_parameter/roughness_min = 0.78
+shader_parameter/specular_value = 0.15
+shader_parameter/coat = 0.0
 
 [node name="Hollow_Visitor_Emaciated_006" type="Node3D" unique_id=699282063]
 

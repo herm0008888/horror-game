@@ -11,5 +11,11 @@ shader_parameter/roughness_texture = ExtResource("roughness_texture")
 shader_parameter/use_texture = true
 shader_parameter/use_normal = true
 shader_parameter/use_roughness = true
-shader_parameter/coat = 0.06
+shader_parameter/coat = 0.0
 shader_parameter/normal_strength = 0.48
+
+shader_parameter/roughness_min = 0.88
+
+shader_parameter/roughness_value = 0.88
+
+shader_parameter/specular_value = 0.12

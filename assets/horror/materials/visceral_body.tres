@@ -11,4 +11,10 @@ shader_parameter/body_mode = true
 shader_parameter/tint = Color(0.32,0.285,0.24,1)
 shader_parameter/normal_tiling = 2.5
 shader_parameter/normal_strength = 0.2
-shader_parameter/coat = 0.25
+shader_parameter/coat = 0.0
+
+shader_parameter/roughness_min = 0.9
+
+shader_parameter/roughness_value = 0.9
+
+shader_parameter/specular_value = 0.1

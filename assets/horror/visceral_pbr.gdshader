@@ -9,7 +9,8 @@ uniform bool use_roughness = false;
 uniform bool body_mode = false;
 uniform float normal_strength = 0.4;
 uniform float normal_tiling = 1.0;
-uniform float roughness_value = 0.4;
+uniform float roughness_value = 0.85;
+uniform float roughness_min = 0.0;
 uniform float specular_value = 0.5;
 uniform float coat = 0.45;
 varying vec3 body_position;
@@ -25,10 +26,10 @@ void fragment(){
   float streak=0.55+0.40*sin(UV.x*31.0+sin(UV.y*8.0))*sin(UV.x*31.0+sin(UV.y*8.0));
   float blood=clamp(max(hands*0.95,neckline*streak),0.0,0.98);
   color=mix(color,vec3(0.17,0.006,0.011),blood);
-  rough=mix(0.58,0.16,blood);
+  rough=mix(0.94,0.78,blood);
  }
  ALBEDO=color;
- ROUGHNESS=rough;
+ ROUGHNESS=max(rough,roughness_min);
  SPECULAR=specular_value;
  CLEARCOAT=coat;
  CLEARCOAT_ROUGHNESS=0.10;
