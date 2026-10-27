@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3]
+[ext_resource type="Texture2D" path="res://assets/house_library/concrete_floor_damaged_01/Diffuse.jpg" id="Color"]
+[ext_resource type="Texture2D" path="res://assets/house_library/concrete_floor_damaged_01/nor_gl.jpg" id="Normal"]
+[ext_resource type="Texture2D" path="res://assets/house_library/concrete_floor_damaged_01/Rough.jpg" id="Rough"]
+[resource]
+resource_name = "basement_floor"
+albedo_texture = ExtResource("Color")
+metallic_specular = 0.12
+roughness = 1.0
+roughness_texture = ExtResource("Rough")
+normal_enabled = true
+normal_scale = 0.55
+normal_texture = ExtResource("Normal")
+uv1_scale = Vector3(0.3333333333333333, 0.3333333333333333, 0.3333333333333333)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 16.0
+uv1_world_triplanar = true
+texture_filter = 2
