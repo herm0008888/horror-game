@@ -1,0 +1,168 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/horror/wood.png" id="E1"]
+
+[ext_resource type="Shader" path="res://assets/horror/psx.gdshader" id="E2"]
+
+[ext_resource type="Texture2D" path="res://assets/horror/cloth.png" id="E4"]
+
+[ext_resource type="Shader" path="res://assets/horror/psx.gdshader" id="E5"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/wall_wood.tres" id="Mat_wall_wood"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/floor_wood.tres" id="Mat_floor_wood"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/furniture_wood.tres" id="Mat_furniture_wood"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/plaster.tres" id="Mat_plaster"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/bed_fabric.tres" id="Mat_bed_fabric"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/pillow_fabric.tres" id="Mat_pillow_fabric"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/enamel.tres" id="Mat_enamel"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/metal.tres" id="Mat_metal"]
+
+[ext_resource type="Material" path="res://assets/horror/materials/counter.tres" id="Mat_counter"]
+
+[sub_resource type="ShaderMaterial" id="R3"]
+shader = ExtResource("E2")
+shader_parameter/surface_texture = ExtResource("E1")
+shader_parameter/tiling = Vector2(2,1)
+shader_parameter/tint = Color(1,1,1,1)
+
+[sub_resource type="ShaderMaterial" id="R6"]
+shader = ExtResource("E5")
+shader_parameter/surface_texture = ExtResource("E4")
+shader_parameter/tiling = Vector2(2,2)
+shader_parameter/tint = Color(1,1,1,1)
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(1.50000,0.30000,2.10000)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(1.50000,0.30000,2.10000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(1.40000,0.19000,2.00000)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(1.40000,0.19000,2.00000)
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(1.60000,1.20000,0.15000)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(1.60000,1.20000,0.15000)
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(0.90000,0.16000,0.45000)
+material = ExtResource("Mat_pillow_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_BedLeg0"]
+size = Vector3(0.12,0.36,0.12)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_BedLeg0Shape"]
+size = Vector3(0.12,0.36,0.12)
+
+[sub_resource type="BoxMesh" id="Detail_BedLeg1"]
+size = Vector3(0.12,0.36,0.12)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_BedLeg1Shape"]
+size = Vector3(0.12,0.36,0.12)
+
+[sub_resource type="BoxMesh" id="Detail_BedLeg2"]
+size = Vector3(0.12,0.36,0.12)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_BedLeg2Shape"]
+size = Vector3(0.12,0.36,0.12)
+
+[sub_resource type="BoxMesh" id="Detail_BedLeg3"]
+size = Vector3(0.12,0.36,0.12)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_BedLeg3Shape"]
+size = Vector3(0.12,0.36,0.12)
+
+[node name="Bed" type="Node3D" ]
+
+
+[node name="Frame" type="StaticBody3D" parent="." ]
+position = Vector3(0.00000,0.36000,0.00000)
+rotation = Vector3(0.00000,0.00000,0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Frame" ]
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="Frame" ]
+shape = SubResource("R8")
+
+[node name="Mattress" type="StaticBody3D" parent="." ]
+position = Vector3(0.00000,0.59000,0.00000)
+rotation = Vector3(0.00000,0.00000,0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Mattress" ]
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="Mattress" ]
+shape = SubResource("R10")
+
+[node name="Headboard" type="StaticBody3D" parent="." ]
+position = Vector3(0.00000,0.75000,-1.03000)
+rotation = Vector3(0.00000,0.00000,0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Headboard" ]
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="Headboard" ]
+shape = SubResource("R12")
+
+[node name="Pillow" type="Node3D" parent="." ]
+position = Vector3(0.00000,0.74000,-0.66000)
+rotation = Vector3(0.00000,0.00000,0.00000)
+
+[node name="Mesh" type="MeshInstance3D" parent="Pillow" ]
+mesh = SubResource("R13")
+
+[node name="BedLeg0" type="StaticBody3D" parent="."]
+position = Vector3(-0.61,0.18,-0.86)
+
+[node name="Mesh" type="MeshInstance3D" parent="BedLeg0"]
+mesh = SubResource("Detail_BedLeg0")
+
+[node name="Collision" type="CollisionShape3D" parent="BedLeg0"]
+shape = SubResource("Detail_BedLeg0Shape")
+
+[node name="BedLeg1" type="StaticBody3D" parent="."]
+position = Vector3(0.61,0.18,-0.86)
+
+[node name="Mesh" type="MeshInstance3D" parent="BedLeg1"]
+mesh = SubResource("Detail_BedLeg1")
+
+[node name="Collision" type="CollisionShape3D" parent="BedLeg1"]
+shape = SubResource("Detail_BedLeg1Shape")
+
+[node name="BedLeg2" type="StaticBody3D" parent="."]
+position = Vector3(-0.61,0.18,0.86)
+
+[node name="Mesh" type="MeshInstance3D" parent="BedLeg2"]
+mesh = SubResource("Detail_BedLeg2")
+
+[node name="Collision" type="CollisionShape3D" parent="BedLeg2"]
+shape = SubResource("Detail_BedLeg2Shape")
+
+[node name="BedLeg3" type="StaticBody3D" parent="."]
+position = Vector3(0.61,0.18,0.86)
+
+[node name="Mesh" type="MeshInstance3D" parent="BedLeg3"]
+mesh = SubResource("Detail_BedLeg3")
+
+[node name="Collision" type="CollisionShape3D" parent="BedLeg3"]
+shape = SubResource("Detail_BedLeg3Shape")

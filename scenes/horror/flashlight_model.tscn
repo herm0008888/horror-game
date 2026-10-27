@@ -1,0 +1,39 @@
+[gd_scene format=3]
+[sub_resource type="StandardMaterial3D" id="Metal"]
+albedo_color = Color(0.08,0.09,0.085,1)
+metallic = 0.7
+roughness = 0.55
+[sub_resource type="StandardMaterial3D" id="LensMat"]
+albedo_color = Color(0.65,0.68,0.54,1)
+emission_enabled = true
+emission = Color(0.12,0.14,0.09,1)
+[sub_resource type="CylinderMesh" id="Body"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 0.26
+radial_segments = 12
+material = SubResource("Metal")
+[sub_resource type="CylinderMesh" id="Head"]
+top_radius = 0.075
+bottom_radius = 0.045
+height = 0.08
+radial_segments = 12
+material = SubResource("Metal")
+[sub_resource type="CylinderMesh" id="Lens"]
+top_radius = 0.062
+bottom_radius = 0.062
+height = 0.008
+radial_segments = 12
+material = SubResource("LensMat")
+[node name="FlashlightModel" type="Node3D"]
+[node name="Body" type="MeshInstance3D" parent="."]
+rotation = Vector3(1.570796,0,0)
+mesh = SubResource("Body")
+[node name="Head" type="MeshInstance3D" parent="."]
+position = Vector3(0,0,-0.15)
+rotation = Vector3(-1.570796,0,0)
+mesh = SubResource("Head")
+[node name="Lens" type="MeshInstance3D" parent="."]
+position = Vector3(0,0,-0.194)
+rotation = Vector3(1.570796,0,0)
+mesh = SubResource("Lens")

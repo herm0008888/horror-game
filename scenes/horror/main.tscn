@@ -1,0 +1,80 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/house.tscn" id="E1"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/player.tscn" id="E2"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/visitation.tscn" id="E3"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/patrol_routes.tscn" id="E4"]
+
+[ext_resource type="AudioStream" path="res://assets/horror/ambience.wav" id="E5"]
+
+[ext_resource type="Shader" path="res://assets/horror/film.gdshader" id="E6"]
+
+[ext_resource type="Script" path="res://scripts/horror/overlay.gd" id="E7"]
+
+[ext_resource type="Script" path="res://scripts/horror/house_manager.gd" id="Manager"]
+
+[ext_resource type="AudioStream" path="res://assets/horror/creak.wav" id="Creak"]
+
+[sub_resource type="Environment" id="R8"]
+background_mode = 1
+background_color = Color(0.008,0.011,0.009,1)
+ambient_light_source = 2
+ambient_light_color = Color(0.38,0.40,0.37,1)
+ambient_light_energy = 0.28
+reflected_light_source = 1
+tonemap_mode = 0
+fog_enabled = true
+fog_light_color = Color(0.055,0.060,0.052,1)
+fog_density = 0.018
+fog_sky_affect = 1.0
+
+[sub_resource type="ShaderMaterial" id="R9"]
+shader = ExtResource("E6")
+
+[node name="TheHouse" type="Node3D" ]
+script = ExtResource("Manager")
+
+
+[node name="Environment" type="WorldEnvironment" parent="." ]
+environment = SubResource("R8")
+
+[node name="House" parent="." instance=ExtResource("E1") ]
+
+
+[node name="PatrolRoutes" parent="." instance=ExtResource("E4") ]
+
+
+[node name="Player" parent="." instance=ExtResource("E2") ]
+position = Vector3(0,0.1,8.3)
+
+[node name="Visitation" parent="." instance=ExtResource("E3") node_paths=PackedStringArray("player","route")]
+position = Vector3(-5.8,3.3,-5)
+player = NodePath("../Player")
+route = NodePath("../PatrolRoutes")
+
+[node name="Ambience" type="AudioStreamPlayer" parent="." ]
+stream = ExtResource("E5")
+volume_db = -24
+autoplay = true
+
+[node name="Film" type="CanvasLayer" parent="." ]
+
+
+[node name="Overlay" type="ColorRect" parent="Film" groups=["horror_overlay"]]
+material = SubResource("R9")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("E7")
+
+[node name="DistantCreak" type="AudioStreamPlayer3D" parent="."]
+position = Vector3(-4.5,4.4,-6)
+stream = ExtResource("Creak")
+volume_db = -15
+max_distance = 28

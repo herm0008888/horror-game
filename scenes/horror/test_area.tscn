@@ -1,0 +1,347 @@
+[gd_scene format=3]
+[ext_resource type="Shader" path="res://assets/horror/test_grid.gdshader" id="Grid"]
+[ext_resource type="PackedScene" path="res://scenes/horror/player.tscn" id="Player"]
+[ext_resource type="PackedScene" path="res://scenes/horror/visitation.tscn" id="Enemy"]
+[ext_resource type="PackedScene" path="res://scenes/horror/flashlight_pickup.tscn" id="Pickup"]
+[ext_resource type="Script" path="res://scripts/horror/test_situations.gd" id="SituationManager"]
+[ext_resource type="PackedScene" path="res://scenes/horror/direct_chase.tscn" id="Situation0"]
+[ext_resource type="PackedScene" path="res://scenes/horror/corner_encounter.tscn" id="Situation1"]
+[ext_resource type="PackedScene" path="res://scenes/horror/obstacle_chase.tscn" id="Situation2"]
+[ext_resource type="PackedScene" path="res://scenes/horror/dark_hunt.tscn" id="Situation3"]
+[ext_resource type="PackedScene" path="res://scenes/horror/close_encounter.tscn" id="Situation4"]
+[sub_resource type="ShaderMaterial" id="Gray"]
+shader = ExtResource("Grid")
+[sub_resource type="ShaderMaterial" id="Blue"]
+shader = ExtResource("Grid")
+shader_parameter/base_color = Vector3(0.24,0.32,0.39)
+[sub_resource type="Environment" id="Env"]
+background_mode = 1
+background_color = Color(0.10,0.12,0.14,1)
+ambient_light_source = 2
+ambient_light_color = Color(0.65,0.71,0.78,1)
+ambient_light_energy = 0.5
+tonemap_mode = 0
+[sub_resource type="BoxMesh" id="FloorMesh"]
+size = Vector3(24, 0.3, 28)
+material = SubResource("Gray")
+[sub_resource type="BoxShape3D" id="FloorShape"]
+size = Vector3(24, 0.3, 28)
+[sub_resource type="BoxMesh" id="BackWallMesh"]
+size = Vector3(24, 4, 0.25)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="BackWallShape"]
+size = Vector3(24, 4, 0.25)
+[sub_resource type="BoxMesh" id="FrontWallMesh"]
+size = Vector3(24, 4, 0.25)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="FrontWallShape"]
+size = Vector3(24, 4, 0.25)
+[sub_resource type="BoxMesh" id="LeftWallMesh"]
+size = Vector3(0.25, 4, 28)
+material = SubResource("Gray")
+[sub_resource type="BoxShape3D" id="LeftWallShape"]
+size = Vector3(0.25, 4, 28)
+[sub_resource type="BoxMesh" id="RightWallMesh"]
+size = Vector3(0.25, 4, 28)
+material = SubResource("Gray")
+[sub_resource type="BoxShape3D" id="RightWallShape"]
+size = Vector3(0.25, 4, 28)
+[sub_resource type="BoxMesh" id="Cover0Mesh"]
+size = Vector3(2.2, 3.5, 2.2)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="Cover0Shape"]
+size = Vector3(2.2, 3.5, 2.2)
+[sub_resource type="BoxMesh" id="Cover1Mesh"]
+size = Vector3(2.2, 3.5, 2.2)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="Cover1Shape"]
+size = Vector3(2.2, 3.5, 2.2)
+[sub_resource type="BoxMesh" id="Cover2Mesh"]
+size = Vector3(2.2, 3.5, 2.2)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="Cover2Shape"]
+size = Vector3(2.2, 3.5, 2.2)
+[sub_resource type="BoxMesh" id="Cover3Mesh"]
+size = Vector3(2.2, 3.5, 2.2)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="Cover3Shape"]
+size = Vector3(2.2, 3.5, 2.2)
+[sub_resource type="BoxMesh" id="PickupPlinthMesh"]
+size = Vector3(1.0, 0.72, 0.7)
+material = SubResource("Blue")
+[sub_resource type="BoxShape3D" id="PickupPlinthShape"]
+size = Vector3(1.0, 0.72, 0.7)
+[sub_resource type="StandardMaterial3D" id="LampMat"]
+albedo_color = Color(0.65,0.69,0.62,1)
+emission_enabled = true
+emission = Color(0.5,0.57,0.46,1)
+[sub_resource type="BoxMesh" id="LampMesh"]
+size = Vector3(2.6,0.08,0.55)
+material = SubResource("LampMat")
+[sub_resource type="BoxMesh" id="BeamMesh"]
+size = Vector3(23.8,0.22,0.24)
+material = SubResource("Blue")
+[sub_resource type="StandardMaterial3D" id="SafetyMat"]
+albedo_color = Color(0.37,0.30,0.10,1)
+roughness = 1.0
+[sub_resource type="BoxMesh" id="SafetyMesh"]
+size = Vector3(0.10,0.015,23.0)
+material = SubResource("SafetyMat")
+[node name="CreatureTestArea" type="Node3D"]
+script = ExtResource("SituationManager")
+situations = Array[PackedScene]([ExtResource("Situation0"),ExtResource("Situation1"),ExtResource("Situation2"),ExtResource("Situation3"),ExtResource("Situation4")])
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("Env")
+[node name="Geometry" type="Node3D" parent="."]
+[node name="Floor" type="StaticBody3D" parent="Geometry"]
+position = Vector3(0, -0.15, 0)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/Floor"]
+mesh = SubResource("FloorMesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/Floor"]
+shape = SubResource("FloorShape")
+[node name="BackWall" type="StaticBody3D" parent="Geometry"]
+position = Vector3(0, 2, -14)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/BackWall"]
+mesh = SubResource("BackWallMesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/BackWall"]
+shape = SubResource("BackWallShape")
+[node name="FrontWall" type="StaticBody3D" parent="Geometry"]
+position = Vector3(0, 2, 14)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/FrontWall"]
+mesh = SubResource("FrontWallMesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/FrontWall"]
+shape = SubResource("FrontWallShape")
+[node name="LeftWall" type="StaticBody3D" parent="Geometry"]
+position = Vector3(-12, 2, 0)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/LeftWall"]
+mesh = SubResource("LeftWallMesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/LeftWall"]
+shape = SubResource("LeftWallShape")
+[node name="RightWall" type="StaticBody3D" parent="Geometry"]
+position = Vector3(12, 2, 0)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/RightWall"]
+mesh = SubResource("RightWallMesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/RightWall"]
+shape = SubResource("RightWallShape")
+[node name="Cover0" type="StaticBody3D" parent="Geometry" groups=["navigation_obstacle"]]
+position = Vector3(-5, 1.75, 0)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/Cover0"]
+mesh = SubResource("Cover0Mesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/Cover0"]
+shape = SubResource("Cover0Shape")
+[node name="Cover1" type="StaticBody3D" parent="Geometry" groups=["navigation_obstacle"]]
+position = Vector3(5, 1.75, 0)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/Cover1"]
+mesh = SubResource("Cover1Mesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/Cover1"]
+shape = SubResource("Cover1Shape")
+[node name="Cover2" type="StaticBody3D" parent="Geometry" groups=["navigation_obstacle"]]
+position = Vector3(-5, 1.75, -7)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/Cover2"]
+mesh = SubResource("Cover2Mesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/Cover2"]
+shape = SubResource("Cover2Shape")
+[node name="Cover3" type="StaticBody3D" parent="Geometry" groups=["navigation_obstacle"]]
+position = Vector3(5, 1.75, -7)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/Cover3"]
+mesh = SubResource("Cover3Mesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/Cover3"]
+shape = SubResource("Cover3Shape")
+[node name="PickupPlinth" type="StaticBody3D" parent="Geometry" groups=["navigation_obstacle"]]
+position = Vector3(-0.9, 0.36, 8.7)
+[node name="Mesh" type="MeshInstance3D" parent="Geometry/PickupPlinth"]
+mesh = SubResource("PickupPlinthMesh")
+[node name="Collision" type="CollisionShape3D" parent="Geometry/PickupPlinth"]
+shape = SubResource("PickupPlinthShape")
+[node name="PatrolRoutes" type="Node3D" parent="."]
+[node name="Waypoint0" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(0, 0, -7)
+metadata/links = PackedInt32Array(7,1)
+[node name="Waypoint1" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(0, 0, -1)
+metadata/links = PackedInt32Array(0,2)
+[node name="Waypoint2" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(0, 0, 5)
+metadata/links = PackedInt32Array(1,3)
+[node name="Waypoint3" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(8, 0, 5)
+metadata/links = PackedInt32Array(2,4)
+[node name="Waypoint4" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(8, 0, -10)
+metadata/links = PackedInt32Array(3,5)
+[node name="Waypoint5" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(0, 0, -11)
+metadata/links = PackedInt32Array(4,6)
+[node name="Waypoint6" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(-8, 0, -10)
+metadata/links = PackedInt32Array(5,7)
+[node name="Waypoint7" type="Marker3D" parent="PatrolRoutes"]
+position = Vector3(-8, 0, 5)
+metadata/links = PackedInt32Array(6,0)
+[node name="Player" parent="." instance=ExtResource("Player")]
+position = Vector3(0,0.05,10.4)
+[node name="Visitation" parent="." instance=ExtResource("Enemy") node_paths=PackedStringArray("player","route")]
+position = Vector3(0,0.05,-7)
+player = NodePath("../Player")
+route = NodePath("../PatrolRoutes")
+[node name="FlashlightPickup" parent="." instance=ExtResource("Pickup")]
+position = Vector3(-0.9,0.82,8.7)
+rotation = Vector3(0,0.6,0)
+[node name="KeyLight" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-65,-25,0)
+light_color = Color(0.85,0.90,1,1)
+light_energy = 0.75
+shadow_enabled = true
+[node name="FillLight" type="OmniLight3D" parent="."]
+position = Vector3(0,4,5)
+light_color = Color(0.85,0.82,0.73,1)
+light_energy = 1.1
+omni_range = 18.0
+
+[node name="CoverAnchors" type="Node3D" parent="."]
+
+[node name="Corner0_-1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-6.4,0.05,-1.5)
+metadata/peek_offset = Vector3(-0.7,0,0.2)
+
+[node name="Corner0_-1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-6.4,0.05,1.5)
+metadata/peek_offset = Vector3(-0.7,0,-0.2)
+
+[node name="Corner0_1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-3.6,0.05,-1.5)
+metadata/peek_offset = Vector3(0.7,0,0.2)
+
+[node name="Corner0_1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-3.6,0.05,1.5)
+metadata/peek_offset = Vector3(0.7,0,-0.2)
+
+[node name="Corner1_-1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(3.6,0.05,-1.5)
+metadata/peek_offset = Vector3(-0.7,0,0.2)
+
+[node name="Corner1_-1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(3.6,0.05,1.5)
+metadata/peek_offset = Vector3(-0.7,0,-0.2)
+
+[node name="Corner1_1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(6.4,0.05,-1.5)
+metadata/peek_offset = Vector3(0.7,0,0.2)
+
+[node name="Corner1_1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(6.4,0.05,1.5)
+metadata/peek_offset = Vector3(0.7,0,-0.2)
+
+[node name="Corner2_-1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-6.4,0.05,-8.5)
+metadata/peek_offset = Vector3(-0.7,0,0.2)
+
+[node name="Corner2_-1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-6.4,0.05,-5.5)
+metadata/peek_offset = Vector3(-0.7,0,-0.2)
+
+[node name="Corner2_1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-3.6,0.05,-8.5)
+metadata/peek_offset = Vector3(0.7,0,0.2)
+
+[node name="Corner2_1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(-3.6,0.05,-5.5)
+metadata/peek_offset = Vector3(0.7,0,-0.2)
+
+[node name="Corner3_-1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(3.6,0.05,-8.5)
+metadata/peek_offset = Vector3(-0.7,0,0.2)
+
+[node name="Corner3_-1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(3.6,0.05,-5.5)
+metadata/peek_offset = Vector3(-0.7,0,-0.2)
+
+[node name="Corner3_1_-1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(6.4,0.05,-8.5)
+metadata/peek_offset = Vector3(0.7,0,0.2)
+
+[node name="Corner3_1_1" type="Marker3D" parent="CoverAnchors" groups=["creature_cover"]]
+position = Vector3(6.4,0.05,-5.5)
+metadata/peek_offset = Vector3(0.7,0,-0.2)
+
+[node name="LabLighting" type="Node3D" parent="."]
+
+[node name="RoofBeam0" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(0,4.1,-10)
+mesh = SubResource("BeamMesh")
+
+[node name="Lamp0-1" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(-6,3.94,-10)
+mesh = SubResource("LampMesh")
+
+[node name="Lamp01" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(6,3.94,-10)
+mesh = SubResource("LampMesh")
+
+[node name="RoofBeam1" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(0,4.1,-3)
+mesh = SubResource("BeamMesh")
+
+[node name="Lamp1-1" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(-6,3.94,-3)
+mesh = SubResource("LampMesh")
+
+[node name="Lamp11" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(6,3.94,-3)
+mesh = SubResource("LampMesh")
+
+[node name="RoofBeam2" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(0,4.1,4)
+mesh = SubResource("BeamMesh")
+
+[node name="Lamp2-1" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(-6,3.94,4)
+mesh = SubResource("LampMesh")
+
+[node name="Lamp21" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(6,3.94,4)
+mesh = SubResource("LampMesh")
+
+[node name="RoofBeam3" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(0,4.1,11)
+mesh = SubResource("BeamMesh")
+
+[node name="Lamp3-1" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(-6,3.94,11)
+mesh = SubResource("LampMesh")
+
+[node name="Lamp31" type="MeshInstance3D" parent="LabLighting"]
+position = Vector3(6,3.94,11)
+mesh = SubResource("LampMesh")
+
+[node name="OverheadLight0" type="OmniLight3D" parent="LabLighting"]
+position = Vector3(-6,3.65,-7)
+light_color = Color(0.72,0.80,0.75,1)
+light_energy = 1.2
+omni_range = 12.0
+
+[node name="OverheadLight1" type="OmniLight3D" parent="LabLighting"]
+position = Vector3(6,3.65,-7)
+light_color = Color(0.72,0.80,0.75,1)
+light_energy = 1.2
+omni_range = 12.0
+
+[node name="OverheadLight2" type="OmniLight3D" parent="LabLighting"]
+position = Vector3(-6,3.65,7)
+light_color = Color(0.72,0.80,0.75,1)
+light_energy = 1.2
+omni_range = 12.0
+
+[node name="OverheadLight3" type="OmniLight3D" parent="LabLighting"]
+position = Vector3(6,3.65,7)
+light_color = Color(0.72,0.80,0.75,1)
+light_energy = 1.2
+omni_range = 12.0
+
+[node name="SafetyLine-10" type="MeshInstance3D" parent="Geometry"]
+position = Vector3(-10,0.01,0)
+mesh = SubResource("SafetyMesh")
+
+[node name="SafetyLine10" type="MeshInstance3D" parent="Geometry"]
+position = Vector3(10,0.01,0)
+mesh = SubResource("SafetyMesh")

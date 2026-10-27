@@ -1,0 +1,67 @@
+config_version=5
+
+[application]
+config/name="The House"
+run/main_scene="res://scenes/horror/test_area.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+
+[physics]
+3d/physics_engine="Jolt Physics"
+common/physics_ticks_per_second=60
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+rendering_device/driver.windows="opengl3"
+textures/default_filters/use_nearest_mipmap_filter=true
+textures/canvas_textures/default_texture_filter=0
+anti_aliasing/quality/msaa_3d=0
+textures/default_filters/anisotropic_filtering_level=0
+lights_and_shadows/positional_shadow/atlas_size=1024
+
+[input]
+move_forward={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":87), Object(InputEventKey,"physical_keycode":4194320)]
+}
+move_back={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":83), Object(InputEventKey,"physical_keycode":4194322)]
+}
+move_left={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":65), Object(InputEventKey,"physical_keycode":4194319)]
+}
+move_right={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":68), Object(InputEventKey,"physical_keycode":4194321)]
+}
+crouch={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":4194326)]
+}
+interact={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":69)]
+}
+flashlight={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":70)]
+}
+restart={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":82)]
+}
+release_mouse={
+"deadzone":0.15,
+"events":[Object(InputEventKey,"physical_keycode":4194305)]
+}

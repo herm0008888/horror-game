@@ -1,0 +1,59 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/horror/enemy.gd" id="E1"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/figure_visual.tscn" id="E2"]
+
+[ext_resource type="AudioStream" path="res://assets/horror/breath.wav" id="E3"]
+
+[ext_resource type="Script" path="res://scripts/horror/haunted_motion.gd" id="Motion"]
+
+[ext_resource type="Script" path="res://scripts/horror/corner_stalker.gd" id="Corner"]
+
+[ext_resource type="Script" path="res://scripts/horror/path_debug.gd" id="PathDebug"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/jumpscare_setup.tscn" id="ScareSetup"]
+
+[ext_resource type="Script" path="res://scripts/horror/eye_gaze.gd" id="EyeGaze"]
+
+[sub_resource type="CapsuleShape3D" id="R4"]
+radius = 0.28
+height = 2.55
+
+[node name="Visitation" type="CharacterBody3D" ]
+collision_layer = 4
+collision_mask = 1
+floor_snap_length = 0.35
+script = ExtResource("E1")
+
+[node name="Collision" type="CollisionShape3D" parent="." ]
+position = Vector3(0,1.275,0)
+shape = SubResource("R4")
+
+[node name="Figure" parent="." instance=ExtResource("E2") ]
+scale = Vector3(1.28,1.28,1.28)
+
+
+[node name="Breath" type="AudioStreamPlayer3D" parent="." ]
+position = Vector3(0,1.6,0)
+stream = ExtResource("E3")
+volume_db = -17
+unit_size = 1.4
+max_distance = 18
+
+[node name="HauntedMotion" type="Node" parent="."]
+script = ExtResource("Motion")
+
+[node name="CornerStalker" type="Node" parent="."]
+script = ExtResource("Corner")
+
+[node name="PathDebug" type="MeshInstance3D" parent="."]
+script = ExtResource("PathDebug")
+
+[node name="JumpscareSetup" parent="Figure" instance=ExtResource("ScareSetup")]
+
+[node name="EyeGaze" type="Node" parent="."]
+script = ExtResource("EyeGaze")
+
+[editable path="Figure"]
+[editable path="Figure/JumpscareSetup"]

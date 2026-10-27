@@ -1,0 +1,71 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/horror/player.gd" id="E1"]
+
+[ext_resource type="AudioStream" path="res://assets/horror/step.wav" id="E2"]
+
+[ext_resource type="AudioStream" path="res://assets/horror/caught.wav" id="E3"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/flashlight_model.tscn" id="HeldModel"]
+
+[ext_resource type="Script" path="res://scripts/horror/jumpscare.gd" id="Scare"]
+[sub_resource type="CapsuleShape3D" id="R4"]
+radius = 0.26
+height = 1.7
+
+[node name="Player" type="CharacterBody3D" groups=["horror_player"]]
+collision_layer = 2
+collision_mask = 1
+floor_snap_length = 0.35
+floor_max_angle = 0.7
+script = ExtResource("E1")
+
+[node name="Collision" type="CollisionShape3D" parent="." ]
+position = Vector3(0,0.85,0)
+shape = SubResource("R4")
+
+[node name="Head" type="Node3D" parent="." ]
+position = Vector3(0,1.65,0)
+
+[node name="Camera" type="Camera3D" parent="Head" ]
+current = true
+fov = 76
+near = 0.07
+far = 45
+
+[node name="Flashlight" type="SpotLight3D" parent="Head/Camera" ]
+position = Vector3(0.12,-0.12,-0.10)
+light_color = Color(0.82,0.80,0.61,1)
+light_energy = 2.9
+spot_range = 20
+spot_angle = 41
+spot_angle_attenuation = 0.8
+spot_attenuation = 1.1
+shadow_enabled = true
+
+[node name="Footsteps" type="AudioStreamPlayer3D" parent="." ]
+stream = ExtResource("E2")
+max_distance = 13
+
+[node name="Caught" type="AudioStreamPlayer" parent="." ]
+stream = ExtResource("E3")
+volume_db = -11
+
+[node name="HeldFlashlight" parent="Head/Camera" instance=ExtResource("HeldModel")]
+position = Vector3(0.25,-0.23,-0.40)
+visible = false
+
+[node name="Jumpscare" type="Node" parent="."]
+script = ExtResource("Scare")
+
+[node name="DeathUI" type="CanvasLayer" parent="Jumpscare"]
+layer = 100
+
+[node name="Black" type="ColorRect" parent="Jumpscare/DeathUI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0,0,0,0)

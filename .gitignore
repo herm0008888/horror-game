@@ -1,0 +1,11 @@
+# Godot regenerates these locally
+.godot/
+/android/
+exports/
+*.exe
+*.pck
+*.blend1
+*.blend2
+*.bak
+.DS_Store
+Thumbs.db

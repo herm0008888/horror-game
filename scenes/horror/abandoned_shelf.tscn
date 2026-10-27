@@ -1,0 +1,268 @@
+[gd_scene format=3]
+[ext_resource type="Material" path="res://assets/horror/materials/furniture_wood.tres" id="Mat_furniture_wood"]
+[ext_resource type="Material" path="res://assets/horror/materials/bed_fabric.tres" id="Mat_bed_fabric"]
+[ext_resource type="Material" path="res://assets/horror/materials/metal.tres" id="Mat_metal"]
+
+[sub_resource type="BoxMesh" id="Detail_Shelf0"]
+size = Vector3(1.2,0.07,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Shelf0Shape"]
+size = Vector3(1.2,0.07,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Shelf1"]
+size = Vector3(1.2,0.07,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Shelf1Shape"]
+size = Vector3(1.2,0.07,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Shelf2"]
+size = Vector3(1.2,0.07,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Shelf2Shape"]
+size = Vector3(1.2,0.07,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Shelf3"]
+size = Vector3(1.2,0.07,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Shelf3Shape"]
+size = Vector3(1.2,0.07,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Shelf4"]
+size = Vector3(1.2,0.07,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Shelf4Shape"]
+size = Vector3(1.2,0.07,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Upright0"]
+size = Vector3(0.07,2.14,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Upright0Shape"]
+size = Vector3(0.07,2.14,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Upright1"]
+size = Vector3(0.07,2.14,0.38)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxShape3D" id="Detail_Upright1Shape"]
+size = Vector3(0.07,2.14,0.38)
+
+[sub_resource type="BoxMesh" id="Detail_Book0"]
+size = Vector3(0.1,0.3538894271041697,0.24)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxMesh" id="Detail_Book1"]
+size = Vector3(0.1,0.3243158281610978,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book2"]
+size = Vector3(0.1,0.40568673651010945,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book3"]
+size = Vector3(0.1,0.3623880322588494,0.24)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxMesh" id="Detail_Book4"]
+size = Vector3(0.1,0.3294859370452305,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book5"]
+size = Vector3(0.1,0.33631122235538924,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book6"]
+size = Vector3(0.1,0.4225835924917963,0.24)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxMesh" id="Detail_Book7"]
+size = Vector3(0.1,0.37633503439281546,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book8"]
+size = Vector3(0.1,0.3547315671689436,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book9"]
+size = Vector3(0.1,0.411097990214528,0.24)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxMesh" id="Detail_Book10"]
+size = Vector3(0.1,0.4013126939442231,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book11"]
+size = Vector3(0.1,0.4078978910717677,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book12"]
+size = Vector3(0.1,0.3478745814490052,0.24)
+material = ExtResource("Mat_furniture_wood")
+
+[sub_resource type="BoxMesh" id="Detail_Book13"]
+size = Vector3(0.1,0.38094969792776257,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[sub_resource type="BoxMesh" id="Detail_Book14"]
+size = Vector3(0.1,0.3168040311578302,0.24)
+material = ExtResource("Mat_bed_fabric")
+
+[node name="AbandonedShelf" type="Node3D"]
+
+[node name="Shelf0" type="StaticBody3D" parent="."]
+position = Vector3(0,0.13,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf0"]
+mesh = SubResource("Detail_Shelf0")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf0"]
+shape = SubResource("Detail_Shelf0Shape")
+
+[node name="Shelf1" type="StaticBody3D" parent="."]
+position = Vector3(0,0.6,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf1"]
+mesh = SubResource("Detail_Shelf1")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf1"]
+shape = SubResource("Detail_Shelf1Shape")
+
+[node name="Shelf2" type="StaticBody3D" parent="."]
+position = Vector3(0,1.07,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf2"]
+mesh = SubResource("Detail_Shelf2")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf2"]
+shape = SubResource("Detail_Shelf2Shape")
+
+[node name="Shelf3" type="StaticBody3D" parent="."]
+position = Vector3(0,1.54,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf3"]
+mesh = SubResource("Detail_Shelf3")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf3"]
+shape = SubResource("Detail_Shelf3Shape")
+
+[node name="Shelf4" type="StaticBody3D" parent="."]
+position = Vector3(0,2.01,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Shelf4"]
+mesh = SubResource("Detail_Shelf4")
+
+[node name="Collision" type="CollisionShape3D" parent="Shelf4"]
+shape = SubResource("Detail_Shelf4Shape")
+
+[node name="Upright0" type="StaticBody3D" parent="."]
+position = Vector3(-0.57,1.07,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Upright0"]
+mesh = SubResource("Detail_Upright0")
+
+[node name="Collision" type="CollisionShape3D" parent="Upright0"]
+shape = SubResource("Detail_Upright0Shape")
+
+[node name="Upright1" type="StaticBody3D" parent="."]
+position = Vector3(0.57,1.07,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Upright1"]
+mesh = SubResource("Detail_Upright1")
+
+[node name="Collision" type="CollisionShape3D" parent="Upright1"]
+shape = SubResource("Detail_Upright1Shape")
+
+[node name="Book0" type="StaticBody3D" parent="."]
+position = Vector3(-0.43,0.4,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book0"]
+mesh = SubResource("Detail_Book0")
+
+[node name="Book1" type="StaticBody3D" parent="."]
+position = Vector3(-0.25,0.4,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book1"]
+mesh = SubResource("Detail_Book1")
+
+[node name="Book2" type="StaticBody3D" parent="."]
+position = Vector3(-0.07,0.4,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book2"]
+mesh = SubResource("Detail_Book2")
+
+[node name="Book3" type="StaticBody3D" parent="."]
+position = Vector3(0.11000000000000004,0.4,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book3"]
+mesh = SubResource("Detail_Book3")
+
+[node name="Book4" type="StaticBody3D" parent="."]
+position = Vector3(0.29,0.4,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book4"]
+mesh = SubResource("Detail_Book4")
+
+[node name="Book5" type="StaticBody3D" parent="."]
+position = Vector3(-0.43,0.87,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book5"]
+mesh = SubResource("Detail_Book5")
+
+[node name="Book6" type="StaticBody3D" parent="."]
+position = Vector3(-0.25,0.87,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book6"]
+mesh = SubResource("Detail_Book6")
+
+[node name="Book7" type="StaticBody3D" parent="."]
+position = Vector3(-0.07,0.87,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book7"]
+mesh = SubResource("Detail_Book7")
+
+[node name="Book8" type="StaticBody3D" parent="."]
+position = Vector3(0.11000000000000004,0.87,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book8"]
+mesh = SubResource("Detail_Book8")
+
+[node name="Book9" type="StaticBody3D" parent="."]
+position = Vector3(0.29,0.87,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book9"]
+mesh = SubResource("Detail_Book9")
+
+[node name="Book10" type="StaticBody3D" parent="."]
+position = Vector3(-0.43,1.3399999999999999,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book10"]
+mesh = SubResource("Detail_Book10")
+
+[node name="Book11" type="StaticBody3D" parent="."]
+position = Vector3(-0.25,1.3399999999999999,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book11"]
+mesh = SubResource("Detail_Book11")
+
+[node name="Book12" type="StaticBody3D" parent="."]
+position = Vector3(-0.07,1.3399999999999999,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book12"]
+mesh = SubResource("Detail_Book12")
+
+[node name="Book13" type="StaticBody3D" parent="."]
+position = Vector3(0.11000000000000004,1.3399999999999999,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book13"]
+mesh = SubResource("Detail_Book13")
+
+[node name="Book14" type="StaticBody3D" parent="."]
+position = Vector3(0.29,1.3399999999999999,0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Book14"]
+mesh = SubResource("Detail_Book14")

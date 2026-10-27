@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://assets/horror/visceral_pbr.gdshader" id="Shader"]
+[resource]
+shader = ExtResource("Shader")
+shader_parameter/use_texture = false
+shader_parameter/use_normal = false
+shader_parameter/use_roughness = false
+shader_parameter/tint = Color(0.15,0.005,0.01,1)
+shader_parameter/roughness_value = 0.14
+shader_parameter/specular_value = 0.6
+shader_parameter/coat = 0.85

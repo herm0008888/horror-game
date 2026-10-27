@@ -1,0 +1,52 @@
+[gd_scene format=3]
+
+[node name="JumpscareSetup" type="Node3D"]
+
+[node name="HeadPose" type="Marker3D" parent="."]
+position = Vector3(0,1.8,-0.27)
+rotation = Vector3(-0.065,0,0)
+
+[node name="FaceTarget" type="Marker3D" parent="."]
+position = Vector3(0,1.76,-0.27)
+
+[node name="CameraShake" type="Node3D" parent="."]
+position = Vector3(0,1.73,-0.84)
+
+[node name="JumpscareCamera" type="Camera3D" parent="CameraShake"]
+rotation = Vector3(0.052583,3.14159265,0)
+fov = 64.0
+near = 0.035
+far = 45.0
+current = false
+
+[node name="FaceLight" type="SpotLight3D" parent="CameraShake/JumpscareCamera"]
+visible = false
+light_color = Color(0.83,0.86,0.82,1)
+light_energy = 0.55
+spot_range = 3.0
+spot_angle = 42.0
+spot_attenuation = 0.8
+
+[node name="MouthEntry" type="Marker3D" parent="."]
+position = Vector3(0,1.49,-0.35)
+
+[node name="SwallowEnd" type="Marker3D" parent="."]
+position = Vector3(0,1.49,0.08)
+
+[node name="ReachPoses" type="Node3D" parent="."]
+
+[node name="LeftArm" type="Marker3D" parent="ReachPoses"]
+rotation = Vector3(-0.90,0,0)
+metadata/bone = "ArmLeft"
+
+[node name="RightArm" type="Marker3D" parent="ReachPoses"]
+rotation = Vector3(-0.85,0,0)
+metadata/bone = "ArmRight"
+
+[node name="LeftForearm" type="Marker3D" parent="ReachPoses"]
+rotation = Vector3(-0.45,0,0)
+metadata/bone = "ForearmLeft"
+
+[node name="RightForearm" type="Marker3D" parent="ReachPoses"]
+rotation = Vector3(-0.40,0,0)
+metadata/bone = "ForearmRight"

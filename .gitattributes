@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+*.gd text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.godot text eol=lf
+*.glb binary
+*.blend binary
+*.png binary
+*.wav binary

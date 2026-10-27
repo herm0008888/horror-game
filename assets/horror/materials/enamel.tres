@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3]
+[ext_resource type="Shader" path="res://assets/horror/surface.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://assets/horror/reference_house_atlas.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/horror/reference_house_atlas.png" id="3"]
+[resource]
+resource_name = "enamel"
+shader = ExtResource("1")
+shader_parameter/surface_texture = ExtResource("2")
+shader_parameter/underside_texture = ExtResource("3")
+shader_parameter/tile_size = Vector2(0.9,0.9)
+shader_parameter/tint = Color(1,1,1,1)
+shader_parameter/horizontal_grain_x = false
+shader_parameter/plaster_underside = false
+
+shader_parameter/use_atlas = true
+shader_parameter/atlas_rect = Vector4(0.002,0.252,0.245,0.245)
+shader_parameter/underside_rect = Vector4(0.502,0.002,0.245,0.245)

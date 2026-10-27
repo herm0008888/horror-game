@@ -1,0 +1,11 @@
+[gd_scene format=3]
+[node name="Situation" type="Node3D"]
+metadata/alerted = true
+metadata/equipped = true
+metadata/dark = true
+[node name="PlayerSpawn" type="Marker3D" parent="."]
+position = Vector3(0, 0.05, 3.2)
+rotation = Vector3(0,0,0)
+[node name="EnemySpawn" type="Marker3D" parent="."]
+position = Vector3(0, 0.05, -2)
+rotation = Vector3(0,3.14159,0)
