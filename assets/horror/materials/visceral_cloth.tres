@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" format=3]
 [ext_resource type="Shader" path="res://assets/horror/visceral_pbr.gdshader" id="Shader"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_cloth_albedo.png" id="surface_texture"]
+[ext_resource type="Texture2D" path="res://assets/horror/anatomy_gown_albedo.png" id="surface_texture"]
 [ext_resource type="Texture2D" path="res://assets/horror/visceral_cloth_roughness.png" id="roughness_texture"]
 [resource]
 shader = ExtResource("Shader")
@@ -15,3 +15,4 @@ shader_parameter/specular_value = 0.06
 shader_parameter/roughness_min = 0.96
 
 shader_parameter/roughness_value = 0.96
+

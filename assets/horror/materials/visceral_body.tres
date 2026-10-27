@@ -1,20 +1,17 @@
 [gd_resource type="ShaderMaterial" format=3]
 [ext_resource type="Shader" path="res://assets/horror/visceral_pbr.gdshader" id="Shader"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_face_normal.png" id="detail_normal"]
+[ext_resource type="Texture2D" path="res://assets/horror/anatomy_skin_albedo.png" id="Skin"]
+[ext_resource type="Texture2D" path="res://assets/horror/anatomy_skin_roughness.png" id="Rough"]
 [resource]
 shader = ExtResource("Shader")
-shader_parameter/detail_normal = ExtResource("detail_normal")
-shader_parameter/use_texture = false
-shader_parameter/use_normal = true
-shader_parameter/use_roughness = false
-shader_parameter/body_mode = true
-shader_parameter/tint = Color(0.32,0.285,0.24,1)
-shader_parameter/normal_tiling = 2.5
-shader_parameter/normal_strength = 0.2
+shader_parameter/surface_texture = ExtResource("Skin")
+shader_parameter/roughness_texture = ExtResource("Rough")
+shader_parameter/use_texture = true
+shader_parameter/use_normal = false
+shader_parameter/use_roughness = true
+shader_parameter/body_mode = false
+shader_parameter/tint = Color(1,1,1,1)
 shader_parameter/coat = 0.0
-
 shader_parameter/roughness_min = 0.9
-
-shader_parameter/roughness_value = 0.9
-
+shader_parameter/roughness_value = 0.94
 shader_parameter/specular_value = 0.1
