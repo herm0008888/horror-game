@@ -1,0 +1,353 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/sofa_02/sofa_02.gltf" id="1_cx8q7"]
+[ext_resource type="Texture2D" path="res://assets/house_library/dirty_carpet/Diffuse.jpg" id="5_8qrv8"]
+[ext_resource type="PackedScene" path="res://assets/house_library/painted_wooden_table/painted_wooden_table.gltf" id="6_k3xda"]
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_bowl_01/wooden_bowl_01.gltf" id="10_r1grx"]
+[ext_resource type="PackedScene" path="res://assets/house_library/portable_cassette_player/portable_cassette_player.gltf" id="14_nott7"]
+[ext_resource type="PackedScene" path="res://assets/house_library/painted_wooden_cabinet/painted_wooden_cabinet.gltf" id="18_5lusq"]
+[ext_resource type="PackedScene" path="res://assets/house_library/Television_01/Television_01.gltf" id="22_c6erk"]
+[ext_resource type="PackedScene" path="res://assets/house_library/Rockingchair_01/Rockingchair_01.gltf" id="26_5jree"]
+[ext_resource type="PackedScene" path="res://assets/house_library/painted_wooden_nightstand/painted_wooden_nightstand.gltf" id="30_dxjc4"]
+[ext_resource type="PackedScene" path="res://assets/house_library/brass_candleholders/brass_candleholders.gltf" id="34_robdp"]
+[ext_resource type="PackedScene" path="res://assets/house_library/vintage_suitcase/vintage_suitcase.gltf" id="48_ypjs2"]
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_bookshelf_worn/wooden_bookshelf_worn.gltf" id="55_u5c10"]
+[ext_resource type="PackedScene" path="res://assets/house_library/book_encyclopedia_set_01/book_encyclopedia_set_01.gltf" id="59_s6utv"]
+[ext_resource type="PackedScene" path="res://assets/house_library/hanging_picture_frame_02/hanging_picture_frame_02.gltf" id="66_sek6m"]
+[ext_resource type="PackedScene" path="res://assets/house_library/ornate_mirror_01/ornate_mirror_01.gltf" id="73_qjwgo"]
+[ext_resource type="PackedScene" path="res://assets/house_library/metal_trash_can/metal_trash_can.gltf" id="77_04f31"]
+[ext_resource type="PackedScene" path="res://assets/house_library/trashbag/trashbag.gltf" id="84_s4ume"]
+[ext_resource type="Material" path="res://assets/house_materials/floor_wood.tres" id="88_jbiap"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s6k7v"]
+size = Vector3(2.25, 0.8833438, 1.0181352)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0fp1"]
+albedo_color = Color(0.42, 0.34, 0.26, 1)
+albedo_texture = ExtResource("5_8qrv8")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_01slq"]
+size = Vector3(3.7, 0.014, 2.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k3xda"]
+size = Vector3(1.45, 0.46, 0.72)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ctyar"]
+size = Vector3(1.2, 0.84, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nott7"]
+size = Vector3(0.7330898, 1.03, 0.86286247)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_304wb"]
+size = Vector3(0.62, 0.62, 0.58)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_80b8j"]
+size = Vector3(1.0760767, 0.37999997, 0.16003853)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5jree"]
+size = Vector3(1.2651232, 1.9, 0.535258)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o2qv2"]
+size = Vector3(0.9783255, 0.48000005, 0.2946679)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xcbmi"]
+size = Vector3(0.09678809, 0.018, 0.06245663)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yyr2h"]
+size = Vector3(0.07893842, 0.018, 0.058782537)
+
+[sub_resource type="BoxMesh" id="BoxMesh_okdws"]
+size = Vector3(0.1391474, 0.018, 0.060536094)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gwbfb"]
+size = Vector3(0.05837965, 0.018, 0.03854887)
+
+[sub_resource type="BoxMesh" id="BoxMesh_si77y"]
+size = Vector3(0.055844102, 0.018, 0.05253881)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yxc2k"]
+size = Vector3(0.04299572, 0.018, 0.0790163)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rpid6"]
+size = Vector3(0.069445275, 0.018, 0.08842514)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4pnmo"]
+size = Vector3(0.15563491, 0.018, 0.030892543)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q3pkf"]
+size = Vector3(0.05936431, 0.018, 0.07902888)
+
+[node name="LivingRoom" type="Node3D" unique_id=807653505]
+
+[node name="Sofa02" type="StaticBody3D" parent="." unique_id=333355351]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.1, 0, 15.35)
+metadata/source = "https://polyhaven.com/a/sofa_02"
+metadata/dimensions = Vector3(2.25, 0.8833438, 1.0181352)
+metadata/asset_id = "sofa_02"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="Sofa02" unique_id=1143348899 instance=ExtResource("1_cx8q7")]
+transform = Transform3D(1.2450424, 0, 0, 0, 1.2450424, 0, 0, 0, 1.2450424, -0.00033275905, -0.0002561369, 0.08568727)
+
+[node name="@CollisionShape3D@2" type="CollisionShape3D" parent="Sofa02" unique_id=174899026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4416719, 0)
+shape = SubResource("BoxShape3D_s6k7v")
+
+[node name="ThreadbareRug" type="MeshInstance3D" parent="." unique_id=1192485591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15, 0.009, 14.4)
+material_override = SubResource("StandardMaterial3D_a0fp1")
+mesh = SubResource("BoxMesh_01slq")
+
+[node name="PaintedWoodenTable" type="StaticBody3D" parent="." unique_id=485760862]
+transform = Transform3D(0.98768836, 0, -0.15643448, 0, 1, 0, 0.15643448, 0, 0.98768836, 10.25, 0, 14.1)
+metadata/source = "https://polyhaven.com/a/painted_wooden_table"
+metadata/dimensions = Vector3(1.45, 0.46, 0.72)
+metadata/asset_id = "painted_wooden_table"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="PaintedWoodenTable" unique_id=107465029 instance=ExtResource("6_k3xda")]
+transform = Transform3D(0.60275924, 0, 0, 0, 0.47984788, 0, 0, 0, 0.6332544, 0.00031386048, 0.00023647441, 0.0017069755)
+
+[node name="@CollisionShape3D@3" type="CollisionShape3D" parent="PaintedWoodenTable" unique_id=695844952]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23, 0)
+shape = SubResource("BoxShape3D_k3xda")
+
+[node name="WoodenBowl01" type="Node3D" parent="." unique_id=76687672]
+transform = Transform3D(0.9945219, 0, 0.10452846, 0, 1, 0, -0.10452846, 0, 0.9945219, 9.953693, 0.4609781, 14.05307)
+metadata/source = "https://polyhaven.com/a/wooden_bowl_01"
+metadata/dimensions = Vector3(0.25, 0.074814804, 0.24685445)
+metadata/asset_id = "wooden_bowl_01"
+metadata/support_y = 0.4609781
+
+[node name="Model" type="Node3D" parent="WoodenBowl01" unique_id=1763929604 instance=ExtResource("10_r1grx")]
+transform = Transform3D(0.7985138, 0, 0, 0, 0.7985138, 0, 0, 0, 0.7985138, 0.000245341, -0.00043718566, -0.00052339176)
+
+[node name="PortableCassettePlayer" type="Node3D" parent="." unique_id=25951905]
+transform = Transform3D(0.93358046, 0, -0.35836798, 0, 1, 0, 0.35836798, 0, 0.93358046, 10.513548, 0.4609781, 14.161992)
+metadata/source = "https://polyhaven.com/a/portable_cassette_player"
+metadata/dimensions = Vector3(0.14, 0.032242946, 0.105905525)
+metadata/asset_id = "portable_cassette_player"
+metadata/support_y = 0.4609781
+
+[node name="Model" type="Node3D" parent="PortableCassettePlayer" unique_id=909523677 instance=ExtResource("14_nott7")]
+transform = Transform3D(0.8127471, 0, 0, 0, -3.5526305e-08, 0.8127471, 0, -0.8127471, -3.5526305e-08, -0.017973613, 0.0134896105, 0.007251789)
+
+[node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=1712787598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.05, 0, 12.55)
+metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
+metadata/dimensions = Vector3(1.2, 0.84, 0.6)
+metadata/asset_id = "painted_wooden_cabinet"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="PaintedWoodenCabinet" unique_id=1957535653 instance=ExtResource("18_5lusq")]
+transform = Transform3D(1.0044577, 0, 0, 0, 0.7107382, 0, 0, 0, 0.973022, -0.0026441738, 0.0002635898, -0.02522601)
+
+[node name="@CollisionShape3D@4" type="CollisionShape3D" parent="PaintedWoodenCabinet" unique_id=494207791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42, 0)
+shape = SubResource("BoxShape3D_ctyar")
+
+[node name="Television01" type="Node3D" parent="." unique_id=710201364]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 8.05, 0.84100014, 12.55)
+metadata/source = "https://polyhaven.com/a/Television_01"
+metadata/dimensions = Vector3(0.60413843, 0.46000004, 0.47405806)
+metadata/asset_id = "Television_01"
+metadata/support_y = 0.84100014
+
+[node name="Model" type="Node3D" parent="Television01" unique_id=670205815 instance=ExtResource("22_c6erk")]
+transform = Transform3D(1.0068974, 0, 0, 0, 1.0068974, 0, 0, 0, 1.0068974, 0, 1.5613696e-05, 0.023119558)
+
+[node name="Rockingchair01" type="StaticBody3D" parent="." unique_id=1431826593]
+transform = Transform3D(-0.4067367, 0, -0.9135454, 0, 1, 0, 0.9135454, 0, -0.4067367, 12.2, 0, 14.82)
+metadata/source = "https://polyhaven.com/a/Rockingchair_01"
+metadata/dimensions = Vector3(0.7330898, 1.03, 0.86286247)
+metadata/asset_id = "Rockingchair_01"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="Rockingchair01" unique_id=766031105 instance=ExtResource("26_5jree")]
+transform = Transform3D(1.0352503, 0, 0, 0, 1.0352503, 0, 0, 0, 1.0352503, 0, -0.105222106, -0.06446527)
+
+[node name="@CollisionShape3D@5" type="CollisionShape3D" parent="Rockingchair01" unique_id=1720868949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.515, 0)
+shape = SubResource("BoxShape3D_nott7")
+
+[node name="PaintedWoodenNightstand" type="StaticBody3D" parent="." unique_id=420360048]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.95, 0, 15.55)
+metadata/source = "https://polyhaven.com/a/painted_wooden_nightstand"
+metadata/dimensions = Vector3(0.62, 0.62, 0.58)
+metadata/asset_id = "painted_wooden_nightstand"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="PaintedWoodenNightstand" unique_id=2120842495 instance=ExtResource("30_dxjc4")]
+transform = Transform3D(1.2287823, 0, 0, 0, 1.0072769, 0, 0, 0, 1.1401253, 0.0013881025, 1.6845188e-08, -0.005826799)
+
+[node name="@CollisionShape3D@6" type="CollisionShape3D" parent="PaintedWoodenNightstand" unique_id=612626618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31, 0)
+shape = SubResource("BoxShape3D_304wb")
+
+[node name="BrassCandleholders" type="Node3D" parent="." unique_id=1194171086]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 12.95, 0.6209789, 15.55)
+metadata/source = "https://polyhaven.com/a/brass_candleholders"
+metadata/dimensions = Vector3(0.5672761, 0.45, 0.19647427)
+metadata/asset_id = "brass_candleholders"
+metadata/support_y = 0.6209789
+
+[node name="Model" type="Node3D" parent="BrassCandleholders" unique_id=758775620 instance=ExtResource("34_robdp")]
+transform = Transform3D(0.5387545, 0, 0, 0, 0.5387545, 0, 0, 0, 0.5387545, -0.04189722, 0.00025065235, -3.8582893e-05)
+
+[node name="VintageSuitcase" type="StaticBody3D" parent="." unique_id=542298340]
+transform = Transform3D(0.9659258, 0, -0.25881904, 0, 1, 0, 0.25881904, 0, 0.9659258, 7.5, 0, 15.4)
+metadata/source = "https://polyhaven.com/a/vintage_suitcase"
+metadata/dimensions = Vector3(1.0760767, 0.37999997, 0.16003853)
+metadata/asset_id = "vintage_suitcase"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="VintageSuitcase" unique_id=2027831413 instance=ExtResource("48_ypjs2")]
+transform = Transform3D(0.66912585, 0, 0, 0, 0.66912585, 0, 0, 0, 0.66912585, -0.00048266418, 7.069316e-05, 0.0061778133)
+
+[node name="@CollisionShape3D@7" type="CollisionShape3D" parent="VintageSuitcase" unique_id=1333177083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18999998, 0)
+shape = SubResource("BoxShape3D_80b8j")
+
+[node name="WoodenBookshelfWorn" type="StaticBody3D" parent="." unique_id=1526921856]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 0, 15.1)
+metadata/source = "https://polyhaven.com/a/wooden_bookshelf_worn"
+metadata/dimensions = Vector3(1.2651232, 1.9, 0.535258)
+metadata/asset_id = "wooden_bookshelf_worn"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="WoodenBookshelfWorn" unique_id=1970307818 instance=ExtResource("55_u5c10")]
+transform = Transform3D(0.92079157, 0, 0, 0, 0.92079157, 0, 0, 0, 0.92079157, 0, 5.4883454e-08, 0)
+
+[node name="@CollisionShape3D@8" type="CollisionShape3D" parent="WoodenBookshelfWorn" unique_id=1049479461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("BoxShape3D_5jree")
+
+[node name="BookEncyclopediaSet01" type="Node3D" parent="." unique_id=1928595680]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 0.36185828, 14.9800005)
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.580513, 0.24999999, 0.1717037)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 0.36185828
+
+[node name="Model" type="Node3D" parent="BookEncyclopediaSet01" unique_id=620074424 instance=ExtResource("59_s6utv")]
+transform = Transform3D(1.0529943, 0, 0, 0, 1.0529943, 0, 0, 0, 1.0529943, -0.2699164, 1.2420767e-08, -0.020492617)
+
+[node name="@Node3D@9" type="Node3D" parent="." unique_id=972790730]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 0.6193116, 14.9800005)
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.580513, 0.24999999, 0.1717037)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 0.6193116
+
+[node name="Model" type="Node3D" parent="@Node3D@9" unique_id=1124390208 instance=ExtResource("59_s6utv")]
+transform = Transform3D(1.0529943, 0, 0, 0, 1.0529943, 0, 0, 0, 1.0529943, -0.2699164, 1.2420767e-08, -0.020492617)
+
+[node name="@Node3D@10" type="Node3D" parent="." unique_id=1084670695]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 1.1358756, 14.9800005)
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.580513, 0.24999999, 0.1717037)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.1358756
+
+[node name="Model" type="Node3D" parent="@Node3D@10" unique_id=1592013261 instance=ExtResource("59_s6utv")]
+transform = Transform3D(1.0529943, 0, 0, 0, 1.0529943, 0, 0, 0, 1.0529943, -0.2699164, 1.2420767e-08, -0.020492617)
+
+[node name="@Node3D@11" type="Node3D" parent="." unique_id=846386309]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 1.4921298, 14.9800005)
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.580513, 0.24999999, 0.1717037)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.4921298
+
+[node name="Model" type="Node3D" parent="@Node3D@11" unique_id=834354665 instance=ExtResource("59_s6utv")]
+transform = Transform3D(1.0529943, 0, 0, 0, 1.0529943, 0, 0, 0, 1.0529943, -0.2699164, 1.2420767e-08, -0.020492617)
+
+[node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=1605215519]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12, 1.55, 15.84)
+metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
+metadata/dimensions = Vector3(0.8269948, 0.55, 0.03638266)
+metadata/asset_id = "hanging_picture_frame_02"
+metadata/support_y = 1.55
+
+[node name="Model" type="Node3D" parent="HangingPictureFrame02" unique_id=1941840800 instance=ExtResource("66_sek6m")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -0.00033015313, 0.3065111, -0.020429514)
+
+[node name="OrnateMirror01" type="Node3D" parent="." unique_id=1897840948]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.96, 1.45, 14.2)
+metadata/source = "https://polyhaven.com/a/ornate_mirror_01"
+metadata/dimensions = Vector3(0.55569226, 0.85, 0.029650507)
+metadata/asset_id = "ornate_mirror_01"
+metadata/support_y = 1.45
+
+[node name="Model" type="Node3D" parent="OrnateMirror01" unique_id=437267093 instance=ExtResource("73_qjwgo")]
+transform = Transform3D(1.1422346, 0, 0, 0, 1.1422346, 0, 0, 0, 1.1422346, 0, 0.4694063, -0.015154528)
+
+[node name="MetalTrashCan" type="StaticBody3D" parent="." unique_id=1575892966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.35, 0, 12.6)
+metadata/source = "https://polyhaven.com/a/metal_trash_can"
+metadata/dimensions = Vector3(0.9783255, 0.48000005, 0.2946679)
+metadata/asset_id = "metal_trash_can"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="MetalTrashCan" unique_id=1513783098 instance=ExtResource("77_04f31")]
+transform = Transform3D(0.5297021, 0, 0, 0, 0.5297021, 0, 0, 0, 0.5297021, 0.051037535, -3.2701533e-05, 4.735906e-08)
+
+[node name="@CollisionShape3D@12" type="CollisionShape3D" parent="MetalTrashCan" unique_id=916758708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24000002, 0)
+shape = SubResource("BoxShape3D_o2qv2")
+
+[node name="Trashbag" type="Node3D" parent="." unique_id=1858261843]
+transform = Transform3D(0.97437006, 0, 0.22495104, 0, 1, 0, -0.22495104, 0, 0.97437006, 7.3, 0, 13.15)
+metadata/source = "https://polyhaven.com/a/trashbag"
+metadata/dimensions = Vector3(0.22959593, 0.25, 0.20125805)
+metadata/asset_id = "trashbag"
+metadata/support_y = 0.0
+
+[node name="Model" type="Node3D" parent="Trashbag" unique_id=449149778 instance=ExtResource("84_s4ume")]
+transform = Transform3D(0.43478307, 0, 0, 0, 0.43478307, 0, 0, 0, 0.43478307, -0.0015498131, 0.00063224725, 0.003640578)
+
+[node name="FallenPlaster" type="MeshInstance3D" parent="." unique_id=2061775550]
+transform = Transform3D(-0.26138347, 0, -0.96523505, 0, 1, 0, 0.96523505, 0, -0.26138347, 15.8305855, 0.015, 15.046093)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_xcbmi")
+
+[node name="@MeshInstance3D@13" type="MeshInstance3D" parent="." unique_id=2099939762]
+transform = Transform3D(-0.18235868, 0, 0.9832321, 0, 1, 0, -0.9832321, 0, -0.18235868, 15.660966, 0.015, 15.180216)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_yyr2h")
+
+[node name="@MeshInstance3D@14" type="MeshInstance3D" parent="." unique_id=2010049404]
+transform = Transform3D(0.5661891, 0, -0.8242754, 0, 1, 0, 0.8242754, 0, 0.5661891, 15.808136, 0.015, 15.443855)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_okdws")
+
+[node name="@MeshInstance3D@15" type="MeshInstance3D" parent="." unique_id=509370884]
+transform = Transform3D(-0.6034732, 0, -0.79738325, 0, 1, 0, 0.79738325, 0, -0.6034732, 15.64438, 0.015, 14.426771)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_gwbfb")
+
+[node name="@MeshInstance3D@16" type="MeshInstance3D" parent="." unique_id=98688126]
+transform = Transform3D(-0.59531915, 0, 0.8034893, 0, 1, 0, -0.8034893, 0, -0.59531915, 15.811501, 0.015, 14.146345)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_si77y")
+
+[node name="@MeshInstance3D@17" type="MeshInstance3D" parent="." unique_id=855479488]
+transform = Transform3D(0.9577675, 0, -0.2875437, 0, 1, 0, 0.2875437, 0, 0.9577675, 15.67475, 0.015, 14.488517)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_yxc2k")
+
+[node name="@MeshInstance3D@18" type="MeshInstance3D" parent="." unique_id=2021085513]
+transform = Transform3D(-0.87390506, 0, -0.48609665, 0, 1, 0, 0.48609665, 0, -0.87390506, 15.702137, 0.015, 15.563858)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_rpid6")
+
+[node name="@MeshInstance3D@19" type="MeshInstance3D" parent="." unique_id=1469046604]
+transform = Transform3D(-0.9385262, 0, 0.3452079, 0, 1, 0, -0.3452079, 0, -0.9385262, 15.72691, 0.015, 14.239782)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_4pnmo")
+
+[node name="@MeshInstance3D@20" type="MeshInstance3D" parent="." unique_id=749495101]
+transform = Transform3D(-0.0346843, 0, 0.9993983, 0, 1, 0, -0.9993983, 0, -0.0346843, 15.643663, 0.015, 14.384909)
+material_override = ExtResource("88_jbiap")
+mesh = SubResource("BoxMesh_q3pkf")
