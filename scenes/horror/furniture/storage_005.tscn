@@ -253,44 +253,54 @@ mesh = ExtResource("1_387lh")
 surface_material_override/0 = SubResource("StandardMaterial3D_4dv6d")
 
 [node name="PaintedWoodenCabinetDoor02" type="AnimatableBody3D" parent="." unique_id=1017936170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.71967703, 0.6563984, 0.23276286)
+sync_to_physics = false
 script = ExtResource("5_178md")
-open_rotation_degrees = Vector3(0, -105, 0)
+open_rotation_degrees = Vector3(0, 100, 0)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_door_02" type="MeshInstance3D" parent="PaintedWoodenCabinetDoor02" unique_id=1383001732]
-transform = Transform3D(1.2605362, 0, 0.14783289, 0, 1.2691754, 0, -0.14783289, 0, 1.2605362, 0.7172823, 0.677469, 0.23548985)
+transform = Transform3D(1.2605362, 0, 0.14783289, 0, 1.2691754, 0, -0.14783289, 0, 1.2605362, -0.0023947358, 0.0210706, 0.002726987)
 mesh = SubResource("ArrayMesh_rksfp")
 surface_material_override/0 = SubResource("StandardMaterial3D_4dv6d")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="PaintedWoodenCabinetDoor02" unique_id=1495328126]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36337587, 0.6563984, 0.30710337)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35630116, 0, 0.07434051)
 shape = SubResource("BoxShape3D_gesce")
 
 [node name="ItemSlots" type="Node3D" parent="PaintedWoodenCabinetDoor02" unique_id=875681613]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71967703, -0.6563984, -0.23276286)
 
 [node name="Item01" type="Marker3D" parent="PaintedWoodenCabinetDoor02/ItemSlots" unique_id=542072898]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36337587, 0.6563984, 0.30710337)
 
 [node name="PaintedWoodenCabinetDoor01" type="AnimatableBody3D" parent="." unique_id=1457922181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71932, 0.65639853, 0.23239647)
+sync_to_physics = false
 script = ExtResource("5_178md")
-open_rotation_degrees = Vector3(0, -105, 0)
+open_rotation_degrees = Vector3(0, -100, 0)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_door_01" type="MeshInstance3D" parent="PaintedWoodenCabinetDoor01" unique_id=869347147]
-transform = Transform3D(1.2682768, 0, -0.047749296, 0, 1.2691754, 0, 0.047749296, 0, 1.2682768, -0.7245226, 0.6762352, 0.2354908)
+transform = Transform3D(1.2682768, 0, -0.047749296, 0, 1.2691754, 0, 0.047749296, 0, 1.2682768, -0.0052025914, 0.019836664, 0.0030943304)
 mesh = SubResource("ArrayMesh_pu3cq")
 surface_material_override/0 = SubResource("StandardMaterial3D_4dv6d")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="PaintedWoodenCabinetDoor01" unique_id=1994008364]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3599356, 0.65639853, 0.26123533)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3593844, 0, 0.028838858)
 shape = SubResource("BoxShape3D_v562e")
 
 [node name="ItemSlots" type="Node3D" parent="PaintedWoodenCabinetDoor01" unique_id=1300441633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.71932, -0.65639853, -0.23239647)
 
 [node name="Item01" type="Marker3D" parent="PaintedWoodenCabinetDoor01/ItemSlots" unique_id=1827004566]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3599356, 0.65639853, 0.26123533)
 
 [node name="PaintedWoodenCabinetDrawer02" type="AnimatableBody3D" parent="." unique_id=352271094]
+sync_to_physics = false
 script = ExtResource("5_178md")
 open_offset = Vector3(0, 0, 0.3861157)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_drawer_02" type="MeshInstance3D" parent="PaintedWoodenCabinetDrawer02" unique_id=1601383332]
 transform = Transform3D(1.2691754, 0, 0, 0, 1.2691754, 0, 0, 0, 1.2691754, 0.34513283, 1.3286681, 0.26554012)
@@ -323,8 +333,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3441748, 1.2979999, 0.30716
 shape = SubResource("BoxShape3D_178md")
 
 [node name="PaintedWoodenCabinetDrawer01" type="AnimatableBody3D" parent="." unique_id=1819763438]
+sync_to_physics = false
 script = ExtResource("5_178md")
 open_offset = Vector3(0, 0, 0.3861157)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_drawer_01" type="MeshInstance3D" parent="PaintedWoodenCabinetDrawer01" unique_id=151948399]
 transform = Transform3D(1.2691754, 0, 0, 0, 1.2691754, 0, 0, 0, 1.2691754, -0.3590889, 1.3286681, 0.33718014)

@@ -193,34 +193,38 @@ mesh = SubResource("ArrayMesh_x8bxk")
 surface_material_override/0 = SubResource("StandardMaterial3D_rppot")
 
 [node name="Lid" type="AnimatableBody3D" parent="." unique_id=778148500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4852495e-06, 0.21348634, -0.13475043)
+sync_to_physics = false
 script = ExtResource("5_5jgr5")
 open_rotation_degrees = Vector3(-100, 0, 0)
+metadata/hinge_fixed = true
 
 [node name="metal_toolbox_lid" type="MeshInstance3D" parent="Lid" unique_id=2013849650]
-transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, -4.2915344e-06, 0.110255, -0.06524706)
+transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, 1.937151e-07, -0.10323134, 0.06950337)
 mesh = ExtResource("6_mkid4")
 surface_material_override/0 = SubResource("StandardMaterial3D_rppot")
 
 [node name="metal_toolbox_handle" type="MeshInstance3D" parent="Lid" unique_id=1348322078]
-transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, -4.2915344e-06, 0.23307014, -0.07866621)
+transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, 1.937151e-07, 0.019583791, 0.056084216)
 mesh = ExtResource("7_mnjgq")
 surface_material_override/0 = SubResource("StandardMaterial3D_rppot")
 
 [node name="metal_toolbox_handle_latch_l" type="MeshInstance3D" parent="Lid" unique_id=650222096]
-transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, -0.108719826, 0.27578616, 0.03538418)
+transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, -0.10871534, 0.062299818, 0.1701346)
 mesh = SubResource("ArrayMesh_5ifqm")
 surface_material_override/0 = SubResource("StandardMaterial3D_rppot")
 
 [node name="metal_toolbox_handle_latch_r" type="MeshInstance3D" parent="Lid" unique_id=975986990]
-transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, 0.10872841, 0.27604818, 0.035557747)
+transform = Transform3D(0.921909, 0, 0, 0, 0.5088242, 0.76877445, 0, -0.76877445, 0.5088242, 0.108732894, 0.06256184, 0.17030817)
 mesh = SubResource("ArrayMesh_3r5km")
 surface_material_override/0 = SubResource("StandardMaterial3D_rppot")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="Lid" unique_id=167797873]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4852495e-06, 0.21348634, -0.03241612)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.102334306)
 shape = SubResource("BoxShape3D_gp7le")
 
 [node name="ItemSlots" type="Node3D" parent="Lid" unique_id=1576723250]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4852495e-06, -0.21348634, 0.13475043)
 
 [node name="Item01" type="Marker3D" parent="Lid/ItemSlots" unique_id=800591748]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4852495e-06, 0.21348634, -0.03241612)

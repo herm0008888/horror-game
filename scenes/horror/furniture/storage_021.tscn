@@ -175,18 +175,22 @@ transform = Transform3D(1.8591704, 0, -1.4901161e-08, 0, 1.8591704, 0, 1.4901161
 mesh = SubResource("ArrayMesh_yx14i")
 
 [node name="Lid" type="AnimatableBody3D" parent="." unique_id=410619782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6107505, -0.38015705)
+sync_to_physics = false
 script = ExtResource("4_kqdkx")
 open_rotation_degrees = Vector3(-100, 0, 0)
+metadata/hinge_fixed = true
 
 [node name="wooden_crate_01_lid" type="MeshInstance3D" parent="Lid" unique_id=240174822]
-transform = Transform3D(1.8591704, 0, -1.4901161e-08, 0, 1.8591704, 0, 1.4901161e-08, 0, 1.8591704, 0, 0.014749441, -0.015500069)
+transform = Transform3D(1.8591704, 0, -1.4901161e-08, 0, 1.8591704, 0, 1.4901161e-08, 0, 1.8591704, 0, -0.596001, 0.36465698)
 mesh = SubResource("ArrayMesh_8s8rh")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="Lid" unique_id=795850186]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6107505, -0.015500069)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.36465698)
 shape = SubResource("BoxShape3D_bhts0")
 
 [node name="ItemSlots" type="Node3D" parent="Lid" unique_id=8564141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6107505, 0.38015705)
 
 [node name="Item01" type="Marker3D" parent="Lid/ItemSlots" unique_id=1460497383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6107505, -0.015500069)

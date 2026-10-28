@@ -148,8 +148,10 @@ transform = Transform3D(1.2287823, 0, 0, 0, 1.0072769, 0, 0, 0, 1.1401253, 0.001
 mesh = SubResource("ArrayMesh_xayjr")
 
 [node name="PaintedWoodenNightstandDrawer" type="AnimatableBody3D" parent="." unique_id=451745862]
+sync_to_physics = false
 script = ExtResource("4_l4rga")
 open_offset = Vector3(0, 0, 0.3483074)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_nightstand_drawer" type="MeshInstance3D" parent="PaintedWoodenNightstandDrawer" unique_id=2004498406]
 transform = Transform3D(1.2287823, 0, 0, 0, 1.0072769, 0, 0, 0, 1.1401253, 0.00064373016, 0.5157886, 0.23458004)

@@ -186,8 +186,10 @@ transform = Transform3D(1.3039988, 0, 0, 0, 0.9343711, 0, 0, 0, 0.68546706, 0, 0
 mesh = SubResource("ArrayMesh_hvcpb")
 
 [node name="PaintedWoodenCabinet02Drawer" type="AnimatableBody3D" parent="." unique_id=114995303]
+sync_to_physics = false
 script = ExtResource("4_vyuvr")
 open_offset = Vector3(0, 0, 0.25602847)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_02_drawer" type="MeshInstance3D" parent="PaintedWoodenCabinet02Drawer" unique_id=1811038150]
 transform = Transform3D(1.3039988, 0, 0, 0, 0.9343711, 0, 0, 0, 0.68546706, -0.0003464222, 0.95190054, 0.044573426)
@@ -219,18 +221,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0003464222, 0.9519005, 0.2
 shape = SubResource("BoxShape3D_hrk56")
 
 [node name="PaintedWoodenCabinet02Door" type="AnimatableBody3D" parent="." unique_id=1423847889]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37391096, 0.41884154, 0.16005218)
+sync_to_physics = false
 script = ExtResource("4_vyuvr")
-open_rotation_degrees = Vector3(0, 105, 0)
+open_rotation_degrees = Vector3(0, 100, 0)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_02_door" type="MeshInstance3D" parent="PaintedWoodenCabinet02Door" unique_id=2081617502]
-transform = Transform3D(1.2997996, 0, 0.104565874, 0, 0.9343711, 0, -0.054966662, 0, 0.68325967, 0.37125874, 0.44129765, 0.18604434)
+transform = Transform3D(1.2997996, 0, 0.104565874, 0, 0.9343711, 0, -0.054966662, 0, 0.68325967, -0.0026522279, 0.02245611, 0.025992155)
 mesh = SubResource("ArrayMesh_c4vfs")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="PaintedWoodenCabinet02Door" unique_id=590442741]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00043928623, 0.41884154, 0.20065315)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37347168, 0, 0.04060097)
 shape = SubResource("BoxShape3D_c8hy3")
 
 [node name="ItemSlots" type="Node3D" parent="PaintedWoodenCabinet02Door" unique_id=1996268083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37391096, -0.41884154, -0.16005218)
 
 [node name="Item01" type="Marker3D" parent="PaintedWoodenCabinet02Door/ItemSlots" unique_id=1751925700]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00043928623, 0.41884154, 0.20065315)

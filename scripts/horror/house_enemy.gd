@@ -2,6 +2,27 @@ extends "res://scripts/horror/house_enemy_base.gd"
 @export var navigation_refresh: float=0.35
 @onready var agent: NavigationAgent3D=$NavigationAgent3D
 var navigation_ready:=false
+func can_see_player() -> bool:
+	if not is_instance_valid(player): return false
+	var to_player: Vector3=player.camera.global_position-sight_origin()
+	to_player.y=0.0
+	var forward: Vector3=-figure.global_basis.z
+	forward.y=0.0
+	# Close range must not grant vision behind her back.
+	if to_player.length()>0.05 and forward.normalized().dot(to_player.normalized())<0.45: return false
+	if not super.can_see_player(): return false
+	var ray:=PhysicsRayQueryParameters3D.create(sight_origin(),player.camera.global_position,8)
+	ray.collide_with_areas=true
+	ray.collide_with_bodies=false
+	ray.hit_from_inside=true
+	return get_world_3d().direct_space_state.intersect_ray(ray).is_empty()
+func should_track_player(travel: Vector3) -> bool:
+	if not sees_player: return false
+	var toward: Vector3=player.global_position-global_position
+	toward.y=0
+	if toward.length()<0.05: return false
+	if travel.length()>0.1 and travel.normalized().dot(toward.normalized())<0.35: return false
+	return true
 func _ready() -> void:
 	route=get_parent().get_node("PatrolRoutes")
 	for marker in route.get_children():
@@ -65,10 +86,12 @@ func _physics_process(delta: float) -> void:
 		stuck_time=0.0
 	if direction.length()>0.1: figure.rotation.y=lerp_angle(figure.rotation.y,atan2(-direction.x,-direction.z),delta*8)
 	motion.animate(delta,direction.length()>0.1,hunt>0,figure,pose_skeleton,pose_bones,pose_rest_rotations)
-	if has_seen_player:
-		track_player_head(delta,attention_target())
+	if should_track_player(direction):
+		track_player_head(delta,player.camera.global_position)
 		motion.apply_tracked_head(pose_skeleton,pose_bones)
-		eye_gaze.track(attention_target(),delta)
+		eye_gaze.track(player.camera.global_position,delta)
+	else:
+		eye_gaze.reset_gaze(delta)
 	if global_position.distance_to(player.global_position)<0.95 and sees_player and not player.caught:
 		caught=true
 		player.capture(self)

@@ -137,19 +137,22 @@ transform = Transform3D(0.8837074, 0, 0, 0, 0.8837073, 0, 0, 0, 0.8837074, 0, 0.
 mesh = SubResource("ArrayMesh_1re2s")
 
 [node name="Lid" type="AnimatableBody3D" parent="." unique_id=277210587]
-transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21132141, 0.3802815, -9.536743e-07)
+sync_to_physics = false
 script = ExtResource("4_gencg")
-open_rotation_degrees = Vector3(-100, 0, 0)
+open_rotation_degrees = Vector3(0, 0, 100)
+metadata/hinge_fixed = true
 
 [node name="wooden_crate_02_lid" type="MeshInstance3D" parent="Lid" unique_id=112656806]
-transform = Transform3D(0.88370717, 0, -7.450581e-09, 0, 0.8837073, 0, 7.450581e-09, 0, 0.88370717, 0.00016188622, 0.3802815, -9.536743e-07)
+transform = Transform3D(0.8837073, 0, -7.4505815e-09, 0, 0.8837073, 0, 7.4505815e-09, 0, 0.8837073, 0.2114833, 0, -1.1368684e-13)
 mesh = SubResource("ArrayMesh_onmuh")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="Lid" unique_id=891541111]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00016188622, 0.3802815, -9.536743e-07)
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.2114833, 0, -1.1368684e-13)
 shape = SubResource("BoxShape3D_1tc2w")
 
 [node name="ItemSlots" type="Node3D" parent="Lid" unique_id=117348480]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.21132141, -0.3802815, 9.536743e-07)
 
 [node name="Item01" type="Marker3D" parent="Lid/ItemSlots" unique_id=2004746756]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00016188622, 0.3802815, -9.536743e-07)

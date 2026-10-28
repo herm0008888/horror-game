@@ -2,6 +2,7 @@ extends Node
 @export var response_speed: float = 45.0
 var skeleton: Skeleton3D
 var eyes: Array[int] = []
+var neutral: Dictionary = {}
 func _ready() -> void:
 	call_deferred("bind_eyes")
 func bind_eyes() -> void:
@@ -10,7 +11,13 @@ func bind_eyes() -> void:
 	if not skeleton: return
 	for name in ["EyeLeft","EyeRight"]:
 		var index := skeleton.find_bone(name)
-		if index >= 0: eyes.append(index)
+		if index >= 0:
+			eyes.append(index)
+			neutral[index]=skeleton.get_bone_pose_rotation(index)
+func reset_gaze(delta: float) -> void:
+	if not skeleton: return
+	for index in eyes:
+		skeleton.set_bone_pose_rotation(index,skeleton.get_bone_pose_rotation(index).slerp(neutral[index],1.0-exp(-delta*response_speed)))
 func track(target: Vector3, delta: float) -> void:
 	if not skeleton: return
 	for index in eyes:

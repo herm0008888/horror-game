@@ -272,42 +272,52 @@ transform = Transform3D(1.0044577, 0, 0, 0, 0.7615052, 0, 0, 0, 0.973022, -0.002
 mesh = SubResource("ArrayMesh_csk1u")
 
 [node name="PaintedWoodenCabinetDoor02" type="AnimatableBody3D" parent="." unique_id=1940817883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.56957036, 0.39383903, 0.17844942)
+sync_to_physics = false
 script = ExtResource("4_1vlp4")
-open_rotation_degrees = Vector3(0, -105, 0)
+open_rotation_degrees = Vector3(0, 100, 0)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_door_02" type="MeshInstance3D" parent="PaintedWoodenCabinetDoor02" unique_id=1858141587]
-transform = Transform3D(0.99762046, 0, 0.11699871, 0, 0.7615052, 0, -0.11333709, 0, 0.9663987, 0.5676751, 0.40648144, 0.18054008)
+transform = Transform3D(0.99762046, 0, 0.11699871, 0, 0.7615052, 0, -0.11333709, 0, 0.9663987, -0.0018952489, 0.012642413, 0.0020906627)
 mesh = SubResource("ArrayMesh_rksfp")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="PaintedWoodenCabinetDoor02" unique_id=1356179607]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28758454, 0.39383903, 0.23544309)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28198582, 0, 0.056993663)
 shape = SubResource("BoxShape3D_f1x1c")
 
 [node name="ItemSlots" type="Node3D" parent="PaintedWoodenCabinetDoor02" unique_id=1056397492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56957036, -0.39383903, -0.17844942)
 
 [node name="Item01" type="Marker3D" parent="PaintedWoodenCabinetDoor02/ItemSlots" unique_id=1564069743]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28758454, 0.39383903, 0.23544309)
 
 [node name="PaintedWoodenCabinetDoor01" type="AnimatableBody3D" parent="." unique_id=1840818288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5692878, 0.39383906, 0.17816779)
+sync_to_physics = false
 script = ExtResource("4_1vlp4")
-open_rotation_degrees = Vector3(0, -105, 0)
+open_rotation_degrees = Vector3(0, -100, 0)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_door_01" type="MeshInstance3D" parent="PaintedWoodenCabinetDoor01" unique_id=1890485991]
-transform = Transform3D(1.0037466, 0, -0.037790008, 0, 0.7615052, 0, 0.036607325, 0, 0.9723331, -0.57340527, 0.40574104, 0.18054008)
+transform = Transform3D(1.0037466, 0, -0.037790008, 0, 0.7615052, 0, 0.036607325, 0, 0.9723331, -0.004117489, 0.011901975, 0.0023722947)
 mesh = SubResource("ArrayMesh_pu3cq")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="PaintedWoodenCabinetDoor01" unique_id=1767984217]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28486183, 0.39383906, 0.2002773)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28442594, 0, 0.022109509)
 shape = SubResource("BoxShape3D_aob7d")
 
 [node name="ItemSlots" type="Node3D" parent="PaintedWoodenCabinetDoor01" unique_id=2064647621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5692878, -0.39383906, -0.17816779)
 
 [node name="Item01" type="Marker3D" parent="PaintedWoodenCabinetDoor01/ItemSlots" unique_id=968413441]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28486183, 0.39383906, 0.2002773)
 
 [node name="PaintedWoodenCabinetDrawer02" type="AnimatableBody3D" parent="." unique_id=856149750]
+sync_to_physics = false
 script = ExtResource("4_1vlp4")
 open_offset = Vector3(0, 0, 0.29601824)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_drawer_02" type="MeshInstance3D" parent="PaintedWoodenCabinetDrawer02" unique_id=99658500]
 transform = Transform3D(1.0044577, 0, 0, 0, 0.7615052, 0, 0, 0, 0.973022, 0.27314663, 0.7972009, 0.2035783)
@@ -339,8 +349,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27238843, 0.77879995, 0.232
 shape = SubResource("BoxShape3D_60706")
 
 [node name="PaintedWoodenCabinetDrawer01" type="AnimatableBody3D" parent="." unique_id=1988985500]
+sync_to_physics = false
 script = ExtResource("4_1vlp4")
 open_offset = Vector3(0, 0, 0.2960182)
+metadata/hinge_fixed = true
 
 [node name="painted_wooden_cabinet_drawer_01" type="MeshInstance3D" parent="PaintedWoodenCabinetDrawer01" unique_id=825235102]
 transform = Transform3D(1.0044577, 0, 0, 0, 0.7615052, 0, 0, 0, 0.973022, -0.2841921, 0.7972009, 0.258501)

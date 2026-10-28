@@ -21,7 +21,7 @@ func run() -> void:
 	var horror := normal.duplicate() as Environment
 	horror.background_color=Color(0.003,0.004,0.007)
 	horror.ambient_light_color=Color(0.72,0.75,0.80)
-	horror.ambient_light_energy=0.50
+	horror.ambient_light_energy=0.36
 	ResourceSaver.save(horror,"res://assets/house_materials/horror_lighting.tres")
 	normal=load("res://assets/house_materials/normal_lighting.tres")
 	horror=load("res://assets/house_materials/horror_lighting.tres")

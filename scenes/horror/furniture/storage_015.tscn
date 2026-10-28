@@ -811,18 +811,22 @@ transform = Transform3D(1.1938047, 0, 0, 0, 1.0480994, 0, 0, 0, 1.0036731, -0.28
 mesh = SubResource("ArrayMesh_13654")
 
 [node name="DoorTop" type="AnimatableBody3D" parent="." unique_id=983050608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3719184, 0.2827172)
+sync_to_physics = false
 script = ExtResource("4_01uon")
-open_rotation_degrees = Vector3(85, 0, 0)
+open_rotation_degrees = Vector3(90, 0, 0)
+metadata/hinge_fixed = true
 
 [node name="door_top" type="MeshInstance3D" parent="DoorTop" unique_id=414209345]
-transform = Transform3D(1.1938047, 0, 0, 0, 1.0480994, 0, 0, 0, 1.0036731, 0, 0.37390542, 0.26624656)
+transform = Transform3D(1.1938047, 0, 0, 0, 1.0480994, 0, 0, 0, 1.0036731, 0, 0.0019870102, -0.01647064)
 mesh = SubResource("ArrayMesh_w1wwv")
 
 [node name="MovingCollision" type="CollisionShape3D" parent="DoorTop" unique_id=64002070]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5659171, 0.2827172)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19399866, 0)
 shape = SubResource("BoxShape3D_r6yqa")
 
 [node name="ItemSlots" type="Node3D" parent="DoorTop" unique_id=456061884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3719184, -0.2827172)
 
 [node name="Item01" type="Marker3D" parent="DoorTop/ItemSlots" unique_id=1987491648]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5659171, 0.2827172)

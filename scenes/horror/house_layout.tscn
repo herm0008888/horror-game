@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dc51lhn1u4wtt"]
 
+[ext_resource type="PackedScene" path="res://scenes/horror/cell_sight_barrier.tscn" id="SightScreen"]
 [ext_resource type="PackedScene" path="res://scenes/horror/interaction_crosshair.tscn" id="Crosshair"]
 
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/study_cupboard.tscn" id="SimpleStorage0"]
@@ -12037,3 +12038,5 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0,0,0,0)
+
+[node name="CellSightBarrier" parent="." instance=ExtResource("SightScreen")]
