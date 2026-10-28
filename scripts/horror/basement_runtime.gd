@@ -24,6 +24,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		if carrying_plank and near_trap():
 			place_plank()
 		elif not carrying_plank and not bridge_placed and player.global_position.distance_to(plank.global_position)<1.8:
+			player.release_hand_items()
 			carrying_plank=true
 			plank.visible=false
 			plank_collision.set_deferred("disabled",true)
@@ -85,7 +86,7 @@ func _process(delta: float) -> void:
 	elif not intro_done:
 		status.text="Du søker ly. Gulvet knirker under deg …"
 	elif player.position.y < -1 and player.position.x>4 and player.position.x<8 and player.position.z>12:
-		status.text="Porten er låst. Se etter en åpning nederst i veggen.  CTRL · dukke"
+		status.text="Porten er låst. Slegga ligger utenfor sprinklene. Finn det sprukne murverket."
 	else:
 		status.text="Bærer planke · Finn fella ved ytterdøra" if carrying_plank else ("Kjeller" if player.position.y < -1 else ("Første etasje" if player.position.y<2 else "Andre etasje"))
 func climb_ladder() -> void:

@@ -76,6 +76,9 @@ func _physics_process(delta: float) -> void:
 		raised.origin.y+=0.23
 		if not test_move(raised,direction*0.16): global_position.y+=0.23
 	move_and_slide()
+	for i in range(get_slide_collision_count()):
+		var body=get_slide_collision(i).get_collider()
+		if body is RigidBody3D and not body.freeze: body.apply_central_impulse(Vector3(velocity.x,0,velocity.z)*.08)
 	if direction.length()>0.1 and global_position.distance_to(previous_position)<delta*0.08:
 		stuck_time+=delta
 	else: stuck_time=0.0

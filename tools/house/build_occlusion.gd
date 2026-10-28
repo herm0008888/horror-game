@@ -12,12 +12,12 @@ func run() -> void:
 		var old:=house.get_node("HouseOcclusion")
 		house.remove_child(old)
 		old.free()
-	for body in house.get_children():
+	for body in house.find_children("*","StaticBody3D",true,false):
 		if not body is StaticBody3D: continue
 		if body.name in ["BridgePlank","LadderCover","FrontDoorPlaceholder"]: continue
 		var visual:=body.get_node_or_null("Mesh") as MeshInstance3D
 		var collision:=body.get_node_or_null("Collision") as CollisionShape3D
-		if not visual or not collision or not collision.shape is BoxShape3D: continue
+		if not visual or not collision or collision.disabled or not collision.shape is BoxShape3D: continue
 		if not visual.get_meta("house_surface","") in ["wall_wood","floor_wood","basement_wall","basement_floor"]: continue
 		var dimensions: Vector3=collision.shape.size-Vector3.ONE*0.12
 		if dimensions.min_axis_index()==-1 or minf(dimensions.x,minf(dimensions.y,dimensions.z))<=0: continue

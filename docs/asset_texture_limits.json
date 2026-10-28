@@ -1,0 +1,1124 @@
+[
+  {
+    "path": "assets/house_library/dirty_tiles/Diffuse.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/dirty_tiles/nor_gl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/dirty_tiles/Rough.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/long_white_tiles/Diffuse.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/long_white_tiles/nor_gl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/long_white_tiles/Rough.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_grate_rusty/Diffuse.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_grate_rusty/nor_gl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_grate_rusty/Rough.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rubble/Diffuse.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rubble/nor_gl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rubble/Rough.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rusty_metal_04/Diffuse.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rusty_metal_04/nor_gl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rusty_metal_04/Rough.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rusty_painted_metal/Diffuse.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rusty_painted_metal/nor_gl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rusty_painted_metal/Rough.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/alarm_clock_01/textures/alarm_clock_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/alarm_clock_01/textures/alarm_clock_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/alarm_clock_01/textures/alarm_clock_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/barrel_stove/textures/barrel_stove_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/barrel_stove/textures/barrel_stove_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/barrel_stove/textures/barrel_stove_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/bleach_bottle/textures/bleach_bottle_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/bleach_bottle/textures/bleach_bottle_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/bleach_bottle/textures/bleach_bottle_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_roughness_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/boombox/textures/boombox_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/boombox/textures/boombox_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/boombox/textures/boombox_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/boombox/textures/boombox_speakers_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/boombox/textures/boombox_speakers_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_02_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_02_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_02_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_03_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_03_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_03_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_candles_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_candles_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_candles_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/brass_candleholders/textures/brass_candleholders_flame_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/caged_hanging_light/textures/caged_hanging_light_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/caged_hanging_light/textures/caged_hanging_light_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/caged_hanging_light/textures/caged_hanging_light_emissive_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/caged_hanging_light/textures/caged_hanging_light_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/can_rusted/textures/can_rusted_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/can_rusted/textures/can_rusted_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/can_rusted/textures/can_rusted_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/cardboard_box_01/textures/cardboard_box_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/cardboard_box_01/textures/cardboard_box_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/cardboard_box_01/textures/cardboard_box_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/ceramic_pot/textures/ceramic_pot_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/ceramic_pot/textures/ceramic_pot_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/ceramic_pot/textures/ceramic_pot_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/cross_pein_hammer/textures/cross_pein_hammer_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/cross_pein_hammer/textures/cross_pein_hammer_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/cross_pein_hammer/textures/cross_pein_hammer_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/dustpan/textures/dustpan_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/dustpan/textures/dustpan_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/dustpan/textures/dustpan_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/electric_stove/textures/electric_stove_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/electric_stove/textures/electric_stove_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/electric_stove/textures/electric_stove_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_roughness_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/mantel_clock_01/textures/mantel_clock_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/mantel_clock_01/textures/mantel_clock_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/mantel_clock_01/textures/mantel_clock_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_toolbox/textures/metal_toolbox_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_toolbox/textures/metal_toolbox_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_toolbox/textures/metal_toolbox_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_tool_chest/textures/metal_tool_chest_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_tool_chest/textures/metal_tool_chest_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/metal_tool_chest/textures/metal_tool_chest_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/multi_cleaner_bottle/textures/multi_cleaner_bottle_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/multi_cleaner_bottle/textures/multi_cleaner_bottle_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/multi_cleaner_bottle/textures/multi_cleaner_bottle_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/oil_tin/textures/oil_tin_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/oil_tin/textures/oil_tin_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/oil_tin/textures/oil_tin_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/old_military_crate/textures/old_military_crate_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/old_military_crate/textures/old_military_crate_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/old_military_crate/textures/old_military_crate_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/pipe_wrench/textures/pipe_wrench_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/pipe_wrench/textures/pipe_wrench_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/pipe_wrench/textures/pipe_wrench_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/plastic_bottle_gallon/textures/plastic_bottle_gallon_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/plastic_bottle_gallon/textures/plastic_bottle_gallon_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/plastic_bottle_gallon/textures/plastic_bottle_gallon_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/plastic_broom/textures/plastic_broom_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/plastic_broom/textures/plastic_broom_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/plastic_broom/textures/plastic_broom_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/pot_enamel_01/textures/pot_enamel_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/pot_enamel_01/textures/pot_enamel_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/pot_enamel_01/textures/pot_enamel_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/Rockingchair_01/textures/Rockingchair_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/Rockingchair_01/textures/Rockingchair_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/Rockingchair_01/textures/Rockingchair_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rock_moss_set_01/textures/rock_moss_set_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rock_moss_set_01/textures/rock_moss_set_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/rock_moss_set_01/textures/rock_moss_set_01_rough_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/russian_food_cans_01/textures/russian_food_cans_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/russian_food_cans_01/textures/russian_food_cans_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/russian_food_cans_01/textures/russian_food_cans_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/small_oil_can_01/textures/small_oil_can_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/small_oil_can_01/textures/small_oil_can_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/small_oil_can_01/textures/small_oil_can_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_rough_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/Television_01/textures/Television_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/Television_01/textures/Television_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/Television_01/textures/Television_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/television_02/textures/television_02_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/television_02/textures/television_02_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/television_02/textures/television_02_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/throw_pillows_01/textures/throw_pillows_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/throw_pillows_01/textures/throw_pillows_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/throw_pillows_01/textures/throw_pillows_01_rough_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/trashbag/textures/trashbag_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/trashbag/textures/trashbag_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/trashbag/textures/trashbag_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/utility_box_01/textures/utility_box_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/utility_box_01/textures/utility_box_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/utility_box_01/textures/utility_box_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_grandfather_clock_01/textures/vintage_grandfather_clock_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_grandfather_clock_01/textures/vintage_grandfather_clock_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_grandfather_clock_01/textures/vintage_grandfather_clock_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_flame_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_glass_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_glass_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_glass_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_oil_lamp/textures/vintage_oil_lamp_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_suitcase/textures/vintage_suitcase_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_suitcase/textures/vintage_suitcase_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_suitcase/textures/vintage_suitcase_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_suitcase/textures/vintage_suitcase_02_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_suitcase/textures/vintage_suitcase_02_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/vintage_suitcase/textures/vintage_suitcase_02_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_arm_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_diff_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/house_library/wine_bottles_01/textures/wine_bottles_01_paper_nor_gl_1k.jpg",
+    "width": 1024,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/horror/reference_house_atlas.png",
+    "width": 1000,
+    "height": 1000,
+    "limit": 512
+  },
+  {
+    "path": "assets/horror/reference_wood_atlas.png",
+    "width": 512,
+    "height": 1024,
+    "limit": 512
+  },
+  {
+    "path": "assets/horror/visitation_visitor_reference_face.png",
+    "width": 1200,
+    "height": 1200,
+    "limit": 1024
+  },
+  {
+    "path": "assets/horror/visitor_face_ashen.png",
+    "width": 1254,
+    "height": 1254,
+    "limit": 1024
+  },
+  {
+    "path": "assets/horror/visitor_reference_face.png",
+    "width": 1200,
+    "height": 1200,
+    "limit": 1024
+  }
+]

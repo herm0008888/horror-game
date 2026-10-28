@@ -1,68 +1,70 @@
 extends Node
-## Held contractions followed by violent releases, always relative to the bind pose.
-@export_range(0.0, 1.0) var neck_twist: float = 0.46
-@export_range(0.0, 0.5) var body_hunch: float = 0.38
+## Slow stalking gives way to a pitched-forward, uneven pursuit. No per-frame randomness.
+@export_range(0.0, 1.0) var neck_twist: float = 0.12
+@export_range(0.0, 0.5) var body_hunch: float = 0.22
 @export var glitch_intensity: float = 1.0
-@export_range(0.0, 0.2) var limp_depth: float = 0.09
+@export_range(0.0, 0.2) var limp_depth: float = 0.025
 var phase: float = 0.0
 var elapsed: float = 0.0
 var moving_blend: float = 0.0
+var chase_blend: float = 0.0
+var head_offset := Vector3.ZERO
 var spasm_left: float = 0.0
-var next_spasm: float = 0.8
+var next_spasm: float = 1.2
 var spasm_number: int = 0
 var spasm: float = 0.0
 var release: float = 0.0
-var head_offset := Vector3.ZERO
-
+var face_mesh: MeshInstance3D
+var threat_index: int = -1
+var scream_index: int = -1
 func speed_factor(hunting: bool) -> float:
-	if spasm > 0.0: return 0.06
-	if release > 0.0: return 1.85 if hunting else 1.55
-	var pull := pow(maxf(0.0, sin(phase)), 4.0)
-	return (0.78 + pull * 0.9) if hunting else (0.48 + pull * 1.15)
-
-func animate(delta: float, moving: bool, hunting: bool, figure: Node3D,
-		skeleton: Skeleton3D, bones: Dictionary, rest: Dictionary) -> void:
-	elapsed += delta
-	next_spasm -= delta
-	spasm_left = maxf(0.0, spasm_left - delta)
-	if next_spasm <= 0.0:
-		spasm_number += 1
-		spasm_left = 0.38 if hunting else 0.48
-		# Unequal intervals prevent a predictable metronome-like walk.
-		next_spasm = (1.05 if hunting else 1.8) + fposmod(float(spasm_number) * 1.618, 1.0) * 1.4
-	spasm = clampf(glitch_intensity, 0.0, 1.5) if spasm_left > 0.17 else 0.0
-	release = 1.0 if spasm_left > 0.0 and spasm_left <= 0.17 and glitch_intensity > 0.0 else 0.0
-	moving_blend = move_toward(moving_blend, 1.0 if moving else 0.0, delta * 8.0)
-	phase += delta * (12.0 if hunting else 6.3) * moving_blend * speed_factor(hunting)
-	var drag := sin(phase)
-	var hitch := pow(maxf(0.0, sin(phase + 0.65)), 6.0)
-	# Hold each broken pose for several frames; no random frame-rate-dependent jitter.
-	var snap := sin(floor(elapsed * 15.0) * 2.399 + float(spasm_number))
-	var counter := sin(floor(elapsed * 11.0) * 1.71)
-	head_offset = Vector3(-0.13 + snap * spasm * 0.32 - release * 0.2,
-		counter * spasm * 0.24, neck_twist + snap * spasm * 0.48 - release * 0.35)
-	figure.position.x = snap * 0.035 * spasm
-	figure.position.y = -0.025 - hitch * limp_depth * moving_blend - spasm * 0.055
-	figure.rotation.z = 0.045 + drag * 0.045 * moving_blend + counter * spasm * 0.075
-	if not skeleton: return
-	var poses := {
-		"Head": Quaternion.from_euler(head_offset),
-		"Spine": Quaternion.from_euler(Vector3(-body_hunch - hitch * 0.09 - release * 0.17, snap * spasm * 0.14, -0.08 - counter * spasm * 0.12)),
-		"ArmLeft": Quaternion.from_euler(Vector3(-0.4 - (0.3 if hunting else 0.0) - spasm * 0.5 + drag * 0.12, 0.12, 0.2 + snap * spasm * 0.25)),
-		"ArmRight": Quaternion.from_euler(Vector3(0.16 - release * 0.8 + counter * spasm * 0.35, -0.14, -0.15 - spasm * 0.24)),
-		"ForearmLeft": Quaternion.from_euler(Vector3(-0.55 - spasm * 0.75, 0.0, 0.16)),
-		"ForearmRight": Quaternion.from_euler(Vector3(-0.15 - release * 0.65 - spasm * 0.35, 0.0, -0.22)),
-		"LegLeft": Quaternion.from_euler(Vector3(drag * 0.32 * moving_blend - spasm * 0.12, 0.0, 0.04)),
-		"LegRight": Quaternion.from_euler(Vector3(-drag * 0.16 * moving_blend - 0.05, 0.0, -0.04))
-	}
-	for bone in poses:
-		if bones.has(bone):
-			var index: int = bones[bone]
-			var target: Quaternion = rest[bone] * poses[bone]
-			skeleton.set_bone_pose_rotation(index, skeleton.get_bone_pose_rotation(index).slerp(target, 1.0 - exp(-delta * (70.0 if spasm > 0.0 or release > 0.0 else 20.0))))
-
-func apply_tracked_head(skeleton: Skeleton3D, bones: Dictionary) -> void:
-	# The gaze solver runs first; retain the contractions instead of erasing them.
-	if not skeleton or not bones.has("Head"): return
-	var index: int = bones["Head"]
-	skeleton.set_bone_pose_rotation(index, skeleton.get_bone_pose_rotation(index) * Quaternion.from_euler(head_offset))
+ return .93 + .12 * maxf(0,sin(phase)) if hunting else .82 + .16 * maxf(0,sin(phase))
+func animate(delta: float, moving: bool, hunting: bool, figure: Node3D, skeleton: Skeleton3D, bones: Dictionary, rest: Dictionary) -> void:
+ elapsed += delta
+ moving_blend = move_toward(moving_blend,1.0 if moving else 0.0,delta*7)
+ chase_blend = move_toward(chase_blend,1.0 if hunting else 0.0,delta*(7.0 if hunting else 1.8))
+ phase += delta * lerpf(5.8,14.0,chase_blend) * moving_blend
+ next_spasm -= delta
+ spasm_left = maxf(0,spasm_left-delta)
+ if next_spasm <= 0:
+  spasm_number += 1
+  spasm_left = .16
+  next_spasm = lerpf(3.2,1.35,chase_blend) + fposmod(spasm_number*1.618,1.0)*1.1
+ spasm = glitch_intensity if spasm_left>.085 else 0.0
+ release = glitch_intensity if spasm_left>0 and spasm_left<=.085 else 0.0
+ var stride := sin(phase)
+ var hitch := pow(maxf(0,sin(phase+.5)),4)
+ var side := -1.0 if spasm_number%2==0 else 1.0
+ head_offset = Vector3(-.10-.12*chase_blend+.16*spasm-.12*release,side*.11*spasm,neck_twist*(1-.5*chase_blend)+side*.20*spasm-side*.07*release)
+ figure.position.x = side*.014*spasm
+ figure.position.y = -.018-hitch*limp_depth*moving_blend-.055*chase_blend
+ figure.rotation.z = .025+stride*.014*moving_blend+side*.025*spasm
+ if not is_instance_valid(face_mesh):
+  face_mesh=figure.find_child("TheHollowVisitor_Mesh",true,false) as MeshInstance3D
+  if face_mesh:
+   threat_index=face_mesh.find_blend_shape_by_name("Threat")
+   scream_index=face_mesh.find_blend_shape_by_name("Scream")
+ if face_mesh:
+  if threat_index>=0: face_mesh.set_blend_shape_value(threat_index,.12+.75*chase_blend+.10*spasm)
+  if scream_index>=0: face_mesh.set_blend_shape_value(scream_index,chase_blend*(.08+.13*hitch)+.09*release)
+ if not skeleton: return
+ var reach := chase_blend*(.32+.10*hitch)
+ var poses := {
+  "Head": Quaternion.from_euler(head_offset),
+  "Spine": Quaternion.from_euler(Vector3(-body_hunch-.22*chase_blend-.08*release,side*.065*spasm,-.035)),
+  "ArmLeft": Quaternion.from_euler(Vector3(-.08-reach+stride*.075*moving_blend,.02,.075)),
+  "ArmRight": Quaternion.from_euler(Vector3(.025-reach*.65-stride*.055*moving_blend,-.02,-.06)),
+  "ForearmLeft": Quaternion.from_euler(Vector3(-.14-.24*chase_blend-.11*spasm,0,.015)),
+  "ForearmRight": Quaternion.from_euler(Vector3(-.08-.32*chase_blend+.08*release,0,-.015)),
+  "LegLeft": Quaternion.from_euler(Vector3(stride*lerpf(.17,.28,chase_blend)*moving_blend,0,0)),
+  "LegRight": Quaternion.from_euler(Vector3(-stride*lerpf(.12,.23,chase_blend)*moving_blend-.025,0,0))
+ }
+ for bone in poses:
+  if bones.has(bone):
+   var index:int=bones[bone]
+   var target:Quaternion=rest[bone]*poses[bone]
+   skeleton.set_bone_pose_rotation(index,skeleton.get_bone_pose_rotation(index).slerp(target,1-exp(-delta*(55 if spasm>0 or release>0 else 24))))
+func apply_tracked_head(skeleton: Skeleton3D,bones: Dictionary) -> void:
+ if not skeleton or not bones.has("Head"): return
+ var index:int=bones["Head"]
+ skeleton.set_bone_pose_rotation(index,skeleton.get_bone_pose_rotation(index)*Quaternion.from_euler(head_offset))

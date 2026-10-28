@@ -1,0 +1,37 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/horror/sledge_pickup.gd" id="1_uswb7"]
+[ext_resource type="Material" path="res://assets/house_materials/floor_wood.tres" id="2_7nqmi"]
+[ext_resource type="Material" path="res://assets/house_materials/rusted_iron.tres" id="3_gkhdf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1cb4q"]
+size = Vector3(0.035, 0.78, 0.035)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0iy0b"]
+size = Vector3(0.25, 0.125, 0.125)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lipvp"]
+size = Vector3(0.25, 0.86, 0.13)
+
+[node name="SledgehammerPickup" type="RigidBody3D" unique_id=1413282324]
+transform = Transform3D(0.9781476, -0.2079117, 0, 0.2079117, 0.9781476, 0, 0, 0, 1, 7.15, -2.8, 11.79)
+collision_layer = 17
+collision_mask = 17
+freeze = true
+script = ExtResource("1_uswb7")
+
+[node name="Visual" type="Node3D" parent="." unique_id=1160307185]
+
+[node name="@MeshInstance3D@64" type="MeshInstance3D" parent="Visual" unique_id=1492728522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
+material_override = ExtResource("2_7nqmi")
+mesh = SubResource("BoxMesh_1cb4q")
+
+[node name="@MeshInstance3D@65" type="MeshInstance3D" parent="Visual" unique_id=242159050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+material_override = ExtResource("3_gkhdf")
+mesh = SubResource("BoxMesh_0iy0b")
+
+[node name="@CollisionShape3D@66" type="CollisionShape3D" parent="." unique_id=58837027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.26, 0)
+shape = SubResource("BoxShape3D_lipvp")

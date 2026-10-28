@@ -15,7 +15,7 @@ func run():
   elif c.shape is ConvexPolygonShape3D:
    var p=c.shape.points
    if p.size()==8:data.add_faces(PackedVector3Array([p[1],p[3],p[5],p[3],p[7],p[5],p[5],p[3],p[1],p[5],p[7],p[3]]),c.global_transform)
- var nav=NavigationMesh.new();nav.cell_size=.08;nav.cell_height=.04;nav.agent_radius=.26;nav.agent_height=1.76;nav.agent_max_climb=.24;nav.agent_max_slope=48;nav.region_min_size=1;nav.region_merge_size=4
+ var nav=NavigationMesh.new();nav.cell_size=.08;nav.cell_height=.04;nav.agent_radius=.34;nav.agent_height=2.04;nav.agent_max_climb=.24;nav.agent_max_slope=48;nav.region_min_size=1;nav.region_merge_size=4
  NavigationServer3D.bake_from_source_geometry_data(nav,data)
  var n=NavigationRegion3D.new();n.name="HouseNavigation";n.navigation_mesh=nav;var pack=PackedScene.new();pack.pack(n);ResourceSaver.save(pack,"res://scenes/horror/house_navigation.tscn");n.free()
  print("NAVIGATION_POLYGONS ",nav.get_polygon_count())

@@ -1,0 +1,109 @@
+{
+  "inventory": {
+    "array_meshes": 813,
+    "lod_surfaces": 760,
+    "meshes": 1841,
+    "occluders": 3,
+    "shadow_lights": 17,
+    "surfaces": 1027
+  },
+  "load_ms": 21672,
+  "views": [
+    {
+      "draw_calls": 140.0,
+      "median_ms": 10.962,
+      "normal": false,
+      "p95_ms": 12.648,
+      "primitives": 107373.0,
+      "view": "cell"
+    },
+    {
+      "draw_calls": 139.0,
+      "median_ms": 4.296,
+      "normal": false,
+      "p95_ms": 6.171,
+      "primitives": 50472.0,
+      "view": "workshop"
+    },
+    {
+      "draw_calls": 639.0,
+      "median_ms": 10.29,
+      "normal": false,
+      "p95_ms": 11.7,
+      "primitives": 132453.0,
+      "view": "living"
+    },
+    {
+      "draw_calls": 746.0,
+      "median_ms": 17.162,
+      "normal": false,
+      "p95_ms": 20.152,
+      "primitives": 130642.0,
+      "view": "kitchen"
+    },
+    {
+      "draw_calls": 685.0,
+      "median_ms": 13.458,
+      "normal": false,
+      "p95_ms": 15.584,
+      "primitives": 175773.0,
+      "view": "doorway"
+    },
+    {
+      "draw_calls": 444.0,
+      "median_ms": 16.486,
+      "normal": false,
+      "p95_ms": 18.554,
+      "primitives": 58749.0,
+      "view": "stairs"
+    },
+    {
+      "draw_calls": 104.0,
+      "median_ms": 8.98,
+      "normal": true,
+      "p95_ms": 9.96,
+      "primitives": 107373.0,
+      "view": "cell"
+    },
+    {
+      "draw_calls": 138.0,
+      "median_ms": 6.235,
+      "normal": true,
+      "p95_ms": 8.202,
+      "primitives": 50472.0,
+      "view": "workshop"
+    },
+    {
+      "draw_calls": 421.0,
+      "median_ms": 10.431,
+      "normal": true,
+      "p95_ms": 11.681,
+      "primitives": 132453.0,
+      "view": "living"
+    },
+    {
+      "draw_calls": 473.0,
+      "median_ms": 11.246,
+      "normal": true,
+      "p95_ms": 12.032,
+      "primitives": 130642.0,
+      "view": "kitchen"
+    },
+    {
+      "draw_calls": 492.0,
+      "median_ms": 10.01,
+      "normal": true,
+      "p95_ms": 10.832,
+      "primitives": 175773.0,
+      "view": "doorway"
+    },
+    {
+      "draw_calls": 240.0,
+      "median_ms": 8.352,
+      "normal": true,
+      "p95_ms": 9.072,
+      "primitives": 58749.0,
+      "view": "stairs"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 extends Node
-@export var hold_time: float = 1.12
-@export var restart_time: float = 2.8
-@export var camera_shake_amount: float = 0.022
-@export var head_shake_amount: float = 0.16
+@export var hold_time: float = 0.82
+@export var restart_time: float = 2.3
+@export var camera_shake_amount: float = 0.009
+@export var head_shake_amount: float = 0.07
 @export var pull_begin: float = 0.25
 @export var entry_time: float = 1.0
 @export var swallow_time: float = 1.3
@@ -36,6 +36,8 @@ func apply_opening(value: float) -> void:
 		if not is_instance_valid(node): continue
 		var shape := node.find_blend_shape_by_name("Scream")
 		if shape >= 0: node.set_blend_shape_value(shape,value)
+		var threat := node.find_blend_shape_by_name("Threat")
+		if threat >= 0: node.set_blend_shape_value(threat,.55*(1.0-value))
 		for surface in range(node.mesh.get_surface_count()):
 			var material := node.get_active_material(surface) as ShaderMaterial
 			if material and (material.shader.resource_path.ends_with("reference_face.gdshader") or material.shader.resource_path.ends_with("corpse_skin.gdshader")): material.set_shader_parameter("scream",value)
@@ -92,12 +94,14 @@ func _process(delta: float) -> void:
 	# All composition comes from saved editor nodes. Only the parent pivot shakes.
 	var pull := smoothstep(pull_begin,entry_time,elapsed)
 	var swallow := smoothstep(entry_time,swallow_time,elapsed)
-	shake_pivot.transform = shake_base.interpolate_with(entry_pose.transform,pull)
+	var close_pose:=shake_base
+	close_pose.origin+=Vector3(.035,-.055,.18)
+	shake_pivot.transform=shake_base.interpolate_with(close_pose,smoothstep(.05,.65,elapsed))
 	# Keep the original lunge/recoil and second hit, but pull continuously between them.
-	var lunge := (1.0 - smoothstep(0.0, 0.09, elapsed)) * -0.65
+	var lunge := (1.0 - smoothstep(0.0, 0.09, elapsed)) * 0.04
 	var recoil := smoothstep(0.09, 0.14, elapsed) * (1.0 - smoothstep(0.14, 0.25, elapsed)) * -0.10
 	shake_pivot.position.z += lunge + recoil + second_hit * 0.07
-	if elapsed >= entry_time: shake_pivot.transform = entry_pose.transform.interpolate_with(end_pose.transform,swallow)
+	shake_pivot.rotation.z+=smoothstep(.55,.78,elapsed)*.11
 	phase = "BITE" if elapsed >= entry_time else ("PULL_IN" if elapsed >= pull_begin else "OPEN")
 	light.light_energy = light_base * (1.0 + impact * 0.6) * (1.0-smoothstep(0.85,1.15,elapsed))
 	shake_pivot.position += Vector3(sin(elapsed*103),sin(elapsed*127),sin(elapsed*89)*0.4)*camera_shake_amount*shaking
@@ -111,9 +115,9 @@ func _process(delta: float) -> void:
 	for pose in setup.get_node("ReachPoses").get_children():
 		var bone: String = pose.get_meta("bone","")
 		if enemy.pose_bones.has(bone):
-			var rotation: Quaternion = enemy.pose_rest_rotations[bone]*Quaternion.from_euler(pose.rotation*reaching)
+			var rotation: Quaternion = enemy.pose_rest_rotations[bone]*Quaternion.from_euler(pose.rotation*reaching*.35)
 			skeleton.set_bone_pose_rotation(enemy.pose_bones[bone],rotation)
-	var opening := smoothstep(0.0,0.085,elapsed)
+	var opening := smoothstep(0.0,0.065,elapsed)*0.20
 	var bite := smoothstep(1.10,1.35,elapsed)
 	apply_opening(opening*(1.0-bite*0.35)*(1.0-smoothstep(1.45,1.65,elapsed)))
 	enemy.eye_gaze.track(camera.global_position,delta)
@@ -128,4 +132,3 @@ func _process(delta: float) -> void:
 	if elapsed > restart_time:
 		active = false
 		get_tree().reload_current_scene()
-

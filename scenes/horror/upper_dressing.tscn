@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_master_bedroom.tscn" id="1_gd1ca"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_east_bedroom.tscn" id="2_d6nx7"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_south_bedroom.tscn" id="3_yhbke"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_bathroom.tscn" id="4_b1fkb"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_upper_store.tscn" id="5_6htw3"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_upper_landing.tscn" id="6_wp35r"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_secret_service_passage.tscn" id="7_qk7eo"]
+[ext_resource type="PackedScene" path="res://scenes/horror/upper_cell_escape_upgrade.tscn" id="8_y4jjw"]
+
+[node name="UpperDressing" type="Node3D" unique_id=1457611779]
+
+[node name="MasterBedroom" type="Node3D" parent="." unique_id=1882032948 instance=ExtResource("1_gd1ca")]
+
+[node name="EastBedroom" type="Node3D" parent="." unique_id=80369282 instance=ExtResource("2_d6nx7")]
+
+[node name="SouthBedroom" type="Node3D" parent="." unique_id=1777742315 instance=ExtResource("3_yhbke")]
+
+[node name="Bathroom" type="Node3D" parent="." unique_id=43114077 instance=ExtResource("4_b1fkb")]
+
+[node name="UpperStore" type="Node3D" parent="." unique_id=1731749625 instance=ExtResource("5_6htw3")]
+
+[node name="UpperLanding" type="Node3D" parent="." unique_id=486055615 instance=ExtResource("6_wp35r")]
+
+[node name="SecretServicePassage" type="Node3D" parent="." unique_id=2022942828 instance=ExtResource("7_qk7eo")]
+
+[node name="CellEscapeUpgrade" type="Node3D" parent="." unique_id=1171107496 instance=ExtResource("8_y4jjw")]

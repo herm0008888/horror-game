@@ -5,6 +5,8 @@ render_mode unshaded, blend_mul, depth_draw_never;
 uniform float decay_strength : hint_range(0.0, 1.0) = 0.7;
 uniform float rising_damp : hint_range(0.0, 1.0) = 0.0;
 uniform vec3 stain_tint : source_color = vec3(0.26, 0.28, 0.20);
+uniform bool use_rest_coordinates = false;
+uniform mat4 rest_transform;
 varying vec3 world_position;
 varying vec3 world_normal;
 float hash(vec3 p) {
@@ -17,8 +19,8 @@ float noise3(vec3 p) {
  return mix(mix(mix(hash(i),hash(i+vec3(1,0,0)),f.x),mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z);
 }
 void vertex() {
- world_position = (MODEL_MATRIX * vec4(VERTEX,1.0)).xyz;
- world_normal = normalize(MODEL_NORMAL_MATRIX * NORMAL);
+ world_position = ((use_rest_coordinates ? rest_transform : MODEL_MATRIX) * vec4(VERTEX,1.0)).xyz;
+ world_normal = normalize((use_rest_coordinates ? mat3(rest_transform) : MODEL_NORMAL_MATRIX) * NORMAL);
 }
 void fragment() {
  vec3 p = world_position;

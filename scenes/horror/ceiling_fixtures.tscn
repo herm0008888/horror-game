@@ -196,212 +196,290 @@ bottom_radius = 0.008
 height = 0.3599999
 radial_segments = 6
 
-[node name="CeilingFixtures" type="Node3D" unique_id=1236802982]
+[sub_resource type="SphereMesh" id="SphereMesh_ke1nf"]
+radius = 0.035
+height = 0.07
 
-[node name="EntranceLampFixture" type="Node3D" parent="." unique_id=546446365 instance=ExtResource("1_mbm86")]
+[sub_resource type="CylinderMesh" id="CylinderMesh_80k5f"]
+top_radius = 0.008
+bottom_radius = 0.008
+height = 0.040000115
+radial_segments = 6
+
+[sub_resource type="SphereMesh" id="SphereMesh_43mft"]
+radius = 0.035
+height = 0.07
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lnm5e"]
+top_radius = 0.008
+bottom_radius = 0.008
+height = 0.060000096
+radial_segments = 6
+
+[sub_resource type="SphereMesh" id="SphereMesh_57l8t"]
+radius = 0.035
+height = 0.07
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hb4q4"]
+top_radius = 0.008
+bottom_radius = 0.008
+height = 0.16
+radial_segments = 6
+
+[node name="CeilingFixtures" type="Node3D" unique_id=243515282]
+
+[node name="EntranceLampFixture" type="Node3D" parent="." unique_id=711331073 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 5.9996023, 3.0724075, 13.000015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="EntranceLampFixture" unique_id=1682105065]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="EntranceLampFixture" unique_id=1937703776]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="EntranceLampBulb" type="MeshInstance3D" parent="." unique_id=1917220432]
+[node name="EntranceLampBulb" type="MeshInstance3D" parent="." unique_id=1412536845]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.75, 13)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_4wtps")
 
-[node name="EntranceLampCable" type="MeshInstance3D" parent="." unique_id=1274759700]
+[node name="EntranceLampCable" type="MeshInstance3D" parent="." unique_id=1469198423]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.145, 13)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_grhmo")
 
-[node name="HallLampFixture" type="Node3D" parent="." unique_id=589332892 instance=ExtResource("1_mbm86")]
+[node name="HallLampFixture" type="Node3D" parent="." unique_id=147726295 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 5.9996023, 3.0724075, 6.2000146)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="HallLampFixture" unique_id=1733662148]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="HallLampFixture" unique_id=2047160606]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="HallLampBulb" type="MeshInstance3D" parent="." unique_id=162081267]
+[node name="HallLampBulb" type="MeshInstance3D" parent="." unique_id=452980227]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.75, 6.2)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_270bq")
 
-[node name="HallLampCable" type="MeshInstance3D" parent="." unique_id=403308571]
+[node name="HallLampCable" type="MeshInstance3D" parent="." unique_id=1544473560]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.145, 6.2)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_c58ar")
 
-[node name="KitchenLampFixture" type="Node3D" parent="." unique_id=6882914 instance=ExtResource("1_mbm86")]
+[node name="KitchenLampFixture" type="Node3D" parent="." unique_id=296269366 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 10.399602, 3.0724075, 3.5000148)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="KitchenLampFixture" unique_id=1229368584]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="KitchenLampFixture" unique_id=1533308013]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="KitchenLampBulb" type="MeshInstance3D" parent="." unique_id=1841619044]
+[node name="KitchenLampBulb" type="MeshInstance3D" parent="." unique_id=2057848332]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4, 2.75, 3.5)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_e51g7")
 
-[node name="KitchenLampCable" type="MeshInstance3D" parent="." unique_id=594569200]
+[node name="KitchenLampCable" type="MeshInstance3D" parent="." unique_id=2093520875]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4, 3.145, 3.5)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_3lcvy")
 
-[node name="StudyLampFixture" type="Node3D" parent="." unique_id=1638582092 instance=ExtResource("1_mbm86")]
+[node name="StudyLampFixture" type="Node3D" parent="." unique_id=1442461228 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 1.9996024, 3.0724075, 2.4000149)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="StudyLampFixture" unique_id=1355177034]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="StudyLampFixture" unique_id=1374046120]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="StudyLampBulb" type="MeshInstance3D" parent="." unique_id=1124338348]
+[node name="StudyLampBulb" type="MeshInstance3D" parent="." unique_id=380877009]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.75, 2.4)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_3rl4n")
 
-[node name="StudyLampCable" type="MeshInstance3D" parent="." unique_id=1888514750]
+[node name="StudyLampCable" type="MeshInstance3D" parent="." unique_id=643395641]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3.145, 2.4)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_ilpqt")
 
-[node name="LivingLampFixture" type="Node3D" parent="." unique_id=1944376430 instance=ExtResource("1_mbm86")]
+[node name="LivingLampFixture" type="Node3D" parent="." unique_id=1563299843 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 12.999602, 3.0724075, 13.000015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="LivingLampFixture" unique_id=172984688]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="LivingLampFixture" unique_id=375410752]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="LivingLampBulb" type="MeshInstance3D" parent="." unique_id=282002915]
+[node name="LivingLampBulb" type="MeshInstance3D" parent="." unique_id=2129499373]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2.75, 13)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_w5jgm")
 
-[node name="LivingLampCable" type="MeshInstance3D" parent="." unique_id=171428125]
+[node name="LivingLampCable" type="MeshInstance3D" parent="." unique_id=1070787235]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 3.145, 13)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_cqdwo")
 
-[node name="UpperLandingLampFixture" type="Node3D" parent="." unique_id=2137038708 instance=ExtResource("1_mbm86")]
+[node name="UpperLandingLampFixture" type="Node3D" parent="." unique_id=1420070934 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 5.9996023, 6.4724073, 8.000015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="UpperLandingLampFixture" unique_id=1727028404]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="UpperLandingLampFixture" unique_id=823142890]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="UpperLandingLampBulb" type="MeshInstance3D" parent="." unique_id=360584653]
+[node name="UpperLandingLampBulb" type="MeshInstance3D" parent="." unique_id=1864842996]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6.15, 8)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_6b630")
 
-[node name="UpperLandingLampCable" type="MeshInstance3D" parent="." unique_id=1509827982]
+[node name="UpperLandingLampCable" type="MeshInstance3D" parent="." unique_id=627741651]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6.545, 8)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_7mvfs")
 
-[node name="WestBedroomLampFixture" type="Node3D" parent="." unique_id=829873742 instance=ExtResource("1_mbm86")]
+[node name="WestBedroomLampFixture" type="Node3D" parent="." unique_id=1651775894 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 1.9996024, 6.4724073, 3.0000148)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="WestBedroomLampFixture" unique_id=643195110]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="WestBedroomLampFixture" unique_id=1866919261]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="WestBedroomLampBulb" type="MeshInstance3D" parent="." unique_id=1820938293]
+[node name="WestBedroomLampBulb" type="MeshInstance3D" parent="." unique_id=1739181078]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.15, 3)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_3iu7b")
 
-[node name="WestBedroomLampCable" type="MeshInstance3D" parent="." unique_id=2068800117]
+[node name="WestBedroomLampCable" type="MeshInstance3D" parent="." unique_id=1711865559]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.545, 3)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_j6y3u")
 
-[node name="EastBedroomLampFixture" type="Node3D" parent="." unique_id=1380331678 instance=ExtResource("1_mbm86")]
+[node name="EastBedroomLampFixture" type="Node3D" parent="." unique_id=1263513275 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 13.999602, 6.4724073, 8.500015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="EastBedroomLampFixture" unique_id=1014104539]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="EastBedroomLampFixture" unique_id=1223991996]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="EastBedroomLampBulb" type="MeshInstance3D" parent="." unique_id=1734476986]
+[node name="EastBedroomLampBulb" type="MeshInstance3D" parent="." unique_id=788768587]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.15, 8.5)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_gfn6y")
 
-[node name="EastBedroomLampCable" type="MeshInstance3D" parent="." unique_id=563492803]
+[node name="EastBedroomLampCable" type="MeshInstance3D" parent="." unique_id=140850083]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.545, 8.5)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_5uhve")
 
-[node name="CellLampFixture" type="Node3D" parent="." unique_id=2007862952 instance=ExtResource("1_mbm86")]
+[node name="CellLampFixture" type="Node3D" parent="." unique_id=920692385 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 5.9996023, -0.2775926, 14.000015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="CellLampFixture" unique_id=1811064227]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="CellLampFixture" unique_id=280186087]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="CellLampBulb" type="MeshInstance3D" parent="." unique_id=126034833]
+[node name="CellLampBulb" type="MeshInstance3D" parent="." unique_id=889771225]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.59999996, 14)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_2r63i")
 
-[node name="CellLampCable" type="MeshInstance3D" parent="." unique_id=113978050]
+[node name="CellLampCable" type="MeshInstance3D" parent="." unique_id=1687091987]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -0.22999999, 14)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_t7thm")
 
-[node name="BasementHallLampFixture" type="Node3D" parent="." unique_id=413522691 instance=ExtResource("1_mbm86")]
+[node name="BasementHallLampFixture" type="Node3D" parent="." unique_id=424440349 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 8.999602, -0.2775926, 8.000015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="BasementHallLampFixture" unique_id=434984920]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="BasementHallLampFixture" unique_id=140145812]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="BasementHallLampBulb" type="MeshInstance3D" parent="." unique_id=1263781904]
+[node name="BasementHallLampBulb" type="MeshInstance3D" parent="." unique_id=1607590189]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -0.59999996, 8)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_ju3uk")
 
-[node name="BasementHallLampCable" type="MeshInstance3D" parent="." unique_id=1954731910]
+[node name="BasementHallLampCable" type="MeshInstance3D" parent="." unique_id=1260112485]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -0.22999999, 8)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_11yqp")
 
-[node name="BasementStoreLampFixture" type="Node3D" parent="." unique_id=1982764682 instance=ExtResource("1_mbm86")]
+[node name="BasementStoreLampFixture" type="Node3D" parent="." unique_id=1783406233 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 1.9996024, -0.2775926, 3.0000148)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="BasementStoreLampFixture" unique_id=1197072179]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="BasementStoreLampFixture" unique_id=1266077764]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="BasementStoreLampBulb" type="MeshInstance3D" parent="." unique_id=900941124]
+[node name="BasementStoreLampBulb" type="MeshInstance3D" parent="." unique_id=701195852]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.59999996, 3)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_r7kdc")
 
-[node name="BasementStoreLampCable" type="MeshInstance3D" parent="." unique_id=636713737]
+[node name="BasementStoreLampCable" type="MeshInstance3D" parent="." unique_id=385359576]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.22999999, 3)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_uaqte")
 
-[node name="BasementEastLampFixture" type="Node3D" parent="." unique_id=1111362682 instance=ExtResource("1_mbm86")]
+[node name="BasementEastLampFixture" type="Node3D" parent="." unique_id=751271282 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 13.999602, -0.2775926, 14.000015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="BasementEastLampFixture" unique_id=164609612]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="BasementEastLampFixture" unique_id=1733903350]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="BasementEastLampBulb" type="MeshInstance3D" parent="." unique_id=1326897260]
+[node name="BasementEastLampBulb" type="MeshInstance3D" parent="." unique_id=483165915]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.59999996, 14)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_h25pw")
 
-[node name="BasementEastLampCable" type="MeshInstance3D" parent="." unique_id=599447658]
+[node name="BasementEastLampCable" type="MeshInstance3D" parent="." unique_id=1541068226]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.22999999, 14)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_05fns")
 
-[node name="StairSpillFixture" type="Node3D" parent="." unique_id=776638207 instance=ExtResource("1_mbm86")]
+[node name="StairSpillFixture" type="Node3D" parent="." unique_id=258192601 instance=ExtResource("1_mbm86")]
 transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 0.9996025, 2.8224075, 9.500015)
 
-[node name="caged_hanging_light" type="MeshInstance3D" parent="StairSpillFixture" unique_id=1696769878]
+[node name="caged_hanging_light" type="MeshInstance3D" parent="StairSpillFixture" unique_id=325929914]
 mesh = SubResource("ArrayMesh_55jmu")
 
-[node name="StairSpillBulb" type="MeshInstance3D" parent="." unique_id=705877383]
+[node name="StairSpillBulb" type="MeshInstance3D" parent="." unique_id=523966327]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.5, 9.5)
 material_override = SubResource("StandardMaterial3D_mbm86")
 mesh = SubResource("SphereMesh_mchjg")
 
-[node name="StairSpillCable" type="MeshInstance3D" parent="." unique_id=1051422918]
+[node name="StairSpillCable" type="MeshInstance3D" parent="." unique_id=1588796605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3.02, 9.5)
 material_override = SubResource("StandardMaterial3D_fqemg")
 mesh = SubResource("CylinderMesh_cxppy")
+
+[node name="UpperBathroomFixture" type="Node3D" parent="." unique_id=581041919 instance=ExtResource("1_mbm86")]
+transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 9.999602, 6.542407, 2.0000148)
+
+[node name="caged_hanging_light" type="MeshInstance3D" parent="UpperBathroomFixture" unique_id=492667654]
+mesh = SubResource("ArrayMesh_55jmu")
+
+[node name="UpperBathroomBulb" type="MeshInstance3D" parent="." unique_id=927120089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.22, 2)
+material_override = SubResource("StandardMaterial3D_mbm86")
+mesh = SubResource("SphereMesh_ke1nf")
+
+[node name="UpperBathroomCable" type="MeshInstance3D" parent="." unique_id=1012035789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.58, 2)
+material_override = SubResource("StandardMaterial3D_fqemg")
+mesh = SubResource("CylinderMesh_80k5f")
+
+[node name="SouthBedroomFixture" type="Node3D" parent="." unique_id=523276774 instance=ExtResource("1_mbm86")]
+transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 11.199602, 6.5224075, 14.300015)
+
+[node name="caged_hanging_light" type="MeshInstance3D" parent="SouthBedroomFixture" unique_id=1101327727]
+mesh = SubResource("ArrayMesh_55jmu")
+
+[node name="SouthBedroomBulb" type="MeshInstance3D" parent="." unique_id=158233224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2, 6.2, 14.3)
+material_override = SubResource("StandardMaterial3D_mbm86")
+mesh = SubResource("SphereMesh_43mft")
+
+[node name="SouthBedroomCable" type="MeshInstance3D" parent="." unique_id=717094478]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2, 6.57, 14.3)
+material_override = SubResource("StandardMaterial3D_fqemg")
+mesh = SubResource("CylinderMesh_lnm5e")
+
+[node name="UpperStoreFixture" type="Node3D" parent="." unique_id=1651577873 instance=ExtResource("1_mbm86")]
+transform = Transform3D(0.63991755, 0, 0, 0, 0.63991755, 0, 0, 0, 0.63991755, 1.9996024, 6.422407, 14.000015)
+
+[node name="caged_hanging_light" type="MeshInstance3D" parent="UpperStoreFixture" unique_id=1298465015]
+mesh = SubResource("ArrayMesh_55jmu")
+
+[node name="UpperStoreBulb" type="MeshInstance3D" parent="." unique_id=1302894686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.1, 14)
+material_override = SubResource("StandardMaterial3D_mbm86")
+mesh = SubResource("SphereMesh_57l8t")
+
+[node name="UpperStoreCable" type="MeshInstance3D" parent="." unique_id=221134179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.52, 14)
+material_override = SubResource("StandardMaterial3D_fqemg")
+mesh = SubResource("CylinderMesh_hb4q4")

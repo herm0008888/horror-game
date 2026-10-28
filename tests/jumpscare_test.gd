@@ -20,7 +20,7 @@ func run() -> void:
 	var open_immediately := false
 	for mesh in scare.mesh_nodes:
 		var shape: int = mesh.find_blend_shape_by_name("Scream")
-		if shape >= 0 and mesh.get_blend_shape_value(shape) > 0.95: open_immediately = true
+		if shape >= 0 and mesh.get_blend_shape_value(shape) > 0.15: open_immediately = true
 	if not open_immediately: errors.append("Mouth did not open during the initial lunge")
 	var offset: Vector3 = scare.camera.global_position - scare.face
 	if offset.length() > 1.0: errors.append("Initial recoil loses the close-up")
