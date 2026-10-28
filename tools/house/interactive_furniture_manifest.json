@@ -1,0 +1,122 @@
+[
+  {
+    "node": "WoodenCrate01",
+    "replacement": "res://scenes/horror/furniture/storage_000.tscn",
+    "scene": "res://scenes/horror/basement_rotten_storage.tscn"
+  },
+  {
+    "node": "WoodenCrate02",
+    "replacement": "res://scenes/horror/furniture/storage_001.tscn",
+    "scene": "res://scenes/horror/basement_rotten_storage.tscn"
+  },
+  {
+    "node": "MetalToolbox",
+    "replacement": "res://scenes/horror/furniture/storage_002.tscn",
+    "scene": "res://scenes/horror/basement_dead_boiler_room.tscn"
+  },
+  {
+    "node": "WoodenCrate02",
+    "replacement": "res://scenes/horror/furniture/storage_003.tscn",
+    "scene": "res://scenes/horror/basement_dead_boiler_room.tscn"
+  },
+  {
+    "node": "MetalToolChest",
+    "replacement": "res://scenes/horror/furniture/storage_004.tscn",
+    "scene": "res://scenes/horror/basement_ruined_workshop.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet",
+    "replacement": "res://scenes/horror/furniture/storage_005.tscn",
+    "scene": "res://scenes/horror/basement_south_store.tscn"
+  },
+  {
+    "node": "WoodenCrate01",
+    "replacement": "res://scenes/horror/furniture/storage_006.tscn",
+    "scene": "res://scenes/horror/basement_south_store.tscn"
+  },
+  {
+    "node": "MetalToolbox",
+    "replacement": "res://scenes/horror/furniture/storage_007.tscn",
+    "scene": "res://scenes/horror/basement_south_store.tscn"
+  },
+  {
+    "node": "WoodenCrate02",
+    "replacement": "res://scenes/horror/furniture/storage_008.tscn",
+    "scene": "res://scenes/horror/basement_south_store.tscn"
+  },
+  {
+    "node": "WoodenCrate02",
+    "replacement": "res://scenes/horror/furniture/storage_009.tscn",
+    "scene": "res://scenes/horror/basement_escape_store.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet",
+    "replacement": "res://scenes/horror/furniture/storage_010.tscn",
+    "scene": "res://scenes/horror/ground_living_room.tscn"
+  },
+  {
+    "node": "PaintedWoodenNightstand",
+    "replacement": "res://scenes/horror/furniture/storage_011.tscn",
+    "scene": "res://scenes/horror/ground_living_room.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet02",
+    "replacement": "res://scenes/horror/furniture/storage_012.tscn",
+    "scene": "res://scenes/horror/ground_kitchen_dining.tscn"
+  },
+  {
+    "node": "@Node3D@21",
+    "replacement": "res://scenes/horror/furniture/storage_013.tscn",
+    "scene": "res://scenes/horror/ground_kitchen_dining.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet",
+    "replacement": "res://scenes/horror/furniture/storage_014.tscn",
+    "scene": "res://scenes/horror/ground_kitchen_dining.tscn"
+  },
+  {
+    "node": "ElectricStove",
+    "replacement": "res://scenes/horror/furniture/storage_015.tscn",
+    "scene": "res://scenes/horror/ground_kitchen_dining.tscn"
+  },
+  {
+    "node": "@StaticBody3D@24",
+    "replacement": "res://scenes/horror/furniture/storage_016.tscn",
+    "scene": "res://scenes/horror/ground_kitchen_dining.tscn"
+  },
+  {
+    "node": "@StaticBody3D@29",
+    "replacement": "res://scenes/horror/furniture/storage_017.tscn",
+    "scene": "res://scenes/horror/ground_kitchen_dining.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet02",
+    "replacement": "res://scenes/horror/furniture/storage_018.tscn",
+    "scene": "res://scenes/horror/ground_study.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet",
+    "replacement": "res://scenes/horror/furniture/storage_019.tscn",
+    "scene": "res://scenes/horror/ground_study.tscn"
+  },
+  {
+    "node": "PaintedWoodenCabinet02",
+    "replacement": "res://scenes/horror/furniture/storage_020.tscn",
+    "scene": "res://scenes/horror/ground_utility_room.tscn"
+  },
+  {
+    "node": "WoodenCrate01",
+    "replacement": "res://scenes/horror/furniture/storage_021.tscn",
+    "scene": "res://scenes/horror/ground_front_store.tscn"
+  },
+  {
+    "node": "WoodenCrate02",
+    "replacement": "res://scenes/horror/furniture/storage_022.tscn",
+    "scene": "res://scenes/horror/ground_front_store.tscn"
+  },
+  {
+    "node": "MetalToolbox",
+    "replacement": "res://scenes/horror/furniture/storage_023.tscn",
+    "scene": "res://scenes/horror/ground_front_store.tscn"
+  }
+]

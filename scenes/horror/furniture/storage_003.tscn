@@ -1,0 +1,101 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/house_optimized/mesh_2fc28b2086c73011d4d51c5c.res" id="1_dq3gc"]
+[ext_resource type="Texture2D" path="res://assets/house_library/wooden_crate_02/textures/wooden_crate_02_diff_1k.jpg" id="2_cqr4n"]
+[ext_resource type="Texture2D" path="res://assets/house_library/wooden_crate_02/textures/wooden_crate_02_arm_1k.jpg" id="3_xnqnl"]
+[ext_resource type="Texture2D" path="res://assets/house_library/wooden_crate_02/textures/wooden_crate_02_nor_gl_1k.jpg" id="4_pj4xr"]
+[ext_resource type="Script" path="res://scripts/horror/storage_part.gd" id="5_jj1yy"]
+[ext_resource type="ArrayMesh" path="res://assets/house_optimized/mesh_e8d67a62d5b4bf37aff22f7f.res" id="6_5x6iq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1028h"]
+size = Vector3(0.035, 0.5758509, 1.5083277)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yjo5x"]
+size = Vector3(0.035, 0.5758509, 1.5083277)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7nxpy"]
+size = Vector3(0.68424934, 0.5758509, 0.035)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xoxyf"]
+size = Vector3(0.68424934, 0.035, 1.5083277)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gpw6v"]
+size = Vector3(0.68424934, 0.5758509, 0.035)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xooyi"]
+resource_name = "wooden_crate_02"
+cull_mode = 2
+albedo_color = Color(0.64, 0.61, 0.54, 1)
+albedo_texture = ExtResource("2_cqr4n")
+metallic = 1.0
+metallic_specular = 0.12
+metallic_texture = ExtResource("3_xnqnl")
+metallic_texture_channel = 2
+roughness = 0.94
+roughness_texture = ExtResource("3_xnqnl")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("4_pj4xr")
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_71ud8"]
+size = Vector3(0.6189755, 0.08698106, 1.3449504)
+
+[node name="WoodenCrate02" type="StaticBody3D" unique_id=1989851460]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2, -3.4, 5.3)
+metadata/source = "https://polyhaven.com/a/wooden_crate_02"
+metadata/interactive_storage = true
+
+[node name="LeftWall" type="CollisionShape3D" parent="." unique_id=938227876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.32462466, 0.28792533, -1.1920929e-07)
+shape = SubResource("BoxShape3D_1028h")
+
+[node name="RightWall" type="CollisionShape3D" parent="." unique_id=299599997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3246247, 0.28792533, -1.1920929e-07)
+shape = SubResource("BoxShape3D_yjo5x")
+
+[node name="BackWall" type="CollisionShape3D" parent="." unique_id=658687260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28792533, -0.736664)
+shape = SubResource("BoxShape3D_7nxpy")
+
+[node name="Bottom" type="CollisionShape3D" parent="." unique_id=630702807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.017499894, -1.1920929e-07)
+shape = SubResource("BoxShape3D_xoxyf")
+
+[node name="FrontWall" type="CollisionShape3D" parent="." unique_id=1100950554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28792533, 0.7366637)
+shape = SubResource("BoxShape3D_gpw6v")
+
+[node name="wooden_crate_02_crate" type="MeshInstance3D" parent="." unique_id=359919329]
+transform = Transform3D(1.2932302, 0, 0, 0, 1.2932302, 0, 0, 0, 1.2932302, 0, 0.012704134, 0.00022935867)
+mesh = ExtResource("1_dq3gc")
+surface_material_override/0 = SubResource("StandardMaterial3D_xooyi")
+
+[node name="Lid" type="AnimatableBody3D" parent="." unique_id=1057370262]
+script = ExtResource("5_jj1yy")
+open_rotation_degrees = Vector3(-100, 0, 0)
+
+[node name="wooden_crate_02_lid" type="MeshInstance3D" parent="Lid" unique_id=718148344]
+transform = Transform3D(1.2932302, 0, 0, 0, 1.2932302, 0, 0, 0, 1.2932302, 0.0002374649, 0.5565095, -4.7683716e-07)
+mesh = ExtResource("6_5x6iq")
+surface_material_override/0 = SubResource("StandardMaterial3D_xooyi")
+
+[node name="MovingCollision" type="CollisionShape3D" parent="Lid" unique_id=1037329844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0002374649, 0.5565095, -4.7683716e-07)
+shape = SubResource("BoxShape3D_71ud8")
+
+[node name="ItemSlots" type="Node3D" parent="Lid" unique_id=112918950]
+
+[node name="Item01" type="Marker3D" parent="Lid/ItemSlots" unique_id=1772267964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0002374649, 0.5565095, -4.7683716e-07)
+
+[node name="InteriorItemSlots" type="Node3D" parent="." unique_id=565793639]
+
+[node name="Item01" type="Marker3D" parent="InteriorItemSlots" unique_id=1077658094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16123813, -1.1920929e-07)
+
+[node name="Item02" type="Marker3D" parent="InteriorItemSlots" unique_id=532401110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28792533, -1.1920929e-07)
+
+[node name="Item03" type="Marker3D" parent="InteriorItemSlots" unique_id=789239833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41461253, -1.1920929e-07)

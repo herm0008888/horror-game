@@ -1,6 +1,8 @@
 extends CharacterBody3D
 var pitch: float = 0.0
 var crouched := false
+var caught:=false
+@onready var torch: SpotLight3D=$Camera/FlashlightRig/Beam
 var start := Vector3(6, 0.1, 14)
 @onready var capsule: CollisionShape3D = $Collision
 @onready var camera: Camera3D = $Camera
@@ -8,6 +10,11 @@ func _ready() -> void:
 	add_to_group("horror_player")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 func _unhandled_input(event: InputEvent) -> void:
+	if caught: return
+	if (event.is_action_pressed("drop_item") or (event is InputEventKey and event.pressed and event.physical_keycode==KEY_Q)) and not event.is_echo():
+		drop_held_item()
+		get_viewport().set_input_as_handled()
+		return
 	if (event.is_action_pressed("interact") or (event is InputEventKey and event.pressed and event.physical_keycode==KEY_E)) and not event.is_echo():
 		var ray := PhysicsRayQueryParameters3D.create(camera.global_position,camera.global_position-camera.global_basis.z*2.6,1,[get_rid()])
 		var hit := get_world_3d().direct_space_state.intersect_ray(ray)
@@ -36,6 +43,7 @@ func can_stand() -> bool:
 	query.exclude = [get_rid()]
 	return get_world_3d().direct_space_state.intersect_shape(query).is_empty()
 func _physics_process(delta: float) -> void:
+	if caught: return
 	crouched = Input.is_action_pressed("crouch") or (crouched and not can_stand())
 	var height: float = 0.95 if crouched else 1.7
 	capsule.shape.height = height
@@ -50,5 +58,35 @@ func _physics_process(delta: float) -> void:
 	if position.y < -9:
 		position = start
 
-func acquire_flashlight() -> void:
-	$Camera/FlashlightRig.acquire()
+func acquire_flashlight(enabled: bool=true) -> bool:
+	if $Camera/FlashlightRig.equipped: return false
+	$Camera/FlashlightRig.acquire(enabled)
+	return true
+func capture(enemy: Node3D) -> void:
+	if caught: return
+	caught=true
+	velocity=Vector3.ZERO
+	$Camera/FlashlightRig.set_switched_on(false)
+	$Camera/FlashlightRig/HeldModel.hide()
+	enemy.breath.stop()
+	$Jumpscare.begin(enemy)
+func drop_held_item() -> void:
+	var world:=get_parent()
+	if world.has_method("drop_carried_plank") and world.carrying_plank:
+		world.drop_carried_plank()
+		return
+	var torch: Node3D=$Camera/FlashlightRig
+	if not torch.equipped: return
+	var item: RigidBody3D=load("res://scenes/horror/flashlight_pickup.tscn").instantiate()
+	var desired:=camera.global_position-camera.global_basis.z*0.6-Vector3.UP*0.18
+	var query:=PhysicsRayQueryParameters3D.create(camera.global_position,desired,1,[get_rid()])
+	var hit:=get_world_3d().direct_space_state.intersect_ray(query)
+	if not hit.is_empty(): desired=hit.position+hit.normal*0.25
+	world.add_child(item)
+	item.global_transform=Transform3D(camera.global_basis,desired)
+	item.freeze=false
+	item.add_collision_exception_with(self)
+	item.linear_velocity=velocity-camera.global_basis.z*0.8
+	item.set_light_state(torch.release())
+	get_tree().create_timer(0.4).timeout.connect(func():
+		if is_instance_valid(item): item.remove_collision_exception_with(self))

@@ -1,0 +1,86 @@
+{
+  "provider": "Powered by Poly Haven",
+  "assets": [
+    {
+      "asset": "rock_moss_set_01",
+      "source": "https://polyhaven.com/a/rock_moss_set_01",
+      "license": "CC0",
+      "files": {
+        "rock_moss_set_01.gltf": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/rock_moss_set_01/rock_moss_set_01_1k.gltf",
+          "md5": "75113cc1c21806cca5d8badad4737af7"
+        },
+        "textures/rock_moss_set_01_nor_gl_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_01/rock_moss_set_01_nor_gl_1k.jpg",
+          "md5": "eb7ebd31ad08e78d0497900652ff1568"
+        },
+        "rock_moss_set_01.bin": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/rock_moss_set_01/rock_moss_set_01.bin",
+          "md5": "207a51c9f56d34732e9814bbf9cc07b1"
+        },
+        "textures/rock_moss_set_01_rough_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_01/rock_moss_set_01_rough_1k.jpg",
+          "md5": "ed9d8a2c863262f76f881346e8047c6a"
+        },
+        "textures/rock_moss_set_01_diff_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_01/rock_moss_set_01_diff_1k.jpg",
+          "md5": "b8742301e6b4bc5683d2de712e83f772"
+        }
+      }
+    },
+    {
+      "asset": "oil_tin",
+      "source": "https://polyhaven.com/a/oil_tin",
+      "license": "CC0",
+      "files": {
+        "oil_tin.gltf": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/oil_tin/oil_tin_1k.gltf",
+          "md5": "90dac4e0c1a9f26c6ff5da8e0336dfa6"
+        },
+        "textures/oil_tin_nor_gl_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/oil_tin/oil_tin_nor_gl_1k.jpg",
+          "md5": "62c09587ae0f325c41fc2c3dfc4285aa"
+        },
+        "textures/oil_tin_diff_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/oil_tin/oil_tin_diff_1k.jpg",
+          "md5": "0945b7a7285d258335d6a9cd65d6c08b"
+        },
+        "textures/oil_tin_arm_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/oil_tin/oil_tin_arm_1k.jpg",
+          "md5": "9bf8319573e325e03af8945b0b19d776"
+        },
+        "oil_tin.bin": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/oil_tin/oil_tin.bin",
+          "md5": "e6abbd8cfadd0df8292c1f7b8300baa6"
+        }
+      }
+    },
+    {
+      "asset": "small_oil_can_01",
+      "source": "https://polyhaven.com/a/small_oil_can_01",
+      "license": "CC0",
+      "files": {
+        "small_oil_can_01.gltf": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/small_oil_can_01/small_oil_can_01_1k.gltf",
+          "md5": "004db75c2aaedefd13a05e3254c1a58f"
+        },
+        "textures/small_oil_can_01_arm_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/small_oil_can_01/small_oil_can_01_arm_1k.jpg",
+          "md5": "19e4e0e2b84bdc6be64712dbb9c3fc72"
+        },
+        "textures/small_oil_can_01_diff_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/small_oil_can_01/small_oil_can_01_diff_1k.jpg",
+          "md5": "11ac046253155c6716cc60297ee815af"
+        },
+        "textures/small_oil_can_01_nor_gl_1k.jpg": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/small_oil_can_01/small_oil_can_01_nor_gl_1k.jpg",
+          "md5": "848ae9a838be9f32d885b228be86e8dd"
+        },
+        "small_oil_can_01.bin": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/small_oil_can_01/small_oil_can_01.bin",
+          "md5": "7d9e824c3714748eaeb8a8b67867fa12"
+        }
+      }
+    }
+  ]
+}

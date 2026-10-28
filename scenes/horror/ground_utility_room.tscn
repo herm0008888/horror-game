@@ -1,5 +1,6 @@
 [gd_scene format=3]
 
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_020.tscn" id="Storage_0"]
 [ext_resource type="PackedScene" path="res://assets/house_library/painted_wooden_table/painted_wooden_table.gltf" id="1_hvwst"]
 [ext_resource type="PackedScene" path="res://assets/house_library/wooden_bowl_01/wooden_bowl_01.gltf" id="5_7srva"]
 [ext_resource type="PackedScene" path="res://assets/house_library/multi_cleaner_bottle/multi_cleaner_bottle.gltf" id="9_tlxr3"]
@@ -104,19 +105,7 @@ metadata/support_y = 0.86096054
 [node name="Model" type="Node3D" parent="@Node3D@77" unique_id=1123348592 instance=ExtResource("9_tlxr3")]
 transform = Transform3D(0.91878414, 0, 0, 0, 0.91878414, 0, 0, 0, 0.91878414, -4.449559e-08, 3.1965038e-11, -9.563129e-06)
 
-[node name="PaintedWoodenCabinet02" type="StaticBody3D" parent="." unique_id=1446690657]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.65, 0, 6.48)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet_02"
-metadata/dimensions = Vector3(1.2, 2.35, 0.65)
-metadata/asset_id = "painted_wooden_cabinet_02"
-metadata/support_y = 0.0
-
-[node name="Model" type="Node3D" parent="PaintedWoodenCabinet02" unique_id=517696521 instance=ExtResource("13_nukbi")]
-transform = Transform3D(1.2036912, 0, 0, 0, 0.9149051, 0, 0, 0, 0.8911071, 3.5872795e-08, 0.00093470386, -0.037899315)
-
-[node name="@CollisionShape3D@78" type="CollisionShape3D" parent="PaintedWoodenCabinet02" unique_id=1951285960]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.175, 0)
-shape = SubResource("BoxShape3D_re4mc")
+[node name="PaintedWoodenCabinet02" parent="." instance=ExtResource("Storage_0") ]
 
 [node name="@Node3D@79" type="Node3D" parent="." unique_id=1645131199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.469999, 1.0688056, 6.28)

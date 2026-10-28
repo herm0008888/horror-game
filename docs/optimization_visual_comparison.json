@@ -1,0 +1,74 @@
+[
+  {
+    "view": "compact_cell_false_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_cell_true_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_doorway_false_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_doorway_true_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_kitchen_false_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_kitchen_true_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_living_false_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_living_true_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_stairs_false_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_stairs_true_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_workshop_false_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "view": "compact_workshop_true_true.png",
+    "mean_difference": 0.0,
+    "max_difference": 0.0,
+    "changed_pixels": 0
+  }
+]

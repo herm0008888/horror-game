@@ -1,0 +1,22 @@
+[
+  {
+    "node": "StudyCupboard",
+    "replacement": "res://scenes/horror/furniture/study_cupboard.tscn",
+    "scene": "res://scenes/horror/house_layout.tscn"
+  },
+  {
+    "node": "DiningCupboard",
+    "replacement": "res://scenes/horror/furniture/dining_cupboard.tscn",
+    "scene": "res://scenes/horror/house_layout.tscn"
+  },
+  {
+    "node": "BedroomWardrobe",
+    "replacement": "res://scenes/horror/furniture/bedroom_wardrobe.tscn",
+    "scene": "res://scenes/horror/house_layout.tscn"
+  },
+  {
+    "node": "KitchenCupboard",
+    "replacement": "res://scenes/horror/furniture/kitchen_cupboard.tscn",
+    "scene": "res://scenes/horror/house_layout.tscn"
+  }
+]

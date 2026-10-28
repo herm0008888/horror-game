@@ -1,0 +1,136 @@
+[gd_scene format=3]
+
+[ext_resource type="Material" path="res://assets/house_materials/wall_wood.tres" id="AgedWood"]
+[ext_resource type="Script" path="res://scripts/horror/storage_part.gd" id="1_r5blq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0sbu"]
+albedo_color = Color(0.46666667, 0.44313726, 0.5568628, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a32cr"]
+size = Vector3(0.05, 2.4, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v8cd3"]
+size = Vector3(0.05, 2.4, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yqrcq"]
+size = Vector3(0.05, 2.4, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cs1fo"]
+size = Vector3(0.05, 2.4, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wpm3k"]
+size = Vector3(1.3, 2.4, 0.05)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3wuuh"]
+size = Vector3(1.3, 2.4, 0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_12emg"]
+size = Vector3(1.3, 0.05, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g45kw"]
+size = Vector3(1.3, 0.05, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5j112"]
+size = Vector3(1.3, 0.05, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3twcq"]
+size = Vector3(1.3, 0.05, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x0j01"]
+size = Vector3(0.625, 2.3400002, 0.04)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ked4t"]
+size = Vector3(0.625, 2.3400002, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_utuha"]
+size = Vector3(0.625, 2.3400002, 0.04)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ynien"]
+size = Vector3(0.625, 2.3400002, 0.04)
+
+[node name="StudyCupboard" type="StaticBody3D" unique_id=1471821756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15, 1.2, 1.55)
+
+[node name="Left" type="MeshInstance3D" parent="." unique_id=1125764100]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625, 0, 0)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_a32cr")
+
+[node name="@CollisionShape3D@3" type="CollisionShape3D" parent="." unique_id=1161703124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625, 0, 0)
+shape = SubResource("BoxShape3D_v8cd3")
+
+[node name="Right" type="MeshInstance3D" parent="." unique_id=1406702285]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625, 0, 0)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_yqrcq")
+
+[node name="@CollisionShape3D@4" type="CollisionShape3D" parent="." unique_id=1338005167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625, 0, 0)
+shape = SubResource("BoxShape3D_cs1fo")
+
+[node name="Back" type="MeshInstance3D" parent="." unique_id=24069821]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.225)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_wpm3k")
+
+[node name="@CollisionShape3D@5" type="CollisionShape3D" parent="." unique_id=428640267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.225)
+shape = SubResource("BoxShape3D_3wuuh")
+
+[node name="Top" type="MeshInstance3D" parent="." unique_id=312172780]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1750001, 0)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_12emg")
+
+[node name="@CollisionShape3D@6" type="CollisionShape3D" parent="." unique_id=1979064917]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1750001, 0)
+shape = SubResource("BoxShape3D_g45kw")
+
+[node name="Bottom" type="MeshInstance3D" parent="." unique_id=1772944079]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1750001, 0)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_5j112")
+
+[node name="@CollisionShape3D@7" type="CollisionShape3D" parent="." unique_id=1470441654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1750001, 0)
+shape = SubResource("BoxShape3D_3twcq")
+
+[node name="LeftDoor" type="AnimatableBody3D" parent="." unique_id=1952489606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625, 0, 0.25)
+script = ExtResource("1_r5blq")
+open_rotation_degrees = Vector3(0, -105, 0)
+
+[node name="Panel" type="MeshInstance3D" parent="LeftDoor" unique_id=1966657334]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.325, 0, 0)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_x0j01")
+
+[node name="@CollisionShape3D@8" type="CollisionShape3D" parent="LeftDoor" unique_id=1113220419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.325, 0, 0)
+shape = SubResource("BoxShape3D_ked4t")
+
+[node name="ItemSlot" type="Marker3D" parent="." unique_id=799337552]
+
+[node name="RightDoor" type="AnimatableBody3D" parent="." unique_id=1311849258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625, 0, 0.25)
+script = ExtResource("1_r5blq")
+open_rotation_degrees = Vector3(0, 105, 0)
+
+[node name="Panel" type="MeshInstance3D" parent="RightDoor" unique_id=1135450250]
+material_override = ExtResource("AgedWood")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.325, 0, 0)
+material_override = SubResource("StandardMaterial3D_o0sbu")
+mesh = SubResource("BoxMesh_utuha")
+
+[node name="@CollisionShape3D@9" type="CollisionShape3D" parent="RightDoor" unique_id=1706038890]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.325, 0, 0)
+shape = SubResource("BoxShape3D_ynien")
+
+[node name="@Marker3D@10" type="Marker3D" parent="." unique_id=1998571175]

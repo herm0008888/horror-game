@@ -1,0 +1,218 @@
+[
+  {
+    "culling": false,
+    "draw_calls": 569.0,
+    "median_ms": 10.159,
+    "normal": false,
+    "p95_ms": 18.353,
+    "primitives": 171909.0,
+    "view": "cell"
+  },
+  {
+    "culling": true,
+    "draw_calls": 118.0,
+    "median_ms": 9.739,
+    "normal": false,
+    "p95_ms": 13.917,
+    "primitives": 95880.0,
+    "view": "cell"
+  },
+  {
+    "culling": false,
+    "draw_calls": 236.0,
+    "median_ms": 5.897,
+    "normal": false,
+    "p95_ms": 19.565,
+    "primitives": 62774.0,
+    "view": "workshop"
+  },
+  {
+    "culling": true,
+    "draw_calls": 138.0,
+    "median_ms": 7.218,
+    "normal": false,
+    "p95_ms": 22.845,
+    "primitives": 50472.0,
+    "view": "workshop"
+  },
+  {
+    "culling": false,
+    "draw_calls": 1154.0,
+    "median_ms": 14.363,
+    "normal": false,
+    "p95_ms": 25.275,
+    "primitives": 137069.0,
+    "view": "living"
+  },
+  {
+    "culling": true,
+    "draw_calls": 545.0,
+    "median_ms": 9.128,
+    "normal": false,
+    "p95_ms": 21.893,
+    "primitives": 89444.0,
+    "view": "living"
+  },
+  {
+    "culling": false,
+    "draw_calls": 857.0,
+    "median_ms": 12.749,
+    "normal": false,
+    "p95_ms": 25.354,
+    "primitives": 149266.0,
+    "view": "kitchen"
+  },
+  {
+    "culling": true,
+    "draw_calls": 617.0,
+    "median_ms": 16.939,
+    "normal": false,
+    "p95_ms": 30.963,
+    "primitives": 98999.0,
+    "view": "kitchen"
+  },
+  {
+    "culling": false,
+    "draw_calls": 1026.0,
+    "median_ms": 16.122,
+    "normal": false,
+    "p95_ms": 29.737,
+    "primitives": 162219.0,
+    "view": "doorway"
+  },
+  {
+    "culling": true,
+    "draw_calls": 546.0,
+    "median_ms": 14.172,
+    "normal": false,
+    "p95_ms": 28.186,
+    "primitives": 107133.0,
+    "view": "doorway"
+  },
+  {
+    "culling": false,
+    "draw_calls": 1408.0,
+    "median_ms": 18.262,
+    "normal": false,
+    "p95_ms": 28.793,
+    "primitives": 186450.0,
+    "view": "stairs"
+  },
+  {
+    "culling": true,
+    "draw_calls": 389.0,
+    "median_ms": 14.628,
+    "normal": false,
+    "p95_ms": 28.248,
+    "primitives": 58387.0,
+    "view": "stairs"
+  },
+  {
+    "culling": false,
+    "draw_calls": 541.0,
+    "median_ms": 12.107,
+    "normal": true,
+    "p95_ms": 24.323,
+    "primitives": 171909.0,
+    "view": "cell"
+  },
+  {
+    "culling": true,
+    "draw_calls": 99.0,
+    "median_ms": 13.473,
+    "normal": true,
+    "p95_ms": 28.266,
+    "primitives": 95880.0,
+    "view": "cell"
+  },
+  {
+    "culling": false,
+    "draw_calls": 236.0,
+    "median_ms": 8.367,
+    "normal": true,
+    "p95_ms": 17.572,
+    "primitives": 62774.0,
+    "view": "workshop"
+  },
+  {
+    "culling": true,
+    "draw_calls": 138.0,
+    "median_ms": 11.85,
+    "normal": true,
+    "p95_ms": 28.82,
+    "primitives": 50472.0,
+    "view": "workshop"
+  },
+  {
+    "culling": false,
+    "draw_calls": 834.0,
+    "median_ms": 12.326,
+    "normal": true,
+    "p95_ms": 24.222,
+    "primitives": 137069.0,
+    "view": "living"
+  },
+  {
+    "culling": true,
+    "draw_calls": 386.0,
+    "median_ms": 9.922,
+    "normal": true,
+    "p95_ms": 22.483,
+    "primitives": 89444.0,
+    "view": "living"
+  },
+  {
+    "culling": false,
+    "draw_calls": 666.0,
+    "median_ms": 11.153,
+    "normal": true,
+    "p95_ms": 22.705,
+    "primitives": 149266.0,
+    "view": "kitchen"
+  },
+  {
+    "culling": true,
+    "draw_calls": 443.0,
+    "median_ms": 10.531,
+    "normal": true,
+    "p95_ms": 24.654,
+    "primitives": 98999.0,
+    "view": "kitchen"
+  },
+  {
+    "culling": false,
+    "draw_calls": 913.0,
+    "median_ms": 12.443,
+    "normal": true,
+    "p95_ms": 25.152,
+    "primitives": 162219.0,
+    "view": "doorway"
+  },
+  {
+    "culling": true,
+    "draw_calls": 454.0,
+    "median_ms": 10.848,
+    "normal": true,
+    "p95_ms": 23.819,
+    "primitives": 107133.0,
+    "view": "doorway"
+  },
+  {
+    "culling": false,
+    "draw_calls": 861.0,
+    "median_ms": 12.274,
+    "normal": true,
+    "p95_ms": 24.456,
+    "primitives": 186450.0,
+    "view": "stairs"
+  },
+  {
+    "culling": true,
+    "draw_calls": 236.0,
+    "median_ms": 9.003,
+    "normal": true,
+    "p95_ms": 22.233,
+    "primitives": 58387.0,
+    "view": "stairs"
+  }
+]

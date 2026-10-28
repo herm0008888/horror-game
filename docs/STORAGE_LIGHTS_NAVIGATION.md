@@ -1,0 +1,11 @@
+# Storage, lights and house navigation
+
+E opens/closes the specific drawer, door or lid under the small central crosshair. 28 furniture objects have 52 separate moving parts. Meshes, hinges, pull distances, collisions and empty ItemSlots are saved in scenes/horror/furniture/. Drawer collision shapes are hollow so later items can sit inside. Scanned cabinet geometry is preserved; former blockout cupboards now have hollow wooden panels and hinged doors.
+
+Q drops the carried plank first, otherwise the equipped flashlight. A flashlight falls as a RigidBody3D and can be picked up with E again; its on/off state transfers with it. F toggles the held torch. New pickup items can use this same held-item handoff pattern.
+
+CeilingFixtures contains the existing caged lamp models, cables and emissive bulbs at the authored HorrorLights positions. The downward spot lights emit actual light with a broader cone and higher energy. L still toggles work lighting.
+
+The user's local Visitation scene, materials and spawn position are retained. The main house overrides its AI with house_enemy.gd, based on a stable house_enemy_base.gd. The user's separately edited enemy.gd remains available in the original test scenes. HouseNavigation is a baked NavigationRegion3D with 752 polygons. Bake includes actual collision geometry, convex staircase ramps and furniture. No runtime rebaking. Runtime path refresh is 0.35 seconds and the capsule is sized for doorway clearance. Doors/drawers remain physical and can be opened by her if in the way. An upward step check handles small stair joins; movement uses normal CharacterBody3D collisions and gravity.
+
+Validation: 52 parts open/close; flashlight drop/re-pickup; connected ground-floor routes and both stairs. The enemy physically traversed basement up/down and upper stairs up/down, plus living-room and kitchen furniture routes, with zero failures. These tests cover representative routes, not a guarantee that every possible future furniture arrangement is passable. Rebuild navigation with rebake_house_navigation.gd after moving static furniture or structural geometry. Furniture authoring manifests are one-time conversion records; keep a backup before rerunning them.

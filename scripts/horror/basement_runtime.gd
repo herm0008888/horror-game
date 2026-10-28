@@ -29,6 +29,17 @@ func _unhandled_input(event: InputEvent) -> void:
 			plank_collision.set_deferred("disabled",true)
 func ladder_near() -> bool:
 	return player.global_position.distance_to(LOWER)<1.7 or player.global_position.distance_to(UPPER)<1.6
+func drop_carried_plank() -> void:
+	if not carrying_plank: return
+	var desired:=player.global_position-player.global_basis.z*0.8
+	var ray:=PhysicsRayQueryParameters3D.create(desired+Vector3.UP,desired-Vector3.UP*2.0,1,[player.get_rid()])
+	var hit:=get_world_3d().direct_space_state.intersect_ray(ray)
+	if not hit.is_empty(): desired.y=hit.position.y+0.05
+	else: desired=player.global_position+Vector3.UP*0.05
+	carrying_plank=false
+	plank.global_position=desired
+	plank.visible=true
+	plank_collision.set_deferred("disabled",false)
 func near_trap() -> bool:
 	return absf(player.position.x-6)<1.2 and absf(player.position.z-14)<1.9 and player.position.y>-0.5 and player.position.y<1.0
 func place_plank() -> void:

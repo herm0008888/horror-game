@@ -8,10 +8,16 @@ var switched_on := false
 func _ready() -> void:
 	if starts_equipped: acquire()
 	else: set_switched_on(false)
-func acquire() -> void:
+func acquire(enabled: bool=true) -> void:
 	equipped=true
 	held_model.visible=true
-	set_switched_on(true)
+	set_switched_on(enabled)
+func release() -> bool:
+	var was_on:=switched_on
+	equipped=false
+	held_model.visible=false
+	set_switched_on(false)
+	return was_on
 func set_switched_on(enabled: bool) -> void:
 	switched_on=enabled and equipped
 	beam.visible=switched_on

@@ -1,5 +1,8 @@
 [gd_scene format=3]
 
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_021.tscn" id="Storage_0"]
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_022.tscn" id="Storage_1"]
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_023.tscn" id="Storage_2"]
 [ext_resource type="PackedScene" path="res://assets/house_library/wooden_bookshelf_worn/wooden_bookshelf_worn.gltf" id="1_m2b5a"]
 [ext_resource type="PackedScene" path="res://assets/house_library/cardboard_box_01/cardboard_box_01.gltf" id="5_vokjy"]
 [ext_resource type="PackedScene" path="res://assets/house_library/wooden_crate_01/wooden_crate_01.gltf" id="9_4ocvv"]
@@ -118,29 +121,9 @@ metadata/support_y = 1.5706104
 [node name="Model" type="Node3D" parent="@Node3D@100" unique_id=405026648 instance=ExtResource("5_vokjy")]
 transform = Transform3D(0.6436521, 0, 0, 0, 0.6436521, 0, 0, 0, 0.6436521, -0.00064760493, 0.0043484704, -0.021144947)
 
-[node name="WoodenCrate01" type="StaticBody3D" parent="." unique_id=1035929348]
-transform = Transform3D(0.9961947, 0, -0.08715574, 0, 1, 0, 0.08715574, 0, 0.9961947, 3.9, 0, 15.25)
-metadata/source = "https://polyhaven.com/a/wooden_crate_01"
-metadata/dimensions = Vector3(1.534323, 0.65, 0.7603147)
-metadata/asset_id = "wooden_crate_01"
-metadata/support_y = 0.0
+[node name="WoodenCrate01" parent="." instance=ExtResource("Storage_0") ]
 
-[node name="Model" type="Node3D" parent="WoodenCrate01" unique_id=935771025 instance=ExtResource("9_4ocvv")]
-transform = Transform3D(1.8591704, 0, 0, 0, 1.8591704, 0, 0, 0, 1.8591704, 0, 0.014749441, -0.015500358)
-
-[node name="@CollisionShape3D@101" type="CollisionShape3D" parent="WoodenCrate01" unique_id=1125769602]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
-shape = SubResource("BoxShape3D_kwl0g")
-
-[node name="WoodenCrate02" type="Node3D" parent="." unique_id=251920231]
-transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 3.9, 0.6274162, 15.25)
-metadata/source = "https://polyhaven.com/a/wooden_crate_02"
-metadata/dimensions = Vector3(0.46757036, 0.41000003, 1.0306907)
-metadata/asset_id = "wooden_crate_02"
-metadata/support_y = 0.6274162
-
-[node name="Model" type="Node3D" parent="WoodenCrate02" unique_id=1484661080 instance=ExtResource("13_iem7a")]
-transform = Transform3D(0.8837073, 0, 0, 0, 0.8837073, 0, 0, 0, 0.8837073, 0, 0.008681231, 0.0001568077)
+[node name="WoodenCrate02" parent="." instance=ExtResource("Storage_1") ]
 
 [node name="VintageSuitcase" type="StaticBody3D" parent="." unique_id=2055233833]
 transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, 1.65, 0, 15.55)
@@ -170,19 +153,7 @@ transform = Transform3D(0.9558171, 0, 0, 0, 0.9558171, 0, 0, 0, 0.9558171, -0.00
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0)
 shape = SubResource("BoxShape3D_iph53")
 
-[node name="MetalToolbox" type="StaticBody3D" parent="." unique_id=818926374]
-transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 4.4, 0, 14.37)
-metadata/source = "https://polyhaven.com/a/metal_toolbox"
-metadata/dimensions = Vector3(0.33420026, 0.29000002, 0.24423482)
-metadata/asset_id = "metal_toolbox"
-metadata/support_y = 0.0
-
-[node name="Model" type="Node3D" parent="MetalToolbox" unique_id=202097973 instance=ExtResource("28_2bnd2")]
-transform = Transform3D(0.83548, 0, 0, 0, 0.83548, 0, 0, 0, 0.83548, 4.0710265e-06, 0, 0.027036458)
-
-[node name="@CollisionShape3D@104" type="CollisionShape3D" parent="MetalToolbox" unique_id=1666045466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14500001, 0)
-shape = SubResource("BoxShape3D_4ocvv")
+[node name="MetalToolbox" parent="." instance=ExtResource("Storage_2") ]
 
 [node name="@StaticBody3D@105" type="StaticBody3D" parent="." unique_id=1129062258]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 0, 15.4)

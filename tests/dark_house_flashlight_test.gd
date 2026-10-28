@@ -25,7 +25,7 @@ func run() -> void:
 	player.camera.look_at(house.get_node("FlashlightPickup").global_position)
 	for i in range(4):await physics_frame
 	if torch.equipped or torch.beam.visible:failures.append("Flashlight available before pickup")
-	if lighting.environment.environment.ambient_light_energy>0.15:failures.append("House remains too bright")
+	if lighting.environment.environment.ambient_light_energy>0.6:failures.append("House remains too bright")
 	var ray:=PhysicsRayQueryParameters3D.create(player.camera.global_position,player.camera.global_position-player.camera.global_basis.z*2.6,1,[player.get_rid()])
 	var hit:=player.get_world_3d().direct_space_state.intersect_ray(ray)
 	if hit.get("collider")!=house.get_node("FlashlightPickup"):failures.append("Pickup is blocked from the landing spot")

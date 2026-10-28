@@ -1,26 +1,39 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://dc51lhn1u4wtt"]
 
-[ext_resource type="Script" path="res://scripts/horror/basement_runtime.gd" id="1_1j16k"]
+[ext_resource type="PackedScene" path="res://scenes/horror/interaction_crosshair.tscn" id="Crosshair"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/study_cupboard.tscn" id="SimpleStorage0"]
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/dining_cupboard.tscn" id="SimpleStorage1"]
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/bedroom_wardrobe.tscn" id="SimpleStorage2"]
+[ext_resource type="PackedScene" path="res://scenes/horror/furniture/kitchen_cupboard.tscn" id="SimpleStorage3"]
+[ext_resource type="Script" uid="uid://uo8voqprvxcy" path="res://scripts/horror/basement_runtime.gd" id="1_1j16k"]
 [ext_resource type="Material" path="res://assets/house_materials/floor_wood.tres" id="2_1yyi6"]
-[ext_resource type="Script" path="res://scripts/horror/layout_player.gd" id="2_ffo64"]
+[ext_resource type="Script" uid="uid://5n10qpxb4ims" path="res://scripts/horror/layout_player.gd" id="2_ffo64"]
 [ext_resource type="Material" path="res://assets/house_materials/wall_wood.tres" id="3_2oida"]
 [ext_resource type="Material" path="res://assets/house_materials/basement_floor.tres" id="4_232vc"]
-[ext_resource type="Texture2D" path="res://assets/house_library/dirty_concrete/Diffuse.jpg" id="4_vseff"]
+[ext_resource type="Texture2D" uid="uid://f06olgmj8abv" path="res://assets/house_library/dirty_concrete/Diffuse.jpg" id="4_vseff"]
 [ext_resource type="Material" path="res://assets/house_materials/basement_wall.tres" id="5_mo72v"]
 [ext_resource type="Environment" path="res://assets/house_materials/horror_lighting.tres" id="6_378n2"]
 [ext_resource type="Material" path="res://assets/house_materials/rusted_iron.tres" id="6_g2ylm"]
 [ext_resource type="PackedScene" path="res://scenes/horror/house_lighting.tscn" id="7_232vc"]
-[ext_resource type="Script" path="res://scripts/horror/house_lighting.gd" id="8_mo72v"]
-[ext_resource type="Environment" path="res://assets/house_materials/normal_lighting.tres" id="10_jyoby"]
-[ext_resource type="Script" path="res://scripts/horror/house_flashlight.gd" id="10_kbk2q"]
-[ext_resource type="Script" path="res://scripts/horror/horror_ui.gd" id="15_jwb2a"]
-[ext_resource type="Script" path="res://scripts/horror/flashlight_pickup.gd" id="17_o7tk0"]
 [ext_resource type="PackedScene" path="res://scenes/horror/basement_decay.tscn" id="18_12vhc"]
+[ext_resource type="PackedScene" path="res://scenes/horror/visitation.tscn" id="19_jwb2a"]
 [ext_resource type="PackedScene" path="res://scenes/horror/basement_dressing.tscn" id="19_kbk2q"]
 [ext_resource type="PackedScene" path="res://scenes/horror/ground_floor_dressing.tscn" id="20_jwb2a"]
+[ext_resource type="PackedScene" path="res://scenes/horror/stone_workshop_decor.tscn" id="22_12vhc"]
+[ext_resource type="PackedScene" path="res://scenes/horror/house_occlusion.tscn" id="23_vseff"]
 [ext_resource type="PackedScene" path="res://scenes/horror/flashlight_pickup.tscn" id="FlashlightPickup"]
 [ext_resource type="PackedScene" path="res://scenes/horror/house_flashlight.tscn" id="FlashlightRig"]
 [ext_resource type="PackedScene" path="res://scenes/horror/horror_ui.tscn" id="HorrorUI"]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/house_navigation.tscn" id="NavRegion"]
+[ext_resource type="PackedScene" path="res://scenes/horror/ceiling_fixtures.tscn" id="Fixtures"]
+[ext_resource type="Script" path="res://scripts/horror/house_enemy.gd" id="HouseEnemy"]
+[ext_resource type="Script" path="res://scripts/horror/jumpscare.gd" id="HouseScare"]
+[ext_resource type="AudioStream" path="res://assets/horror/caught.wav" id="CaughtSound"]
+[sub_resource type="CapsuleShape3D" id="HouseEnemyCapsule"]
+radius = 0.24
+height = 1.76
 
 [sub_resource type="BoxMesh" id="BoxMesh_rvwrs"]
 size = Vector3(4, 0.2, 2)
@@ -9713,37 +9726,11 @@ metadata/house_surface = "floor_wood"
 [node name="Collision" type="CollisionShape3D" parent="SecretPassageRoof" unique_id=958437601]
 shape = SubResource("BoxShape3D_ppeg4")
 
-[node name="StudyCupboard" type="StaticBody3D" parent="." unique_id=1844117569]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15, 1.2, 1.55)
+[node name="StudyCupboard" parent="." instance=ExtResource("SimpleStorage0") ]
 
-[node name="Mesh" type="MeshInstance3D" parent="StudyCupboard" unique_id=896012176]
-visible = false
-material_override = SubResource("StandardMaterial3D_o0sbu")
-mesh = SubResource("BoxMesh_77d2s")
+[node name="DiningCupboard" parent="." instance=ExtResource("SimpleStorage1") ]
 
-[node name="Collision" type="CollisionShape3D" parent="StudyCupboard" unique_id=1304262947]
-shape = SubResource("BoxShape3D_nb1aa")
-
-[node name="DiningCupboard" type="StaticBody3D" parent="." unique_id=1100779052]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.85, 1.2, 1.55)
-
-[node name="Mesh" type="MeshInstance3D" parent="DiningCupboard" unique_id=142246849]
-visible = false
-material_override = SubResource("StandardMaterial3D_o0sbu")
-mesh = SubResource("BoxMesh_tnfqd")
-
-[node name="Collision" type="CollisionShape3D" parent="DiningCupboard" unique_id=793428691]
-shape = SubResource("BoxShape3D_y7vt3")
-
-[node name="BedroomWardrobe" type="StaticBody3D" parent="." unique_id=1095585958]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 4.6, 11.1)
-
-[node name="Mesh" type="MeshInstance3D" parent="BedroomWardrobe" unique_id=1645132276]
-material_override = SubResource("StandardMaterial3D_o0sbu")
-mesh = SubResource("BoxMesh_l3d0u")
-
-[node name="Collision" type="CollisionShape3D" parent="BedroomWardrobe" unique_id=1476752879]
-shape = SubResource("BoxShape3D_7uqqo")
+[node name="BedroomWardrobe" parent="." instance=ExtResource("SimpleStorage2") ]
 
 [node name="BrokenPlaster" type="StaticBody3D" parent="." unique_id=1644229523]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.45, 3.55, 12.08)
@@ -11619,16 +11606,7 @@ metadata/house_surface = "floor_wood"
 [node name="Collision" type="CollisionShape3D" parent="LadderCover" unique_id=936570686]
 shape = SubResource("BoxShape3D_jss8v")
 
-[node name="KitchenCupboard" type="StaticBody3D" parent="." unique_id=113203821]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3, 1.2, 3.6)
-
-[node name="Mesh" type="MeshInstance3D" parent="KitchenCupboard" unique_id=657415138]
-visible = false
-material_override = SubResource("StandardMaterial3D_o0sbu")
-mesh = SubResource("BoxMesh_bkjfy")
-
-[node name="Collision" type="CollisionShape3D" parent="KitchenCupboard" unique_id=646853782]
-shape = SubResource("BoxShape3D_0w0fw")
+[node name="KitchenCupboard" parent="." instance=ExtResource("SimpleStorage3") ]
 
 [node name="EntranceHatch" type="Node3D" parent="." unique_id=1431596372]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 13.2)
@@ -11959,8 +11937,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 current = true
 fov = 80.0
 
-[node name="FlashlightRig" type="Node3D" parent="Player/Camera" unique_id=786054577 instance=ExtResource("FlashlightRig")]
-script = ExtResource("10_kbk2q")
+[node name="FlashlightRig" parent="Player/Camera" unique_id=786054577 instance=ExtResource("FlashlightRig")]
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1077403877]
 
@@ -11980,23 +11957,83 @@ offset_right = 12.0
 offset_bottom = 52.0
 theme_override_font_sizes/font_size = 13
 
-[node name="Lighting" type="Node3D" parent="." unique_id=1627942066 instance=ExtResource("7_232vc")]
-script = ExtResource("8_mo72v")
-environment_node = NodePath("../Environment")
-horror_environment = ExtResource("6_378n2")
-normal_environment = ExtResource("10_jyoby")
+[node name="Lighting" parent="." unique_id=1627942066 instance=ExtResource("7_232vc")]
 
-[node name="HorrorUI" type="CanvasLayer" parent="." unique_id=1707662443 instance=ExtResource("HorrorUI")]
-layer = 8
-script = ExtResource("15_jwb2a")
+[node name="HorrorUI" parent="." unique_id=1707662443 instance=ExtResource("HorrorUI")]
 
-[node name="FlashlightPickup" type="StaticBody3D" parent="." unique_id=1666868788 instance=ExtResource("FlashlightPickup")]
+[node name="FlashlightPickup" parent="." unique_id=1666868788 instance=ExtResource("FlashlightPickup")]
 transform = Transform3D(0.7960838, 0, 0.6051864, 0, 1, 0, -0.6051864, 0, 0.7960838, 6.65, -3.3, 14.65)
-collision_mask = 0
-script = ExtResource("17_o7tk0")
 
-[node name="BasementDecay" type="Node3D" parent="." unique_id=491705221 instance=ExtResource("18_12vhc")]
+[node name="BasementDecay" parent="." unique_id=491705221 instance=ExtResource("18_12vhc")]
 
-[node name="BasementDressing" type="Node3D" parent="." unique_id=1521041405 instance=ExtResource("19_kbk2q")]
+[node name="BasementDressing" parent="." unique_id=1521041405 instance=ExtResource("19_kbk2q")]
 
-[node name="GroundFloorDressing" type="Node3D" parent="." unique_id=386039719 instance=ExtResource("20_jwb2a")]
+[node name="GroundFloorDressing" parent="." unique_id=386039719 instance=ExtResource("20_jwb2a")]
+
+[node name="HouseOcclusion" parent="." unique_id=1820525366 instance=ExtResource("23_vseff")]
+
+[node name="StoneAndWorkshopDecor" parent="." unique_id=163339507 instance=ExtResource("22_12vhc")]
+
+[node name="Visitation" parent="." unique_id=1507111137 node_paths=PackedStringArray("player") instance=ExtResource("19_jwb2a")]
+script = ExtResource("HouseEnemy")
+floor_snap_length = 0.45
+floor_max_angle = 0.84
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.424967, 0, 9.648829)
+player = NodePath("../Player")
+
+[node name="PatrolRoutes" type="Node3D" parent="." unique_id=1839658646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.424967, 0, 9.648829)
+
+[node name="Waypoint0" type="Marker3D" parent="PatrolRoutes" unique_id=1934229645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3788214, 0.16279554, 1.260313)
+metadata/links = PackedInt32Array(7, 1)
+
+[node name="Waypoint1" type="Marker3D" parent="PatrolRoutes" unique_id=1095585914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2470155, 0.16279554, 1.260313)
+metadata/links = PackedInt32Array(7, 1)
+
+[node name="Waypoint2" type="Marker3D" parent="PatrolRoutes" unique_id=1438710013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2470155, -1.6160213, -3.1077347)
+metadata/links = PackedInt32Array(7, 1)
+
+[node name="Waypoint3" type="Marker3D" parent="PatrolRoutes" unique_id=1077523838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4991674, -1.6160213, -3.1077347)
+metadata/links = PackedInt32Array(7, 1)
+
+[node name="Waypoint4" type="Marker3D" parent="PatrolRoutes" unique_id=1882089190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4991674, -3.2518497, 1.6109552)
+metadata/links = PackedInt32Array(7, 1)
+
+[node name="Waypoint5" type="Marker3D" parent="PatrolRoutes" unique_id=75192603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98747396, -3.2518497, 1.2468147)
+metadata/links = PackedInt32Array(7, 1)
+
+[node name="InteractionCrosshair" parent="." instance=ExtResource("Crosshair") ]
+
+[node name="HouseNavigation" parent="." instance=ExtResource("NavRegion") ]
+[node name="CeilingFixtures" parent="." instance=ExtResource("Fixtures") ]
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Visitation"]
+path_desired_distance = 0.18
+target_desired_distance = 0.55
+radius = 0.25
+height = 1.76
+path_height_offset = 0.08
+avoidance_enabled = false
+[node name="Collision" parent="Visitation"]
+position = Vector3(0,0.88,0)
+shape = SubResource("HouseEnemyCapsule")
+[node name="Caught" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("CaughtSound")
+volume_db = -11.0
+[node name="Jumpscare" type="Node" parent="Player"]
+script = ExtResource("HouseScare")
+[node name="DeathUI" type="CanvasLayer" parent="Player/Jumpscare"]
+layer = 100
+[node name="Black" type="ColorRect" parent="Player/Jumpscare/DeathUI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0,0,0,0)

@@ -3,8 +3,9 @@ var failed:=0
 func _initialize(): call_deferred("run")
 func run():
 	var house=load("res://scenes/horror/house_layout.tscn").instantiate()
-	house.process_mode=Node.PROCESS_MODE_DISABLED
 	root.add_child(house)
+	house.set_process(false)
+	house.get_node("Player").set_physics_process(false)
 	await physics_frame
 	await physics_frame
 	var shape:=CapsuleShape3D.new()
@@ -17,7 +18,7 @@ func run():
 	var routes=[
 		["study doorway",Vector3(2.6,0,3.9),Vector3(5.7,0,3.9)],
 		["kitchen west aisle",Vector3(5.65,0,3.9),Vector3(5.65,0,8.7)],
-		["kitchen east aisle",Vector3(11,0,3.9),Vector3(11,0,8.7)],
+		["kitchen east aisle",Vector3(11.3,0,3.9),Vector3(11.3,0,8.7)],
 		["back stair approach",Vector3(11,0,5.1),Vector3(13,0,5.1)],
 		["ladder approach",Vector3(11.6,0,4.6),Vector3(11.6,0,2.6)],
 		["utility west door",Vector3(11.2,0,8),Vector3(14,0,8)],

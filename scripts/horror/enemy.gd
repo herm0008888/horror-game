@@ -1,6 +1,6 @@
 extends CharacterBody3D
 @export var player: CharacterBody3D
-@export var route: Node3D
+@export var wander_radius: float = 5.0
 @export var patrol_speed: float = 1.15
 @export var chase_speed: float = 2.65
 @onready var figure: Node3D = $Figure
@@ -8,9 +8,6 @@ extends CharacterBody3D
 @onready var corner: Node = $CornerStalker
 @onready var eye_gaze: Node = $EyeGaze
 @onready var breath: AudioStreamPlayer3D = $Breath
-var graph := AStar3D.new()
-var points: Array[Vector3] = []
-var patrol_index := 0
 var route_path := PackedVector3Array()
 var repath: float = 0
 var hunt: float = 0
@@ -25,6 +22,12 @@ var search_origin := Vector3.ZERO
 var search_step: int = 0
 var previous_position := Vector3.ZERO
 var stuck_time: float = 0.0
+var avoidance_side: float = 1.0
+var steering_left: float = 0.0
+var steering_direction := Vector3.ZERO
+var wander_goal_left: float = 0.0
+var escape_left: float = 0.0
+var escape_direction := Vector3.ZERO
 var head: Node3D
 var arm_left: Node3D
 var arm_right: Node3D
@@ -45,6 +48,8 @@ func _exit_tree() -> void:
 
 func _ready() -> void:
 	add_to_group("horror_listener")
+	previous_position = global_position
+	avoidance_side = -1.0 if randf() < 0.5 else 1.0
 	head = figure.find_child("HeadPivot", true, false)
 	arm_left = figure.find_child("ArmLeft", true, false)
 	arm_right = figure.find_child("ArmRight", true, false)
@@ -55,15 +60,6 @@ func _ready() -> void:
 			if index >= 0:
 				pose_bones[bone] = index
 				pose_rest_rotations[bone] = pose_skeleton.get_bone_pose_rotation(index)
-	for marker in route.get_children():
-		if marker is Marker3D:
-			points.append(marker.global_position)
-			graph.add_point(points.size() - 1, marker.global_position)
-	for marker in route.get_children():
-		if marker is Marker3D:
-			var from: int = marker.get_index()
-			for to in marker.get_meta("links", PackedInt32Array()):
-				if not graph.are_points_connected(from, to): graph.connect_points(from, to)
 	breath.play()
 
 func _physics_process(delta: float) -> void:
@@ -96,24 +92,22 @@ func _physics_process(delta: float) -> void:
 			has_seen_player = false
 			route_path.clear()
 	corner.tick(delta, visible_player)
+	wander_goal_left -= delta
+	if state in ["PATROL", "SEARCH"] and wander_goal_left <= 0.0 and not corner.active:
+		route_path.clear()
+		repath = 0.0
+		wander_goal_left = randf_range(2.5, 4.5)
 	repath -= delta
-	if repath <= 0 and points.size() > 0 and (route_path.is_empty() or (state == "CHASE" and visible_player)):
+	if repath <= 0 and (route_path.is_empty() or (state == "CHASE" and visible_player)):
 		repath = 0.55
-		var destination := points[patrol_index]
+		var destination := global_position
 		if state in ["CHASE", "INVESTIGATE"]:
 			destination = last_seen
 			if global_position.distance_to(last_seen) < 0.85 and not visible_player and not corner.active:
 				begin_search()
-		elif state == "SEARCH":
-			var center := graph.get_closest_point(search_origin)
-			var neighbors := graph.get_point_connections(center)
-			if neighbors.size() > 0:
-				destination = graph.get_point_position(neighbors[search_step % neighbors.size()])
-				search_step += 1
+				destination = random_walk_target()
 		else:
-			if global_position.distance_to(destination) < 1:
-				patrol_index = (patrol_index + 1) % points.size()
-				destination = points[patrol_index]
+			destination = random_walk_target()
 		if corner.active: destination = corner.destination
 		route_path = plan_route(destination)
 	if state == "CHASE" and visible_player and not corner.active and clear_passage(global_position,player.global_position):
@@ -139,21 +133,39 @@ func _physics_process(delta: float) -> void:
 	if is_instance_valid(waiting_door):
 		if waiting_door.can_pass(): waiting_door = null
 		else: direction = Vector3.ZERO
+	steering_left -= delta
+	escape_left = maxf(0.0, escape_left - delta)
+	var intentionally_waiting: bool = corner.holding or is_instance_valid(waiting_door)
+	var wants_to_move: bool = direction.length_squared() > 0.01 and not intentionally_waiting
+	if intentionally_waiting:
+		direction = Vector3.ZERO
+	elif wants_to_move:
+		if escape_left > 0.0: direction = escape_direction
+		if steering_left <= 0.0:
+			steering_direction = steer_around_obstacles(direction)
+			steering_left = 0.16
+		direction = steering_direction
 	var speed: float = (chase_speed if hunt > 0 else patrol_speed) * motion.speed_factor(hunt > 0) * corner.speed_factor()
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
 	if not is_on_floor(): velocity.y -= delta * 18
 	else: velocity.y = -0.5
 	move_and_slide()
-	if not corner.holding and direction.length() > 0.1 and global_position.distance_to(previous_position) < delta * 0.10:
+	if wants_to_move and global_position.distance_to(previous_position) < delta * 0.15:
 		stuck_time += delta
 	else: stuck_time = 0.0
 	previous_position = global_position
-	if stuck_time > 2.0:
+	if stuck_time > 0.65:
+		avoidance_side *= -1.0
+		var away := -steering_direction
+		if away.length_squared() < 0.01: away = figure.global_basis.z
+		away.y = 0.0
+		escape_direction = steer_around_obstacles(away.normalized())
+		escape_left = 1.2
+		steering_left = 0.0
 		route_path.clear()
-		repath = 0
-		stuck_time = 0
-		if state == "PATROL": patrol_index = (patrol_index + 1) % points.size()
+		repath = 0.0
+		stuck_time = 0.0
 	if direction.length() > 0.1 and not corner.holding:
 		figure.rotation.y = lerp_angle(figure.rotation.y, atan2(-direction.x, -direction.z), delta * 8)
 	if corner.holding:
@@ -178,7 +190,6 @@ func _physics_process(delta: float) -> void:
 func hear_noise(source: Vector3, radius: float) -> void:
 	if caught or sees_player: return
 	if global_position.distance_to(source) > radius: return
-	# Sound carries between floors; A* takes the stairs instead of a straight line.
 	last_seen = source
 	state = "INVESTIGATE"
 	hunt = 12.0
@@ -259,29 +270,59 @@ func track_player_head(delta: float, target: Vector3 = Vector3.INF) -> void:
 		pose_skeleton.set_bone_pose_rotation(index, rotation)
 
 
+# Local steering deliberately keeps the goal even when a straight line is blocked.
 func plan_route(destination: Vector3) -> PackedVector3Array:
-	if clear_passage(global_position,destination): return PackedVector3Array([destination])
-	var candidates: Array[Vector3] = points.duplicate()
-	for marker in get_tree().get_nodes_in_group("creature_cover"):
-		candidates.append(marker.global_position)
-	for obstacle in get_tree().get_nodes_in_group("navigation_obstacle"):
-		var collider := obstacle.get_node_or_null("Collision") as CollisionShape3D
-		if not collider or not collider.shape is BoxShape3D: continue
-		var half: Vector3 = collider.shape.size * 0.5 + Vector3(0.34,0,0.34)
-		for side in [-1,1]:
-			for end in [-1,1]:
-				var corner_point: Vector3 = collider.global_transform * Vector3(half.x*side,0,half.z*end)
-				corner_point.y = destination.y
-				candidates.append(corner_point)
-	var navigation := AStar3D.new()
-	candidates.append(global_position)
-	var start := candidates.size()-1
-	candidates.append(destination)
-	var finish := candidates.size()-1
-	for i in range(candidates.size()): navigation.add_point(i,candidates[i])
-	for i in range(candidates.size()):
-		for j in range(i+1,candidates.size()):
-			if clear_passage(candidates[i],candidates[j]): navigation.connect_points(i,j)
-	var path := navigation.get_point_path(start,finish)
-	if path.size() > 0: path.remove_at(0)
-	return path
+	return PackedVector3Array([destination])
+
+
+func ground_at(position: Vector3) -> Dictionary:
+	var query := PhysicsRayQueryParameters3D.create(
+		position + Vector3.UP * 0.45, position - Vector3.UP * 3.0,
+		collision_mask, [get_rid(), player.get_rid()])
+	return get_world_3d().direct_space_state.intersect_ray(query)
+
+
+func has_safe_ground(direction: Vector3, distance: float) -> bool:
+	var here := ground_at(global_position)
+	if here.is_empty(): return false
+	var baseline: Vector3 = here.position
+	for fraction in [0.5, 1.0]:
+		var ahead := ground_at(global_position + direction * distance * fraction)
+		if ahead.is_empty(): return false
+		var floor_point: Vector3 = ahead.position
+		var normal: Vector3 = ahead.normal
+		if floor_point.y < baseline.y - 0.45 or floor_point.y > baseline.y + 0.35: return false
+		if normal.dot(Vector3.UP) < cos(floor_max_angle): return false
+	return true
+
+
+func direction_is_open(direction: Vector3, distance: float) -> bool:
+	if not has_safe_ground(direction, distance): return false
+	return not test_move(global_transform, direction * distance)
+
+
+func steer_around_obstacles(desired: Vector3) -> Vector3:
+	if desired.length_squared() < 0.01: return Vector3.ZERO
+	var forward := desired.normalized()
+	# Retain a preferred side so she does not switch left/right every frame.
+	for degrees in [0.0, 30.0, -30.0, 60.0, -60.0, 90.0, -90.0, 125.0, -125.0, 180.0]:
+		var candidate := forward.rotated(Vector3.UP, deg_to_rad(degrees * avoidance_side))
+		if direction_is_open(candidate, 0.55): return candidate
+	# Short probes allow movement in cramped spaces.
+	for degrees in [0.0, 60.0, -60.0, 100.0, -100.0, 180.0]:
+		var candidate := forward.rotated(Vector3.UP, deg_to_rad(degrees * avoidance_side))
+		if direction_is_open(candidate, 0.18): return candidate
+	return Vector3.ZERO
+
+
+func random_walk_target() -> Vector3:
+	# Prefer continuing forward, while occasionally exploring a new direction.
+	var forward := -figure.global_basis.z
+	forward.y = 0.0
+	forward = forward.normalized()
+	for attempt in range(20):
+		var angle := randf_range(-1.3, 1.3) if attempt < 10 else randf_range(-PI, PI)
+		var heading := forward.rotated(Vector3.UP, angle)
+		if direction_is_open(heading, 0.55):
+			return global_position + heading * randf_range(1.0, maxf(1.0, wander_radius))
+	return global_position

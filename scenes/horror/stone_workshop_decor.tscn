@@ -1,0 +1,382 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/horror/decor/stone_01.tscn" id="1_a3i3a"]
+[ext_resource type="PackedScene" path="res://scenes/horror/decor/stone_02.tscn" id="2_wk3ei"]
+[ext_resource type="PackedScene" path="res://scenes/horror/decor/stone_03.tscn" id="3_rnal8"]
+[ext_resource type="PackedScene" path="res://scenes/horror/decor/stone_04.tscn" id="4_fqjr4"]
+[ext_resource type="PackedScene" path="res://scenes/horror/decor/stone_05.tscn" id="5_0o2bn"]
+[ext_resource type="PackedScene" path="res://scenes/horror/decor/stone_06.tscn" id="6_8oc38"]
+[ext_resource type="PackedScene" path="res://assets/house_library/oil_tin/oil_tin.gltf" id="7_6ufdb"]
+[ext_resource type="PackedScene" path="res://assets/house_library/small_oil_can_01/small_oil_can_01.gltf" id="8_gaylp"]
+
+[node name="StoneAndWorkshopDecor" type="Node3D" unique_id=163339507]
+
+[node name="LooseStone_00" type="Node3D" parent="." unique_id=1326333009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23, -3.4, 13.25)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.08634879, 0.056830477, 0.13)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_00" unique_id=68481675 instance=ExtResource("1_a3i3a")]
+transform = Transform3D(0.03858936, 0, 0, 0, 0.03858936, 0, 0, 0, 0.03858936, 0.10786516, 0.025336564, 0.08255881)
+
+[node name="LooseStone_01" type="Node3D" parent="." unique_id=505688257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.27, -3.4, 13.55)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.16381986, 0.049603038, 0.165)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_01" unique_id=1896754785 instance=ExtResource("2_wk3ei")]
+transform = Transform3D(-0.028746134, 0, 0.026806198, 0, 0.039305374, 0, -0.026806198, 0, -0.028746134, 0.058810778, 0.018301347, -0.05991807)
+
+[node name="LooseStone_02" type="Node3D" parent="." unique_id=2139443794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, -3.4, 13.85)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.197607, 0.09781536, 0.2)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_02" unique_id=450149641 instance=ExtResource("3_rnal8")]
+transform = Transform3D(0.0062046903, 0, -0.08873108, 0, 0.08894776, 0, 0.08873108, 0, 0.0062046903, -0.2057609, 0.03654616, -0.2563426)
+
+[node name="LooseStone_03" type="Node3D" parent="." unique_id=179328702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.72, -3.4, 15.6)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.23304194, 0.14379416, 0.23499995)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_03" unique_id=1702236926 instance=ExtResource("4_fqjr4")]
+transform = Transform3D(0.05117434, 0, 0.06319505, 0, 0.08131683, 0, -0.06319505, 0, 0.05117434, 0.026687711, 0.05374803, -0.24902394)
+
+[node name="LooseStone_04" type="Node3D" parent="." unique_id=1348667796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, -3.4, 15.72)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.18575636, 0.10100278, 0.27)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_04" unique_id=1763436193 instance=ExtResource("5_0o2bn")]
+transform = Transform3D(-0.082972966, 0, -0.01166109, 0, 0.08378839, 0, 0.01166109, 0, -0.082972966, 0.03538452, 0.047973417, 0.13257296)
+
+[node name="LooseStone_05" type="Node3D" parent="." unique_id=1420821520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2, -3.4, 15.72)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.12420518, 0.04716442, 0.13000001)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_05" unique_id=1649232204 instance=ExtResource("6_8oc38")]
+transform = Transform3D(0.030617539, 0, -0.02143864, 0, 0.03737712, 0, 0.02143864, 0, 0.030617539, -0.049872927, 0.019737238, -0.10225729)
+
+[node name="LooseStone_06" type="Node3D" parent="." unique_id=447376556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, -3.4, 5.4)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.16499999, 0.0646192, 0.12677035)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_06" unique_id=744993421 instance=ExtResource("1_a3i3a")]
+transform = Transform3D(-0.009122772, 0, 0.042919256, 0, 0.0438781, 0, -0.042919256, 0, -0.009122772, 0.06632227, 0.028808985, -0.13948555)
+
+[node name="LooseStone_07" type="Node3D" parent="." unique_id=2093916330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32, -3.4, 5.1)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.20000002, 0.060597252, 0.19000614)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_07" unique_id=334527634 instance=ExtResource("2_wk3ei")]
+transform = Transform3D(-0.024730664, 0, -0.041158758, 0, 0.048017174, 0, 0.041158758, 0, -0.024730664, -0.086536594, 0.022357732, -0.05505698)
+
+[node name="LooseStone_08" type="Node3D" parent="." unique_id=1076315941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24, -3.4, 4.85)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.235, 0.09939122, 0.23320311)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_08" unique_id=1335619262 instance=ExtResource("3_rnal8")]
+transform = Transform3D(0.08687956, 0, 0.024912313, 0, 0.09038076, 0, -0.024912313, 0, 0.08687956, -0.21131119, 0.03713494, 0.25866225)
+
+[node name="LooseStone_09" type="Node3D" parent="." unique_id=43846410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72, -3.4, 1.6)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.27, 0.17126858, 0.2631055)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_09" unique_id=972667793 instance=ExtResource("4_fqjr4")]
+transform = Transform3D(-0.08629741, 0, 0.043970738, 0, 0.09685385, 0, -0.043970738, 0, -0.08629741, -0.2967317, 0.06401755, 0.030575216)
+
+[node name="LooseStone_10" type="Node3D" parent="." unique_id=1905059459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.65, -3.4, 1.85)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.12999998, 0.04556299, 0.10331289)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_10" unique_id=310677363 instance=ExtResource("5_0o2bn")]
+transform = Transform3D(0.012927494, 0, -0.035518, 0, 0.03779747, 0, 0.035518, 0, 0.012927494, 0.055178903, 0.021641111, -0.028047426)
+
+[node name="LooseStone_11" type="Node3D" parent="." unique_id=798001404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72, -3.4, 2.1)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.165, 0.061804146, 0.14861867)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_11" unique_id=563087132 instance=ExtResource("6_8oc38")]
+transform = Transform3D(0.019137574, 0, 0.045085307, 0, 0.04897889, 0, -0.045085307, 0, 0.019137574, -0.11748179, 0.02586363, 0.091784954)
+
+[node name="LooseStone_12" type="Node3D" parent="." unique_id=1406418995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25, -3.4, 1.8)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.17124707, 0.07386234, 0.19999999)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_12" unique_id=99757997 instance=ExtResource("1_a3i3a")]
+transform = Transform3D(-0.04581835, 0, -0.02039965, 0, 0.050154433, 0, 0.02039965, 0, -0.04581835, -0.17171508, 0.032929827, -0.04100347)
+
+[node name="LooseStone_13" type="Node3D" parent="." unique_id=1321508153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.28, -3.4, 2.15)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.21256489, 0.07507259, 0.23499998)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_13" unique_id=197864269 instance=ExtResource("2_wk3ei")]
+transform = Transform3D(0.056246456, 0, -0.0193672, 0, 0.059487414, 0, 0.0193672, 0, 0.056246456, -0.044428516, 0.027698498, 0.11904691)
+
+[node name="LooseStone_14" type="Node3D" parent="." unique_id=157893440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35, -3.4, 2.4)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.26885942, 0.10461937, 0.27000004)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_14" unique_id=15521037 instance=ExtResource("3_rnal8")]
+transform = Transform3D(-0.044663154, 0, 0.083999164, 0, 0.09513494, 0, -0.083999164, 0, -0.044663154, 0.31256372, 0.0390883, 0.1609582)
+
+[node name="LooseStone_15" type="Node3D" parent="." unique_id=573610595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7, -3.4, 9.4)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.12415938, 0.08966984, 0.13)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_15" unique_id=544058406 instance=ExtResource("4_fqjr4")]
+transform = Transform3D(-0.013124468, 0, -0.048981193, 0, 0.05070906, 0, 0.048981193, 0, -0.013124468, 0.047958933, 0.033517197, 0.14863445)
+
+[node name="LooseStone_16" type="Node3D" parent="." unique_id=741366199]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.65, -3.4, 9.7)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.14731339, 0.0567304, 0.16499999)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_16" unique_id=1156044830 instance=ExtResource("5_0o2bn")]
+transform = Transform3D(0.039910473, 0, 0.024938831, 0, 0.047061566, 0, -0.024938831, 0, 0.039910473, -0.04844287, 0.02694531, -0.05994118)
+
+[node name="LooseStone_17" type="Node3D" parent="." unique_id=398825972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, -3.4, 10)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.16791698, 0.08108811, 0.20000003)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_17" unique_id=435464645 instance=ExtResource("6_8oc38")]
+transform = Transform3D(-0.0630805, 0, 0.012261607, 0, 0.06426115, 0, -0.012261607, 0, -0.0630805, 0.14983903, 0.03393353, 0.12573242)
+
+[node name="LooseStone_18" type="Node3D" parent="." unique_id=1289570970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.25, -3.4, 15.5)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.23499998, 0.08565022, 0.22044566)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_18" unique_id=1746798250 instance=ExtResource("1_a3i3a")]
+transform = Transform3D(0.03418482, 0, -0.04705139, 0, 0.058158707, 0, 0.04705139, 0, 0.03418482, -0.005109079, 0.038185183, 0.20465393)
+
+[node name="LooseStone_19" type="Node3D" parent="." unique_id=733415897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.42, -3.4, 15.75)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.26999998, 0.09563215, 0.22986245)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_19" unique_id=1332626467 instance=ExtResource("2_wk3ei")]
+transform = Transform3D(0.009235109, 0, 0.07521394, 0, 0.07577878, 0, -0.07521394, 0, 0.009235109, 0.16010243, 0.035284076, 0.0238294)
+
+[node name="LooseStone_20" type="Node3D" parent="." unique_id=1032235084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.65, -3.4, 15.8)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.13, 0.048428286, 0.12984261)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_20" unique_id=130397431 instance=ExtResource("3_rnal8")]
+transform = Transform3D(-0.033735026, 0, -0.028307045, 0, 0.044037946, 0, 0.028307045, 0, -0.033735026, 0.04279752, 0.018093968, -0.15701492)
+
+[node name="LooseStone_21" type="Node3D" parent="." unique_id=1353492655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22, -3.4, 14.2)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.16499999, 0.1309843, 0.15358245)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_21" unique_id=887688180 instance=ExtResource("4_fqjr4")]
+transform = Transform3D(0.07397123, 0, -0.0038766682, 0, 0.07407274, 0, 0.0038766682, 0, 0.07397123, 0.19780637, 0.048959903, -0.11366563)
+
+[node name="LooseStone_22" type="Node3D" parent="." unique_id=587647075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, -3.4, 14.55)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.2, 0.070504986, 0.19829464)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_22" unique_id=332146707 instance=ExtResource("5_0o2bn")]
+transform = Transform3D(-0.040629517, 0, 0.04207309, 0, 0.05848848, 0, -0.04207309, 0, -0.040629517, -0.0603501, 0.03348784, 0.07437801)
+
+[node name="LooseStone_23" type="Node3D" parent="." unique_id=1403940362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, -3.4, 14.85)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.23500001, 0.10613344, 0.18283492)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_23" unique_id=445804777 instance=ExtResource("6_8oc38")]
+transform = Transform3D(0.0014679008, 0, -0.0840964, 0, 0.08410921, 0, 0.0840964, 0, 0.0014679008, 0.12019521, 0.04441443, -0.22604883)
+
+[node name="LooseStone_24" type="Node3D" parent="." unique_id=274567803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2, -3.4, 4.1)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.2700001, 0.09938781, 0.26434985)
+metadata/support = "/root/HouseLayout/@StaticBody3D@754"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_24" unique_id=247370749 instance=ExtResource("1_a3i3a")]
+transform = Transform3D(0.04515754, 0, 0.050152536, 0, 0.06748689, 0, -0.050152536, 0, 0.04515754, 0.23352188, 0.044309776, -0.04357569)
+
+[node name="LooseStone_25" type="Node3D" parent="." unique_id=1038702903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.18, -3.4, 7.2)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.109358, 0.047106355, 0.13)
+metadata/support = "/root/HouseLayout/@StaticBody3D@754"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_25" unique_id=1601298942 instance=ExtResource("2_wk3ei")]
+transform = Transform3D(-0.03718497, 0, -0.0032532655, 0, 0.037327006, 0, 0.0032532655, 0, -0.03718497, -0.0049151964, 0.017380182, -0.07958013)
+
+[node name="LooseStone_26" type="Node3D" parent="." unique_id=89403612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.19, -3.4, 11.1)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.16499996, 0.061677545, 0.16471967)
+metadata/support = "/root/HouseLayout/@StaticBody3D@754"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_26" unique_id=832175628 instance=ExtResource("3_rnal8")]
+transform = Transform3D(0.044196434, 0, -0.03453003, 0, 0.056086075, 0, 0.03453003, 0, 0.044196434, -0.20693451, 0.023044208, -0.011738658)
+
+[node name="LooseStone_27" type="Node3D" parent="." unique_id=215784464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.15, -3.4, 5.7)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.18875775, 0.1468224, 0.20000002)
+metadata/support = "/root/HouseLayout/@StaticBody3D@754"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_27" unique_id=36815835 instance=ExtResource("4_fqjr4")]
+transform = Transform3D(-0.012988645, 0, 0.08200709, 0, 0.083029315, 0, -0.08200709, 0, -0.012988645, -0.1707245, 0.054879934, -0.19038916)
+
+[node name="LooseStone_28" type="Node3D" parent="." unique_id=331208525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.16, -3.4, 9.5)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.235, 0.08088566, 0.21360995)
+metadata/support = "/root/HouseLayout/@StaticBody3D@754"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_28" unique_id=469302050 instance=ExtResource("5_0o2bn")]
+transform = Transform3D(-0.037521802, 0, -0.055628363, 0, 0.06709993, 0, 0.055628363, 0, -0.037521802, 0.09785918, 0.038418364, 0.049981795)
+
+[node name="LooseStone_29" type="Node3D" parent="." unique_id=977486097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.16, -3.4, 12.7)
+metadata/source = "https://polyhaven.com/a/rock_moss_set_01"
+metadata/dimensions_metres = Vector3(0.22963713, 0.10765043, 0.26999998)
+metadata/support = "/root/HouseLayout/@StaticBody3D@754"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="LooseStone_29" unique_id=807559375 instance=ExtResource("6_8oc38")]
+transform = Transform3D(0.083124876, 0, 0.019190889, 0, 0.085311405, 0, -0.019190889, 0, 0.083124876, -0.24961668, 0.045049258, -0.071579136)
+
+[node name="OilTin_30" type="Node3D" parent="." unique_id=76912011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.45, -3.4, 0.6)
+metadata/source = "https://polyhaven.com/a/oil_tin"
+metadata/dimensions_metres = Vector3(0.13532478, 0.18460484, 0.16)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilTin_30" unique_id=1804669619 instance=ExtResource("7_6ufdb")]
+transform = Transform3D(0.86822206, 0, 0.2326394, 0, 0.8988496, 0, -0.2326394, 0, 0.86822206, 0.00840757, 0.000673234, -0.0010975078)
+
+[node name="OilTin_31" type="Node3D" parent="." unique_id=34776575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7, -3.4, 0.62)
+metadata/source = "https://polyhaven.com/a/oil_tin"
+metadata/dimensions_metres = Vector3(0.13250971, 0.18880898, 0.16)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilTin_31" unique_id=702954396 instance=ExtResource("7_6ufdb")]
+transform = Transform3D(0.8992305, 0, -0.19113734, 0, 0.9193198, 0, 0.19113734, 0, 0.8992305, 0.008171402, 0.00068856607, 0.0029037222)
+
+[node name="OilTin_32" type="Node3D" parent="." unique_id=603433150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.65, -3.4, 6.55)
+metadata/source = "https://polyhaven.com/a/oil_tin"
+metadata/dimensions_metres = Vector3(0.16, 0.17323028, 0.16000001)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilTin_32" unique_id=1155771722 instance=ExtResource("7_6ufdb")]
+transform = Transform3D(0.59642076, 0, 0.59642076, 0, 0.84346634, 0, -0.59642076, 0, 0.59642076, 0.006317593, 0.0006317522, -0.004836671)
+
+[node name="OilTin_33" type="Node3D" parent="." unique_id=2096077573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.35, -3.4, 6.65)
+metadata/source = "https://polyhaven.com/a/oil_tin"
+metadata/dimensions_metres = Vector3(0.14398804, 0.17512353, 0.16)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilTin_33" unique_id=528609333 instance=ExtResource("7_6ufdb")]
+transform = Transform3D(0.7727947, 0, -0.36036012, 0, 0.8526847, 0, 0.36036012, 0, 0.7727947, 0.006779015, 0.0006386567, 0.0043291524)
+
+[node name="OilTin_34" type="Node3D" parent="." unique_id=193006665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.45, -3.4, 5.4)
+metadata/source = "https://polyhaven.com/a/oil_tin"
+metadata/dimensions_metres = Vector3(0.13055712, 0.1920175, 0.16)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilTin_34" unique_id=272656809 instance=ExtResource("7_6ufdb")]
+transform = Transform3D(0.92073834, 0, 0.16235101, 0, 0.93494225, 0, -0.16235101, 0, 0.92073834, 0.008811384, 0.0007002672, -0.00037504733)
+
+[node name="OilCanOnWorkshopTable" type="Node3D" parent="." unique_id=1308755353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.72, -2.5500002, 0.65)
+metadata/source = "https://polyhaven.com/a/small_oil_can_01"
+metadata/dimensions_metres = Vector3(0.29999998, 0.2502167, 0.17877167)
+metadata/support = "/root/HouseLayout/BasementDressing/RuinedWorkshop/PaintedWoodenTable"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilCanOnWorkshopTable" unique_id=1017540454 instance=ExtResource("8_gaylp")]
+transform = Transform3D(1.0206833, 0, -0.27349126, 0, 1.0566891, 0, 0.27349126, 0, 1.0206833, -0.043195926, -4.4718345e-06, -0.011574261)
+
+[node name="OilCanBesideBoiler" type="Node3D" parent="." unique_id=2127139633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4, -3.4, 1)
+metadata/source = "https://polyhaven.com/a/small_oil_can_01"
+metadata/dimensions_metres = Vector3(0.3, 0.25039658, 0.22906157)
+metadata/support = "/root/HouseLayout/@StaticBody3D@609"
+metadata/decor_only = true
+
+[node name="Model" type="Node3D" parent="OilCanBesideBoiler" unique_id=1165779971 instance=ExtResource("8_gaylp")]
+transform = Transform3D(0.9336718, 0, 0.49644214, 0, 1.0574487, 0, -0.49644214, 0, 0.9336718, -0.03951353, -4.4750486e-06, 0.021009773)
