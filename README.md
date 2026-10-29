@@ -2,23 +2,22 @@
 
 ## Åpne på en annen PC
 
-1. Installer Godot 4.7.2 (standardutgaven).
+1. Installer Godot 4.7 (standardutgaven).
 2. Logg inn med samme GitHub-konto i GitHub Desktop.
 3. Velg File → Clone repository → herm0008888/horror-game og en lokal mappe.
 4. I Godot Project Manager: Import → velg project.godot i mappen → Import & Edit.
 5. Vent til Godot har importert modellene og teksturene. Trykk F5 for å spille.
 
-Hovedscenen er `scenes/horror/test_area.tscn`. Huset er beholdt i `scenes/horror/main.tscn`.
-Alle scripts, scener, materialer og teksturer følger med. Blender-kilden er
+Hovedscenen er `scenes/horror/house_layout.tscn`. Spillet starter inne i huset;
+skogen og uteområdet er fjernet mens utsiden bygges på nytt. Blender-kilden er
 `assets/source/visitation_sculpt.blend`; spillet bruker den eksporterte GLB-filen,
 så Blender er ikke nødvendig for å åpne og spille prosjektet.
 
 ## Kontroller
 
-- WASD / piltaster: gå. Mus: se. Ctrl: snik.
-- E: plukk opp lommelykten. F: slå den av/på.
-- 1–5: bytt testsituasjon.
-- R: start på nytt. Esc: slipp/fang musen.
+- WASD: gå. Mus: se. Ctrl: snik.
+- E: bruk/plukk opp. Q: slipp gjenstand. F: lommelykt.
+- Esc: slipp/fang musen.
 
 ## Jobb mellom to PC-er
 

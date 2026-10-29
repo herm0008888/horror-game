@@ -126,10 +126,7 @@
 [ext_resource type="PackedScene" path="res://scenes/horror/cell_sight_barrier.tscn" id="SightScreen"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/bedroom_wardrobe.tscn" id="SimpleStorage2"]
 
-[ext_resource type="PackedScene" path="res://scenes/horror/abandoned_exterior.tscn" id="AbandonedExterior"]
 [ext_resource type="PackedScene" path="res://scenes/horror/front_door.tscn" id="ExteriorDoor"]
-
-[ext_resource type="PackedScene" path="res://scenes/horror/exterior_story.tscn" id="ExteriorStory"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_rvwrs"]
 size = Vector3(4, 0.2, 2)
@@ -13838,10 +13835,6 @@ transform = Transform3D(-0.00593985, 0, 0.99998236, 0, 1, 0, -0.99998236, 0, -0.
 [node name="PlayerFeel" parent="Player" instance=ExtResource("PlayerFeelScene")]
 
 [node name="HouseParticles" parent="." instance=ExtResource("HouseParticlesScene")]
-
-[node name="AbandonedExterior" parent="." instance=ExtResource("AbandonedExterior")]
-
-[node name="ExteriorStory" parent="." instance=ExtResource("ExteriorStory")]
 
 [editable path="GroundFloorDressing"]
 [editable path="GroundFloorDressing/LivingRoom"]

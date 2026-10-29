@@ -89,10 +89,6 @@ func _process(delta: float) -> void:
 		status.text="Porten er låst. Slegga ligger utenfor sprinklene. Finn det sprukne murverket."
 	else:
 		status.text="Bærer planke · Finn fella ved ytterdøra" if carrying_plank else ("Kjeller" if player.position.y < -1 else ("Første etasje" if player.position.y<2 else "Andre etasje"))
-	var story=get_node_or_null("ExteriorStory")
-	if story and not climbing:
-		var line: String=story.caption()
-		if not line.is_empty():status.text=line
 func climb_ladder() -> void:
 	if climbing: return
 	climbing=true
