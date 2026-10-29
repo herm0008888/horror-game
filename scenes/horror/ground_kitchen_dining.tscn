@@ -1624,7 +1624,7 @@ visibility_range_end_margin = 2.0
 mesh = ExtResource("31_fv18n")
 
 [node name="MetalTrashCan" type="StaticBody3D" parent="." unique_id=1971828126]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7, 0, 0.5)
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 9.7, 0, 0.85)
 metadata/source = "https://polyhaven.com/a/metal_trash_can"
 metadata/dimensions = Vector3(1.2636704, 0.62, 0.38061267)
 metadata/asset_id = "metal_trash_can"

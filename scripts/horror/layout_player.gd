@@ -9,6 +9,7 @@ var start := Vector3(6, 0.1, 14)
 @onready var camera: Camera3D = $Camera
 func _ready() -> void:
 	add_to_group("horror_player")
+	add_child(load("res://scripts/horror/pickup_outline.gd").new())
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 func _unhandled_input(event: InputEvent) -> void:
 	if caught: return

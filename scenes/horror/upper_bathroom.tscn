@@ -638,7 +638,7 @@ material_override = SubResource("StandardMaterial3D_n5gpa")
 mesh = SubResource("SphereMesh_dtb5i")
 
 [node name="BleachBottleLoose" type="RigidBody3D" parent="." unique_id=709865878]
-transform = Transform3D(0.9396926, 0, 0.34202012, 0, 1, 0, -0.34202012, 0, 0.9396926, 8.55, 4.33, 2.3)
+transform = Transform3D(0.9396926, 0, 0.34202012, 0, 1, 0, -0.34202012, 0, 0.9396926, 8.48, 4.32, 2.08)
 collision_layer = 17
 collision_mask = 17
 mass = 0.6
@@ -688,7 +688,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_wkero")
 
 [node name="MultiCleanerBottleLoose" type="RigidBody3D" parent="." unique_id=1860309588]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.45, 4.32, 2.65)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.45, 4.32, 2.93)
 collision_layer = 17
 collision_mask = 17
 mass = 0.6
@@ -718,7 +718,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.105000004, 0)
 shape = SubResource("BoxShape3D_chapn")
 
 [node name="@RigidBody3D@88" type="RigidBody3D" parent="." unique_id=157711296]
-transform = Transform3D(0.81915206, 0, 0.57357645, 0, 1, 0, -0.57357645, 0, 0.81915206, 8.45, 4.32, 2.75)
+transform = Transform3D(0.81915206, 0, 0.57357645, 0, 1, 0, -0.57357645, 0, 0.81915206, 8.6, 4.32, 2.93)
 collision_layer = 17
 collision_mask = 17
 mass = 0.6
@@ -748,7 +748,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.105000004, 0)
 shape = SubResource("BoxShape3D_qi6g4")
 
 [node name="@RigidBody3D@90" type="RigidBody3D" parent="." unique_id=1934996905]
-transform = Transform3D(0.34202015, 0, 0.9396926, 0, 1, 0, -0.9396926, 0, 0.34202015, 8.45, 4.32, 2.85)
+transform = Transform3D(0.34202015, 0, 0.9396926, 0, 1, 0, -0.9396926, 0, 0.34202015, 8.45, 4.32, 3.13)
 collision_layer = 17
 collision_mask = 17
 mass = 0.6

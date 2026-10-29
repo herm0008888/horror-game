@@ -1,22 +1,27 @@
-[gd_scene format=4 uid="uid://7ywtawadpjct"]
+[gd_scene format=4]
 
-[ext_resource type="Script" uid="uid://uo8voqprvxcy" path="res://scripts/horror/basement_runtime.gd" id="1_1j16k"]
+[ext_resource type="Script" path="res://scripts/horror/basement_runtime.gd" id="1_1j16k"]
 [ext_resource type="Material" path="res://assets/house_materials/floor_wood.tres" id="2_1yyi6"]
-[ext_resource type="Script" uid="uid://5n10qpxb4ims" path="res://scripts/horror/layout_player.gd" id="2_ffo64"]
+[ext_resource type="Script" path="res://scripts/horror/layout_player.gd" id="2_ffo64"]
 [ext_resource type="Material" path="res://assets/house_materials/wall_wood.tres" id="3_2oida"]
 [ext_resource type="Material" path="res://assets/house_materials/basement_floor.tres" id="4_232vc"]
-[ext_resource type="Texture2D" uid="uid://f06olgmj8abv" path="res://assets/house_library/dirty_concrete/Diffuse.jpg" id="4_vseff"]
+[ext_resource type="Texture2D" path="res://assets/house_library/dirty_concrete/Diffuse.jpg" id="4_vseff"]
 [ext_resource type="Material" path="res://assets/house_materials/basement_wall.tres" id="5_mo72v"]
 [ext_resource type="Environment" path="res://assets/house_materials/horror_lighting.tres" id="6_378n2"]
 [ext_resource type="Material" path="res://assets/house_materials/rusted_iron.tres" id="6_g2ylm"]
 [ext_resource type="PackedScene" path="res://scenes/horror/house_lighting.tscn" id="7_232vc"]
-[ext_resource type="Script" uid="uid://cqkyjrw3fmxh5" path="res://scripts/horror/tool_controller.gd" id="18_6cbtw"]
+[ext_resource type="Script" path="res://scripts/horror/house_flashlight.gd" id="15_wr55o"]
+[ext_resource type="Script" path="res://scripts/horror/tool_controller.gd" id="18_6cbtw"]
 [ext_resource type="PackedScene" path="res://scenes/horror/basement_decay.tscn" id="18_12vhc"]
 [ext_resource type="PackedScene" path="res://scenes/horror/visitation.tscn" id="19_jwb2a"]
 [ext_resource type="PackedScene" path="res://scenes/horror/basement_dressing.tscn" id="19_kbk2q"]
+[ext_resource type="Script" path="res://scripts/horror/house_lighting.gd" id="20_cge8g"]
 [ext_resource type="PackedScene" path="res://scenes/horror/ground_floor_dressing.tscn" id="20_jwb2a"]
+[ext_resource type="Environment" path="res://assets/house_materials/normal_lighting.tres" id="21_2r2by"]
 [ext_resource type="PackedScene" path="res://scenes/horror/stone_workshop_decor.tscn" id="22_12vhc"]
+[ext_resource type="Script" path="res://scripts/horror/horror_ui.gd" id="23_mh2pc"]
 [ext_resource type="PackedScene" path="res://scenes/horror/house_occlusion.tscn" id="23_vseff"]
+[ext_resource type="Script" path="res://scripts/horror/flashlight_pickup.gd" id="25_doqsj"]
 [ext_resource type="PackedScene" path="res://scenes/horror/upper_dressing.tscn" id="37_3gk4g"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0094.res" id="38_w1uph"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0095.res" id="39_hwbgl"]
@@ -99,17 +104,17 @@
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0172.res" id="116_e5svu"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0173.res" id="117_jga4f"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0174.res" id="118_mitge"]
-[ext_resource type="Script" uid="uid://bnrnoywngafke" path="res://scripts/horror/house_visibility.gd" id="119_hwbgl"]
-[ext_resource type="AudioStream" uid="uid://bswa5v71c4mch" path="res://assets/horror/caught.wav" id="CaughtSound"]
+[ext_resource type="Script" path="res://scripts/horror/house_visibility.gd" id="119_hwbgl"]
+[ext_resource type="AudioStream" path="res://assets/horror/caught.wav" id="CaughtSound"]
 [ext_resource type="PackedScene" path="res://scenes/horror/interaction_crosshair.tscn" id="Crosshair"]
 [ext_resource type="PackedScene" path="res://scenes/horror/ceiling_fixtures.tscn" id="Fixtures"]
 [ext_resource type="PackedScene" path="res://scenes/horror/flashlight_pickup.tscn" id="FlashlightPickup"]
 [ext_resource type="PackedScene" path="res://scenes/horror/house_flashlight.tscn" id="FlashlightRig"]
 [ext_resource type="PackedScene" path="res://scenes/horror/horror_ui.tscn" id="HorrorUI"]
-[ext_resource type="Script" uid="uid://c2ck0j70btv2j" path="res://scripts/horror/house_enemy.gd" id="HouseEnemy"]
-[ext_resource type="Script" uid="uid://by68c1pg6eopg" path="res://scripts/horror/jumpscare.gd" id="HouseScare"]
+[ext_resource type="Script" path="res://scripts/horror/house_enemy.gd" id="HouseEnemy"]
+[ext_resource type="Script" path="res://scripts/horror/jumpscare.gd" id="HouseScare"]
 [ext_resource type="PackedScene" path="res://scenes/horror/house_navigation.tscn" id="NavRegion"]
-[ext_resource type="Script" uid="uid://cejfpi360hjii" path="res://scripts/horror/render_budget.gd" id="RenderBudget"]
+[ext_resource type="Script" path="res://scripts/horror/render_budget.gd" id="RenderBudget"]
 [ext_resource type="PackedScene" path="res://scenes/horror/cell_sight_barrier.tscn" id="SightScreen"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/study_cupboard.tscn" id="SimpleStorage0"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/dining_cupboard.tscn" id="SimpleStorage1"]
@@ -1289,21 +1294,33 @@ size = Vector3(1.8, 1, 0.14)
 [sub_resource type="BoxShape3D" id="BoxShape3D_t736p"]
 size = Vector3(1.8, 1, 0.14)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7tk0"]
-albedo_color = Color(0.17, 0.23, 0.24, 1)
-albedo_texture = ExtResource("4_vseff")
-metallic_specular = 0.08
-emission_enabled = true
-emission = Color(0.025, 0.033, 0.035, 1)
-uv1_scale = Vector3(0.8, 0.8, 0.8)
-uv1_triplanar = true
-uv1_world_triplanar = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egb84"]
+albedo_color = Color(0.025, 0.045, 0.055, 1)
+roughness = 0.3
 
 [sub_resource type="BoxMesh" id="BoxMesh_7xbp3"]
 size = Vector3(1.8, 1.3, 0.08)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pb02y"]
 size = Vector3(1.8, 1.3, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_slqlc"]
+size = Vector3(0.065, 1.3, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ehd3"]
+size = Vector3(0.065, 1.3, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nedem"]
+size = Vector3(0.065, 1.3, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iegbk"]
+size = Vector3(1.8, 0.065, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t62qi"]
+size = Vector3(1.8, 0.065, 0.08)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6pp7e"]
+size = Vector3(1.8, 0.065, 0.08)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4cr6x"]
 size = Vector3(2.2, 3.2, 0.14)
@@ -1322,6 +1339,16 @@ size = Vector3(1.8, 1, 0.14)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n3l7r"]
 size = Vector3(1.8, 1, 0.14)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7tk0"]
+albedo_color = Color(0.17, 0.23, 0.24, 1)
+albedo_texture = ExtResource("4_vseff")
+metallic_specular = 0.08
+emission_enabled = true
+emission = Color(0.025, 0.033, 0.035, 1)
+uv1_scale = Vector3(0.8, 0.8, 0.8)
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_mmslf"]
 size = Vector3(1.8, 1.3, 0.08)
@@ -2488,6 +2515,51 @@ size = Vector3(2, 1, 0.1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_504fb"]
 size = Vector3(2, 1, 0.1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jqh1m"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ewmka"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sjkkn"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xlolv"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u3c8r"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dmndo"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tc53j"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0qbxq"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jtath"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hce58"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3rqpr"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_am0jt"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_52srl"]
+size = Vector3(0.045, 1, 0.045)
+
+[sub_resource type="BoxMesh" id="BoxMesh_scv12"]
+size = Vector3(2, 0.07, 0.09)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bj7mj"]
+size = Vector3(2, 0.07, 0.09)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ime01"]
 points = PackedVector3Array(-0.65, -0.12, 0, -0.65, 0.02, 0, -0.65, 1.58, -3.2, -0.65, 1.72, -3.2, 0.65, -0.12, 0, 0.65, 0.02, 0, 0.65, 1.58, -3.2, 0.65, 1.72, -3.2)
@@ -7186,11 +7258,41 @@ shape = SubResource("BoxShape3D_t736p")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.55, 0)
 
 [node name="Mesh" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=744301906]
-material_override = SubResource("StandardMaterial3D_o7tk0")
+material_override = SubResource("StandardMaterial3D_egb84")
 mesh = SubResource("BoxMesh_7xbp3")
 
 [node name="Collision" type="CollisionShape3D" parent="WindowPlaceholder" unique_id=1898419110]
 shape = SubResource("BoxShape3D_pb02y")
+
+[node name="@MeshInstance3D@17" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=1098885558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 0, -0.048)
+material_override = ExtResource("3_2oida")
+mesh = SubResource("BoxMesh_slqlc")
+
+[node name="@MeshInstance3D@18" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=1881707937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.048)
+material_override = ExtResource("3_2oida")
+mesh = SubResource("BoxMesh_4ehd3")
+
+[node name="@MeshInstance3D@19" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=227684055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, -0.048)
+material_override = ExtResource("3_2oida")
+mesh = SubResource("BoxMesh_nedem")
+
+[node name="@MeshInstance3D@20" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=544920456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.65, -0.048)
+material_override = ExtResource("3_2oida")
+mesh = SubResource("BoxMesh_iegbk")
+
+[node name="@MeshInstance3D@21" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=540207557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.048)
+material_override = ExtResource("3_2oida")
+mesh = SubResource("BoxMesh_t62qi")
+
+[node name="@MeshInstance3D@22" type="MeshInstance3D" parent="WindowPlaceholder" unique_id=165159175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, -0.048)
+material_override = ExtResource("3_2oida")
+mesh = SubResource("BoxMesh_6pp7e")
 
 [node name="@StaticBody3D@342" type="StaticBody3D" parent="." unique_id=1956176535]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.6, 0)
@@ -9534,12 +9636,87 @@ shape = SubResource("BoxShape3D_6ltfm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 3.9, 10.17)
 
 [node name="Mesh" type="MeshInstance3D" parent="LandingGuard" unique_id=1392143451]
+visible = false
 material_override = ExtResource("2_1yyi6")
 mesh = SubResource("BoxMesh_o5mms")
 metadata/house_surface = "floor_wood"
 
 [node name="Collision" type="CollisionShape3D" parent="LandingGuard" unique_id=1298303329]
 shape = SubResource("BoxShape3D_504fb")
+
+[node name="@MeshInstance3D@2" type="MeshInstance3D" parent="LandingGuard" unique_id=1496455551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_jqh1m")
+
+[node name="@MeshInstance3D@3" type="MeshInstance3D" parent="LandingGuard" unique_id=514899710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8333333, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_ewmka")
+
+[node name="@MeshInstance3D@4" type="MeshInstance3D" parent="LandingGuard" unique_id=983750368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6666667, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_sjkkn")
+
+[node name="@MeshInstance3D@5" type="MeshInstance3D" parent="LandingGuard" unique_id=600320600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_xlolv")
+
+[node name="@MeshInstance3D@6" type="MeshInstance3D" parent="LandingGuard" unique_id=1640099792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33333334, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_u3c8r")
+
+[node name="@MeshInstance3D@7" type="MeshInstance3D" parent="LandingGuard" unique_id=1190562687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16666667, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_dmndo")
+
+[node name="@MeshInstance3D@8" type="MeshInstance3D" parent="LandingGuard" unique_id=2105293008]
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_tc53j")
+
+[node name="@MeshInstance3D@9" type="MeshInstance3D" parent="LandingGuard" unique_id=1646207029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16666667, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_0qbxq")
+
+[node name="@MeshInstance3D@10" type="MeshInstance3D" parent="LandingGuard" unique_id=1086453680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33333334, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_jtath")
+
+[node name="@MeshInstance3D@11" type="MeshInstance3D" parent="LandingGuard" unique_id=2021844185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_hce58")
+
+[node name="@MeshInstance3D@12" type="MeshInstance3D" parent="LandingGuard" unique_id=1457925804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6666667, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_3rqpr")
+
+[node name="@MeshInstance3D@13" type="MeshInstance3D" parent="LandingGuard" unique_id=1187036429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8333333, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_am0jt")
+
+[node name="@MeshInstance3D@14" type="MeshInstance3D" parent="LandingGuard" unique_id=2107140037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_52srl")
+
+[node name="@MeshInstance3D@15" type="MeshInstance3D" parent="LandingGuard" unique_id=2000926809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_scv12")
+
+[node name="@MeshInstance3D@16" type="MeshInstance3D" parent="LandingGuard" unique_id=1785056890]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46, 0)
+material_override = ExtResource("2_1yyi6")
+mesh = SubResource("BoxMesh_bj7mj")
 
 [node name="@StaticBody3D@544" type="StaticBody3D" parent="." unique_id=2040418887]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.05, 0, 4.2)
@@ -10158,11 +10335,13 @@ metadata/house_surface = "floor_wood"
 [node name="Collision" type="CollisionShape3D" parent="SecretPassageRoof" unique_id=958437601]
 shape = SubResource("BoxShape3D_ppeg4")
 
-[node name="StudyCupboard" parent="." unique_id=1886850520 instance=ExtResource("SimpleStorage0")]
+[node name="StudyCupboard" type="StaticBody3D" parent="." unique_id=1886850520 instance=ExtResource("SimpleStorage0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15, 1.2, 1.55)
 
-[node name="DiningCupboard" parent="." unique_id=798785991 instance=ExtResource("SimpleStorage1")]
+[node name="DiningCupboard" type="StaticBody3D" parent="." unique_id=798785991 instance=ExtResource("SimpleStorage1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.85, 1.2, 1.55)
 
-[node name="BedroomWardrobe" parent="." unique_id=1596528008 instance=ExtResource("SimpleStorage2")]
+[node name="BedroomWardrobe" type="StaticBody3D" parent="." unique_id=1596528008 instance=ExtResource("SimpleStorage2")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14, 4.6, 11.1)
 
 [node name="BrokenPlaster" type="StaticBody3D" parent="." unique_id=1644229523]
@@ -12123,7 +12302,8 @@ metadata/house_surface = "floor_wood"
 [node name="Collision" type="CollisionShape3D" parent="LadderCover" unique_id=936570686]
 shape = SubResource("BoxShape3D_jss8v")
 
-[node name="KitchenCupboard" parent="." unique_id=1350274397 instance=ExtResource("SimpleStorage3")]
+[node name="KitchenCupboard" type="StaticBody3D" parent="." unique_id=1350274397 instance=ExtResource("SimpleStorage3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3, 1.2, 3.6)
 
 [node name="EntranceHatch" type="Node3D" parent="." unique_id=1431596372]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 13.2)
@@ -12454,7 +12634,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 current = true
 fov = 80.0
 
-[node name="FlashlightRig" parent="Player/Camera" unique_id=786054577 instance=ExtResource("FlashlightRig")]
+[node name="FlashlightRig" type="Node3D" parent="Player/Camera" unique_id=786054577 instance=ExtResource("FlashlightRig")]
+script = ExtResource("15_wr55o")
 
 [node name="Caught" type="AudioStreamPlayer" parent="Player" unique_id=341243957]
 stream = ExtResource("CaughtSound")
@@ -12495,27 +12676,37 @@ offset_right = 12.0
 offset_bottom = 52.0
 theme_override_font_sizes/font_size = 13
 
-[node name="Lighting" parent="." unique_id=1627942066 instance=ExtResource("7_232vc")]
+[node name="Lighting" type="Node3D" parent="." unique_id=1627942066 instance=ExtResource("7_232vc")]
+script = ExtResource("20_cge8g")
+environment_node = NodePath("../Environment")
+horror_environment = ExtResource("6_378n2")
+normal_environment = ExtResource("21_2r2by")
 
-[node name="HorrorUI" parent="." unique_id=1707662443 instance=ExtResource("HorrorUI")]
+[node name="HorrorUI" type="CanvasLayer" parent="." unique_id=1707662443 instance=ExtResource("HorrorUI")]
+layer = 8
+script = ExtResource("23_mh2pc")
 
-[node name="FlashlightPickup" parent="." unique_id=1666868788 instance=ExtResource("FlashlightPickup")]
+[node name="FlashlightPickup" type="RigidBody3D" parent="." unique_id=1666868788 instance=ExtResource("FlashlightPickup")]
 transform = Transform3D(0.7960838, 0, 0.6051864, 0, 1, 0, -0.6051864, 0, 0.7960838, 6.65, -3.3, 14.65)
+mass = 0.3
+freeze = true
+continuous_cd = true
+script = ExtResource("25_doqsj")
 
-[node name="BasementDecay" parent="." unique_id=491705221 instance=ExtResource("18_12vhc")]
+[node name="BasementDecay" type="Node3D" parent="." unique_id=491705221 instance=ExtResource("18_12vhc")]
 
-[node name="BasementDressing" parent="." unique_id=1521041405 instance=ExtResource("19_kbk2q")]
+[node name="BasementDressing" type="Node3D" parent="." unique_id=1521041405 instance=ExtResource("19_kbk2q")]
 
-[node name="GroundFloorDressing" parent="." unique_id=386039719 instance=ExtResource("20_jwb2a")]
+[node name="GroundFloorDressing" type="Node3D" parent="." unique_id=386039719 instance=ExtResource("20_jwb2a")]
 
-[node name="StoneAndWorkshopDecor" parent="." unique_id=163339507 instance=ExtResource("22_12vhc")]
+[node name="StoneAndWorkshopDecor" type="Node3D" parent="." unique_id=163339507 instance=ExtResource("22_12vhc")]
 
-[node name="Visitation" parent="." unique_id=1507111137 node_paths=PackedStringArray("player", "route") instance=ExtResource("19_jwb2a")]
+[node name="Visitation" type="CharacterBody3D" parent="." unique_id=1507111137 node_paths=PackedStringArray("player", "route") instance=ExtResource("19_jwb2a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.424967, 0, 9.648829)
+collision_layer = 4
 floor_max_angle = 0.84
 floor_snap_length = 0.45
 script = ExtResource("HouseEnemy")
-navigation_refresh = 0.35
 player = NodePath("../Player")
 route = NodePath("../PatrolRoutes")
 
@@ -12553,17 +12744,21 @@ metadata/links = PackedInt32Array(1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98747396, -3.2518497, 1.2468147)
 metadata/links = PackedInt32Array(1)
 
-[node name="InteractionCrosshair" parent="." unique_id=341365910 instance=ExtResource("Crosshair")]
+[node name="InteractionCrosshair" type="CanvasLayer" parent="." unique_id=341365910 instance=ExtResource("Crosshair")]
+layer = 20
 
-[node name="HouseNavigation" parent="." unique_id=1503831427 instance=ExtResource("NavRegion")]
+[node name="HouseNavigation" type="NavigationRegion3D" parent="." unique_id=1503831427 instance=ExtResource("NavRegion")]
 navigation_mesh = SubResource("NavigationMesh_5n856")
 
-[node name="CeilingFixtures" parent="." unique_id=986522891 instance=ExtResource("Fixtures")]
+[node name="CeilingFixtures" type="Node3D" parent="." unique_id=986522891 instance=ExtResource("Fixtures")]
 
-[node name="CellSightBarrier" parent="." unique_id=1366103769 instance=ExtResource("SightScreen")]
+[node name="CellSightBarrier" type="Area3D" parent="." unique_id=1366103769 instance=ExtResource("SightScreen")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1.85, 12)
+collision_layer = 8
+collision_mask = 0
+monitoring = false
 
-[node name="UpperDressing" parent="." unique_id=1457611779 instance=ExtResource("37_3gk4g")]
+[node name="UpperDressing" type="Node3D" parent="." unique_id=1457611779 instance=ExtResource("37_3gk4g")]
 
 [node name="UpperWindowFrames" type="Node3D" parent="." unique_id=359586130]
 visible = false
@@ -13472,7 +13667,8 @@ material_override = ExtResource("6_g2ylm")
 lod_bias = 0.7
 mesh = ExtResource("118_mitge")
 
-[node name="HouseOcclusion" parent="." unique_id=1893118960 instance=ExtResource("23_vseff")]
+[node name="HouseOcclusion" type="Node3D" parent="." unique_id=1893118960 instance=ExtResource("23_vseff")]
+metadata/rebuild_tool = "res://tools/house/build_occlusion.gd"
 
 [node name="HouseVisibility" type="Node" parent="." unique_id=921435536]
 script = ExtResource("119_hwbgl")

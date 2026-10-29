@@ -2433,7 +2433,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_318jd")
 surface_material_override/2 = SubResource("StandardMaterial3D_53laq")
 
 [node name="BookEncyclopediaSet01" type="Node3D" parent="." unique_id=1382331594]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.55, 4.18, 11.4)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.8, 4.18, 11.4)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
 
@@ -2540,7 +2540,7 @@ lod_bias = 0.7
 mesh = ExtResource("68_2qb7w")
 
 [node name="MetalToolboxLoose" type="RigidBody3D" parent="." unique_id=1744264446]
-transform = Transform3D(0.9612617, 0, 0.27563736, 0, 1, 0, -0.27563736, 0, 0.9612617, 12, 3.43, 10.9)
+transform = Transform3D(0.9612617, 0, 0.27563736, 0, 1, 0, -0.27563736, 0, 0.9612617, 13, 3.43, 11.25)
 collision_layer = 17
 collision_mask = 17
 mass = 0.6
@@ -2604,7 +2604,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
 shape = SubResource("BoxShape3D_mssw7")
 
 [node name="LooseBottle" type="RigidBody3D" parent="." unique_id=911221985]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1175871e-08, 0.14916198, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.6, 4.319, 11.05)
 collision_layer = 17
 collision_mask = 17
 mass = 0.45
@@ -2620,7 +2620,7 @@ mesh = SubResource("ArrayMesh_vb6r8")
 shape = SubResource("BoxShape3D_4r17i")
 
 [node name="@RigidBody3D@8" type="RigidBody3D" parent="." unique_id=974164719]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 0.1656836, 2.8423965e-06)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.78, 4.336, 11.05)
 collision_layer = 17
 collision_mask = 17
 mass = 0.45
@@ -2636,7 +2636,7 @@ mesh = SubResource("ArrayMesh_hnckx")
 shape = SubResource("BoxShape3D_53dxw")
 
 [node name="@RigidBody3D@11" type="RigidBody3D" parent="." unique_id=47879949]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15318064, -1.1175871e-08)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.96, 4.323, 11.05)
 collision_layer = 17
 collision_mask = 17
 mass = 0.45
@@ -2652,7 +2652,7 @@ mesh = SubResource("ArrayMesh_aot35")
 shape = SubResource("BoxShape3D_uea6m")
 
 [node name="@RigidBody3D@14" type="RigidBody3D" parent="." unique_id=61755534]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15776296, 1.1112541e-05)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.14, 4.328, 11.05)
 collision_layer = 17
 collision_mask = 17
 mass = 0.45

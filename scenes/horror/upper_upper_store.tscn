@@ -483,7 +483,7 @@ mesh = SubResource("ArrayMesh_62c5y")
 surface_material_override/0 = SubResource("StandardMaterial3D_i3ipf")
 
 [node name="@Node3D@94" type="Node3D" parent="." unique_id=1751880504]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 4.6073217, 13.3)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 4.82, 13.3)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/asset_id = "cardboard_box_01"
 
@@ -513,7 +513,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_imv74")
 surface_material_override/1 = SubResource("StandardMaterial3D_1of7n")
 
 [node name="Dustpan" type="Node3D" parent="." unique_id=1323269898]
-transform = Transform3D(0.90630776, 0, -0.42261827, 0, 1, 0, 0.42261827, 0, 0.90630776, 3.3, 3.4, 12.8)
+transform = Transform3D(0.90630776, 0, -0.42261827, 0, 1, 0, 0.42261827, 0, 0.90630776, 2.95, 3.4, 12.25)
 metadata/source = "https://polyhaven.com/a/dustpan"
 metadata/asset_id = "dustpan"
 

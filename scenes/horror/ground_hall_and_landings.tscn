@@ -663,6 +663,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_a0fxu")
 
 [node name="@Node3D@121" type="Node3D" parent="." unique_id=2046863890]
+visible = false
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.83, 2.3, 8.5)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/dimensions = Vector3(0.781886, 0.52000004, 0.034398153)
@@ -677,6 +678,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_a0fxu")
 
 [node name="@Node3D@122" type="Node3D" parent="." unique_id=1201230127]
+visible = false
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.17, 2.35, 2.5)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/dimensions = Vector3(0.75181353, 0.5, 0.033075146)

@@ -1436,7 +1436,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_ilrpf")
 
 [node name="MetalTrashCan" type="StaticBody3D" parent="." unique_id=1575892966]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.35, 0, 12.6)
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 8.45, 0, 12.65)
 metadata/source = "https://polyhaven.com/a/metal_trash_can"
 metadata/dimensions = Vector3(0.9783255, 0.48000005, 0.2946679)
 metadata/asset_id = "metal_trash_can"
