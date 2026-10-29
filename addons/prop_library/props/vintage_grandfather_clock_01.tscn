@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/vintage_grandfather_clock_01/vintage_grandfather_clock_01.gltf" id="1_qyjoj"]
+
+[node name="VintageGrandfatherClock01" type="Node3D" unique_id=1937442578]
+metadata/asset_id = "vintage_grandfather_clock_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=820067687 instance=ExtResource("1_qyjoj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.496906e-05, -0.025101632)

@@ -10,6 +10,7 @@ func interact() -> void: set_open(not opened)
 func set_open(value: bool) -> void:
 	if opened == value: return
 	opened = value
+	get_tree().call_group("dynamic_navigation","request_update")
 	if motion: motion.kill()
 	motion = create_tween()
 	var property := "rotation:x" if floor_hatch else "rotation:y"

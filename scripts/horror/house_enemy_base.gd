@@ -25,6 +25,10 @@ var search_origin := Vector3.ZERO
 var search_step: int = 0
 var previous_position := Vector3.ZERO
 var stuck_time: float = 0.0
+@export_range(20.0,75.0) var head_yaw_limit: float=55.0
+@export var head_follow_speed: float=8.0
+var tracked_yaw:=0.0
+var tracked_pitch:=0.0
 var head: Node3D
 var arm_left: Node3D
 var arm_right: Node3D
@@ -238,25 +242,28 @@ func attention_target() -> Vector3:
 	if state == "SEARCH" and not route_path.is_empty(): return route_path[0] + Vector3.UP * 1.5
 	return last_seen + Vector3.UP * 1.5
 
+func relax_head_tracking(delta: float) -> void:
+	tracked_yaw=lerp_angle(tracked_yaw,0.0,1.0-exp(-delta*head_follow_speed))
+	tracked_pitch=lerpf(tracked_pitch,0.0,1.0-exp(-delta*head_follow_speed))
 func track_player_head(delta: float, target: Vector3 = Vector3.INF) -> void:
-	if not pose_skeleton or not pose_bones.has("Head"): return
-	if target == Vector3.INF: target = attention_target()
-	var index: int = pose_bones["Head"]
-	var rest := pose_skeleton.get_bone_global_rest(index)
-	var parent := pose_skeleton.get_bone_parent(index)
-	var parent_basis := pose_skeleton.get_bone_global_pose(parent).basis.orthonormalized() if parent >= 0 else Basis.IDENTITY
-	# Aim from the photographed eyes, not from the neck joint. Iterate as the
-	# eye position itself moves around the neck pivot when the head turns.
-	for iteration in range(3):
-		var pose := pose_skeleton.get_bone_global_pose(index)
-		var eyes := pose_skeleton.global_transform * (pose * (rest.affine_inverse() * Vector3(0,1.905,-0.26)))
-		var direction: Vector3 = target - eyes
-		if direction.length_squared() < 0.001: return
-		var up := Vector3.FORWARD if absf(direction.normalized().dot(Vector3.UP)) > 0.98 else Vector3.UP
-		var desired_world := Basis.looking_at(direction.normalized(), up)
-		var desired_model := pose_skeleton.global_basis.orthonormalized().inverse() * desired_world
-		var rotation := (parent_basis.inverse() * desired_model * rest.basis.orthonormalized()).get_rotation_quaternion()
-		pose_skeleton.set_bone_pose_rotation(index, rotation)
+	if not pose_skeleton or not pose_bones.has("Head"):return
+	if target==Vector3.INF:target=attention_target()
+	var index: int=pose_bones["Head"]
+	var direction: Vector3=target-sight_origin()
+	if direction.length_squared()<.001:return
+	# Limit the gaze relative to her torso. The body must turn to follow behind.
+	var local:=figure.global_basis.orthonormalized().inverse()*direction.normalized()
+	var yaw:=clampf(atan2(-local.x,-local.z),-deg_to_rad(head_yaw_limit),deg_to_rad(head_yaw_limit))
+	var pitch:=clampf(atan2(local.y,Vector2(local.x,local.z).length()),deg_to_rad(-28.0),deg_to_rad(20.0))
+	tracked_yaw=lerp_angle(tracked_yaw,yaw,1.0-exp(-delta*head_follow_speed))
+	tracked_pitch=lerpf(tracked_pitch,pitch,1.0-exp(-delta*head_follow_speed))
+	var desired_world:=figure.global_basis.orthonormalized()*Basis.from_euler(Vector3(tracked_pitch,tracked_yaw,0))
+	var parent:=pose_skeleton.get_bone_parent(index)
+	var parent_basis:=pose_skeleton.get_bone_global_pose(parent).basis.orthonormalized() if parent>=0 else Basis.IDENTITY
+	var rest:=pose_skeleton.get_bone_global_rest(index).basis.orthonormalized()
+	var desired_model:=pose_skeleton.global_basis.orthonormalized().inverse()*desired_world
+	var rotation: Quaternion=(parent_basis.inverse()*desired_model*rest).get_rotation_quaternion()
+	pose_skeleton.set_bone_pose_rotation(index,rotation)
 
 
 func plan_route(destination: Vector3) -> PackedVector3Array:

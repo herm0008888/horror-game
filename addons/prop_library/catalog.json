@@ -1,0 +1,1010 @@
+[
+	{
+		"category": "Stoler",
+		"dimensions": [
+			0.848,
+			1.065,
+			0.766
+		],
+		"id": "ArmChair_01",
+		"interactive": false,
+		"name": "Arm Chair 01",
+		"path": "res://addons/prop_library/props/ArmChair_01.tscn",
+		"source": "res://assets/house_library/ArmChair_01/ArmChair_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/ArmChair_01.png"
+	},
+	{
+		"category": "Senger",
+		"dimensions": [
+			1.494,
+			1.534,
+			2.04
+		],
+		"id": "GothicBed_01",
+		"interactive": false,
+		"name": "Gothic Bed 01",
+		"path": "res://addons/prop_library/props/GothicBed_01.tscn",
+		"source": "res://assets/house_library/GothicBed_01/GothicBed_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/GothicBed_01.png"
+	},
+	{
+		"category": "Stoler",
+		"dimensions": [
+			0.708,
+			0.995,
+			0.833
+		],
+		"id": "Rockingchair_01",
+		"interactive": false,
+		"name": "Rockingchair 01",
+		"path": "res://addons/prop_library/props/Rockingchair_01.tscn",
+		"source": "res://assets/house_library/Rockingchair_01/Rockingchair_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/Rockingchair_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.6,
+			0.457,
+			0.471
+		],
+		"id": "Television_01",
+		"interactive": false,
+		"name": "Television 01",
+		"path": "res://addons/prop_library/props/Television_01.tscn",
+		"source": "res://assets/house_library/Television_01/Television_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/Television_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.132,
+			0.174,
+			0.067
+		],
+		"id": "alarm_clock_01",
+		"interactive": false,
+		"name": "Alarm Clock 01",
+		"path": "res://addons/prop_library/props/alarm_clock_01.tscn",
+		"source": "res://assets/house_library/alarm_clock_01/alarm_clock_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/alarm_clock_01.png"
+	},
+	{
+		"category": "Kjøkken",
+		"dimensions": [
+			0.593,
+			0.856,
+			0.593
+		],
+		"id": "barrel_stove",
+		"interactive": false,
+		"name": "Barrel Stove",
+		"path": "res://addons/prop_library/props/barrel_stove.tscn",
+		"source": "res://assets/house_library/barrel_stove/barrel_stove.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/barrel_stove.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.088,
+			0.294,
+			0.061
+		],
+		"id": "bleach_bottle",
+		"interactive": false,
+		"name": "Bleach Bottle",
+		"path": "res://addons/prop_library/props/bleach_bottle.tscn",
+		"source": "res://assets/house_library/bleach_bottle/bleach_bottle.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/bleach_bottle.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.551,
+			0.237,
+			0.163
+		],
+		"id": "book_encyclopedia_set_01",
+		"interactive": false,
+		"name": "Book Encyclopedia Set 01",
+		"path": "res://addons/prop_library/props/book_encyclopedia_set_01.tscn",
+		"source": "res://assets/house_library/book_encyclopedia_set_01/book_encyclopedia_set_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/book_encyclopedia_set_01.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			0.724,
+			0.47,
+			0.186
+		],
+		"id": "boombox",
+		"interactive": false,
+		"name": "Boombox",
+		"path": "res://addons/prop_library/props/boombox.tscn",
+		"source": "res://assets/house_library/boombox/boombox.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/boombox.png"
+	},
+	{
+		"category": "Lys",
+		"dimensions": [
+			1.053,
+			0.835,
+			0.365
+		],
+		"id": "brass_candleholders",
+		"interactive": false,
+		"name": "Brass Candleholders",
+		"path": "res://addons/prop_library/props/brass_candleholders.tscn",
+		"source": "res://assets/house_library/brass_candleholders/brass_candleholders.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/brass_candleholders.png"
+	},
+	{
+		"category": "Lys",
+		"dimensions": [
+			1.162,
+			0.75,
+			0.315
+		],
+		"id": "caged_hanging_light",
+		"interactive": false,
+		"name": "Caged Hanging Light",
+		"path": "res://addons/prop_library/props/caged_hanging_light.tscn",
+		"source": "res://assets/house_library/caged_hanging_light/caged_hanging_light.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/caged_hanging_light.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.125,
+			0.151,
+			0.125
+		],
+		"id": "can_rusted",
+		"interactive": false,
+		"name": "Can Rusted",
+		"path": "res://addons/prop_library/props/can_rusted.tscn",
+		"source": "res://assets/house_library/can_rusted/can_rusted.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/can_rusted.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			0.387,
+			0.342,
+			0.516
+		],
+		"id": "cardboard_box_01",
+		"interactive": false,
+		"name": "Cardboard Box 01",
+		"path": "res://addons/prop_library/props/cardboard_box_01.tscn",
+		"source": "res://assets/house_library/cardboard_box_01/cardboard_box_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/cardboard_box_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.272,
+			0.038,
+			0.269
+		],
+		"id": "carved_wooden_plate",
+		"interactive": false,
+		"name": "Carved Wooden Plate",
+		"path": "res://addons/prop_library/props/carved_wooden_plate.tscn",
+		"source": "res://assets/house_library/carved_wooden_plate/carved_wooden_plate.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/carved_wooden_plate.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.656,
+			0.372,
+			0.502
+		],
+		"id": "ceramic_pot",
+		"interactive": false,
+		"name": "Ceramic Pot",
+		"path": "res://addons/prop_library/props/ceramic_pot.tscn",
+		"source": "res://assets/house_library/ceramic_pot/ceramic_pot.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/ceramic_pot.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.099,
+			0.3,
+			0.024
+		],
+		"id": "cross_pein_hammer",
+		"interactive": false,
+		"name": "Cross Pein Hammer",
+		"path": "res://addons/prop_library/props/cross_pein_hammer.tscn",
+		"source": "res://assets/house_library/cross_pein_hammer/cross_pein_hammer.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/cross_pein_hammer.png"
+	},
+	{
+		"category": "Bord",
+		"dimensions": [
+			0.202,
+			0.893,
+			0.614
+		],
+		"id": "desk_lamp_arm_01",
+		"interactive": false,
+		"name": "Desk Lamp Arm 01",
+		"path": "res://addons/prop_library/props/desk_lamp_arm_01.tscn",
+		"source": "res://assets/house_library/desk_lamp_arm_01/desk_lamp_arm_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/desk_lamp_arm_01.png"
+	},
+	{
+		"category": "Bord",
+		"dimensions": [
+			2.256,
+			0.877,
+			1.39
+		],
+		"id": "dining_table",
+		"interactive": false,
+		"name": "Dining Table",
+		"path": "res://addons/prop_library/props/dining_table.tscn",
+		"source": "res://assets/house_library/dining_table/dining_table.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/dining_table.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.332,
+			0.1,
+			0.368
+		],
+		"id": "dustpan",
+		"interactive": false,
+		"name": "Dustpan",
+		"path": "res://addons/prop_library/props/dustpan.tscn",
+		"source": "res://assets/house_library/dustpan/dustpan.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/dustpan.png"
+	},
+	{
+		"category": "Kjøkken",
+		"dimensions": [
+			0.6,
+			0.9,
+			0.65
+		],
+		"id": "electric_stove",
+		"interactive": true,
+		"name": "Electric Stove",
+		"path": "res://scenes/horror/furniture/storage_015.tscn",
+		"source": "res://assets/house_library/electric_stove/electric_stove.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/electric_stove.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.041,
+			0.167,
+			0.633
+		],
+		"id": "handsaw_wood",
+		"interactive": false,
+		"name": "Handsaw Wood",
+		"path": "res://addons/prop_library/props/handsaw_wood.tscn",
+		"source": "res://assets/house_library/handsaw_wood/handsaw_wood.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/handsaw_wood.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.752,
+			0.5,
+			0.033
+		],
+		"id": "hanging_picture_frame_02",
+		"interactive": false,
+		"name": "Hanging Picture Frame 02",
+		"path": "res://addons/prop_library/props/hanging_picture_frame_02.tscn",
+		"source": "res://assets/house_library/hanging_picture_frame_02/hanging_picture_frame_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/hanging_picture_frame_02.png"
+	},
+	{
+		"category": "Lys",
+		"dimensions": [
+			0.273,
+			0.43,
+			0.14
+		],
+		"id": "industrial_wall_lamp",
+		"interactive": false,
+		"name": "Industrial Wall Lamp",
+		"path": "res://addons/prop_library/props/industrial_wall_lamp.tscn",
+		"source": "res://assets/house_library/industrial_wall_lamp/industrial_wall_lamp.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/industrial_wall_lamp.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.342,
+			0.16,
+			0.126
+		],
+		"id": "mantel_clock_01",
+		"interactive": false,
+		"name": "Mantel Clock 01",
+		"path": "res://addons/prop_library/props/mantel_clock_01.tscn",
+		"source": "res://assets/house_library/mantel_clock_01/mantel_clock_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/mantel_clock_01.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			0.781,
+			1.25,
+			1.314
+		],
+		"id": "metal_tool_chest",
+		"interactive": true,
+		"name": "Metal Tool Chest",
+		"path": "res://scenes/horror/furniture/storage_004.tscn",
+		"source": "res://assets/house_library/metal_tool_chest/metal_tool_chest.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/metal_tool_chest.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			0.369,
+			0.32,
+			0.27
+		],
+		"id": "metal_toolbox",
+		"interactive": true,
+		"name": "Metal Toolbox",
+		"path": "res://scenes/horror/furniture/storage_002.tscn",
+		"source": "res://assets/house_library/metal_toolbox/metal_toolbox.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/metal_toolbox.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			1.847,
+			0.906,
+			0.556
+		],
+		"id": "metal_trash_can",
+		"interactive": false,
+		"name": "Metal Trash Can",
+		"path": "res://addons/prop_library/props/metal_trash_can.tscn",
+		"source": "res://assets/house_library/metal_trash_can/metal_trash_can.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/metal_trash_can.png"
+	},
+	{
+		"category": "Stein og kjeller",
+		"dimensions": [
+			1.403,
+			1.955,
+			0.308
+		],
+		"id": "modular_industrial_pipes_01",
+		"interactive": false,
+		"name": "Modular Industrial Pipes 01",
+		"path": "res://addons/prop_library/props/modular_industrial_pipes_01.tscn",
+		"source": "res://assets/house_library/modular_industrial_pipes_01/modular_industrial_pipes_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/modular_industrial_pipes_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.088,
+			0.229,
+			0.09
+		],
+		"id": "multi_cleaner_bottle",
+		"interactive": false,
+		"name": "Multi Cleaner Bottle",
+		"path": "res://addons/prop_library/props/multi_cleaner_bottle.tscn",
+		"source": "res://assets/house_library/multi_cleaner_bottle/multi_cleaner_bottle.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/multi_cleaner_bottle.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.115,
+			0.205,
+			0.154
+		],
+		"id": "oil_tin",
+		"interactive": false,
+		"name": "Oil Tin",
+		"path": "res://addons/prop_library/props/oil_tin.tscn",
+		"source": "res://assets/house_library/oil_tin/oil_tin.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/oil_tin.png"
+	},
+	{
+		"category": "Senger",
+		"dimensions": [
+			0.905,
+			1.201,
+			2.002
+		],
+		"id": "old_bed_frame",
+		"interactive": false,
+		"name": "Old Bed Frame",
+		"path": "res://addons/prop_library/props/old_bed_frame.tscn",
+		"source": "res://assets/house_library/old_bed_frame/old_bed_frame.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/old_bed_frame.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			1.815,
+			0.301,
+			0.979
+		],
+		"id": "old_military_crate",
+		"interactive": false,
+		"name": "Old Military Crate",
+		"path": "res://addons/prop_library/props/old_military_crate.tscn",
+		"source": "res://assets/house_library/old_military_crate/old_military_crate.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/old_military_crate.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.486,
+			0.744,
+			0.026
+		],
+		"id": "ornate_mirror_01",
+		"interactive": false,
+		"name": "Ornate Mirror 01",
+		"path": "res://addons/prop_library/props/ornate_mirror_01.tscn",
+		"source": "res://assets/house_library/ornate_mirror_01/ornate_mirror_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/ornate_mirror_01.png"
+	},
+	{
+		"category": "Stoler",
+		"dimensions": [
+			1.165,
+			0.889,
+			0.497
+		],
+		"id": "painted_wooden_bench",
+		"interactive": false,
+		"name": "Painted Wooden Bench",
+		"path": "res://addons/prop_library/props/painted_wooden_bench.tscn",
+		"source": "res://assets/house_library/painted_wooden_bench/painted_wooden_bench.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_bench.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			1.516,
+			1.5,
+			0.783
+		],
+		"id": "painted_wooden_cabinet",
+		"interactive": true,
+		"name": "Painted Wooden Cabinet",
+		"path": "res://scenes/horror/furniture/storage_005.tscn",
+		"source": "res://assets/house_library/painted_wooden_cabinet/painted_wooden_cabinet.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_cabinet.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			1.3,
+			2.4,
+			0.5
+		],
+		"id": "painted_wooden_cabinet_02",
+		"interactive": true,
+		"name": "Painted Wooden Cabinet 02",
+		"path": "res://scenes/horror/furniture/storage_012.tscn",
+		"source": "res://assets/house_library/painted_wooden_cabinet_02/painted_wooden_cabinet_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_cabinet_02.png"
+	},
+	{
+		"category": "Stoler",
+		"dimensions": [
+			0.432,
+			0.956,
+			0.54
+		],
+		"id": "painted_wooden_chair_01",
+		"interactive": false,
+		"name": "Painted Wooden Chair 01",
+		"path": "res://addons/prop_library/props/painted_wooden_chair_01.tscn",
+		"source": "res://assets/house_library/painted_wooden_chair_01/painted_wooden_chair_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_chair_01.png"
+	},
+	{
+		"category": "Stoler",
+		"dimensions": [
+			0.639,
+			1.264,
+			0.662
+		],
+		"id": "painted_wooden_chair_02",
+		"interactive": false,
+		"name": "Painted Wooden Chair 02",
+		"path": "res://addons/prop_library/props/painted_wooden_chair_02.tscn",
+		"source": "res://assets/house_library/painted_wooden_chair_02/painted_wooden_chair_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_chair_02.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.62,
+			0.62,
+			0.58
+		],
+		"id": "painted_wooden_nightstand",
+		"interactive": true,
+		"name": "Painted Wooden Nightstand",
+		"path": "res://scenes/horror/furniture/storage_011.tscn",
+		"source": "res://assets/house_library/painted_wooden_nightstand/painted_wooden_nightstand.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_nightstand.png"
+	},
+	{
+		"category": "Stoler",
+		"dimensions": [
+			0.385,
+			0.579,
+			0.406
+		],
+		"id": "painted_wooden_stool",
+		"interactive": false,
+		"name": "Painted Wooden Stool",
+		"path": "res://addons/prop_library/props/painted_wooden_stool.tscn",
+		"source": "res://assets/house_library/painted_wooden_stool/painted_wooden_stool.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_stool.png"
+	},
+	{
+		"category": "Bord",
+		"dimensions": [
+			2.406,
+			0.959,
+			1.137
+		],
+		"id": "painted_wooden_table",
+		"interactive": false,
+		"name": "Painted Wooden Table",
+		"path": "res://addons/prop_library/props/painted_wooden_table.tscn",
+		"source": "res://assets/house_library/painted_wooden_table/painted_wooden_table.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/painted_wooden_table.png"
+	},
+	{
+		"category": "Stein og kjeller",
+		"dimensions": [
+			0.084,
+			0.405,
+			0.034
+		],
+		"id": "pipe_wrench",
+		"interactive": false,
+		"name": "Pipe Wrench",
+		"path": "res://addons/prop_library/props/pipe_wrench.tscn",
+		"source": "res://assets/house_library/pipe_wrench/pipe_wrench.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/pipe_wrench.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.166,
+			0.274,
+			0.126
+		],
+		"id": "plastic_bottle_gallon",
+		"interactive": false,
+		"name": "Plastic Bottle Gallon",
+		"path": "res://addons/prop_library/props/plastic_bottle_gallon.tscn",
+		"source": "res://assets/house_library/plastic_bottle_gallon/plastic_bottle_gallon.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/plastic_bottle_gallon.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.416,
+			1.198,
+			0.567
+		],
+		"id": "plastic_broom",
+		"interactive": false,
+		"name": "Plastic Broom",
+		"path": "res://addons/prop_library/props/plastic_broom.tscn",
+		"source": "res://assets/house_library/plastic_broom/plastic_broom.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/plastic_broom.png"
+	},
+	{
+		"category": "Bord",
+		"dimensions": [
+			0.172,
+			0.13,
+			0.04
+		],
+		"id": "portable_cassette_player",
+		"interactive": false,
+		"name": "Portable Cassette Player",
+		"path": "res://addons/prop_library/props/portable_cassette_player.tscn",
+		"source": "res://assets/house_library/portable_cassette_player/portable_cassette_player.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/portable_cassette_player.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.263,
+			0.178,
+			0.18
+		],
+		"id": "pot_enamel_01",
+		"interactive": false,
+		"name": "Pot Enamel 01",
+		"path": "res://addons/prop_library/props/pot_enamel_01.tscn",
+		"source": "res://assets/house_library/pot_enamel_01/pot_enamel_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/pot_enamel_01.png"
+	},
+	{
+		"category": "Stein og kjeller",
+		"dimensions": [
+			8.005,
+			1.768,
+			6.949
+		],
+		"id": "rock_moss_set_01",
+		"interactive": false,
+		"name": "Rock Moss Set 01",
+		"path": "res://addons/prop_library/props/rock_moss_set_01.tscn",
+		"source": "res://assets/house_library/rock_moss_set_01/rock_moss_set_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/rock_moss_set_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.142,
+			0.085,
+			0.046
+		],
+		"id": "russian_food_cans_01",
+		"interactive": false,
+		"name": "Russian Food Cans 01",
+		"path": "res://addons/prop_library/props/russian_food_cans_01.tscn",
+		"source": "res://assets/house_library/russian_food_cans_01/russian_food_cans_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/russian_food_cans_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.266,
+			0.237,
+			0.104
+		],
+		"id": "small_oil_can_01",
+		"interactive": false,
+		"name": "Small Oil Can 01",
+		"path": "res://addons/prop_library/props/small_oil_can_01.tscn",
+		"source": "res://assets/house_library/small_oil_can_01/small_oil_can_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/small_oil_can_01.png"
+	},
+	{
+		"category": "Stoler",
+		"dimensions": [
+			1.807,
+			0.709,
+			0.818
+		],
+		"id": "sofa_02",
+		"interactive": false,
+		"name": "Sofa 02",
+		"path": "res://addons/prop_library/props/sofa_02.tscn",
+		"source": "res://assets/house_library/sofa_02/sofa_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/sofa_02.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.1,
+			0.25,
+			0.201
+		],
+		"id": "standing_picture_frame_01",
+		"interactive": false,
+		"name": "Standing Picture Frame 01",
+		"path": "res://addons/prop_library/props/standing_picture_frame_01.tscn",
+		"source": "res://assets/house_library/standing_picture_frame_01/standing_picture_frame_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/standing_picture_frame_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.4,
+			0.411,
+			0.35
+		],
+		"id": "television_02",
+		"interactive": false,
+		"name": "Television 02",
+		"path": "res://addons/prop_library/props/television_02.tscn",
+		"source": "res://assets/house_library/television_02/television_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/television_02.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			1.022,
+			0.45,
+			0.627
+		],
+		"id": "throw_pillows_01",
+		"interactive": false,
+		"name": "Throw Pillows 01",
+		"path": "res://addons/prop_library/props/throw_pillows_01.tscn",
+		"source": "res://assets/house_library/throw_pillows_01/throw_pillows_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/throw_pillows_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.528,
+			0.575,
+			0.463
+		],
+		"id": "trashbag",
+		"interactive": false,
+		"name": "Trashbag",
+		"path": "res://addons/prop_library/props/trashbag.tscn",
+		"source": "res://assets/house_library/trashbag/trashbag.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/trashbag.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			0.52,
+			1.12,
+			0.432
+		],
+		"id": "utility_box_01",
+		"interactive": false,
+		"name": "Utility Box 01",
+		"path": "res://addons/prop_library/props/utility_box_01.tscn",
+		"source": "res://assets/house_library/utility_box_01/utility_box_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/utility_box_01.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			2.022,
+			2.235,
+			0.67
+		],
+		"id": "vintage_cabinet_01",
+		"interactive": false,
+		"name": "Vintage Cabinet 01",
+		"path": "res://addons/prop_library/props/vintage_cabinet_01.tscn",
+		"source": "res://assets/house_library/vintage_cabinet_01/vintage_cabinet_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_cabinet_01.png"
+	},
+	{
+		"category": "Senger",
+		"dimensions": [
+			1.973,
+			1.127,
+			0.855
+		],
+		"id": "vintage_day_bed",
+		"interactive": false,
+		"name": "Vintage Day Bed",
+		"path": "res://addons/prop_library/props/vintage_day_bed.tscn",
+		"source": "res://assets/house_library/vintage_day_bed/vintage_day_bed.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_day_bed.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.321,
+			0.305,
+			0.249
+		],
+		"id": "vintage_electric_kettle",
+		"interactive": false,
+		"name": "Vintage Electric Kettle",
+		"path": "res://addons/prop_library/props/vintage_electric_kettle.tscn",
+		"source": "res://assets/house_library/vintage_electric_kettle/vintage_electric_kettle.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_electric_kettle.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.626,
+			2.191,
+			0.427
+		],
+		"id": "vintage_grandfather_clock_01",
+		"interactive": false,
+		"name": "Vintage Grandfather Clock 01",
+		"path": "res://addons/prop_library/props/vintage_grandfather_clock_01.tscn",
+		"source": "res://assets/house_library/vintage_grandfather_clock_01/vintage_grandfather_clock_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_grandfather_clock_01.png"
+	},
+	{
+		"category": "Lys",
+		"dimensions": [
+			0.22,
+			0.802,
+			0.22
+		],
+		"id": "vintage_oil_lamp",
+		"interactive": false,
+		"name": "Vintage Oil Lamp",
+		"path": "res://addons/prop_library/props/vintage_oil_lamp.tscn",
+		"source": "res://assets/house_library/vintage_oil_lamp/vintage_oil_lamp.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_oil_lamp.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			1.608,
+			0.568,
+			0.239
+		],
+		"id": "vintage_suitcase",
+		"interactive": false,
+		"name": "Vintage Suitcase",
+		"path": "res://addons/prop_library/props/vintage_suitcase.tscn",
+		"source": "res://assets/house_library/vintage_suitcase/vintage_suitcase.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_suitcase.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.343,
+			0.501,
+			0.193
+		],
+		"id": "vintage_telephone_wall_clock",
+		"interactive": false,
+		"name": "Vintage Telephone Wall Clock",
+		"path": "res://addons/prop_library/props/vintage_telephone_wall_clock.tscn",
+		"source": "res://assets/house_library/vintage_telephone_wall_clock/vintage_telephone_wall_clock.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/vintage_telephone_wall_clock.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.676,
+			0.331,
+			0.081
+		],
+		"id": "wine_bottles_01",
+		"interactive": false,
+		"name": "Wine Bottles 01",
+		"path": "res://addons/prop_library/props/wine_bottles_01.tscn",
+		"source": "res://assets/house_library/wine_bottles_01/wine_bottles_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wine_bottles_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			4.44,
+			0.957,
+			3.345
+		],
+		"id": "wooden_barrels_01",
+		"interactive": false,
+		"name": "Wooden Barrels 01",
+		"path": "res://addons/prop_library/props/wooden_barrels_01.tscn",
+		"source": "res://assets/house_library/wooden_barrels_01/wooden_barrels_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_barrels_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			1.374,
+			2.063,
+			0.581
+		],
+		"id": "wooden_bookshelf_worn",
+		"interactive": false,
+		"name": "Wooden Bookshelf Worn",
+		"path": "res://addons/prop_library/props/wooden_bookshelf_worn.tscn",
+		"source": "res://assets/house_library/wooden_bookshelf_worn/wooden_bookshelf_worn.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_bookshelf_worn.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.313,
+			0.094,
+			0.309
+		],
+		"id": "wooden_bowl_01",
+		"interactive": false,
+		"name": "Wooden Bowl 01",
+		"path": "res://addons/prop_library/props/wooden_bowl_01.tscn",
+		"source": "res://assets/house_library/wooden_bowl_01/wooden_bowl_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_bowl_01.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.367,
+			0.55,
+			0.342
+		],
+		"id": "wooden_bucket_01",
+		"interactive": false,
+		"name": "Wooden Bucket 01",
+		"path": "res://addons/prop_library/props/wooden_bucket_01.tscn",
+		"source": "res://assets/house_library/wooden_bucket_01/wooden_bucket_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_bucket_01.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			1.614,
+			0.65,
+			0.937
+		],
+		"id": "wooden_crate_01",
+		"interactive": true,
+		"name": "Wooden Crate 01",
+		"path": "res://scenes/horror/furniture/storage_000.tscn",
+		"source": "res://assets/house_library/wooden_crate_01/wooden_crate_01.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_crate_01.png"
+	},
+	{
+		"category": "Skap og skuffer",
+		"dimensions": [
+			0.656,
+			0.43,
+			1.145
+		],
+		"id": "wooden_crate_02",
+		"interactive": true,
+		"name": "Wooden Crate 02",
+		"path": "res://scenes/horror/furniture/storage_001.tscn",
+		"source": "res://assets/house_library/wooden_crate_02/wooden_crate_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_crate_02.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.45,
+			0.041,
+			0.247
+		],
+		"id": "wooden_cutting_board",
+		"interactive": false,
+		"name": "Wooden Cutting Board",
+		"path": "res://addons/prop_library/props/wooden_cutting_board.tscn",
+		"source": "res://assets/house_library/wooden_cutting_board/wooden_cutting_board.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_cutting_board.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.99,
+			1.722,
+			0.618
+		],
+		"id": "wooden_ladder_02",
+		"interactive": false,
+		"name": "Wooden Ladder 02",
+		"path": "res://addons/prop_library/props/wooden_ladder_02.tscn",
+		"source": "res://assets/house_library/wooden_ladder_02/wooden_ladder_02.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_ladder_02.png"
+	},
+	{
+		"category": "Dekor",
+		"dimensions": [
+			0.087,
+			0.025,
+			0.278
+		],
+		"id": "wooden_spoon",
+		"interactive": false,
+		"name": "Wooden Spoon",
+		"path": "res://addons/prop_library/props/wooden_spoon.tscn",
+		"source": "res://assets/house_library/wooden_spoon/wooden_spoon.gltf",
+		"thumbnail": "res://addons/prop_library/thumbnails/wooden_spoon.png"
+	}
+]

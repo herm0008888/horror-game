@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_cutting_board/wooden_cutting_board.gltf" id="1_5s6en"]
+
+[node name="WoodenCuttingBoard" type="Node3D" unique_id=572116983]
+metadata/asset_id = "wooden_cutting_board"
+
+[node name="Model" type="Node3D" parent="." unique_id=1180795025 instance=ExtResource("1_5s6en")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00071933866, -7.5862095e-05, -3.0308962e-05)

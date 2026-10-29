@@ -1,86 +1,76 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://bt0gt43pxn73e"]
 
-[ext_resource type="Texture2D" path="res://assets/house_library/pot_enamel_01/textures/pot_enamel_01_diff_1k.jpg" id="6_rb6fk"]
-[ext_resource type="Texture2D" path="res://assets/house_library/pot_enamel_01/textures/pot_enamel_01_arm_1k.jpg" id="7_yglk6"]
-[ext_resource type="Texture2D" path="res://assets/house_library/pot_enamel_01/textures/pot_enamel_01_nor_gl_1k.jpg" id="8_xgfqh"]
+[ext_resource type="Texture2D" uid="uid://k2216igh57bc" path="res://assets/house_library/pot_enamel_01/textures/pot_enamel_01_diff_1k.jpg" id="6_rb6fk"]
+[ext_resource type="Texture2D" uid="uid://do7853lgv8kja" path="res://assets/house_library/pot_enamel_01/textures/pot_enamel_01_arm_1k.jpg" id="7_yglk6"]
+[ext_resource type="Texture2D" uid="uid://btkyonh4oyaym" path="res://assets/house_library/pot_enamel_01/textures/pot_enamel_01_nor_gl_1k.jpg" id="8_xgfqh"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0014.res" id="9_dkwnb"]
-[ext_resource type="Texture2D" path="res://assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_diff_1k.jpg" id="10_0krkp"]
-[ext_resource type="Texture2D" path="res://assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_arm_1k.jpg" id="11_vp8ri"]
-[ext_resource type="Texture2D" path="res://assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_nor_gl_1k.jpg" id="12_p00e5"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_cutting_board/textures/wooden_cutting_board_diff_1k.jpg" id="13_6rkdg"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_cutting_board/textures/wooden_cutting_board_arm_1k.jpg" id="14_e7fsj"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_cutting_board/textures/wooden_cutting_board_nor_gl_1k.jpg" id="15_x82u6"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_spoon/textures/wooden_spoon_diff_1k.jpg" id="16_axcsw"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_spoon/textures/wooden_spoon_arm_1k.jpg" id="17_gt5f1"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_spoon/textures/wooden_spoon_nor_gl_1k.jpg" id="18_gofkv"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_diff_1k.jpg" id="19_wugsf"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_arm_1k.jpg" id="20_0bf58"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_nor_gl_1k.jpg" id="21_mmvaq"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bowl_01/textures/wooden_bowl_01_diff_1k.jpg" id="22_qnfev"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bowl_01/textures/wooden_bowl_01_arm_1k.jpg" id="23_ch8np"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bowl_01/textures/wooden_bowl_01_nor_gl_1k.jpg" id="24_nhk4c"]
-[ext_resource type="Texture2D" path="res://assets/house_library/carved_wooden_plate/textures/carved_wooden_plate_diff_1k.jpg" id="25_tbm4s"]
-[ext_resource type="Texture2D" path="res://assets/house_library/carved_wooden_plate/textures/carved_wooden_plate_arm_1k.jpg" id="26_thfa2"]
-[ext_resource type="Texture2D" path="res://assets/house_library/carved_wooden_plate/textures/carved_wooden_plate_nor_gl_1k.jpg" id="27_5e5hb"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bucket_01/textures/wooden_bucket_01_diff_1k.jpg" id="28_46lro"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bucket_01/textures/wooden_bucket_01_arm_1k.jpg" id="29_y6s2i"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bucket_01/textures/wooden_bucket_01_nor_gl_1k.jpg" id="30_4twpd"]
+[ext_resource type="Texture2D" uid="uid://db4m7yxk7utwm" path="res://assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_diff_1k.jpg" id="10_0krkp"]
+[ext_resource type="Texture2D" uid="uid://d1a4wvbxvfxth" path="res://assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_arm_1k.jpg" id="11_vp8ri"]
+[ext_resource type="Texture2D" uid="uid://dh8ml54xwryhw" path="res://assets/house_library/vintage_electric_kettle/textures/vintage_electric_kettle_nor_gl_1k.jpg" id="12_p00e5"]
+[ext_resource type="Texture2D" uid="uid://bc20oqgg42cjo" path="res://assets/house_library/wooden_cutting_board/textures/wooden_cutting_board_diff_1k.jpg" id="13_6rkdg"]
+[ext_resource type="Texture2D" uid="uid://2fv345pquwge" path="res://assets/house_library/wooden_cutting_board/textures/wooden_cutting_board_arm_1k.jpg" id="14_e7fsj"]
+[ext_resource type="Texture2D" uid="uid://delvxispwo7op" path="res://assets/house_library/wooden_cutting_board/textures/wooden_cutting_board_nor_gl_1k.jpg" id="15_x82u6"]
+[ext_resource type="Texture2D" uid="uid://u8mjqwgiyt3a" path="res://assets/house_library/wooden_spoon/textures/wooden_spoon_diff_1k.jpg" id="16_axcsw"]
+[ext_resource type="Texture2D" uid="uid://dtuylvbaqyugk" path="res://assets/house_library/wooden_spoon/textures/wooden_spoon_arm_1k.jpg" id="17_gt5f1"]
+[ext_resource type="Texture2D" uid="uid://dpujir5fr5kd0" path="res://assets/house_library/wooden_spoon/textures/wooden_spoon_nor_gl_1k.jpg" id="18_gofkv"]
+[ext_resource type="Texture2D" uid="uid://c2c53x54cfoxa" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_diff_1k.jpg" id="19_wugsf"]
+[ext_resource type="Texture2D" uid="uid://cpbtid6ch5ydg" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_arm_1k.jpg" id="20_0bf58"]
+[ext_resource type="Texture2D" uid="uid://cc8hoctr8m3yk" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_nor_gl_1k.jpg" id="21_mmvaq"]
+[ext_resource type="Texture2D" uid="uid://143tpxen48nb" path="res://assets/house_library/wooden_bowl_01/textures/wooden_bowl_01_diff_1k.jpg" id="22_qnfev"]
+[ext_resource type="Texture2D" uid="uid://dvuu1poe5ypbx" path="res://assets/house_library/wooden_bowl_01/textures/wooden_bowl_01_arm_1k.jpg" id="23_ch8np"]
+[ext_resource type="Texture2D" uid="uid://by8c4om4th5sc" path="res://assets/house_library/wooden_bowl_01/textures/wooden_bowl_01_nor_gl_1k.jpg" id="24_nhk4c"]
+[ext_resource type="Texture2D" uid="uid://114rwihsp1j0" path="res://assets/house_library/carved_wooden_plate/textures/carved_wooden_plate_diff_1k.jpg" id="25_tbm4s"]
+[ext_resource type="Texture2D" uid="uid://b60n32du84uxg" path="res://assets/house_library/carved_wooden_plate/textures/carved_wooden_plate_arm_1k.jpg" id="26_thfa2"]
+[ext_resource type="Texture2D" uid="uid://da4g6s78q1cir" path="res://assets/house_library/carved_wooden_plate/textures/carved_wooden_plate_nor_gl_1k.jpg" id="27_5e5hb"]
+[ext_resource type="Texture2D" uid="uid://duli0qatyyjrx" path="res://assets/house_library/wooden_bucket_01/textures/wooden_bucket_01_diff_1k.jpg" id="28_46lro"]
+[ext_resource type="Texture2D" uid="uid://tqgg08lc0o8i" path="res://assets/house_library/wooden_bucket_01/textures/wooden_bucket_01_arm_1k.jpg" id="29_y6s2i"]
+[ext_resource type="Texture2D" uid="uid://bwddmk1fainpc" path="res://assets/house_library/wooden_bucket_01/textures/wooden_bucket_01_nor_gl_1k.jpg" id="30_4twpd"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0015.res" id="31_fv18n"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_diff_1k.jpg" id="32_e4lbs"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_arm_1k.jpg" id="33_bmtcq"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_nor_gl_1k.jpg" id="34_e8g3j"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_diff_1k.jpg" id="35_i0lf0"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_arm_1k.jpg" id="36_p8i2f"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_nor_gl_1k.jpg" id="37_kbbky"]
+[ext_resource type="Texture2D" uid="uid://btx3vt2hmsea0" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_diff_1k.jpg" id="32_e4lbs"]
+[ext_resource type="Texture2D" uid="uid://jsrg0ugdq0os" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_arm_1k.jpg" id="33_bmtcq"]
+[ext_resource type="Texture2D" uid="uid://boie0jnse3hhy" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_nor_gl_1k.jpg" id="34_e8g3j"]
+[ext_resource type="Texture2D" uid="uid://den6jv2kg7uyl" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_diff_1k.jpg" id="35_i0lf0"]
+[ext_resource type="Texture2D" uid="uid://dryidsqijmj6o" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_arm_1k.jpg" id="36_p8i2f"]
+[ext_resource type="Texture2D" uid="uid://c2jf0quoko5i6" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_nor_gl_1k.jpg" id="37_kbbky"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0016.res" id="38_kfd3k"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0017.res" id="39_4ctjl"]
-[ext_resource type="Texture2D" path="res://assets/house_library/plastic_broom/textures/plastic_broom_diff_1k.jpg" id="40_qbe4c"]
-[ext_resource type="Texture2D" path="res://assets/house_library/plastic_broom/textures/plastic_broom_arm_1k.jpg" id="41_sd66o"]
-[ext_resource type="Texture2D" path="res://assets/house_library/plastic_broom/textures/plastic_broom_nor_gl_1k.jpg" id="42_f6nxn"]
-[ext_resource type="Texture2D" path="res://assets/house_library/russian_food_cans_01/textures/russian_food_cans_01_diff_1k.jpg" id="44_eqycq"]
-[ext_resource type="Texture2D" path="res://assets/house_library/russian_food_cans_01/textures/russian_food_cans_01_arm_1k.jpg" id="45_pmjfx"]
-[ext_resource type="Texture2D" path="res://assets/house_library/russian_food_cans_01/textures/russian_food_cans_01_nor_gl_1k.jpg" id="46_wu8lc"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0018.res" id="47_vuu2n"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0019.res" id="48_3pcb3"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0020.res" id="49_dy1ut"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0021.res" id="50_l5j4r"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0022.res" id="51_ccss1"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0023.res" id="52_1uq5v"]
-[ext_resource type="Texture2D" path="res://assets/house_library/dining_table/textures/dining_table_diff_1k.jpg" id="53_c23ag"]
-[ext_resource type="Texture2D" path="res://assets/house_library/dining_table/textures/dining_table_arm_1k.jpg" id="54_tge80"]
-[ext_resource type="Texture2D" path="res://assets/house_library/dining_table/textures/dining_table_nor_gl_1k.jpg" id="55_co5a3"]
+[ext_resource type="Texture2D" uid="uid://bn4lrpnylf4ll" path="res://assets/house_library/plastic_broom/textures/plastic_broom_diff_1k.jpg" id="40_qbe4c"]
+[ext_resource type="Texture2D" uid="uid://7o1kbkuvkn52" path="res://assets/house_library/plastic_broom/textures/plastic_broom_arm_1k.jpg" id="41_sd66o"]
+[ext_resource type="Texture2D" uid="uid://dke0rejwy7pos" path="res://assets/house_library/plastic_broom/textures/plastic_broom_nor_gl_1k.jpg" id="42_f6nxn"]
+[ext_resource type="Texture2D" uid="uid://b8e6n7f85a14g" path="res://assets/house_library/dining_table/textures/dining_table_diff_1k.jpg" id="53_c23ag"]
+[ext_resource type="Texture2D" uid="uid://cocp25sjse5bg" path="res://assets/house_library/dining_table/textures/dining_table_arm_1k.jpg" id="54_tge80"]
+[ext_resource type="Texture2D" uid="uid://dmfwp5rs0yelg" path="res://assets/house_library/dining_table/textures/dining_table_nor_gl_1k.jpg" id="55_co5a3"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0024.res" id="56_ni1jj"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_01/textures/painted_wooden_chair_01_diff_1k.jpg" id="57_qr4aj"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_01/textures/painted_wooden_chair_01_arm_1k.jpg" id="58_msw0a"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_01/textures/painted_wooden_chair_01_nor_gl_1k.jpg" id="59_5su83"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_diff_1k.jpg" id="60_6orcu"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_arm_1k.jpg" id="61_bqv4s"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_nor_gl_1k.jpg" id="62_0wfsc"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_diff_1k.jpg" id="63_a8xil"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_arm_1k.jpg" id="64_5b55f"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_nor_gl_1k.jpg" id="65_gp4gn"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_diff_1k.jpg" id="66_bkfsg"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_arm_1k.jpg" id="67_ikns4"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_paper_nor_gl_1k.jpg" id="68_qncsk"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_diff_1k.jpg" id="69_nhivp"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_arm_1k.jpg" id="70_6yv07"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_diff_1k.jpg" id="71_2ng14"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_arm_1k.jpg" id="72_i6pad"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_diff_1k.jpg" id="73_uu8w1"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_arm_1k.jpg" id="74_16gcf"]
-[ext_resource type="Texture2D" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_diff_1k.jpg" id="75_e21uo"]
-[ext_resource type="Texture2D" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_roughness_1k.jpg" id="76_rcyky"]
-[ext_resource type="Texture2D" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_nor_gl_1k.jpg" id="77_nosvk"]
-[ext_resource type="Texture2D" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_diff_1k.jpg" id="78_5qc6g"]
-[ext_resource type="Texture2D" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_arm_1k.jpg" id="79_dxqor"]
-[ext_resource type="Texture2D" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_nor_gl_1k.jpg" id="80_umeod"]
+[ext_resource type="Texture2D" uid="uid://cyw7o4knflt3n" path="res://assets/house_library/painted_wooden_chair_01/textures/painted_wooden_chair_01_diff_1k.jpg" id="57_qr4aj"]
+[ext_resource type="Texture2D" uid="uid://bjqfqy65n7l8l" path="res://assets/house_library/painted_wooden_chair_01/textures/painted_wooden_chair_01_arm_1k.jpg" id="58_msw0a"]
+[ext_resource type="Texture2D" uid="uid://cpjuadvwe8gl" path="res://assets/house_library/painted_wooden_chair_01/textures/painted_wooden_chair_01_nor_gl_1k.jpg" id="59_5su83"]
+[ext_resource type="Texture2D" uid="uid://bkmjhfxify63s" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_diff_1k.jpg" id="60_6orcu"]
+[ext_resource type="Texture2D" uid="uid://db611cjgpon4k" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_arm_1k.jpg" id="61_bqv4s"]
+[ext_resource type="Texture2D" uid="uid://kyn7ekq41qqx" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_nor_gl_1k.jpg" id="62_0wfsc"]
+[ext_resource type="Texture2D" uid="uid://bgy5g2sam4d03" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_diff_1k.jpg" id="63_a8xil"]
+[ext_resource type="Texture2D" uid="uid://ob5rhblvgpqw" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_arm_1k.jpg" id="64_5b55f"]
+[ext_resource type="Texture2D" uid="uid://bna8a42708lfn" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_nor_gl_1k.jpg" id="65_gp4gn"]
+[ext_resource type="Texture2D" uid="uid://862eadq0a7e5" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_diff_1k.jpg" id="66_bkfsg"]
+[ext_resource type="Texture2D" uid="uid://c861ahpbtfpya" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_01_arm_1k.jpg" id="67_ikns4"]
+[ext_resource type="Texture2D" uid="uid://bxml8goojqps2" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_paper_nor_gl_1k.jpg" id="68_qncsk"]
+[ext_resource type="Texture2D" uid="uid://cx3k5pokbujg7" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_diff_1k.jpg" id="69_nhivp"]
+[ext_resource type="Texture2D" uid="uid://iph43hqtw70x" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_clearwater_crystals_01_arm_1k.jpg" id="70_6yv07"]
+[ext_resource type="Texture2D" uid="uid://b36cn1dqsjndf" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_diff_1k.jpg" id="71_2ng14"]
+[ext_resource type="Texture2D" uid="uid://cb7fsjqkqsoot" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_intertwine_01_arm_1k.jpg" id="72_i6pad"]
+[ext_resource type="Texture2D" uid="uid://dvgjw4xbsjuip" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_diff_1k.jpg" id="73_uu8w1"]
+[ext_resource type="Texture2D" uid="uid://dvy365ojj2txu" path="res://assets/house_library/wine_bottles_01/textures/wine_bottles_01_label_ftero_vinea_02_arm_1k.jpg" id="74_16gcf"]
+[ext_resource type="Texture2D" uid="uid://dn5wgvdcgrsbn" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_diff_1k.jpg" id="75_e21uo"]
+[ext_resource type="Texture2D" uid="uid://da5xej4skxpyy" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_roughness_1k.jpg" id="76_rcyky"]
+[ext_resource type="Texture2D" uid="uid://86mqhepwng0g" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_artwork_nor_gl_1k.jpg" id="77_nosvk"]
+[ext_resource type="Texture2D" uid="uid://dgbdyvpixl8kv" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_diff_1k.jpg" id="78_5qc6g"]
+[ext_resource type="Texture2D" uid="uid://6e6qo2tvubdb" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_arm_1k.jpg" id="79_dxqor"]
+[ext_resource type="Texture2D" uid="uid://ct7beb0xidqrq" path="res://assets/house_library/hanging_picture_frame_02/textures/hanging_picture_frame_02_nor_gl_1k.jpg" id="80_umeod"]
 [ext_resource type="Material" path="res://assets/house_materials/floor_wood.tres" id="92_kjm4g"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_012.tscn" id="Storage_0"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_013.tscn" id="Storage_1"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_014.tscn" id="Storage_2"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_015.tscn" id="Storage_3"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_016.tscn" id="Storage_4"]
-[ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_017.tscn" id="Storage_5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t7r28"]
 resource_name = "pot_enamel_01"
@@ -589,19 +579,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_a1gci")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vq5q8"]
-resource_name = "russian_food_cans_01"
-cull_mode = 2
-albedo_texture = ExtResource("44_eqycq")
-metallic = 1.0
-metallic_texture = ExtResource("45_pmjfx")
-metallic_texture_channel = 2
-roughness_texture = ExtResource("45_pmjfx")
-roughness_texture_channel = 1
-normal_enabled = true
-normal_texture = ExtResource("46_wu8lc")
-metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eutxl"]
 size = Vector3(1.9806857, 0.77, 1.2206328)
@@ -1447,48 +1424,24 @@ size = Vector3(0.05016796, 0.018, 0.08577498)
 
 [node name="KitchenDining" type="Node3D" unique_id=703750939]
 
-[node name="PaintedWoodenCabinet02" type="StaticBody3D" parent="." unique_id=1754050504 instance=ExtResource("Storage_0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.85, 0, 1.55)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet_02"
-metadata/dimensions = Vector3(1.3, 2.4, 0.5)
-metadata/asset_id = "painted_wooden_cabinet_02"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
+[node name="PaintedWoodenCabinet02" parent="." unique_id=1754050504 instance=ExtResource("Storage_0")]
+metadata/_edit_group_ = true
 
-[node name="@Node3D@21" type="StaticBody3D" parent="." unique_id=1331403050 instance=ExtResource("Storage_1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3, 0, 3.6)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet_02"
-metadata/dimensions = Vector3(1.3, 2.4, 0.5)
-metadata/asset_id = "painted_wooden_cabinet_02"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
+[node name="@Node3D@21" parent="." unique_id=1331403050 instance=ExtResource("Storage_1")]
+metadata/_edit_group_ = true
 
-[node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=907587060 instance=ExtResource("Storage_2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.95, 0, 0.44)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
-metadata/dimensions = Vector3(1.2, 0.9, 0.6)
-metadata/asset_id = "painted_wooden_cabinet"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
+[node name="PaintedWoodenCabinet" parent="." unique_id=907587060 instance=ExtResource("Storage_2")]
+metadata/_edit_group_ = true
 
-[node name="ElectricStove" type="StaticBody3D" parent="." unique_id=1267967817 instance=ExtResource("Storage_3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.85, 0, 0.44)
-metadata/source = "https://polyhaven.com/a/electric_stove"
-metadata/dimensions = Vector3(0.6, 0.9, 0.65)
-metadata/asset_id = "electric_stove"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
+[node name="ElectricStove" parent="." unique_id=1267967817 instance=ExtResource("Storage_3")]
+metadata/_edit_group_ = true
 
-[node name="@StaticBody3D@24" type="StaticBody3D" parent="." unique_id=322678810 instance=ExtResource("Storage_4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.75, 0, 0.44)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
-metadata/dimensions = Vector3(1.2, 0.9, 0.6)
-metadata/asset_id = "painted_wooden_cabinet"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
+[node name="@StaticBody3D@24" parent="." unique_id=322678810 instance=ExtResource("Storage_4")]
+metadata/_edit_group_ = true
 
 [node name="PotEnamel01" type="Node3D" parent="." unique_id=1732202101]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.705, 0.9000593, 0.57)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/pot_enamel_01"
 metadata/dimensions = Vector3(0.2359933, 0.16, 0.16198505)
 metadata/asset_id = "pot_enamel_01"
@@ -1506,6 +1459,7 @@ mesh = ExtResource("9_dkwnb")
 
 [node name="VintageElectricKettle" type="Node3D" parent="." unique_id=190217638]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.91, 0.90100056, 0.49)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/vintage_electric_kettle"
 metadata/dimensions = Vector3(0.28430957, 0.27, 0.22021829)
 metadata/asset_id = "vintage_electric_kettle"
@@ -1522,6 +1476,7 @@ mesh = SubResource("ArrayMesh_gehqs")
 
 [node name="WoodenCuttingBoard" type="Node3D" parent="." unique_id=1799532727]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.83, 0.90100056, 0.46)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_cutting_board"
 metadata/dimensions = Vector3(0.39, 0.03576141, 0.21381798)
 metadata/asset_id = "wooden_cutting_board"
@@ -1538,6 +1493,7 @@ mesh = SubResource("ArrayMesh_jwyf5")
 
 [node name="WoodenSpoon" type="Node3D" parent="." unique_id=2071466516]
 transform = Transform3D(0.9396926, 0, 0.34202012, 0, 1, 0, -0.34202012, 0, 0.9396926, 7.22, 0.90100056, 0.48)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_spoon"
 metadata/dimensions = Vector3(0.084276915, 0.024422893, 0.27)
 metadata/asset_id = "wooden_spoon"
@@ -1554,6 +1510,7 @@ mesh = SubResource("ArrayMesh_ynv57")
 
 [node name="PaintedWoodenTable" type="StaticBody3D" parent="." unique_id=2120415672]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3, 0, 2.25)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_table"
 metadata/dimensions = Vector3(2.13299, 0.85, 1.0081358)
 metadata/asset_id = "painted_wooden_table"
@@ -1572,6 +1529,7 @@ shape = SubResource("BoxShape3D_0qttr")
 
 [node name="WoodenBowl01" type="Node3D" parent="." unique_id=938805213]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9, 0.85095936, 2.25)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_bowl_01"
 metadata/dimensions = Vector3(0.42000002, 0.12568887, 0.41471553)
 metadata/asset_id = "wooden_bowl_01"
@@ -1588,6 +1546,7 @@ mesh = SubResource("ArrayMesh_qwgrw")
 
 [node name="CarvedWoodenPlate" type="Node3D" parent="." unique_id=909322294]
 transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 7.6600003, 0.8509584, 2.3)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/carved_wooden_plate"
 metadata/dimensions = Vector3(0.27999997, 0.039255816, 0.2768569)
 metadata/asset_id = "carved_wooden_plate"
@@ -1604,6 +1563,7 @@ mesh = SubResource("ArrayMesh_e1owh")
 
 [node name="WoodenBucket01" type="StaticBody3D" parent="." unique_id=2123549844]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.65, 0, 2.28)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_bucket_01"
 metadata/dimensions = Vector3(0.22691149, 0.34000003, 0.21160787)
 metadata/asset_id = "wooden_bucket_01"
@@ -1625,6 +1585,7 @@ mesh = ExtResource("31_fv18n")
 
 [node name="MetalTrashCan" type="StaticBody3D" parent="." unique_id=1971828126]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 9.7, 0, 0.85)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/metal_trash_can"
 metadata/dimensions = Vector3(1.2636704, 0.62, 0.38061267)
 metadata/asset_id = "metal_trash_can"
@@ -1654,6 +1615,7 @@ mesh = ExtResource("39_4ctjl")
 
 [node name="PlasticBroom" type="Node3D" parent="." unique_id=525152329]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.5, 0, 0.61)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/plastic_broom"
 metadata/dimensions = Vector3(0.43463936, 1.25, 0.59142166)
 metadata/asset_id = "plastic_broom"
@@ -1666,118 +1628,9 @@ transform = Transform3D(1.043821, 0, 0, 0, 1.043821, 0, 0, 0, 1.043821, -3.18704
 lod_bias = 0.7
 mesh = SubResource("ArrayMesh_y3dtx")
 
-[node name="@StaticBody3D@29" type="StaticBody3D" parent="." unique_id=1234425723 instance=ExtResource("Storage_5")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.5, 0, 6.1)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet_02"
-metadata/dimensions = Vector3(1.2, 2.35, 0.65)
-metadata/asset_id = "painted_wooden_cabinet_02"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
-
-[node name="RussianFoodCans01" type="Node3D" parent="." unique_id=267217924]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.3, 1.0688056, 6.2999997)
-metadata/source = "https://polyhaven.com/a/russian_food_cans_01"
-metadata/dimensions = Vector3(0.2012065, 0.12, 0.065305896)
-metadata/asset_id = "russian_food_cans_01"
-metadata/support_y = 1.0688056
-
-[node name="Model" type="Node3D" parent="RussianFoodCans01" unique_id=746275313]
-transform = Transform3D(1.4134277, 0, 0, 0, 1.4134277, 0, 0, 0, 1.4134277, 0.0027210787, 0, 0)
-
-[node name="StaticBatch0018" type="MeshInstance3D" parent="RussianFoodCans01" unique_id=1569261041]
-material_override = SubResource("StandardMaterial3D_vq5q8")
-lod_bias = 0.7
-visibility_range_end = 22.0
-visibility_range_end_margin = 2.0
-mesh = ExtResource("47_vuu2n")
-
-[node name="@Node3D@31" type="Node3D" parent="." unique_id=1760217896]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.3, 1.7339414, 6.2999997)
-metadata/source = "https://polyhaven.com/a/russian_food_cans_01"
-metadata/dimensions = Vector3(0.2012065, 0.12, 0.065305896)
-metadata/asset_id = "russian_food_cans_01"
-metadata/support_y = 1.7339414
-
-[node name="Model" type="Node3D" parent="@Node3D@31" unique_id=1841709728]
-transform = Transform3D(1.4134277, 0, 0, 0, 1.4134277, 0, 0, 0, 1.4134277, 0.0027210787, 0, 0)
-
-[node name="StaticBatch0019" type="MeshInstance3D" parent="@Node3D@31" unique_id=1721055362]
-material_override = SubResource("StandardMaterial3D_vq5q8")
-lod_bias = 0.7
-visibility_range_end = 22.0
-visibility_range_end_margin = 2.0
-mesh = ExtResource("48_3pcb3")
-
-[node name="@Node3D@32" type="Node3D" parent="." unique_id=1765283606]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.3, 2.0037467, 6.2999997)
-metadata/source = "https://polyhaven.com/a/russian_food_cans_01"
-metadata/dimensions = Vector3(0.2012065, 0.12, 0.065305896)
-metadata/asset_id = "russian_food_cans_01"
-metadata/support_y = 2.0037467
-
-[node name="Model" type="Node3D" parent="@Node3D@32" unique_id=1693235339]
-transform = Transform3D(1.4134277, 0, 0, 0, 1.4134277, 0, 0, 0, 1.4134277, 0.0027210787, 0, 0)
-
-[node name="StaticBatch0020" type="MeshInstance3D" parent="@Node3D@32" unique_id=208799125]
-material_override = SubResource("StandardMaterial3D_vq5q8")
-lod_bias = 0.7
-visibility_range_end = 22.0
-visibility_range_end_margin = 2.0
-mesh = ExtResource("49_dy1ut")
-
-[node name="@Node3D@33" type="Node3D" parent="." unique_id=778753045]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.3, 1.0688056, 5.91)
-metadata/source = "https://polyhaven.com/a/russian_food_cans_01"
-metadata/dimensions = Vector3(0.2012065, 0.12, 0.065305896)
-metadata/asset_id = "russian_food_cans_01"
-metadata/support_y = 1.0688056
-
-[node name="Model" type="Node3D" parent="@Node3D@33" unique_id=1763592343]
-transform = Transform3D(1.4134277, 0, 0, 0, 1.4134277, 0, 0, 0, 1.4134277, 0.0027210787, 0, 0)
-
-[node name="StaticBatch0021" type="MeshInstance3D" parent="@Node3D@33" unique_id=124726488]
-material_override = SubResource("StandardMaterial3D_vq5q8")
-lod_bias = 0.7
-visibility_range_end = 22.0
-visibility_range_end_margin = 2.0
-mesh = ExtResource("50_l5j4r")
-
-[node name="@Node3D@34" type="Node3D" parent="." unique_id=279583398]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.3, 1.7339414, 5.91)
-metadata/source = "https://polyhaven.com/a/russian_food_cans_01"
-metadata/dimensions = Vector3(0.2012065, 0.12, 0.065305896)
-metadata/asset_id = "russian_food_cans_01"
-metadata/support_y = 1.7339414
-
-[node name="Model" type="Node3D" parent="@Node3D@34" unique_id=2039108933]
-transform = Transform3D(1.4134277, 0, 0, 0, 1.4134277, 0, 0, 0, 1.4134277, 0.0027210787, 0, 0)
-
-[node name="StaticBatch0022" type="MeshInstance3D" parent="@Node3D@34" unique_id=1711760404]
-material_override = SubResource("StandardMaterial3D_vq5q8")
-lod_bias = 0.7
-visibility_range_end = 22.0
-visibility_range_end_margin = 2.0
-mesh = ExtResource("51_ccss1")
-
-[node name="@Node3D@35" type="Node3D" parent="." unique_id=2120064093]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.3, 2.0037467, 5.91)
-metadata/source = "https://polyhaven.com/a/russian_food_cans_01"
-metadata/dimensions = Vector3(0.2012065, 0.12, 0.065305896)
-metadata/asset_id = "russian_food_cans_01"
-metadata/support_y = 2.0037467
-
-[node name="Model" type="Node3D" parent="@Node3D@35" unique_id=1365746853]
-transform = Transform3D(1.4134277, 0, 0, 0, 1.4134277, 0, 0, 0, 1.4134277, 0.0027210787, 0, 0)
-
-[node name="StaticBatch0023" type="MeshInstance3D" parent="@Node3D@35" unique_id=1761302625]
-material_override = SubResource("StandardMaterial3D_vq5q8")
-lod_bias = 0.7
-visibility_range_end = 22.0
-visibility_range_end_margin = 2.0
-mesh = ExtResource("52_1uq5v")
-
 [node name="DiningTable" type="StaticBody3D" parent="." unique_id=1388093209]
 transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 7.22, 0, 5.62)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/dining_table"
 metadata/dimensions = Vector3(1.9806857, 0.77, 1.2206328)
 metadata/asset_id = "dining_table"
@@ -1797,6 +1650,7 @@ mesh = ExtResource("56_ni1jj")
 
 [node name="PaintedWoodenChair01" type="StaticBody3D" parent="." unique_id=1203074906]
 transform = Transform3D(-0.90630776, 0, 0.42261833, 0, 1, 0, -0.42261833, 0, -0.90630776, 6.48, 0, 7.03)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_01"
 metadata/dimensions = Vector3(0.4243115, 0.94000006, 0.530522)
 metadata/asset_id = "painted_wooden_chair_01"
@@ -1815,6 +1669,7 @@ shape = SubResource("BoxShape3D_1k6yx")
 
 [node name="PaintedWoodenChair02" type="StaticBody3D" parent="." unique_id=824022218]
 transform = Transform3D(-0.9271838, 0, -0.37460664, 0, 1, 0, 0.37460664, 0, -0.9271838, 7.9, 0, 6.75)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_02"
 metadata/dimensions = Vector3(0.49581903, 0.98, 0.5134282)
 metadata/asset_id = "painted_wooden_chair_02"
@@ -1834,6 +1689,7 @@ shape = SubResource("BoxShape3D_o1oxf")
 
 [node name="@StaticBody3D@39" type="StaticBody3D" parent="." unique_id=2076774200]
 transform = Transform3D(0.9135454, 0, -0.40673664, 0, 1, 0, 0.40673664, 0, 0.9135454, 6.35, 0, 4.05)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_01"
 metadata/dimensions = Vector3(0.4243115, 0.94000006, 0.530522)
 metadata/asset_id = "painted_wooden_chair_01"
@@ -1852,6 +1708,7 @@ shape = SubResource("BoxShape3D_3kl14")
 
 [node name="@StaticBody3D@41" type="StaticBody3D" parent="." unique_id=933730891]
 transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 8.05, 0, 4.37)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_02"
 metadata/dimensions = Vector3(0.49581903, 0.98, 0.5134282)
 metadata/asset_id = "painted_wooden_chair_02"
@@ -1871,6 +1728,7 @@ shape = SubResource("BoxShape3D_drkoo")
 
 [node name="@Node3D@43" type="Node3D" parent="." unique_id=737937055]
 transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 6.785013, 0.73851925, 5.2240367)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/carved_wooden_plate"
 metadata/dimensions = Vector3(0.25, 0.035049837, 0.24719366)
 metadata/asset_id = "carved_wooden_plate"
@@ -1887,6 +1745,7 @@ mesh = SubResource("ArrayMesh_e1owh")
 
 [node name="@Node3D@44" type="Node3D" parent="." unique_id=333603804]
 transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 6.702142, 0.71567494, 5.898968)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/carved_wooden_plate"
 metadata/dimensions = Vector3(0.25, 0.035049837, 0.24719366)
 metadata/asset_id = "carved_wooden_plate"
@@ -1903,6 +1762,7 @@ mesh = SubResource("ArrayMesh_e1owh")
 
 [node name="@Node3D@45" type="Node3D" parent="." unique_id=774989478]
 transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 7.7378573, 0.71674305, 5.341031)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/carved_wooden_plate"
 metadata/dimensions = Vector3(0.25, 0.035049837, 0.24719366)
 metadata/asset_id = "carved_wooden_plate"
@@ -1919,6 +1779,7 @@ mesh = SubResource("ArrayMesh_e1owh")
 
 [node name="@Node3D@46" type="Node3D" parent="." unique_id=1228999117]
 transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 7.654986, 0.7159267, 6.0159626)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/carved_wooden_plate"
 metadata/dimensions = Vector3(0.25, 0.035049837, 0.24719366)
 metadata/asset_id = "carved_wooden_plate"
@@ -1935,6 +1796,7 @@ mesh = SubResource("ArrayMesh_e1owh")
 
 [node name="@Node3D@47" type="Node3D" parent="." unique_id=455374528]
 transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 7.265971, 0.7157751, 5.65587)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_bowl_01"
 metadata/dimensions = Vector3(0.24, 0.0718222, 0.23698029)
 metadata/asset_id = "wooden_bowl_01"
@@ -1951,6 +1813,7 @@ mesh = SubResource("ArrayMesh_qwgrw")
 
 [node name="@Node3D@48" type="Node3D" parent="." unique_id=547049935]
 transform = Transform3D(0.99984765, 0, 0.017452411, 0, 1, 0, -0.017452411, 0, 0.99984765, 7.703734, 0.72374684, 5.618944)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_spoon"
 metadata/dimensions = Vector3(0.0749128, 0.021709237, 0.24)
 metadata/asset_id = "wooden_spoon"
@@ -1967,6 +1830,7 @@ mesh = SubResource("ArrayMesh_ynv57")
 
 [node name="WineBottles01" type="Node3D" parent="." unique_id=810652845]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.6, 0.90100056, 0.3)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wine_bottles_01"
 metadata/dimensions = Vector3(0.61230385, 0.3, 0.072936825)
 metadata/asset_id = "wine_bottles_01"
@@ -2004,6 +1868,7 @@ mesh = SubResource("ArrayMesh_57j1y")
 
 [node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=822928511]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 8.8, 1.55, 7.83)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/dimensions = Vector3(0.75181353, 0.5, 0.033075146)
 metadata/asset_id = "hanging_picture_frame_02"

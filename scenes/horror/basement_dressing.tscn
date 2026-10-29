@@ -23,3 +23,17 @@
 [node name="EscapeStore" type="Node3D" parent="." unique_id=2075403938 instance=ExtResource("6_rfr3r")]
 
 [node name="BrokenCeilingAndFrames" type="Node3D" parent="." unique_id=647806799 instance=ExtResource("7_2hc73")]
+
+[editable path="AbandonedCell"]
+
+[editable path="RottenStorage"]
+
+[editable path="DeadBoilerRoom"]
+
+[editable path="RuinedWorkshop"]
+
+[editable path="SouthStore"]
+
+[editable path="EscapeStore"]
+
+[editable path="BrokenCeilingAndFrames"]

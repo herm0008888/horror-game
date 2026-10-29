@@ -26,7 +26,12 @@ func track(target: Vector3, delta: float) -> void:
 		var direction := target-position
 		if direction.length_squared() < 0.0001: continue
 		var up := Vector3.FORWARD if absf(direction.normalized().dot(Vector3.UP)) > 0.98 else Vector3.UP
-		var desired := Basis.looking_at(direction.normalized(),up)
+		var parent_id:=skeleton.get_bone_parent(index)
+		var head_forward:=skeleton.global_basis.orthonormalized()*skeleton.get_bone_global_pose(parent_id).basis.orthonormalized()*skeleton.get_bone_global_rest(parent_id).basis.orthonormalized().inverse()
+		var local:=head_forward.inverse()*direction.normalized()
+		var yaw:=clampf(atan2(-local.x,-local.z),deg_to_rad(-16.0),deg_to_rad(16.0))
+		var pitch:=clampf(atan2(local.y,Vector2(local.x,local.z).length()),deg_to_rad(-12.0),deg_to_rad(12.0))
+		var desired:=head_forward*Basis.from_euler(Vector3(pitch,yaw,0))
 		var parent := skeleton.get_bone_parent(index)
 		var parent_basis := skeleton.get_bone_global_pose(parent).basis.orthonormalized()
 		var rest := skeleton.get_bone_global_rest(index).basis.orthonormalized()

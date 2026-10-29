@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/industrial_wall_lamp/industrial_wall_lamp.gltf" id="1_u50tk"]
+
+[node name="IndustrialWallLamp" type="Node3D" unique_id=1302383567]
+metadata/asset_id = "industrial_wall_lamp"
+
+[node name="Model" type="Node3D" parent="." unique_id=37185552 instance=ExtResource("1_u50tk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.183982e-06, 0.2149533, -0.07018924)

@@ -1390,6 +1390,7 @@ size = Vector3(0.30572414, 0.27, 0.40750498)
 [node name="MasterBedroom" type="Node3D" unique_id=1882032948]
 
 [node name="GothicBed01" type="StaticBody3D" parent="." unique_id=1103531446]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 3.4, 2.1)
 metadata/source = "https://polyhaven.com/a/GothicBed_01"
 metadata/asset_id = "GothicBed_01"
@@ -1406,6 +1407,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78947663, 0)
 shape = SubResource("BoxShape3D_s7hin")
 
 [node name="PaintedWoodenNightstand" type="StaticBody3D" parent="." unique_id=1649892941 instance=ExtResource("9_he4ve")]
+metadata/_edit_group_ = true
 transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 0.95, 3.4, 1.8)
 metadata/source = "https://polyhaven.com/a/painted_wooden_nightstand"
 metadata/dimensions = Vector3(0.62, 0.62, 0.58)
@@ -1414,6 +1416,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="AlarmClock01" type="Node3D" parent="." unique_id=699144245]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9848077, 0, 0.17364818, 0, 1, 0, -0.17364818, 0, 0.9848077, 0.95, 4.03, 1.78)
 metadata/source = "https://polyhaven.com/a/alarm_clock_01"
 metadata/asset_id = "alarm_clock_01"
@@ -1436,6 +1439,7 @@ visibility_range_end_margin = 2.0
 mesh = ExtResource("8_bih3o")
 
 [node name="ArmChair01" type="StaticBody3D" parent="." unique_id=1998101943]
+metadata/_edit_group_ = true
 transform = Transform3D(-0.7880108, 0, -0.61566144, 0, 1, 0, 0.61566144, 0, -0.7880108, 5.5, 3.4, 3.3)
 metadata/source = "https://polyhaven.com/a/ArmChair_01"
 metadata/asset_id = "ArmChair_01"
@@ -1452,6 +1456,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
 shape = SubResource("BoxShape3D_rjbt8")
 
 [node name="PaintedWoodenChair01" type="StaticBody3D" parent="." unique_id=1317913950]
+metadata/_edit_group_ = true
 transform = Transform3D(0.8571673, 0, -0.5150381, 0, 1, 0, 0.5150381, 0, 0.8571673, 3.9, 3.4, 4.9)
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_01"
 metadata/asset_id = "painted_wooden_chair_01"
@@ -1468,6 +1473,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48000002, 0)
 shape = SubResource("BoxShape3D_3r6o0")
 
 [node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=1210713392 instance=ExtResource("34_x8kla")]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.6, 3.4, 5.56)
 metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
 metadata/dimensions = Vector3(1.2, 0.95, 0.6)
@@ -1476,6 +1482,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="VintageOilLamp" type="Node3D" parent="." unique_id=1677086589]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 4.36, 5.5)
 metadata/source = "https://polyhaven.com/a/vintage_oil_lamp"
 metadata/asset_id = "vintage_oil_lamp"
@@ -1502,6 +1509,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_5rw74")
 
 [node name="OrnateMirror01" type="Node3D" parent="." unique_id=605990804]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.16, 4.6, 1.2)
 metadata/source = "https://polyhaven.com/a/ornate_mirror_01"
 metadata/asset_id = "ornate_mirror_01"
@@ -1514,6 +1522,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_ilrpf")
 
 [node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=1952827250]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.15, 4.9, 0.16)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/asset_id = "hanging_picture_frame_02"
@@ -1576,6 +1585,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_j75w1")
 
 [node name="WoodenBookshelfWorn" type="StaticBody3D" parent="." unique_id=1287542302]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6.9, 3.4, 5.55)
 metadata/source = "https://polyhaven.com/a/wooden_bookshelf_worn"
 metadata/asset_id = "wooden_bookshelf_worn"
@@ -1593,6 +1603,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_slfve")
 
 [node name="BookEncyclopediaSet01" type="Node3D" parent="." unique_id=1238200671]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6.9, 3.780851, 5.54)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1611,6 +1622,7 @@ lod_bias = 0.7
 mesh = ExtResource("62_44rxv")
 
 [node name="@Node3D@78" type="Node3D" parent="." unique_id=2127652352]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6.9, 4.051854, 5.54)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1629,6 +1641,7 @@ lod_bias = 0.7
 mesh = ExtResource("64_8tutg")
 
 [node name="@Node3D@79" type="Node3D" parent="." unique_id=915858786]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6.9, 4.331969, 5.54)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1647,6 +1660,7 @@ lod_bias = 0.7
 mesh = ExtResource("66_o37ts")
 
 [node name="@Node3D@80" type="Node3D" parent="." unique_id=1154630016]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6.9, 4.638253, 5.54)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1665,6 +1679,7 @@ lod_bias = 0.7
 mesh = ExtResource("68_s7hin")
 
 [node name="StandingPictureFrame01" type="Node3D" parent="." unique_id=2061437812]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.25, 4.36, 5.48)
 metadata/source = "https://polyhaven.com/a/standing_picture_frame_01"
 metadata/asset_id = "standing_picture_frame_01"
@@ -1682,6 +1697,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_46euy")
 surface_material_override/2 = SubResource("StandardMaterial3D_y07yd")
 
 [node name="@Node3D@81" type="Node3D" parent="." unique_id=2075856013]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.65, 4.36, 5.48)
 metadata/source = "https://polyhaven.com/a/standing_picture_frame_01"
 metadata/asset_id = "standing_picture_frame_01"
@@ -1699,6 +1715,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_46euy")
 surface_material_override/2 = SubResource("StandardMaterial3D_y07yd")
 
 [node name="WoodenBowl01" type="Node3D" parent="." unique_id=1077978465]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, 3.4, 2.9)
 metadata/source = "https://polyhaven.com/a/wooden_bowl_01"
 metadata/asset_id = "wooden_bowl_01"

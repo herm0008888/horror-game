@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/pot_enamel_01/pot_enamel_01.gltf" id="1_6n81e"]
+
+[node name="PotEnamel01" type="Node3D" unique_id=1927724702]
+metadata/asset_id = "pot_enamel_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1721340968 instance=ExtResource("1_6n81e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00014360249, 0)

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://scripts/horror/first_person_motion.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/horror/pickup_controller.gd" id="2"]
+[node name="PlayerFeel" type="Node"]
+[node name="CameraMotion" type="Node" parent="."]
+script = ExtResource("1")
+player_path = NodePath("../..")
+bob_height = 0.018
+bob_width = 0.01
+lean_distance = 0.16
+lean_angle = 4.0
+[node name="PickupController" type="Node" parent="."]
+script = ExtResource("2")
+player_path = NodePath("../..")
+large_hold_time = 0.95
+very_large_hold_time = 1.2

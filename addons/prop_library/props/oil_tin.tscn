@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/oil_tin/oil_tin.gltf" id="1_88vw2"]
+
+[node name="OilTin" type="Node3D" unique_id=129807206]
+metadata/asset_id = "oil_tin"
+
+[node name="Model" type="Node3D" parent="." unique_id=909009818 instance=ExtResource("1_88vw2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009351, 0.00074899517, 0.0012415051)

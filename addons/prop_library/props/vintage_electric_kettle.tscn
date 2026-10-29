@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/vintage_electric_kettle/vintage_electric_kettle.gltf" id="1_7tplq"]
+
+[node name="VintageElectricKettle" type="Node3D" unique_id=1486368435]
+metadata/asset_id = "vintage_electric_kettle"
+
+[node name="Model" type="Node3D" parent="." unique_id=205358514 instance=ExtResource("1_7tplq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045045614, 0, 0)

@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/standing_picture_frame_01/standing_picture_frame_01.gltf" id="1_5wcx0"]
+
+[node name="StandingPictureFrame01" type="Node3D" unique_id=2115381220]
+metadata/asset_id = "standing_picture_frame_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1466325884 instance=ExtResource("1_5wcx0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011483982, 0.00047437102, 0)

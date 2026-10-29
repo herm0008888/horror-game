@@ -808,6 +808,7 @@ metadata/_gltf_primary_texture_coord = 0
 [node name="UpperLanding" type="Node3D" unique_id=486055615]
 
 [node name="VintageGrandfatherClock01" type="StaticBody3D" parent="." unique_id=1911271466]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.55, 3.4, 7.15)
 metadata/source = "https://polyhaven.com/a/vintage_grandfather_clock_01"
 metadata/asset_id = "vintage_grandfather_clock_01"
@@ -831,6 +832,7 @@ visibility_range_end_margin = 2.0
 mesh = ExtResource("4_ld6jg")
 
 [node name="PaintedWoodenBench" type="StaticBody3D" parent="." unique_id=598899326]
+metadata/_edit_group_ = true
 transform = Transform3D(0.052335974, 0, -0.9986295, 0, 1, 0, 0.9986295, 0, 0.052335974, 11.45, 3.4, 9.5)
 metadata/source = "https://polyhaven.com/a/painted_wooden_bench"
 metadata/asset_id = "painted_wooden_bench"
@@ -847,6 +849,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45000002, 0)
 shape = SubResource("BoxShape3D_q4vsu")
 
 [node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=448298712]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.84, 4.9, 9.4)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/asset_id = "hanging_picture_frame_02"
@@ -859,6 +862,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_a0fxu")
 
 [node name="PaintedWoodenChair02" type="StaticBody3D" parent="." unique_id=441491627]
+metadata/_edit_group_ = true
 transform = Transform3D(0.8480481, 0, 0.52991927, 0, 1, 0, -0.52991927, 0, 0.8480481, 7.45, 3.4, 9.8)
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_02"
 metadata/asset_id = "painted_wooden_chair_02"
@@ -892,6 +896,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 1.4901161e-08)
 shape = SubResource("BoxShape3D_68nfg")
 
 [node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=1762971501 instance=ExtResource("7_5geqx")]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.4, 3.4, 11.5)
 metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
 metadata/dimensions = Vector3(1.2, 0.84, 0.6)
@@ -900,6 +905,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="BrassCandleholders" type="Node3D" parent="." unique_id=1695650529]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.4, 4.25, 11.5)
 metadata/source = "https://polyhaven.com/a/brass_candleholders"
 metadata/asset_id = "brass_candleholders"
@@ -935,6 +941,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_hllm1")
 surface_material_override/1 = SubResource("StandardMaterial3D_vb0yv")
 
 [node name="@Node3D@95" type="Node3D" parent="." unique_id=1261241895]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.8, 4.8, 6.84)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/asset_id = "hanging_picture_frame_02"

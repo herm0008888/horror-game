@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_bucket_01/wooden_bucket_01.gltf" id="1_x6b4e"]
+
+[node name="WoodenBucket01" type="Node3D" unique_id=1539713231]
+metadata/asset_id = "wooden_bucket_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1192640344 instance=ExtResource("1_x6b4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0009611249, -0.00013674796, -0.0011499971)

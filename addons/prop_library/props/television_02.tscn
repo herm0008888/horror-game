@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/television_02/television_02.gltf" id="1_s2yfi"]
+
+[node name="Television02" type="Node3D" unique_id=2101030483]
+metadata/asset_id = "television_02"
+
+[node name="Model" type="Node3D" parent="." unique_id=86811883 instance=ExtResource("1_s2yfi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0018344969, -2.9783576e-09, 0.053194284)

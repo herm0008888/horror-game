@@ -1,0 +1,139 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/horror/door.gd" id="1_7oe41"]
+[ext_resource type="Texture2D" path="res://assets/house_library/wood_peeling_paint_weathered/Diffuse.jpg" id="2_von67"]
+[ext_resource type="Texture2D" path="res://assets/house_library/wood_peeling_paint_weathered/nor_gl.jpg" id="3_nb235"]
+[ext_resource type="Material" path="res://assets/horror/materials/furniture_wood.tres" id="4_77o6l"]
+[ext_resource type="Material" path="res://assets/horror/materials/metal.tres" id="5_44n80"]
+[ext_resource type="AudioStream" path="res://assets/horror/creak.wav" id="6_lyhy0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2vtx0"]
+albedo_color = Color(0.54, 0.6, 0.53, 1)
+albedo_texture = ExtResource("2_von67")
+roughness = 0.95
+normal_enabled = true
+normal_scale = 0.35
+normal_texture = ExtResource("3_nb235")
+uv1_scale = Vector3(1, 2, 1)
+texture_filter = 5
+
+[sub_resource type="BoxMesh" id="R9"]
+material = ExtResource("4_77o6l")
+size = Vector3(1.3, 2.2, 0.12)
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(1.3, 2.2, 0.12)
+
+[sub_resource type="BoxMesh" id="R11"]
+material = ExtResource("5_44n80")
+size = Vector3(0.11, 0.06, 0.08)
+
+[sub_resource type="BoxMesh" id="R12"]
+material = ExtResource("5_44n80")
+size = Vector3(0.11, 0.06, 0.08)
+
+[sub_resource type="BoxMesh" id="Detail_InsetPanel0"]
+material = ExtResource("4_77o6l")
+size = Vector3(0.96, 0.72, 0.035)
+
+[sub_resource type="BoxMesh" id="Detail_InsetPanel1"]
+material = ExtResource("4_77o6l")
+size = Vector3(0.96, 0.72, 0.035)
+
+[sub_resource type="BoxMesh" id="Detail_FrameLeft"]
+material = ExtResource("4_77o6l")
+size = Vector3(0.09, 2.23, 0.24)
+
+[sub_resource type="BoxShape3D" id="Detail_FrameLeftShape"]
+size = Vector3(0.09, 2.23, 0.24)
+
+[sub_resource type="BoxMesh" id="Detail_FrameRight"]
+material = ExtResource("4_77o6l")
+size = Vector3(0.09, 2.23, 0.24)
+
+[sub_resource type="BoxShape3D" id="Detail_FrameRightShape"]
+size = Vector3(0.09, 2.23, 0.24)
+
+[sub_resource type="BoxMesh" id="Detail_FrameTop"]
+material = ExtResource("4_77o6l")
+size = Vector3(1.5, 0.17, 0.24)
+
+[sub_resource type="BoxShape3D" id="Detail_FrameTopShape"]
+size = Vector3(1.5, 0.17, 0.24)
+
+[node name="Door" type="Node3D" unique_id=1220630826]
+script = ExtResource("1_7oe41")
+
+[node name="Hinge" type="Node3D" parent="." unique_id=486889737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, 0)
+
+[node name="Slab" type="StaticBody3D" parent="Hinge" unique_id=125652919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 1.1, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Hinge/Slab" unique_id=841489403]
+material_override = SubResource("StandardMaterial3D_2vtx0")
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="Hinge/Slab" unique_id=579998121]
+shape = SubResource("R10")
+
+[node name="Handle-0.09" type="Node3D" parent="Hinge" unique_id=1995223950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16, 1, -0.09)
+
+[node name="Mesh" type="MeshInstance3D" parent="Hinge/Handle-0.09" unique_id=211160566]
+mesh = SubResource("R11")
+
+[node name="Handle0.09" type="Node3D" parent="Hinge" unique_id=1288606424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16, 1, 0.09)
+
+[node name="Mesh" type="MeshInstance3D" parent="Hinge/Handle0.09" unique_id=1064702360]
+mesh = SubResource("R12")
+
+[node name="InsetPanel0" type="StaticBody3D" parent="Hinge" unique_id=995751749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 0.55, -0.074)
+
+[node name="Mesh" type="MeshInstance3D" parent="Hinge/InsetPanel0" unique_id=1122531973]
+material_override = SubResource("StandardMaterial3D_2vtx0")
+mesh = SubResource("Detail_InsetPanel0")
+
+[node name="InsetPanel1" type="StaticBody3D" parent="Hinge" unique_id=563074756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 1.52, -0.074)
+
+[node name="Mesh" type="MeshInstance3D" parent="Hinge/InsetPanel1" unique_id=1712661209]
+material_override = SubResource("StandardMaterial3D_2vtx0")
+mesh = SubResource("Detail_InsetPanel1")
+
+[node name="Creak" type="AudioStreamPlayer3D" parent="." unique_id=1366924716]
+stream = ExtResource("6_lyhy0")
+volume_db = -15.0
+max_distance = 18.0
+
+[node name="FrameLeft" type="StaticBody3D" parent="." unique_id=409261296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.705, 1.115, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="FrameLeft" unique_id=909322500]
+material_override = SubResource("StandardMaterial3D_2vtx0")
+mesh = SubResource("Detail_FrameLeft")
+
+[node name="Collision" type="CollisionShape3D" parent="FrameLeft" unique_id=1376489045]
+shape = SubResource("Detail_FrameLeftShape")
+
+[node name="FrameRight" type="StaticBody3D" parent="." unique_id=762959298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.705, 1.115, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="FrameRight" unique_id=1651532216]
+material_override = SubResource("StandardMaterial3D_2vtx0")
+mesh = SubResource("Detail_FrameRight")
+
+[node name="Collision" type="CollisionShape3D" parent="FrameRight" unique_id=1405844361]
+shape = SubResource("Detail_FrameRightShape")
+
+[node name="FrameTop" type="StaticBody3D" parent="." unique_id=1996523711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.315, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="FrameTop" unique_id=1490700986]
+material_override = SubResource("StandardMaterial3D_2vtx0")
+mesh = SubResource("Detail_FrameTop")
+
+[node name="Collision" type="CollisionShape3D" parent="FrameTop" unique_id=1615991678]
+shape = SubResource("Detail_FrameTopShape")

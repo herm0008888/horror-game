@@ -1,0 +1,42 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+resource_name = "Weathered concrete"
+albedo_color = Color(0.34, 0.36, 0.35, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="StandardMaterial3D" id="R2"]
+resource_name = "Faded ochre paint"
+albedo_color = Color(0.64, 0.42, 0.09, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(4, 0.8, 0.65)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(4, 0.8, 0.65)
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(3.80000, 0.16000, 0.01200)
+material = SubResource("R2")
+
+[node name="ConcreteBarrier" type="StaticBody3D" ]
+
+
+[node name="Concrete" type="MeshInstance3D" parent="." ]
+position = Vector3(0, 0.4, 0)
+mesh = SubResource("R3")
+
+[node name="Collision" type="CollisionShape3D" parent="." ]
+position = Vector3(0, 0.4, 0)
+shape = SubResource("R4")
+
+[node name="PaintStripe" type="Node3D" parent="." ]
+position = Vector3(0.00000, 0.65000, -0.33100)
+rotation = Vector3(0, 0, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="PaintStripe" ]
+mesh = SubResource("R5")

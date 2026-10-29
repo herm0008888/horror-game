@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/brass_candleholders/brass_candleholders.gltf" id="1_oqhxr"]
+
+[node name="BrassCandleholders" type="Node3D" unique_id=200692508]
+metadata/asset_id = "brass_candleholders"
+
+[node name="Model" type="Node3D" parent="." unique_id=1327543584 instance=ExtResource("1_oqhxr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.077766806, 0.00046524405, -7.161498e-05)

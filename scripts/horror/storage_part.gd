@@ -17,6 +17,7 @@ func interact() -> void:
 func set_open(enabled: bool, immediate: bool=false) -> void:
 	if opened==enabled and not immediate: return
 	opened=enabled
+	get_tree().call_group("dynamic_navigation","request_update")
 	if motion and motion.is_valid(): motion.kill()
 	var target:=closed_transform
 	if opened:

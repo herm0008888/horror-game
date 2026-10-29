@@ -1,60 +1,53 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://b5mutcrfpkyes"]
 
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_diff_1k.jpg" id="2_acvb7"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_arm_1k.jpg" id="3_a1f1c"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_nor_gl_1k.jpg" id="4_ubcwp"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_diff_1k.jpg" id="5_ic7mx"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_arm_1k.jpg" id="6_psmey"]
-[ext_resource type="Texture2D" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_nor_gl_1k.jpg" id="7_c810f"]
-[ext_resource type="Texture2D" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_diff_1k.jpg" id="8_k7rhx"]
-[ext_resource type="Texture2D" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_arm_1k.jpg" id="9_8u7ks"]
-[ext_resource type="Texture2D" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_nor_gl_1k.jpg" id="10_ulwnv"]
-[ext_resource type="Texture2D" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_diff_1k.jpg" id="11_5opkh"]
-[ext_resource type="Texture2D" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_rough_1k.jpg" id="12_dlkhf"]
-[ext_resource type="Texture2D" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_nor_gl_1k.jpg" id="13_upkhh"]
-[ext_resource type="Texture2D" path="res://assets/house_library/portable_cassette_player/textures/portable_cassette_player_diff_1k.jpg" id="14_tbgmh"]
-[ext_resource type="Texture2D" path="res://assets/house_library/portable_cassette_player/textures/portable_cassette_player_arm_1k.jpg" id="15_q055h"]
-[ext_resource type="Texture2D" path="res://assets/house_library/portable_cassette_player/textures/portable_cassette_player_nor_gl_1k.jpg" id="16_n5vfi"]
-[ext_resource type="Texture2D" path="res://assets/house_library/desk_lamp_arm_01/textures/desk_lamp_arm_01_diff_1k.jpg" id="17_yqjxe"]
-[ext_resource type="Texture2D" path="res://assets/house_library/desk_lamp_arm_01/textures/desk_lamp_arm_01_arm_1k.jpg" id="18_2glfj"]
-[ext_resource type="Texture2D" path="res://assets/house_library/desk_lamp_arm_01/textures/desk_lamp_arm_01_nor_gl_1k.jpg" id="19_g4acf"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_diff_1k.jpg" id="20_e7b2h"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_arm_1k.jpg" id="21_1x7ox"]
-[ext_resource type="Texture2D" path="res://assets/house_library/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_nor_gl_1k.jpg" id="22_c2qy5"]
-[ext_resource type="Texture2D" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_diff_1k.jpg" id="23_e6qew"]
-[ext_resource type="Texture2D" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_arm_1k.jpg" id="24_vb08o"]
-[ext_resource type="Texture2D" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_nor_gl_1k.jpg" id="25_jkliu"]
-[ext_resource type="Texture2D" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_diff_1k.jpg" id="26_uhfn7"]
-[ext_resource type="Texture2D" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_roughness_1k.jpg" id="27_fpkce"]
-[ext_resource type="Texture2D" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_nor_gl_1k.jpg" id="28_vhvm6"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0025.res" id="29_j3ihj"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0026.res" id="30_44ypq"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0027.res" id="31_y5dlk"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0028.res" id="32_g75wq"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0029.res" id="33_dkwd0"]
-[ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0030.res" id="34_t7wsr"]
+[ext_resource type="Texture2D" uid="uid://c2c53x54cfoxa" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_diff_1k.jpg" id="2_acvb7"]
+[ext_resource type="Texture2D" uid="uid://cpbtid6ch5ydg" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_arm_1k.jpg" id="3_a1f1c"]
+[ext_resource type="Texture2D" uid="uid://cc8hoctr8m3yk" path="res://assets/house_library/painted_wooden_table/textures/painted_wooden_table_nor_gl_1k.jpg" id="4_ubcwp"]
+[ext_resource type="Texture2D" uid="uid://bkmjhfxify63s" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_diff_1k.jpg" id="5_ic7mx"]
+[ext_resource type="Texture2D" uid="uid://db611cjgpon4k" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_arm_1k.jpg" id="6_psmey"]
+[ext_resource type="Texture2D" uid="uid://kyn7ekq41qqx" path="res://assets/house_library/painted_wooden_chair_02/textures/painted_wooden_chair_02_nor_gl_1k.jpg" id="7_c810f"]
+[ext_resource type="Texture2D" uid="uid://csd2u6ni28u4o" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_diff_1k.jpg" id="8_k7rhx"]
+[ext_resource type="Texture2D" uid="uid://b2a42v2ar18v0" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_arm_1k.jpg" id="9_8u7ks"]
+[ext_resource type="Texture2D" uid="uid://dh3b5dm7m4mv3" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_nor_gl_1k.jpg" id="10_ulwnv"]
+[ext_resource type="Texture2D" uid="uid://61o5juxkwvyb" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_diff_1k.jpg" id="11_5opkh"]
+[ext_resource type="Texture2D" uid="uid://bx6oymbdtucgn" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_rough_1k.jpg" id="12_dlkhf"]
+[ext_resource type="Texture2D" uid="uid://0tak6eu7qum5" path="res://assets/house_library/standing_picture_frame_01/textures/standing_picture_frame_01_artwork_nor_gl_1k.jpg" id="13_upkhh"]
+[ext_resource type="Texture2D" uid="uid://bdx061xrkb8hi" path="res://assets/house_library/portable_cassette_player/textures/portable_cassette_player_diff_1k.jpg" id="14_tbgmh"]
+[ext_resource type="Texture2D" uid="uid://n688yqw0xkke" path="res://assets/house_library/portable_cassette_player/textures/portable_cassette_player_arm_1k.jpg" id="15_q055h"]
+[ext_resource type="Texture2D" uid="uid://dv7q6te8qdvas" path="res://assets/house_library/portable_cassette_player/textures/portable_cassette_player_nor_gl_1k.jpg" id="16_n5vfi"]
+[ext_resource type="Texture2D" uid="uid://s4gpkt5f5rkx" path="res://assets/house_library/desk_lamp_arm_01/textures/desk_lamp_arm_01_diff_1k.jpg" id="17_yqjxe"]
+[ext_resource type="Texture2D" uid="uid://dhj6vewxnx1lr" path="res://assets/house_library/desk_lamp_arm_01/textures/desk_lamp_arm_01_arm_1k.jpg" id="18_2glfj"]
+[ext_resource type="Texture2D" uid="uid://ca5wxaj435i8x" path="res://assets/house_library/desk_lamp_arm_01/textures/desk_lamp_arm_01_nor_gl_1k.jpg" id="19_g4acf"]
+[ext_resource type="Texture2D" uid="uid://comaudqwxpwku" path="res://assets/house_library/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_diff_1k.jpg" id="20_e7b2h"]
+[ext_resource type="Texture2D" uid="uid://bltgwen8x18qb" path="res://assets/house_library/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_arm_1k.jpg" id="21_1x7ox"]
+[ext_resource type="Texture2D" uid="uid://dpq2akyrt67qm" path="res://assets/house_library/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_nor_gl_1k.jpg" id="22_c2qy5"]
+[ext_resource type="Texture2D" uid="uid://dvrf11v7b4wqr" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_diff_1k.jpg" id="23_e6qew"]
+[ext_resource type="Texture2D" uid="uid://bidx683233sk4" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_arm_1k.jpg" id="24_vb08o"]
+[ext_resource type="Texture2D" uid="uid://n4djp4u3h5fg" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_nor_gl_1k.jpg" id="25_jkliu"]
+[ext_resource type="Texture2D" uid="uid://dv7dm3emp6pxu" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_diff_1k.jpg" id="26_uhfn7"]
+[ext_resource type="Texture2D" uid="uid://dri1fkasx822e" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_roughness_1k.jpg" id="27_fpkce"]
+[ext_resource type="Texture2D" uid="uid://cwo1bwe21xcoh" path="res://assets/house_library/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_nor_gl_1k.jpg" id="28_vhvm6"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0031.res" id="35_5v3ji"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0032.res" id="36_waxef"]
-[ext_resource type="Texture2D" path="res://assets/house_library/cardboard_box_01/textures/cardboard_box_01_diff_1k.jpg" id="38_p1mqu"]
-[ext_resource type="Texture2D" path="res://assets/house_library/cardboard_box_01/textures/cardboard_box_01_arm_1k.jpg" id="39_8i847"]
-[ext_resource type="Texture2D" path="res://assets/house_library/cardboard_box_01/textures/cardboard_box_01_nor_gl_1k.jpg" id="40_6r0ug"]
-[ext_resource type="Texture2D" path="res://assets/house_library/vintage_telephone_wall_clock/textures/vintage_telephone_wall_clock_diff_1k.jpg" id="41_7hhgb"]
-[ext_resource type="Texture2D" path="res://assets/house_library/vintage_telephone_wall_clock/textures/vintage_telephone_wall_clock_arm_1k.jpg" id="42_1f8jr"]
-[ext_resource type="Texture2D" path="res://assets/house_library/vintage_telephone_wall_clock/textures/vintage_telephone_wall_clock_nor_gl_1k.jpg" id="43_r2fhh"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_diff_1k.jpg" id="44_60tvx"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_arm_1k.jpg" id="45_tq32d"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_nor_gl_1k.jpg" id="46_485ao"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_diff_1k.jpg" id="47_4hlyl"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_arm_1k.jpg" id="48_wufpi"]
-[ext_resource type="Texture2D" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_nor_gl_1k.jpg" id="49_dirhh"]
+[ext_resource type="Texture2D" uid="uid://bhan70hbfl0os" path="res://assets/house_library/cardboard_box_01/textures/cardboard_box_01_diff_1k.jpg" id="38_p1mqu"]
+[ext_resource type="Texture2D" uid="uid://cd5h3q0dnfpl4" path="res://assets/house_library/cardboard_box_01/textures/cardboard_box_01_arm_1k.jpg" id="39_8i847"]
+[ext_resource type="Texture2D" uid="uid://dkwbp824twmpt" path="res://assets/house_library/cardboard_box_01/textures/cardboard_box_01_nor_gl_1k.jpg" id="40_6r0ug"]
+[ext_resource type="Texture2D" uid="uid://dx7npup35qdu2" path="res://assets/house_library/vintage_telephone_wall_clock/textures/vintage_telephone_wall_clock_diff_1k.jpg" id="41_7hhgb"]
+[ext_resource type="Texture2D" uid="uid://i20jjyssg2mv" path="res://assets/house_library/vintage_telephone_wall_clock/textures/vintage_telephone_wall_clock_arm_1k.jpg" id="42_1f8jr"]
+[ext_resource type="Texture2D" uid="uid://bdqmkgqi0a3a" path="res://assets/house_library/vintage_telephone_wall_clock/textures/vintage_telephone_wall_clock_nor_gl_1k.jpg" id="43_r2fhh"]
+[ext_resource type="Texture2D" uid="uid://btx3vt2hmsea0" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_diff_1k.jpg" id="44_60tvx"]
+[ext_resource type="Texture2D" uid="uid://jsrg0ugdq0os" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_arm_1k.jpg" id="45_tq32d"]
+[ext_resource type="Texture2D" uid="uid://boie0jnse3hhy" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_nor_gl_1k.jpg" id="46_485ao"]
+[ext_resource type="Texture2D" uid="uid://den6jv2kg7uyl" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_diff_1k.jpg" id="47_4hlyl"]
+[ext_resource type="Texture2D" uid="uid://dryidsqijmj6o" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_arm_1k.jpg" id="48_wufpi"]
+[ext_resource type="Texture2D" uid="uid://c2jf0quoko5i6" path="res://assets/house_library/metal_trash_can/textures/metal_trash_can_rust_nor_gl_1k.jpg" id="49_dirhh"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0033.res" id="50_2l1b1"]
 [ext_resource type="ArrayMesh" path="res://assets/house_optimized/render/batch_0034.res" id="51_kobat"]
-[ext_resource type="Texture2D" path="res://assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_diff_1k.jpg" id="52_4cxtv"]
-[ext_resource type="Texture2D" path="res://assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_arm_1k.jpg" id="53_puhwj"]
-[ext_resource type="Texture2D" path="res://assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_nor_gl_1k.jpg" id="54_0h78k"]
-[ext_resource type="Texture2D" path="res://assets/house_library/dirty_carpet/Diffuse.jpg" id="62_v3rco"]
+[ext_resource type="Texture2D" uid="uid://djwqjc6ppb7or" path="res://assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_diff_1k.jpg" id="52_4cxtv"]
+[ext_resource type="Texture2D" uid="uid://726nmc30smgo" path="res://assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_arm_1k.jpg" id="53_puhwj"]
+[ext_resource type="Texture2D" uid="uid://bv5ghy8oebcwt" path="res://assets/house_library/ornate_mirror_01/textures/ornate_mirror_01_nor_gl_1k.jpg" id="54_0h78k"]
+[ext_resource type="Texture2D" uid="uid://brc83wa3yw8jf" path="res://assets/house_library/dirty_carpet/Diffuse.jpg" id="62_v3rco"]
 [ext_resource type="Material" path="res://assets/house_materials/floor_wood.tres" id="63_hw14a"]
-[ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_018.tscn" id="Storage_0"]
 [ext_resource type="PackedScene" path="res://scenes/horror/furniture/storage_019.tscn" id="Storage_1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwovr"]
@@ -900,16 +893,9 @@ size = Vector3(0.11816387, 0.018, 0.05940509)
 
 [node name="Study" type="Node3D" unique_id=288530869]
 
-[node name="PaintedWoodenCabinet02" type="StaticBody3D" parent="." unique_id=1042822202 instance=ExtResource("Storage_0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15, 0, 1.55)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet_02"
-metadata/dimensions = Vector3(1.3, 2.4, 0.5)
-metadata/asset_id = "painted_wooden_cabinet_02"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
-
 [node name="PaintedWoodenTable" type="StaticBody3D" parent="." unique_id=760658620]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.67, 0, 3.15)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_table"
 metadata/dimensions = Vector3(1.9071438, 0.76, 0.901392)
 metadata/asset_id = "painted_wooden_table"
@@ -928,6 +914,7 @@ shape = SubResource("BoxShape3D_8u7ks")
 
 [node name="PaintedWoodenChair02" type="StaticBody3D" parent="." unique_id=1770825635]
 transform = Transform3D(0.4067366, 0, -0.9135455, 0, 1, 0, 0.9135455, 0, 0.4067366, 2.03, 0, 3.1)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_02"
 metadata/dimensions = Vector3(0.49075964, 0.97, 0.5081892)
 metadata/asset_id = "painted_wooden_chair_02"
@@ -946,7 +933,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.485, 0)
 shape = SubResource("BoxShape3D_ulwnv")
 
 [node name="StandingPictureFrame01" type="Node3D" parent="." unique_id=1446896587]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67, 0.760963, 2.6000001)
+transform = Transform3D(0.7523385, 0, -0.6587767, 0, 1, 0, 0.6587767, 0, 0.7523385, 0.44567245, 0.760963, 2.3757303)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/standing_picture_frame_01"
 metadata/dimensions = Vector3(0.09639762, 0.24000001, 0.19303185)
 metadata/asset_id = "standing_picture_frame_01"
@@ -962,7 +950,8 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_otpy7")
 
 [node name="PortableCassettePlayer" type="Node3D" parent="." unique_id=127175963]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.77000004, 0.760964, 3.4)
+transform = Transform3D(-0.48335165, 0, 0.8754263, 0, 1, 0, -0.8754263, 0, -0.48335165, 0.46928507, 0.760964, 3.8946595)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/portable_cassette_player"
 metadata/dimensions = Vector3(0.14, 0.032242946, 0.105905525)
 metadata/asset_id = "portable_cassette_player"
@@ -993,7 +982,8 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_j6ltj")
 
 [node name="DeskLampArm01" type="Node3D" parent="." unique_id=1609255941]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.27000004, 0.695963, 3.75)
+transform = Transform3D(0.4519515, 0, -0.8920425, 0, 1, 0, 0.8920425, 0, 0.4519515, 0.47131604, 0.695963, 3.60424)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/desk_lamp_arm_01"
 metadata/dimensions = Vector3(0.1446395, 0.64, 0.44014537)
 metadata/asset_id = "desk_lamp_arm_01"
@@ -1007,8 +997,14 @@ transform = Transform3D(0.7169979, 0, 0, 0, 0.7169979, 0, 0, 0, 0.7169979, 0.012
 lod_bias = 0.7
 mesh = SubResource("ArrayMesh_juwb4")
 
+[node name="SpotLight3D" type="SpotLight3D" parent="DeskLampArm01" unique_id=1345831583]
+transform = Transform3D(1, 0, 0, 0, 0.40627787, 0.9137496, 0, -0.9137496, 0.40627787, -0.092015505, 0.46914113, -0.09397483)
+spot_range = 0.758
+spot_angle = 39.0
+
 [node name="WoodenBookshelfWorn" type="StaticBody3D" parent="." unique_id=1803894139]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.3, 0, 5.58)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/wooden_bookshelf_worn"
 metadata/dimensions = Vector3(1.3716599, 2.06, 0.5803324)
 metadata/asset_id = "wooden_bookshelf_worn"
@@ -1025,68 +1021,9 @@ mesh = SubResource("ArrayMesh_fdq60")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03, 0)
 shape = SubResource("BoxShape3D_n5vfi")
 
-[node name="BookEncyclopediaSet01" type="Node3D" parent="." unique_id=438225843]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, 0.39224634, 5.5699997)
-metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
-metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
-metadata/asset_id = "book_encyclopedia_set_01"
-metadata/support_y = 0.39224634
-
-[node name="Model" type="Node3D" parent="BookEncyclopediaSet01" unique_id=620074424]
-transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
-
-[node name="StaticBatch0025" type="MeshInstance3D" parent="BookEncyclopediaSet01" unique_id=218571316]
-material_override = SubResource("StandardMaterial3D_6oftd")
-lod_bias = 0.7
-mesh = ExtResource("29_j3ihj")
-
-[node name="StaticBatch0026" type="MeshInstance3D" parent="BookEncyclopediaSet01" unique_id=341531876]
-material_override = SubResource("StandardMaterial3D_vkbp5")
-lod_bias = 0.7
-mesh = ExtResource("30_44ypq")
-
-[node name="@Node3D@60" type="Node3D" parent="." unique_id=100278960]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, 0.67137986, 5.5699997)
-metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
-metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
-metadata/asset_id = "book_encyclopedia_set_01"
-metadata/support_y = 0.67137986
-
-[node name="Model" type="Node3D" parent="@Node3D@60" unique_id=1498978195]
-transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
-
-[node name="StaticBatch0027" type="MeshInstance3D" parent="@Node3D@60" unique_id=1152838927]
-material_override = SubResource("StandardMaterial3D_6oftd")
-lod_bias = 0.7
-mesh = ExtResource("31_y5dlk")
-
-[node name="StaticBatch0028" type="MeshInstance3D" parent="@Node3D@60" unique_id=681720142]
-material_override = SubResource("StandardMaterial3D_vkbp5")
-lod_bias = 0.7
-mesh = ExtResource("32_g75wq")
-
-[node name="@Node3D@61" type="Node3D" parent="." unique_id=101382369]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, 0.9598978, 5.5699997)
-metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
-metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
-metadata/asset_id = "book_encyclopedia_set_01"
-metadata/support_y = 0.9598978
-
-[node name="Model" type="Node3D" parent="@Node3D@61" unique_id=1040952853]
-transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
-
-[node name="StaticBatch0029" type="MeshInstance3D" parent="@Node3D@61" unique_id=1201392612]
-material_override = SubResource("StandardMaterial3D_6oftd")
-lod_bias = 0.7
-mesh = ExtResource("33_dkwd0")
-
-[node name="StaticBatch0030" type="MeshInstance3D" parent="@Node3D@61" unique_id=211158556]
-material_override = SubResource("StandardMaterial3D_vkbp5")
-lod_bias = 0.7
-mesh = ExtResource("34_t7wsr")
-
 [node name="@Node3D@62" type="Node3D" parent="." unique_id=1491991253]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, 1.2753707, 5.5699997)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5837004, 1.2753707, 5.5699997)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1105,8 +1042,114 @@ material_override = SubResource("StandardMaterial3D_vkbp5")
 lod_bias = 0.7
 mesh = ExtResource("36_waxef")
 
+[node name="_Node3D_62" type="Node3D" parent="." unique_id=1081519288]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9912496, 1.2753707, 5.5699997)
+metadata/_edit_group_ = true
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.2753707
+
+[node name="Model" type="Node3D" parent="_Node3D_62" unique_id=1827251210]
+transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
+
+[node name="StaticBatch0031" type="MeshInstance3D" parent="_Node3D_62" unique_id=1010067634]
+material_override = SubResource("StandardMaterial3D_6oftd")
+lod_bias = 0.7
+mesh = ExtResource("35_5v3ji")
+
+[node name="StaticBatch0032" type="MeshInstance3D" parent="_Node3D_62" unique_id=1393788213]
+material_override = SubResource("StandardMaterial3D_vkbp5")
+lod_bias = 0.7
+mesh = ExtResource("36_waxef")
+
+[node name="_Node3D_63" type="Node3D" parent="." unique_id=1890534013]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5837004, 0.9439218, 5.5699997)
+metadata/_edit_group_ = true
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.2753707
+
+[node name="Model" type="Node3D" parent="_Node3D_63" unique_id=76082598]
+transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
+
+[node name="StaticBatch0031" type="MeshInstance3D" parent="_Node3D_63" unique_id=1223963161]
+material_override = SubResource("StandardMaterial3D_6oftd")
+lod_bias = 0.7
+mesh = ExtResource("35_5v3ji")
+
+[node name="StaticBatch0032" type="MeshInstance3D" parent="_Node3D_63" unique_id=395536003]
+material_override = SubResource("StandardMaterial3D_vkbp5")
+lod_bias = 0.7
+mesh = ExtResource("36_waxef")
+
+[node name="_Node3D_64" type="Node3D" parent="." unique_id=1811006677]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9912496, 0.9439218, 5.5699997)
+metadata/_edit_group_ = true
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.2753707
+
+[node name="Model" type="Node3D" parent="_Node3D_64" unique_id=2007506126]
+transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
+
+[node name="StaticBatch0031" type="MeshInstance3D" parent="_Node3D_64" unique_id=597576783]
+material_override = SubResource("StandardMaterial3D_6oftd")
+lod_bias = 0.7
+mesh = ExtResource("35_5v3ji")
+
+[node name="StaticBatch0032" type="MeshInstance3D" parent="_Node3D_64" unique_id=418095204]
+material_override = SubResource("StandardMaterial3D_vkbp5")
+lod_bias = 0.7
+mesh = ExtResource("36_waxef")
+
+[node name="_Node3D_65" type="Node3D" parent="." unique_id=1759638282]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5837004, 0.66343164, 5.5699997)
+metadata/_edit_group_ = true
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.2753707
+
+[node name="Model" type="Node3D" parent="_Node3D_65" unique_id=1252423794]
+transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
+
+[node name="StaticBatch0031" type="MeshInstance3D" parent="_Node3D_65" unique_id=960812121]
+material_override = SubResource("StandardMaterial3D_6oftd")
+lod_bias = 0.7
+mesh = ExtResource("35_5v3ji")
+
+[node name="StaticBatch0032" type="MeshInstance3D" parent="_Node3D_65" unique_id=210753044]
+material_override = SubResource("StandardMaterial3D_vkbp5")
+lod_bias = 0.7
+mesh = ExtResource("36_waxef")
+
+[node name="_Node3D_66" type="Node3D" parent="." unique_id=1642839997]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9912496, 0.66343164, 5.5699997)
+metadata/_edit_group_ = true
+metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
+metadata/dimensions = Vector3(0.6037336, 0.26, 0.17857186)
+metadata/asset_id = "book_encyclopedia_set_01"
+metadata/support_y = 1.2753707
+
+[node name="Model" type="Node3D" parent="_Node3D_66" unique_id=1119384908]
+transform = Transform3D(1.0951141, 0, 0, 0, 1.0951141, 0, 0, 0, 1.0951141, -0.28071305, 1.29175985e-08, -0.021312324)
+
+[node name="StaticBatch0031" type="MeshInstance3D" parent="_Node3D_66" unique_id=28998011]
+material_override = SubResource("StandardMaterial3D_6oftd")
+lod_bias = 0.7
+mesh = ExtResource("35_5v3ji")
+
+[node name="StaticBatch0032" type="MeshInstance3D" parent="_Node3D_66" unique_id=391434032]
+material_override = SubResource("StandardMaterial3D_vkbp5")
+lod_bias = 0.7
+mesh = ExtResource("36_waxef")
+
 [node name="@Node3D@63" type="Node3D" parent="." unique_id=348098001]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9399999, 1.6616253, 5.55)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/standing_picture_frame_01"
 metadata/dimensions = Vector3(0.08836449, 0.22, 0.17694585)
 metadata/asset_id = "standing_picture_frame_01"
@@ -1121,16 +1164,12 @@ visibility_range_end = 22.0
 visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_otpy7")
 
-[node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=1376982318 instance=ExtResource("Storage_1")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.45, 0, 2.45)
-metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
-metadata/dimensions = Vector3(1.2, 0.95, 0.6)
-metadata/asset_id = "painted_wooden_cabinet"
-metadata/support_y = 0.0
-metadata/interactive_storage = true
+[node name="PaintedWoodenCabinet" parent="." unique_id=1376982318 instance=ExtResource("Storage_1")]
+metadata/_edit_group_ = true
 
 [node name="CardboardBox01" type="Node3D" parent="." unique_id=1139735108]
 transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, 3.45, 0.95100075, 2.45)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.26043165, 0.23, 0.34713387)
 metadata/asset_id = "cardboard_box_01"
@@ -1148,6 +1187,7 @@ mesh = SubResource("ArrayMesh_l83bj")
 
 [node name="VintageTelephoneWallClock" type="Node3D" parent="." unique_id=661286281]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.78, 1.3, 5.03)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/vintage_telephone_wall_clock"
 metadata/dimensions = Vector3(0.3282843, 0.48, 0.18440607)
 metadata/asset_id = "vintage_telephone_wall_clock"
@@ -1162,6 +1202,7 @@ mesh = SubResource("ArrayMesh_2krbj")
 
 [node name="MetalTrashCan" type="StaticBody3D" parent="." unique_id=889073216]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0.4, 0, 4.7)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/metal_trash_can"
 metadata/dimensions = Vector3(0.9171801, 0.45, 0.27625114)
 metadata/asset_id = "metal_trash_can"
@@ -1197,6 +1238,7 @@ mesh = ExtResource("51_kobat")
 
 [node name="@StaticBody3D@66" type="StaticBody3D" parent="." unique_id=1869933547]
 transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 0.45, 0, 5.5)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.40763217, 0.36, 0.54333997)
 metadata/asset_id = "cardboard_box_01"
@@ -1216,6 +1258,7 @@ shape = SubResource("BoxShape3D_c2qy5")
 
 [node name="OrnateMirror01" type="Node3D" parent="." unique_id=1421222520]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.16, 1.25, 1.65)
+metadata/_edit_group_ = true
 metadata/source = "https://polyhaven.com/a/ornate_mirror_01"
 metadata/dimensions = Vector3(0.4576289, 0.70000005, 0.024418065)
 metadata/asset_id = "ornate_mirror_01"

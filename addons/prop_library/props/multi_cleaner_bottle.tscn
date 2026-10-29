@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/multi_cleaner_bottle/multi_cleaner_bottle.gltf" id="1_20u77"]
+
+[node name="MultiCleanerBottle" type="Node3D" unique_id=1065700725]
+metadata/asset_id = "multi_cleaner_bottle"
+
+[node name="Model" type="Node3D" parent="." unique_id=1668551501 instance=ExtResource("1_20u77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8428774e-08, 3.4790587e-11, -1.0408461e-05)

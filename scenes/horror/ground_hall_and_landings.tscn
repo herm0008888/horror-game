@@ -538,6 +538,7 @@ size = Vector3(0.06866394, 0.018, 0.031077415)
 [node name="HallAndLandings" type="Node3D" unique_id=2131937240]
 
 [node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=47547198]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.55, 0, 9.15)
 metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
 metadata/dimensions = Vector3(1.2, 0.9, 0.6)
@@ -557,6 +558,7 @@ lod_bias = 0.7
 mesh = ExtResource("4_vcwom")
 
 [node name="CeramicPot" type="Node3D" parent="." unique_id=1188099281]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 4.55, 0.90100056, 9.349999)
 metadata/source = "https://polyhaven.com/a/ceramic_pot"
 metadata/dimensions = Vector3(0.4237684, 0.24, 0.32400256)
@@ -573,6 +575,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_jcoy5")
 
 [node name="StandingPictureFrame01" type="Node3D" parent="." unique_id=1976784269]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.90100056, 8.95)
 metadata/source = "https://polyhaven.com/a/standing_picture_frame_01"
 metadata/dimensions = Vector3(0.09238106, 0.23, 0.18498884)
@@ -589,6 +592,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_otpy7")
 
 [node name="OrnateMirror01" type="Node3D" parent="." unique_id=632600805]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.17, 1.35, 9.1)
 metadata/source = "https://polyhaven.com/a/ornate_mirror_01"
 metadata/dimensions = Vector3(0.56222975, 0.86, 0.029999334)
@@ -603,6 +607,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_ilrpf")
 
 [node name="PaintedWoodenBench" type="StaticBody3D" parent="." unique_id=1193593288]
+metadata/_edit_group_ = true
 transform = Transform3D(0.121869326, 0, -0.99254614, 0, 1, 0, 0.99254614, 0, 0.121869326, 15.38, 0, 11.14)
 metadata/source = "https://polyhaven.com/a/painted_wooden_bench"
 metadata/dimensions = Vector3(1.1527721, 0.88000005, 0.49135515)
@@ -621,6 +626,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44000003, 0)
 shape = SubResource("BoxShape3D_3oglw")
 
 [node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=1752254823]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.84, 1.45, 11.1)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/dimensions = Vector3(0.75181353, 0.5, 0.033075146)
@@ -635,6 +641,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_a0fxu")
 
 [node name="VintageTelephoneWallClock" type="Node3D" parent="." unique_id=326189291]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.6, 1.45, 11.79)
 metadata/source = "https://polyhaven.com/a/vintage_telephone_wall_clock"
 metadata/dimensions = Vector3(0.3556413, 0.52, 0.19977322)
@@ -649,6 +656,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_2krbj")
 
 [node name="@Node3D@120" type="Node3D" parent="." unique_id=1065340751]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.36, 1.65, 15.2)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/dimensions = Vector3(0.4811606, 0.32, 0.021168094)
@@ -663,6 +671,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_a0fxu")
 
 [node name="@Node3D@121" type="Node3D" parent="." unique_id=2046863890]
+metadata/_edit_group_ = true
 visible = false
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.83, 2.3, 8.5)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
@@ -678,6 +687,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_a0fxu")
 
 [node name="@Node3D@122" type="Node3D" parent="." unique_id=1201230127]
+metadata/_edit_group_ = true
 visible = false
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.17, 2.35, 2.5)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"

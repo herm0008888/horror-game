@@ -365,6 +365,7 @@ metadata/source = "https://polyhaven.com/a/wooden_crate_02"
 metadata/interactive_storage = true
 
 [node name="WoodenBookshelfWorn" type="StaticBody3D" parent="." unique_id=1788404084]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.53, 3.4, 13.3)
 metadata/source = "https://polyhaven.com/a/wooden_bookshelf_worn"
 metadata/asset_id = "wooden_bookshelf_worn"
@@ -381,6 +382,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.975, 0)
 shape = SubResource("BoxShape3D_r7h2c")
 
 [node name="VintageSuitcase" type="StaticBody3D" parent="." unique_id=2061563971]
+metadata/_edit_group_ = true
 transform = Transform3D(0.8910065, 0, -0.45399052, 0, 1, 0, 0.45399052, 0, 0.8910065, 2, 3.4, 13.5)
 metadata/source = "https://polyhaven.com/a/vintage_suitcase"
 metadata/asset_id = "vintage_suitcase"
@@ -435,6 +437,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13999997, 0)
 shape = SubResource("BoxShape3D_4lfeu")
 
 [node name="CardboardBox01" type="Node3D" parent="." unique_id=313447712]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 3.7713544, 13.3)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/asset_id = "cardboard_box_01"
@@ -451,6 +454,7 @@ mesh = SubResource("ArrayMesh_62c5y")
 surface_material_override/0 = SubResource("StandardMaterial3D_i3ipf")
 
 [node name="@Node3D@92" type="Node3D" parent="." unique_id=195553689]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 4.035583, 13.3)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/asset_id = "cardboard_box_01"
@@ -467,6 +471,7 @@ mesh = SubResource("ArrayMesh_62c5y")
 surface_material_override/0 = SubResource("StandardMaterial3D_i3ipf")
 
 [node name="@Node3D@93" type="Node3D" parent="." unique_id=352199385]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 4.5657406, 13.3)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/asset_id = "cardboard_box_01"
@@ -483,6 +488,7 @@ mesh = SubResource("ArrayMesh_62c5y")
 surface_material_override/0 = SubResource("StandardMaterial3D_i3ipf")
 
 [node name="@Node3D@94" type="Node3D" parent="." unique_id=1751880504]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 4.82, 13.3)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/asset_id = "cardboard_box_01"
@@ -499,6 +505,7 @@ mesh = SubResource("ArrayMesh_62c5y")
 surface_material_override/0 = SubResource("StandardMaterial3D_i3ipf")
 
 [node name="PlasticBroom" type="Node3D" parent="." unique_id=180942407]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 3.5, 3.4, 12.6)
 metadata/source = "https://polyhaven.com/a/plastic_broom"
 metadata/asset_id = "plastic_broom"
@@ -513,6 +520,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_imv74")
 surface_material_override/1 = SubResource("StandardMaterial3D_1of7n")
 
 [node name="Dustpan" type="Node3D" parent="." unique_id=1323269898]
+metadata/_edit_group_ = true
 transform = Transform3D(0.90630776, 0, -0.42261827, 0, 1, 0, 0.42261827, 0, 0.90630776, 2.95, 3.4, 12.25)
 metadata/source = "https://polyhaven.com/a/dustpan"
 metadata/asset_id = "dustpan"

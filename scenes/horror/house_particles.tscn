@@ -1,0 +1,126 @@
+[gd_scene load_steps=13 format=3]
+[ext_resource type="Script" path="res://scripts/horror/particle_sources.gd" id="Follow"]
+[ext_resource type="Shader" path="res://assets/effects/soft_smoke.gdshader" id="1"]
+[sub_resource type="Gradient" id="DustGradient"]
+offsets = PackedFloat32Array(0, 0.45, 1)
+colors = PackedColorArray(1, 0.88, 0.7, 0.32, 1, 0.88, 0.7, 0.1, 1, 0.88, 0.7, 0)
+[sub_resource type="GradientTexture2D" id="DustTexture"]
+gradient = SubResource("DustGradient")
+width = 32
+height = 32
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+[sub_resource type="StandardMaterial3D" id="DustMaterial"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("DustTexture")
+billboard_mode = 1
+no_depth_test = false
+[sub_resource type="QuadMesh" id="DustQuad"]
+material = SubResource("DustMaterial")
+size = Vector2(0.018, 0.018)
+[sub_resource type="ParticleProcessMaterial" id="DustProcess"]
+emission_shape = 3
+emission_box_extents = Vector3(1.8, 1.1, 1.8)
+direction = Vector3(1, 0.15, 0)
+spread = 40.0
+gravity = Vector3(0, 0.002, 0)
+initial_velocity_min = 0.008
+initial_velocity_max = 0.035
+scale_min = 0.45
+scale_max = 1.2
+[sub_resource type="FastNoiseLite" id="SmokeNoise"]
+noise_type = 3
+frequency = 0.05
+fractal_octaves = 3
+[sub_resource type="NoiseTexture2D" id="SmokeTexture"]
+width = 128
+height = 128
+seamless = true
+noise = SubResource("SmokeNoise")
+[sub_resource type="ShaderMaterial" id="SmokeMaterial"]
+shader = ExtResource("1")
+shader_parameter/smoke_noise = SubResource("SmokeTexture")
+[sub_resource type="QuadMesh" id="SmokeQuad"]
+material = SubResource("SmokeMaterial")
+size = Vector2(0.9, 0.9)
+[sub_resource type="ParticleProcessMaterial" id="SmokeProcess"]
+emission_shape = 3
+emission_box_extents = Vector3(0.22, 0.04, 0.12)
+direction = Vector3(0, 1, 0)
+spread = 25.0
+gravity = Vector3(-0.004, 0.014, 0)
+initial_velocity_min = 0.02
+initial_velocity_max = 0.05
+scale_min = 0.4
+scale_max = 0.85
+color = Color(0.6, 0.61, 0.57, 0.09)
+[node name="HouseParticles" type="Node3D"]
+script = ExtResource("Follow")
+boiler_path = NodePath("../BasementDressing/DeadBoilerRoom/BarrelStove")
+vent_offset = Vector3(0, 1.4, 0)
+[node name="HallDust" type="GPUParticles3D" parent="."]
+position = Vector3(6, 1.6, 6.2)
+amount = 80
+lifetime = 24.0
+preprocess = 12.0
+visibility_aabb = AABB(-2.5, -1.4, -2.5, 5, 3.5, 5)
+process_material = SubResource("DustProcess")
+draw_pass_1 = SubResource("DustQuad")
+cast_shadow = 0
+[node name="KitchenDust" type="GPUParticles3D" parent="."]
+position = Vector3(10.4, 1.6, 3.5)
+amount = 80
+lifetime = 24.0
+preprocess = 12.0
+visibility_aabb = AABB(-2.5, -1.4, -2.5, 5, 3.5, 5)
+process_material = SubResource("DustProcess")
+draw_pass_1 = SubResource("DustQuad")
+cast_shadow = 0
+[node name="LivingDust" type="GPUParticles3D" parent="."]
+position = Vector3(13, 1.6, 13)
+amount = 80
+lifetime = 24.0
+preprocess = 12.0
+visibility_aabb = AABB(-2.5, -1.4, -2.5, 5, 3.5, 5)
+process_material = SubResource("DustProcess")
+draw_pass_1 = SubResource("DustQuad")
+cast_shadow = 0
+[node name="BasementDust" type="GPUParticles3D" parent="."]
+position = Vector3(9, -2, 8)
+amount = 80
+lifetime = 24.0
+preprocess = 12.0
+visibility_aabb = AABB(-2.5, -1.4, -2.5, 5, 3.5, 5)
+process_material = SubResource("DustProcess")
+draw_pass_1 = SubResource("DustQuad")
+cast_shadow = 0
+[node name="UpperLandingDust" type="GPUParticles3D" parent="."]
+position = Vector3(6, 5, 8)
+amount = 80
+lifetime = 24.0
+preprocess = 12.0
+visibility_aabb = AABB(-2.5, -1.4, -2.5, 5, 3.5, 5)
+process_material = SubResource("DustProcess")
+draw_pass_1 = SubResource("DustQuad")
+cast_shadow = 0
+[node name="BoilerVapour" type="GPUParticles3D" parent="."]
+position = Vector3(7, -2, 0.85)
+amount = 20
+lifetime = 7.0
+preprocess = 3.0
+visibility_aabb = AABB(-1, -0.5, -1, 2, 3, 2)
+process_material = SubResource("SmokeProcess")
+draw_pass_1 = SubResource("SmokeQuad")
+cast_shadow = 0
+[node name="WorkshopDust" type="GPUParticles3D" parent="."]
+position = Vector3(2.1, -2, 3.2)
+amount = 80
+lifetime = 24.0
+preprocess = 12.0
+visibility_aabb = AABB(-2.5, -1.4, -2.5, 5, 3.5, 5)
+process_material = SubResource("DustProcess")
+draw_pass_1 = SubResource("DustQuad")
+cast_shadow = 0

@@ -84,11 +84,15 @@ func _process(delta: float) -> void:
 	elif intro_done and not carrying_plank and not bridge_placed and player.global_position.distance_to(plank.global_position)<1.8:
 		status.text="E · Plukk opp planken"
 	elif not intro_done:
-		status.text="Du søker ly. Gulvet knirker under deg …"
+		status.text="Finn Ida i huset."
 	elif player.position.y < -1 and player.position.x>4 and player.position.x<8 and player.position.z>12:
 		status.text="Porten er låst. Slegga ligger utenfor sprinklene. Finn det sprukne murverket."
 	else:
 		status.text="Bærer planke · Finn fella ved ytterdøra" if carrying_plank else ("Kjeller" if player.position.y < -1 else ("Første etasje" if player.position.y<2 else "Andre etasje"))
+	var story=get_node_or_null("ExteriorStory")
+	if story and not climbing:
+		var line: String=story.caption()
+		if not line.is_empty():status.text=line
 func climb_ladder() -> void:
 	if climbing: return
 	climbing=true

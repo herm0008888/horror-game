@@ -1,0 +1,209 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/container.res" id="1_b4d2v"]
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(12, 2.6, 2.45)
+
+[node name="Container" type="Node3D" unique_id=1788988681]
+
+[node name="Shell" type="StaticBody3D" parent="." unique_id=886229236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0)
+
+[node name="Collision" type="CollisionShape3D" parent="Shell" unique_id=559562012]
+shape = SubResource("R4")
+
+[node name="Rib0_-1" type="Node3D" parent="." unique_id=2116327939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8, 1.3, -1.24)
+
+[node name="Rib0_1" type="Node3D" parent="." unique_id=1477284265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8, 1.3, 1.24)
+
+[node name="Rib1_-1" type="Node3D" parent="." unique_id=2132612626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 1.3, -1.24)
+
+[node name="Rib1_1" type="Node3D" parent="." unique_id=618276637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 1.3, 1.24)
+
+[node name="Rib2_-1" type="Node3D" parent="." unique_id=270944941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.3, -1.24)
+
+[node name="Rib2_1" type="Node3D" parent="." unique_id=1409137793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.3, 1.24)
+
+[node name="Rib3_-1" type="Node3D" parent="." unique_id=639920105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6, 1.3, -1.24)
+
+[node name="Rib3_1" type="Node3D" parent="." unique_id=2043521299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6, 1.3, 1.24)
+
+[node name="Rib4_-1" type="Node3D" parent="." unique_id=1283598908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2, 1.3, -1.24)
+
+[node name="Rib4_1" type="Node3D" parent="." unique_id=604269629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2, 1.3, 1.24)
+
+[node name="Rib5_-1" type="Node3D" parent="." unique_id=920353390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8, 1.3, -1.24)
+
+[node name="Rib5_1" type="Node3D" parent="." unique_id=1962443383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8, 1.3, 1.24)
+
+[node name="Rib6_-1" type="Node3D" parent="." unique_id=216978546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4, 1.3, -1.24)
+
+[node name="Rib6_1" type="Node3D" parent="." unique_id=787199780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4, 1.3, 1.24)
+
+[node name="Rib7_-1" type="Node3D" parent="." unique_id=2113484164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.3, -1.24)
+
+[node name="Rib7_1" type="Node3D" parent="." unique_id=197332616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.3, 1.24)
+
+[node name="Rib8_-1" type="Node3D" parent="." unique_id=1601118860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6, 1.3, -1.24)
+
+[node name="Rib8_1" type="Node3D" parent="." unique_id=1509633352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6, 1.3, 1.24)
+
+[node name="Rib9_-1" type="Node3D" parent="." unique_id=787319550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2, 1.3, -1.24)
+
+[node name="Rib9_1" type="Node3D" parent="." unique_id=488978186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2, 1.3, 1.24)
+
+[node name="Rib10_-1" type="Node3D" parent="." unique_id=395027525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 1.3, -1.24)
+
+[node name="Rib10_1" type="Node3D" parent="." unique_id=2129428108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 1.3, 1.24)
+
+[node name="Rib11_-1" type="Node3D" parent="." unique_id=81476482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1.3, -1.24)
+
+[node name="Rib11_1" type="Node3D" parent="." unique_id=729534967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1.3, 1.24)
+
+[node name="Rib12_-1" type="Node3D" parent="." unique_id=1791296847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.3, -1.24)
+
+[node name="Rib12_1" type="Node3D" parent="." unique_id=752746860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.3, 1.24)
+
+[node name="Rib13_-1" type="Node3D" parent="." unique_id=2100796433]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1.3, -1.24)
+
+[node name="Rib13_1" type="Node3D" parent="." unique_id=1214786640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1.3, 1.24)
+
+[node name="Rib14_-1" type="Node3D" parent="." unique_id=1604364248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.3, -1.24)
+
+[node name="Rib14_1" type="Node3D" parent="." unique_id=1813620639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.3, 1.24)
+
+[node name="Rib15_-1" type="Node3D" parent="." unique_id=1601839622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.3, -1.24)
+
+[node name="Rib15_1" type="Node3D" parent="." unique_id=241972754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.3, 1.24)
+
+[node name="Rib16_-1" type="Node3D" parent="." unique_id=72511739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.3, -1.24)
+
+[node name="Rib16_1" type="Node3D" parent="." unique_id=1434419594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.3, 1.24)
+
+[node name="Rib17_-1" type="Node3D" parent="." unique_id=1784498753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.3, -1.24)
+
+[node name="Rib17_1" type="Node3D" parent="." unique_id=1139351710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.3, 1.24)
+
+[node name="Rib18_-1" type="Node3D" parent="." unique_id=1191142732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.3, -1.24)
+
+[node name="Rib18_1" type="Node3D" parent="." unique_id=618262802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.3, 1.24)
+
+[node name="Rib19_-1" type="Node3D" parent="." unique_id=1992962013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 1.3, -1.24)
+
+[node name="Rib19_1" type="Node3D" parent="." unique_id=216003079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 1.3, 1.24)
+
+[node name="Rib20_-1" type="Node3D" parent="." unique_id=1095542539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 1.3, -1.24)
+
+[node name="Rib20_1" type="Node3D" parent="." unique_id=2079758065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 1.3, 1.24)
+
+[node name="Rib21_-1" type="Node3D" parent="." unique_id=226166011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 1.3, -1.24)
+
+[node name="Rib21_1" type="Node3D" parent="." unique_id=351594012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 1.3, 1.24)
+
+[node name="Rib22_-1" type="Node3D" parent="." unique_id=1629739228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1.3, -1.24)
+
+[node name="Rib22_1" type="Node3D" parent="." unique_id=142742056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1.3, 1.24)
+
+[node name="Rib23_-1" type="Node3D" parent="." unique_id=1732332012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 1.3, -1.24)
+
+[node name="Rib23_1" type="Node3D" parent="." unique_id=906089713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 1.3, 1.24)
+
+[node name="Rib24_-1" type="Node3D" parent="." unique_id=690508121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 1.3, -1.24)
+
+[node name="Rib24_1" type="Node3D" parent="." unique_id=1895663882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 1.3, 1.24)
+
+[node name="Rib25_-1" type="Node3D" parent="." unique_id=1086537648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 1.3, -1.24)
+
+[node name="Rib25_1" type="Node3D" parent="." unique_id=1532772299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 1.3, 1.24)
+
+[node name="Rib26_-1" type="Node3D" parent="." unique_id=2021038925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, 1.3, -1.24)
+
+[node name="Rib26_1" type="Node3D" parent="." unique_id=2009937959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, 1.3, 1.24)
+
+[node name="Rib27_-1" type="Node3D" parent="." unique_id=260793371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.3, -1.24)
+
+[node name="Rib27_1" type="Node3D" parent="." unique_id=1897360102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.3, 1.24)
+
+[node name="Rib28_-1" type="Node3D" parent="." unique_id=1199548293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 1.3, -1.24)
+
+[node name="Rib28_1" type="Node3D" parent="." unique_id=60275757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 1.3, 1.24)
+
+[node name="Rib29_-1" type="Node3D" parent="." unique_id=1849216882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8, 1.3, -1.24)
+
+[node name="Rib29_1" type="Node3D" parent="." unique_id=426955772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8, 1.3, 1.24)
+
+[node name="Corner-5.98-1.23" type="Node3D" parent="." unique_id=1320321245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.98, 1.3, -1.23)
+
+[node name="Corner-5.981.23" type="Node3D" parent="." unique_id=159909093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.98, 1.3, 1.23)
+
+[node name="Corner5.98-1.23" type="Node3D" parent="." unique_id=1577594664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.98, 1.3, -1.23)
+
+[node name="Corner5.981.23" type="Node3D" parent="." unique_id=37484066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.98, 1.3, 1.23)
+
+[node name="BakedVisual" type="MeshInstance3D" parent="." unique_id=498223399]
+mesh = ExtResource("1_b4d2v")

@@ -32,3 +32,7 @@ Godot sin `.godot`-mappe bygges automatisk og skal ikke lastes opp.
 For å lage en Windows-spillfil: installer export templates for samme Godot-versjon
 via Editor → Manage Export Templates. Bruk Windows Desktop-presetet og velg en
 filplassering under `exports/`. Eksport er ikke nødvendig for å teste med F5.
+
+## Oppdatering på en annen PC
+
+Se [oppdateringsguiden](docs/SYNC_OTHER_PC.md). Åpne `project.godot` direkte fra Git-klonen etter Pull.

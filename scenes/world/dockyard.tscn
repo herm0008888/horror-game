@@ -1,0 +1,3016 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://assets/materials/asphalt.gdshader" id="E1"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/barrier.tscn" id="E10"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/cone.tscn" id="E11"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/yard_light.tscn" id="E12"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/warehouse.tscn" id="E13"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/container.tscn" id="E14"]
+
+[ext_resource type="ArrayMesh" path="res://assets/meshes/outer_line.obj" id="E19"]
+
+[ext_resource type="ArrayMesh" path="res://assets/meshes/inner_line.obj" id="E20"]
+
+[ext_resource type="ArrayMesh" path="res://assets/meshes/skid_outer.obj" id="E21"]
+
+[ext_resource type="ArrayMesh" path="res://assets/meshes/skid_inner.obj" id="E22"]
+
+[ext_resource type="ArrayMesh" path="res://assets/meshes/hills.obj" id="E39"]
+
+[ext_resource type="Texture2D" path="res://assets/textures/asphalt_aggregate.png" id="Aggregate"]
+
+[ext_resource type="ArrayMesh" path="res://assets/meshes/pine_crown.obj" id="PineCrown"]
+
+[ext_resource type="Texture2D" path="res://assets/textures/asphalt_diff.jpg" id="RoadAlbedo"]
+
+[ext_resource type="Texture2D" path="res://assets/textures/asphalt_normal.jpg" id="RoadNormal"]
+
+[ext_resource type="Texture2D" path="res://assets/textures/asphalt_rough.jpg" id="RoadRough"]
+
+[sub_resource type="ShaderMaterial" id="R2"]
+shader = ExtResource("E1")
+shader_parameter/aggregate = ExtResource("Aggregate")
+shader_parameter/road_albedo = ExtResource("RoadAlbedo")
+shader_parameter/road_normal = ExtResource("RoadNormal")
+shader_parameter/road_roughness = ExtResource("RoadRough")
+
+[sub_resource type="StandardMaterial3D" id="R3"]
+resource_name = "Dry verge"
+albedo_color = Color(0.12, 0.15, 0.105, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="StandardMaterial3D" id="R4"]
+resource_name = "Weathered lane paint"
+albedo_color = Color(0.67, 0.65, 0.51, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="StandardMaterial3D" id="R5"]
+resource_name = "Old rubber"
+albedo_color = Color(0.018, 0.021, 0.025, 1)
+roughness = 0.88
+metallic = 0
+
+[sub_resource type="StandardMaterial3D" id="R6"]
+resource_name = "Distant pine ridge"
+albedo_color = Color(0.09, 0.14, 0.13, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="StandardMaterial3D" id="R7"]
+resource_name = "Rail steel"
+albedo_color = Color(0.26, 0.29, 0.3, 1)
+roughness = 0.45
+metallic = 0.7
+
+[sub_resource type="StandardMaterial3D" id="R8"]
+resource_name = "Pine bark"
+albedo_color = Color(0.13, 0.09, 0.06, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="StandardMaterial3D" id="R9"]
+resource_name = "Pine needles"
+albedo_color = Color(0.07, 0.13, 0.095, 1)
+roughness = 0.7
+metallic = 0
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(900.00000, 0.40000, 900.00000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(900.00000, 0.40000, 900.00000)
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(218.00000, 0.16000, 178.00000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R18"]
+size = Vector3(218.00000, 0.16000, 178.00000)
+
+[sub_resource type="BoxMesh" id="R23"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R24"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R25"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R26"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R27"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R28"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R29"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R30"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R31"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R32"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R33"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R34"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R35"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R36"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R37"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R38"]
+size = Vector3(2.00000, 0.00800, 0.12000)
+material = SubResource("R4")
+
+[sub_resource type="CylinderMesh" id="R40"]
+top_radius = 0.16
+bottom_radius = 0.26
+height = 7.0
+material = SubResource("R8")
+
+[sub_resource type="CylinderMesh" id="R41"]
+top_radius = 0.0
+bottom_radius = 2.4
+height = 8.0
+radial_segments = 9
+material = SubResource("R9")
+
+[node name="DockyardCircuit" type="Node3D" ]
+
+
+[node name="Surfaces" type="Node3D" parent="." ]
+
+
+[node name="Terrain" type="StaticBody3D" parent="Surfaces" ]
+position = Vector3(0.00000, -0.22000, 0.00000)
+rotation = Vector3(0, 0, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Surfaces/Terrain" ]
+mesh = SubResource("R15")
+
+[node name="Collision" type="CollisionShape3D" parent="Surfaces/Terrain" ]
+shape = SubResource("R16")
+
+[node name="Asphalt" type="StaticBody3D" parent="Surfaces" ]
+position = Vector3(0.00000, -0.08000, 0.00000)
+rotation = Vector3(0, 0, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="Surfaces/Asphalt" ]
+mesh = SubResource("R17")
+
+[node name="Collision" type="CollisionShape3D" parent="Surfaces/Asphalt" ]
+shape = SubResource("R18")
+
+[node name="RoadMarkings" type="Node3D" parent="." ]
+
+
+[node name="outer_line" type="MeshInstance3D" parent="RoadMarkings" ]
+mesh = ExtResource("E19")
+material_override = SubResource("R4")
+cast_shadow = 0
+
+[node name="inner_line" type="MeshInstance3D" parent="RoadMarkings" ]
+mesh = ExtResource("E20")
+material_override = SubResource("R4")
+cast_shadow = 0
+
+[node name="skid_outer" type="MeshInstance3D" parent="RoadMarkings" ]
+mesh = ExtResource("E21")
+material_override = SubResource("R5")
+cast_shadow = 0
+
+[node name="skid_inner" type="MeshInstance3D" parent="RoadMarkings" ]
+mesh = ExtResource("E22")
+material_override = SubResource("R5")
+cast_shadow = 0
+
+[node name="CenterDash0" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(70.00000, 0.01200, 0.00000)
+rotation = Vector3(0, -1.5707963267948966, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash0" ]
+mesh = SubResource("R23")
+
+[node name="CenterDash1" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(64.67157, 0.01200, 17.22075)
+rotation = Vector3(0, -2.143176834911604, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash1" ]
+mesh = SubResource("R24")
+
+[node name="CenterDash2" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(49.49747, 0.01200, 31.81981)
+rotation = Vector3(0, -2.5702551737561663, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash2" ]
+mesh = SubResource("R25")
+
+[node name="CenterDash3" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(26.78784, 0.01200, 41.57458)
+rotation = Vector3(0, -2.881351154941168, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash3" ]
+mesh = SubResource("R26")
+
+[node name="CenterDash4" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(0.00000, 0.01200, 45.00000)
+rotation = Vector3(0, -3.141592653589793, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash4" ]
+mesh = SubResource("R27")
+
+[node name="CenterDash5" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-26.78784, 0.01200, 41.57458)
+rotation = Vector3(0, 2.881351154941168, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash5" ]
+mesh = SubResource("R28")
+
+[node name="CenterDash6" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-49.49747, 0.01200, 31.81981)
+rotation = Vector3(0, 2.5702551737561663, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash6" ]
+mesh = SubResource("R29")
+
+[node name="CenterDash7" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-64.67157, 0.01200, 17.22075)
+rotation = Vector3(0, 2.143176834911604, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash7" ]
+mesh = SubResource("R30")
+
+[node name="CenterDash8" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-70.00000, 0.01200, 0.00000)
+rotation = Vector3(0, 1.5707963267948968, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash8" ]
+mesh = SubResource("R31")
+
+[node name="CenterDash9" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-64.67157, 0.01200, -17.22075)
+rotation = Vector3(0, 0.9984158186781896, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash9" ]
+mesh = SubResource("R32")
+
+[node name="CenterDash10" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-49.49747, 0.01200, -31.81981)
+rotation = Vector3(0, 0.5713374798336269, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash10" ]
+mesh = SubResource("R33")
+
+[node name="CenterDash11" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-26.78784, 0.01200, -41.57458)
+rotation = Vector3(0, 0.2602414986486259, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash11" ]
+mesh = SubResource("R34")
+
+[node name="CenterDash12" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(-0.00000, 0.01200, -45.00000)
+rotation = Vector3(0, 1.180909413463519e-16, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash12" ]
+mesh = SubResource("R35")
+
+[node name="CenterDash13" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(26.78784, 0.01200, -41.57458)
+rotation = Vector3(0, -0.26024149864862556, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash13" ]
+mesh = SubResource("R36")
+
+[node name="CenterDash14" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(49.49747, 0.01200, -31.81981)
+rotation = Vector3(0, -0.5713374798336266, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash14" ]
+mesh = SubResource("R37")
+
+[node name="CenterDash15" type="Node3D" parent="RoadMarkings" ]
+position = Vector3(64.67157, 0.01200, -17.22075)
+rotation = Vector3(0, -0.9984158186781886, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="RoadMarkings/CenterDash15" ]
+mesh = SubResource("R38")
+
+[node name="Perimeter" type="Node3D" parent="." ]
+
+
+[node name="EndBarrier-1_0" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-104,0,-87)
+
+[node name="EndBarrier-1_1" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-100,0,-87)
+
+[node name="EndBarrier-1_2" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-96,0,-87)
+
+[node name="EndBarrier-1_3" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-92,0,-87)
+
+[node name="EndBarrier-1_4" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-88,0,-87)
+
+[node name="EndBarrier-1_5" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-84,0,-87)
+
+[node name="EndBarrier-1_6" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-80,0,-87)
+
+[node name="EndBarrier-1_7" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-76,0,-87)
+
+[node name="EndBarrier-1_8" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-72,0,-87)
+
+[node name="EndBarrier-1_9" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-68,0,-87)
+
+[node name="EndBarrier-1_10" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-64,0,-87)
+
+[node name="EndBarrier-1_11" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-60,0,-87)
+
+[node name="EndBarrier-1_12" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-56,0,-87)
+
+[node name="EndBarrier-1_13" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-52,0,-87)
+
+[node name="EndBarrier-1_14" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-48,0,-87)
+
+[node name="EndBarrier-1_15" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-44,0,-87)
+
+[node name="EndBarrier-1_16" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-40,0,-87)
+
+[node name="EndBarrier-1_17" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-36,0,-87)
+
+[node name="EndBarrier-1_18" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-32,0,-87)
+
+[node name="EndBarrier-1_19" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-28,0,-87)
+
+[node name="EndBarrier-1_20" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-24,0,-87)
+
+[node name="EndBarrier-1_21" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-20,0,-87)
+
+[node name="EndBarrier-1_22" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-16,0,-87)
+
+[node name="EndBarrier-1_23" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-12,0,-87)
+
+[node name="EndBarrier-1_24" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-8,0,-87)
+
+[node name="EndBarrier-1_25" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-4,0,-87)
+
+[node name="EndBarrier-1_26" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(0,0,-87)
+
+[node name="EndBarrier-1_27" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(4,0,-87)
+
+[node name="EndBarrier-1_28" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(8,0,-87)
+
+[node name="EndBarrier-1_29" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(12,0,-87)
+
+[node name="EndBarrier-1_30" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(16,0,-87)
+
+[node name="EndBarrier-1_31" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(20,0,-87)
+
+[node name="EndBarrier-1_32" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(24,0,-87)
+
+[node name="EndBarrier-1_33" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(28,0,-87)
+
+[node name="EndBarrier-1_34" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(32,0,-87)
+
+[node name="EndBarrier-1_35" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(36,0,-87)
+
+[node name="EndBarrier-1_36" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(40,0,-87)
+
+[node name="EndBarrier-1_37" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(44,0,-87)
+
+[node name="EndBarrier-1_38" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(48,0,-87)
+
+[node name="EndBarrier-1_39" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(52,0,-87)
+
+[node name="EndBarrier-1_40" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(56,0,-87)
+
+[node name="EndBarrier-1_41" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(60,0,-87)
+
+[node name="EndBarrier-1_42" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(64,0,-87)
+
+[node name="EndBarrier-1_43" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(68,0,-87)
+
+[node name="EndBarrier-1_44" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(72,0,-87)
+
+[node name="EndBarrier-1_45" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(76,0,-87)
+
+[node name="EndBarrier-1_46" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(80,0,-87)
+
+[node name="EndBarrier-1_47" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(84,0,-87)
+
+[node name="EndBarrier-1_48" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(88,0,-87)
+
+[node name="EndBarrier-1_49" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(92,0,-87)
+
+[node name="EndBarrier-1_50" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(96,0,-87)
+
+[node name="EndBarrier-1_51" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(100,0,-87)
+
+[node name="EndBarrier-1_52" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(104,0,-87)
+
+[node name="SideBarrier-1_0" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-84)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_1" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-80)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_2" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-76)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_3" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-72)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_4" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-68)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_5" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-64)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_6" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-60)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_7" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-56)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_8" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-52)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_9" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-48)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_10" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-44)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_11" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-40)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_12" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-36)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_13" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-32)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_14" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-28)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_15" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-24)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_16" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-20)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_17" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-16)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_18" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-12)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_19" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-8)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_20" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,-4)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_21" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,0)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_22" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,4)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_23" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,8)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_24" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,12)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_25" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,16)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_26" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,20)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_27" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,24)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_28" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,28)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_29" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,32)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_30" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,36)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_31" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,40)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_32" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,44)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_33" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,48)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_34" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,52)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_35" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,56)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_36" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,60)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_37" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,64)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_38" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,68)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_39" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,72)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_40" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,76)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_41" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,80)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier-1_42" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-107,0,84)
+rotation = Vector3(0,1.570796,0)
+
+[node name="EndBarrier1_0" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-104,0,87)
+
+[node name="EndBarrier1_1" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-100,0,87)
+
+[node name="EndBarrier1_2" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-96,0,87)
+
+[node name="EndBarrier1_3" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-92,0,87)
+
+[node name="EndBarrier1_4" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-88,0,87)
+
+[node name="EndBarrier1_5" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-84,0,87)
+
+[node name="EndBarrier1_6" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-80,0,87)
+
+[node name="EndBarrier1_7" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-76,0,87)
+
+[node name="EndBarrier1_8" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-72,0,87)
+
+[node name="EndBarrier1_9" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-68,0,87)
+
+[node name="EndBarrier1_10" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-64,0,87)
+
+[node name="EndBarrier1_11" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-60,0,87)
+
+[node name="EndBarrier1_12" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-56,0,87)
+
+[node name="EndBarrier1_13" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-52,0,87)
+
+[node name="EndBarrier1_14" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-48,0,87)
+
+[node name="EndBarrier1_15" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-44,0,87)
+
+[node name="EndBarrier1_16" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-40,0,87)
+
+[node name="EndBarrier1_17" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-36,0,87)
+
+[node name="EndBarrier1_18" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-32,0,87)
+
+[node name="EndBarrier1_19" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-28,0,87)
+
+[node name="EndBarrier1_20" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-24,0,87)
+
+[node name="EndBarrier1_21" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-20,0,87)
+
+[node name="EndBarrier1_22" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-16,0,87)
+
+[node name="EndBarrier1_23" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-12,0,87)
+
+[node name="EndBarrier1_24" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-8,0,87)
+
+[node name="EndBarrier1_25" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(-4,0,87)
+
+[node name="EndBarrier1_26" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(0,0,87)
+
+[node name="EndBarrier1_27" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(4,0,87)
+
+[node name="EndBarrier1_28" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(8,0,87)
+
+[node name="EndBarrier1_29" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(12,0,87)
+
+[node name="EndBarrier1_30" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(16,0,87)
+
+[node name="EndBarrier1_31" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(20,0,87)
+
+[node name="EndBarrier1_32" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(24,0,87)
+
+[node name="EndBarrier1_33" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(28,0,87)
+
+[node name="EndBarrier1_34" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(32,0,87)
+
+[node name="EndBarrier1_35" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(36,0,87)
+
+[node name="EndBarrier1_36" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(40,0,87)
+
+[node name="EndBarrier1_37" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(44,0,87)
+
+[node name="EndBarrier1_38" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(48,0,87)
+
+[node name="EndBarrier1_39" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(52,0,87)
+
+[node name="EndBarrier1_40" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(56,0,87)
+
+[node name="EndBarrier1_41" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(60,0,87)
+
+[node name="EndBarrier1_42" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(64,0,87)
+
+[node name="EndBarrier1_43" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(68,0,87)
+
+[node name="EndBarrier1_44" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(72,0,87)
+
+[node name="EndBarrier1_45" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(76,0,87)
+
+[node name="EndBarrier1_46" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(80,0,87)
+
+[node name="EndBarrier1_47" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(84,0,87)
+
+[node name="EndBarrier1_48" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(88,0,87)
+
+[node name="EndBarrier1_49" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(92,0,87)
+
+[node name="EndBarrier1_50" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(96,0,87)
+
+[node name="EndBarrier1_51" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(100,0,87)
+
+[node name="EndBarrier1_52" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(104,0,87)
+
+[node name="SideBarrier1_0" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-84)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_1" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-80)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_2" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-76)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_3" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-72)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_4" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-68)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_5" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-64)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_6" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-60)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_7" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-56)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_8" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-52)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_9" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-48)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_10" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-44)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_11" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-40)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_12" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-36)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_13" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-32)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_14" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-28)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_15" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-24)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_16" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-20)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_17" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-16)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_18" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-12)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_19" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-8)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_20" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,-4)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_21" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,0)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_22" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,4)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_23" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,8)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_24" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,12)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_25" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,16)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_26" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,20)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_27" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,24)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_28" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,28)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_29" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,32)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_30" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,36)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_31" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,40)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_32" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,44)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_33" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,48)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_34" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,52)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_35" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,56)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_36" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,60)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_37" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,64)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_38" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,68)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_39" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,72)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_40" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,76)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_41" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,80)
+rotation = Vector3(0,1.570796,0)
+
+[node name="SideBarrier1_42" parent="Perimeter" instance=ExtResource("E10") ]
+position = Vector3(107,0,84)
+rotation = Vector3(0,1.570796,0)
+
+[node name="TrainingCones" type="Node3D" parent="." ]
+
+
+[node name="CircleCone0" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(14.000,0,0.000)
+
+[node name="CircleCone1" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(13.156,0,4.788)
+
+[node name="CircleCone2" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(10.725,0,8.999)
+
+[node name="CircleCone3" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(7.000,0,12.124)
+
+[node name="CircleCone4" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(2.431,0,13.787)
+
+[node name="CircleCone5" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-2.431,0,13.787)
+
+[node name="CircleCone6" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-7.000,0,12.124)
+
+[node name="CircleCone7" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-10.725,0,8.999)
+
+[node name="CircleCone8" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-13.156,0,4.788)
+
+[node name="CircleCone9" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-14.000,0,0.000)
+
+[node name="CircleCone10" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-13.156,0,-4.788)
+
+[node name="CircleCone11" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-10.725,0,-8.999)
+
+[node name="CircleCone12" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-7.000,0,-12.124)
+
+[node name="CircleCone13" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-2.431,0,-13.787)
+
+[node name="CircleCone14" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(2.431,0,-13.787)
+
+[node name="CircleCone15" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(7.000,0,-12.124)
+
+[node name="CircleCone16" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(10.725,0,-8.999)
+
+[node name="CircleCone17" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(13.156,0,-4.788)
+
+[node name="Slalom0" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-42,0,-10)
+
+[node name="Slalom1" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-29,0,2)
+
+[node name="Slalom2" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-16,0,-10)
+
+[node name="Slalom3" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(-3,0,2)
+
+[node name="Slalom4" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(10,0,-10)
+
+[node name="Slalom5" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(23,0,2)
+
+[node name="Slalom6" parent="TrainingCones" instance=ExtResource("E11") ]
+position = Vector3(36,0,-10)
+
+[node name="Buildings" type="Node3D" parent="." ]
+
+
+[node name="Warehouse0" parent="Buildings" instance=ExtResource("E13") ]
+position = Vector3(-58,0,-112)
+rotation = Vector3(0,3.14159265,0)
+
+[node name="Warehouse1" parent="Buildings" instance=ExtResource("E13") ]
+position = Vector3(20,0,-112)
+rotation = Vector3(0,3.14159265,0)
+
+[node name="Warehouse2" parent="Buildings" instance=ExtResource("E13") ]
+position = Vector3(145,0,10)
+rotation = Vector3(0,1.5707963267948966,0)
+
+[node name="Warehouse3" parent="Buildings" instance=ExtResource("E13") ]
+position = Vector3(-150,0,20)
+rotation = Vector3(0,-1.5707963267948966,0)
+
+[node name="Containers" type="Node3D" parent="." ]
+
+
+[node name="Container0" parent="Containers" instance=ExtResource("E14") ]
+position = Vector3(-87,0,-70)
+
+[node name="Container1" parent="Containers" instance=ExtResource("E14") ]
+position = Vector3(-74,0,-70)
+
+[node name="Container2" parent="Containers" instance=ExtResource("E14") ]
+position = Vector3(-87,2.6,-70)
+
+[node name="Container3" parent="Containers" instance=ExtResource("E14") ]
+position = Vector3(83,0,64)
+
+[node name="Container4" parent="Containers" instance=ExtResource("E14") ]
+position = Vector3(83,2.6,64)
+
+[node name="Container5" parent="Containers" instance=ExtResource("E14") ]
+position = Vector3(69,0,64)
+
+[node name="Lighting" type="Node3D" parent="." ]
+
+
+[node name="Floodlight0" parent="Lighting" instance=ExtResource("E12") ]
+position = Vector3(-97,0,-70)
+
+[node name="Floodlight1" parent="Lighting" instance=ExtResource("E12") ]
+position = Vector3(0,0,-79)
+
+[node name="Floodlight2" parent="Lighting" instance=ExtResource("E12") ]
+position = Vector3(97,0,-70)
+
+[node name="Floodlight3" parent="Lighting" instance=ExtResource("E12") ]
+position = Vector3(-97,0,70)
+
+[node name="Floodlight4" parent="Lighting" instance=ExtResource("E12") ]
+position = Vector3(0,0,79)
+
+[node name="Floodlight5" parent="Lighting" instance=ExtResource("E12") ]
+position = Vector3(97,0,70)
+
+[node name="Landscape" type="Node3D" parent="." ]
+
+
+[node name="Ridge" type="MeshInstance3D" parent="Landscape" ]
+mesh = ExtResource("E39")
+material_override = SubResource("R6")
+cast_shadow = 0
+
+[node name="Pine0" type="Node3D" parent="Landscape" ]
+position = Vector3(153.2699609418983,0,-76.93510414913834)
+scale = Vector3(1.4053209000457816,1.4053209000457816,1.4053209000457816)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine0" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine0" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine1" type="Node3D" parent="Landscape" ]
+position = Vector3(111.88584772042358,0,-178.9180566125011)
+scale = Vector3(1.093130280138674,1.093130280138674,1.093130280138674)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine1" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine1" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine2" type="Node3D" parent="Landscape" ]
+position = Vector3(152.3188121800685,0,77.63088907448467)
+scale = Vector3(1.2910272995561654,1.2910272995561654,1.2910272995561654)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine2" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine2" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine3" type="Node3D" parent="Landscape" ]
+position = Vector3(10.537695775084893,0,201.9850778757679)
+scale = Vector3(0.9754430527953877,0.9754430527953877,0.9754430527953877)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine3" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine3" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine4" type="Node3D" parent="Landscape" ]
+position = Vector3(96.10475966098178,0,158.85840428513183)
+scale = Vector3(1.366136772964491,1.366136772964491,1.366136772964491)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine4" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine4" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine5" type="Node3D" parent="Landscape" ]
+position = Vector3(-191.83358508342644,0,15.930213728175639)
+scale = Vector3(1.163510089286437,1.163510089286437,1.163510089286437)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine5" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine5" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine6" type="Node3D" parent="Landscape" ]
+position = Vector3(-189.6391087623618,0,-66.90968798392622)
+scale = Vector3(1.1283001137211166,1.1283001137211166,1.1283001137211166)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine6" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine6" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine7" type="Node3D" parent="Landscape" ]
+position = Vector3(213.06795397887115,0,-44.2838182650544)
+scale = Vector3(0.9447019734270926,0.9447019734270926,0.9447019734270926)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine7" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine7" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine8" type="Node3D" parent="Landscape" ]
+position = Vector3(-74.09766959573828,0,162.0816591909644)
+scale = Vector3(1.0594783113035295,1.0594783113035295,1.0594783113035295)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine8" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine8" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine9" type="Node3D" parent="Landscape" ]
+position = Vector3(213.6730404103284,0,38.507772942036105)
+scale = Vector3(1.2327056448275409,1.2327056448275409,1.2327056448275409)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine9" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine9" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine10" type="Node3D" parent="Landscape" ]
+position = Vector3(-201.21336057275678,0,106.24447884268392)
+scale = Vector3(1.0294343771019048,1.0294343771019048,1.0294343771019048)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine10" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine10" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine11" type="Node3D" parent="Landscape" ]
+position = Vector3(-202.60132337210828,0,-109.04535576968854)
+scale = Vector3(1.2224807779970344,1.2224807779970344,1.2224807779970344)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine11" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine11" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine12" type="Node3D" parent="Landscape" ]
+position = Vector3(-144.6818653090996,0,-124.31937269051359)
+scale = Vector3(1.598383009259872,1.598383009259872,1.598383009259872)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine12" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine12" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine13" type="Node3D" parent="Landscape" ]
+position = Vector3(5.595264881104712,0,-186.15008229773233)
+scale = Vector3(1.0521883635349467,1.0521883635349467,1.0521883635349467)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine13" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine13" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine14" type="Node3D" parent="Landscape" ]
+position = Vector3(-168.93674356597737,0,-109.47097576724536)
+scale = Vector3(1.1948104080478206,1.1948104080478206,1.1948104080478206)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine14" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine14" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine15" type="Node3D" parent="Landscape" ]
+position = Vector3(73.06343863853797,0,191.85800434060354)
+scale = Vector3(1.348354953679813,1.348354953679813,1.348354953679813)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine15" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine15" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine16" type="Node3D" parent="Landscape" ]
+position = Vector3(18.47769176122789,0,-195.5857246427461)
+scale = Vector3(1.1287240935661669,1.1287240935661669,1.1287240935661669)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine16" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine16" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine17" type="Node3D" parent="Landscape" ]
+position = Vector3(-202.4652599230388,0,-5.417363938880612)
+scale = Vector3(1.1536873834944101,1.1536873834944101,1.1536873834944101)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine17" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine17" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine18" type="Node3D" parent="Landscape" ]
+position = Vector3(182.91002095219955,0,13.932912154364201)
+scale = Vector3(1.5896361005079647,1.5896361005079647,1.5896361005079647)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine18" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine18" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine19" type="Node3D" parent="Landscape" ]
+position = Vector3(91.21950798848012,0,-175.41568333255546)
+scale = Vector3(1.3891812408673685,1.3891812408673685,1.3891812408673685)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine19" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine19" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine20" type="Node3D" parent="Landscape" ]
+position = Vector3(44.28712185159488,0,178.28369156519616)
+scale = Vector3(1.1899850004693104,1.1899850004693104,1.1899850004693104)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine20" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine20" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine21" type="Node3D" parent="Landscape" ]
+position = Vector3(-52.28690879555673,0,-158.52928619365332)
+scale = Vector3(1.1509553823895797,1.1509553823895797,1.1509553823895797)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine21" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine21" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine22" type="Node3D" parent="Landscape" ]
+position = Vector3(172.70734326783577,0,-115.65955423499601)
+scale = Vector3(1.5941275720522472,1.5941275720522472,1.5941275720522472)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine22" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine22" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine23" type="Node3D" parent="Landscape" ]
+position = Vector3(186.04470350454253,0,132.83935144143015)
+scale = Vector3(1.4617881986312429,1.4617881986312429,1.4617881986312429)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine23" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine23" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine24" type="Node3D" parent="Landscape" ]
+position = Vector3(199.83117292992875,0,33.142941560089774)
+scale = Vector3(1.3953876732693005,1.3953876732693005,1.3953876732693005)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine24" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine24" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine25" type="Node3D" parent="Landscape" ]
+position = Vector3(36.765233074656564,0,207.21488479944045)
+scale = Vector3(1.472928532138336,1.472928532138336,1.472928532138336)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine25" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine25" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine26" type="Node3D" parent="Landscape" ]
+position = Vector3(53.15416479958117,0,-187.58197028597695)
+scale = Vector3(0.7995943924604816,0.7995943924604816,0.7995943924604816)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine26" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine26" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine27" type="Node3D" parent="Landscape" ]
+position = Vector3(-172.79633882198354,0,-43.40971842906926)
+scale = Vector3(1.2078960018082538,1.2078960018082538,1.2078960018082538)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine27" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine27" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine28" type="Node3D" parent="Landscape" ]
+position = Vector3(-23.060182468844296,0,187.9022362577969)
+scale = Vector3(1.212172465354842,1.212172465354842,1.212172465354842)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine28" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine28" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine29" type="Node3D" parent="Landscape" ]
+position = Vector3(98.77279058558729,0,-211.32890039789763)
+scale = Vector3(1.0947002636342835,1.0947002636342835,1.0947002636342835)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine29" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine29" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine30" type="Node3D" parent="Landscape" ]
+position = Vector3(217.27252466066633,0,10.185471450715086)
+scale = Vector3(1.0383724292276715,1.0383724292276715,1.0383724292276715)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine30" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine30" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine31" type="Node3D" parent="Landscape" ]
+position = Vector3(10.690273111139005,0,-222.88391799782266)
+scale = Vector3(0.7784968345051314,0.7784968345051314,0.7784968345051314)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine31" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine31" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine32" type="Node3D" parent="Landscape" ]
+position = Vector3(-22.218787473693443,0,-183.5984782342417)
+scale = Vector3(1.0233975786704061,1.0233975786704061,1.0233975786704061)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine32" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine32" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine33" type="Node3D" parent="Landscape" ]
+position = Vector3(-102.34959629502292,0,174.94692361964925)
+scale = Vector3(0.956768748053455,0.956768748053455,0.956768748053455)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine33" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine33" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine34" type="Node3D" parent="Landscape" ]
+position = Vector3(-184.7200241505848,0,6.422956599066157)
+scale = Vector3(0.8559390832983624,0.8559390832983624,0.8559390832983624)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine34" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine34" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine35" type="Node3D" parent="Landscape" ]
+position = Vector3(0.031001005576848883,0,212.66570684433574)
+scale = Vector3(1.0139396111081662,1.0139396111081662,1.0139396111081662)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine35" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine35" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine36" type="Node3D" parent="Landscape" ]
+position = Vector3(58.546312817598434,0,181.37507443223484)
+scale = Vector3(0.9315849887514356,0.9315849887514356,0.9315849887514356)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine36" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine36" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine37" type="Node3D" parent="Landscape" ]
+position = Vector3(219.06148997342382,0,-21.424870818248028)
+scale = Vector3(0.8789058965963198,0.8789058965963198,0.8789058965963198)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine37" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine37" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine38" type="Node3D" parent="Landscape" ]
+position = Vector3(-53.14679983842055,0,188.15039605627055)
+scale = Vector3(1.1988638778242415,1.1988638778242415,1.1988638778242415)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine38" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine38" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine39" type="Node3D" parent="Landscape" ]
+position = Vector3(-154.09261483584038,0,130.04305433893649)
+scale = Vector3(1.3961095330493447,1.3961095330493447,1.3961095330493447)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine39" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine39" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine40" type="Node3D" parent="Landscape" ]
+position = Vector3(115.64780742862663,0,168.2289015697255)
+scale = Vector3(0.8897976878918147,0.8897976878918147,0.8897976878918147)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine40" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine40" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine41" type="Node3D" parent="Landscape" ]
+position = Vector3(-182.7419796684968,0,-40.59650831880329)
+scale = Vector3(1.4326923295273934,1.4326923295273934,1.4326923295273934)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine41" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine41" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine42" type="Node3D" parent="Landscape" ]
+position = Vector3(170.102173462905,0,-157.71688264110807)
+scale = Vector3(1.0960718326715522,1.0960718326715522,1.0960718326715522)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine42" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine42" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine43" type="Node3D" parent="Landscape" ]
+position = Vector3(-131.3406344834627,0,-118.36108248575746)
+scale = Vector3(1.3548782764247682,1.3548782764247682,1.3548782764247682)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine43" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine43" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine44" type="Node3D" parent="Landscape" ]
+position = Vector3(34.13726740151665,0,-191.878426755829)
+scale = Vector3(1.0234378718543424,1.0234378718543424,1.0234378718543424)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine44" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine44" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine45" type="Node3D" parent="Landscape" ]
+position = Vector3(11.023091153740902,0,-217.24496936085328)
+scale = Vector3(1.4294123788120585,1.4294123788120585,1.4294123788120585)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine45" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine45" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine46" type="Node3D" parent="Landscape" ]
+position = Vector3(-43.78964824156445,0,176.63509162286152)
+scale = Vector3(0.9630478197859029,0.9630478197859029,0.9630478197859029)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine46" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine46" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine47" type="Node3D" parent="Landscape" ]
+position = Vector3(59.93395799407941,0,154.25681685614492)
+scale = Vector3(0.8540612499024737,0.8540612499024737,0.8540612499024737)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine47" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine47" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine48" type="Node3D" parent="Landscape" ]
+position = Vector3(-194.93366281673718,0,8.930872866452944)
+scale = Vector3(1.5062287806567083,1.5062287806567083,1.5062287806567083)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine48" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine48" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine49" type="Node3D" parent="Landscape" ]
+position = Vector3(-127.6061322623223,0,122.55017097387376)
+scale = Vector3(1.541232424990657,1.541232424990657,1.541232424990657)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine49" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine49" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine50" type="Node3D" parent="Landscape" ]
+position = Vector3(169.3677973025696,0,83.39016418396173)
+scale = Vector3(1.399073567563115,1.399073567563115,1.399073567563115)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine50" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine50" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine51" type="Node3D" parent="Landscape" ]
+position = Vector3(-100.76144151622984,0,209.50564908771688)
+scale = Vector3(1.3819722039709688,1.3819722039709688,1.3819722039709688)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine51" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine51" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine52" type="Node3D" parent="Landscape" ]
+position = Vector3(-80.75513121289325,0,210.48000448738387)
+scale = Vector3(1.533504350770823,1.533504350770823,1.533504350770823)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine52" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine52" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine53" type="Node3D" parent="Landscape" ]
+position = Vector3(-174.3721530655726,0,-15.372555147385727)
+scale = Vector3(0.8384745218343008,0.8384745218343008,0.8384745218343008)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine53" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine53" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine54" type="Node3D" parent="Landscape" ]
+position = Vector3(94.0360749509315,0,-206.7791962474736)
+scale = Vector3(1.3057915000746365,1.3057915000746365,1.3057915000746365)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine54" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine54" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine55" type="Node3D" parent="Landscape" ]
+position = Vector3(32.94672742175874,0,-218.0814246515445)
+scale = Vector3(0.9515602617279263,0.9515602617279263,0.9515602617279263)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine55" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine55" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine56" type="Node3D" parent="Landscape" ]
+position = Vector3(51.68802079555581,0,219.7358278000914)
+scale = Vector3(1.4633600776468472,1.4633600776468472,1.4633600776468472)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine56" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine56" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine57" type="Node3D" parent="Landscape" ]
+position = Vector3(-169.3203841947343,0,71.80506458447353)
+scale = Vector3(0.8169354748841582,0.8169354748841582,0.8169354748841582)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine57" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine57" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine58" type="Node3D" parent="Landscape" ]
+position = Vector3(-188.63599769634513,0,129.18101891904985)
+scale = Vector3(0.9228710200569744,0.9228710200569744,0.9228710200569744)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine58" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine58" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine59" type="Node3D" parent="Landscape" ]
+position = Vector3(-67.3297409324623,0,153.33148992441198)
+scale = Vector3(1.2335578824933378,1.2335578824933378,1.2335578824933378)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine59" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine59" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine60" type="Node3D" parent="Landscape" ]
+position = Vector3(197.2968214480589,0,78.23635560991008)
+scale = Vector3(1.168226998994773,1.168226998994773,1.168226998994773)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine60" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine60" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine61" type="Node3D" parent="Landscape" ]
+position = Vector3(-162.2225035015679,0,85.02153299109641)
+scale = Vector3(1.0071937745953419,1.0071937745953419,1.0071937745953419)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine61" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine61" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine62" type="Node3D" parent="Landscape" ]
+position = Vector3(180.63951494814222,0,-143.7438973458158)
+scale = Vector3(1.389182457347724,1.389182457347724,1.389182457347724)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine62" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine62" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine63" type="Node3D" parent="Landscape" ]
+position = Vector3(41.39384934744845,0,174.72736245442263)
+scale = Vector3(1.05834910144342,1.05834910144342,1.05834910144342)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine63" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine63" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine64" type="Node3D" parent="Landscape" ]
+position = Vector3(164.2013053460806,0,-162.47618081835924)
+scale = Vector3(0.9454857971497979,0.9454857971497979,0.9454857971497979)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine64" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine64" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine65" type="Node3D" parent="Landscape" ]
+position = Vector3(-128.11864402256154,0,-142.43984143478792)
+scale = Vector3(1.1372312658288486,1.1372312658288486,1.1372312658288486)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine65" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine65" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine66" type="Node3D" parent="Landscape" ]
+position = Vector3(69.64345719243354,0,203.94717196304998)
+scale = Vector3(1.414751758473287,1.414751758473287,1.414751758473287)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine66" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine66" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine67" type="Node3D" parent="Landscape" ]
+position = Vector3(184.67844374480902,0,-73.8396068577802)
+scale = Vector3(1.1254568322887297,1.1254568322887297,1.1254568322887297)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine67" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine67" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine68" type="Node3D" parent="Landscape" ]
+position = Vector3(-105.64109985597815,0,-138.50015093352988)
+scale = Vector3(1.4966924065394607,1.4966924065394607,1.4966924065394607)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine68" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine68" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine69" type="Node3D" parent="Landscape" ]
+position = Vector3(20.404376517300033,0,-179.78759965129615)
+scale = Vector3(1.0915662137543831,1.0915662137543831,1.0915662137543831)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine69" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine69" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine70" type="Node3D" parent="Landscape" ]
+position = Vector3(-223.7681788610304,0,19.689616576887882)
+scale = Vector3(1.3388327484972051,1.3388327484972051,1.3388327484972051)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine70" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine70" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine71" type="Node3D" parent="Landscape" ]
+position = Vector3(15.757009006171648,0,231.04316115055147)
+scale = Vector3(1.5404225295931389,1.5404225295931389,1.5404225295931389)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine71" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine71" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine72" type="Node3D" parent="Landscape" ]
+position = Vector3(125.02287550535507,0,-155.44934960289925)
+scale = Vector3(1.152223547797049,1.152223547797049,1.152223547797049)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine72" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine72" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine73" type="Node3D" parent="Landscape" ]
+position = Vector3(-194.31742247815436,0,129.36559769967212)
+scale = Vector3(1.1592558937858517,1.1592558937858517,1.1592558937858517)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine73" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine73" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine74" type="Node3D" parent="Landscape" ]
+position = Vector3(172.15222619541217,0,-44.76607802873532)
+scale = Vector3(0.7757559632876119,0.7757559632876119,0.7757559632876119)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine74" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine74" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine75" type="Node3D" parent="Landscape" ]
+position = Vector3(-176.18554283548698,0,31.134615228476758)
+scale = Vector3(0.9680895959932787,0.9680895959932787,0.9680895959932787)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine75" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine75" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine76" type="Node3D" parent="Landscape" ]
+position = Vector3(169.28357912807547,0,38.959389999210764)
+scale = Vector3(1.1249408151651425,1.1249408151651425,1.1249408151651425)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine76" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine76" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine77" type="Node3D" parent="Landscape" ]
+position = Vector3(158.34734252071593,0,97.09649108864699)
+scale = Vector3(1.2706257995175494,1.2706257995175494,1.2706257995175494)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine77" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine77" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine78" type="Node3D" parent="Landscape" ]
+position = Vector3(-11.673807703146135,0,186.4310980727554)
+scale = Vector3(1.071658303884865,1.071658303884865,1.071658303884865)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine78" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine78" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine79" type="Node3D" parent="Landscape" ]
+position = Vector3(-17.034934544995565,0,203.72528735985165)
+scale = Vector3(1.4103205282284628,1.4103205282284628,1.4103205282284628)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine79" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine79" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine80" type="Node3D" parent="Landscape" ]
+position = Vector3(198.69397179222528,0,39.348217864445445)
+scale = Vector3(1.2045310185852938,1.2045310185852938,1.2045310185852938)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine80" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine80" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine81" type="Node3D" parent="Landscape" ]
+position = Vector3(186.6399117123722,0,-105.28207159120791)
+scale = Vector3(0.9834800567505673,0.9834800567505673,0.9834800567505673)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine81" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine81" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine82" type="Node3D" parent="Landscape" ]
+position = Vector3(-170.03173923155626,0,-151.96872178122717)
+scale = Vector3(1.5587067431243542,1.5587067431243542,1.5587067431243542)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine82" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine82" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine83" type="Node3D" parent="Landscape" ]
+position = Vector3(18.93857240435399,0,-171.48770646554664)
+scale = Vector3(1.0661413853347121,1.0661413853347121,1.0661413853347121)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine83" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine83" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine84" type="Node3D" parent="Landscape" ]
+position = Vector3(-186.3670292753366,0,25.091953104287466)
+scale = Vector3(1.3948613702899477,1.3948613702899477,1.3948613702899477)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine84" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine84" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine85" type="Node3D" parent="Landscape" ]
+position = Vector3(-233.27148727676425,0,10.291979844148061)
+scale = Vector3(0.7566514518915474,0.7566514518915474,0.7566514518915474)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine85" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine85" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine86" type="Node3D" parent="Landscape" ]
+position = Vector3(61.54531193320041,0,-161.6295556745439)
+scale = Vector3(1.1907958777215684,1.1907958777215684,1.1907958777215684)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine86" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine86" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine87" type="Node3D" parent="Landscape" ]
+position = Vector3(113.80988153432723,0,154.33539032419034)
+scale = Vector3(1.2696137992616232,1.2696137992616232,1.2696137992616232)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine87" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine87" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine88" type="Node3D" parent="Landscape" ]
+position = Vector3(162.27045389175657,0,-42.962914178175694)
+scale = Vector3(1.0829700145705405,1.0829700145705405,1.0829700145705405)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine88" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine88" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine89" type="Node3D" parent="Landscape" ]
+position = Vector3(167.64052761292797,0,137.8029747454666)
+scale = Vector3(0.8720529761308852,0.8720529761308852,0.8720529761308852)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine89" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine89" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine90" type="Node3D" parent="Landscape" ]
+position = Vector3(72.55996372637,0,209.4011267556124)
+scale = Vector3(0.7900196151928137,0.7900196151928137,0.7900196151928137)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine90" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine90" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine91" type="Node3D" parent="Landscape" ]
+position = Vector3(138.0892493306594,0,-121.26111056100194)
+scale = Vector3(1.5966595333377254,1.5966595333377254,1.5966595333377254)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine91" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine91" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine92" type="Node3D" parent="Landscape" ]
+position = Vector3(134.89351182786044,0,106.27948670327135)
+scale = Vector3(1.1546394589342321,1.1546394589342321,1.1546394589342321)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine92" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine92" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine93" type="Node3D" parent="Landscape" ]
+position = Vector3(-76.04664945341521,0,195.83853806477646)
+scale = Vector3(1.0073815868425973,1.0073815868425973,1.0073815868425973)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine93" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine93" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine94" type="Node3D" parent="Landscape" ]
+position = Vector3(-80.68747107423602,0,145.25955157543953)
+scale = Vector3(0.8252426719384266,0.8252426719384266,0.8252426719384266)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine94" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine94" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine95" type="Node3D" parent="Landscape" ]
+position = Vector3(197.25739880996014,0,3.857141182582181)
+scale = Vector3(1.4945861282006294,1.4945861282006294,1.4945861282006294)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine95" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine95" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine96" type="Node3D" parent="Landscape" ]
+position = Vector3(-182.63384737764576,0,-43.03754306894039)
+scale = Vector3(1.1403425279065253,1.1403425279065253,1.1403425279065253)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine96" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine96" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine97" type="Node3D" parent="Landscape" ]
+position = Vector3(22.25253244194074,0,-224.84030267018312)
+scale = Vector3(0.8291664563422977,0.8291664563422977,0.8291664563422977)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine97" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine97" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine98" type="Node3D" parent="Landscape" ]
+position = Vector3(-112.5089898697147,0,-147.8419715895241)
+scale = Vector3(1.53973691913813,1.53973691913813,1.53973691913813)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine98" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine98" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine99" type="Node3D" parent="Landscape" ]
+position = Vector3(-32.38058744084772,0,-203.74942616641246)
+scale = Vector3(1.3161784803933094,1.3161784803933094,1.3161784803933094)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine99" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine99" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine100" type="Node3D" parent="Landscape" ]
+position = Vector3(12.817721809403414,0,-169.4845105590459)
+scale = Vector3(1.0238885095574681,1.0238885095574681,1.0238885095574681)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine100" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine100" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine101" type="Node3D" parent="Landscape" ]
+position = Vector3(170.53527716869115,0,42.65944517713067)
+scale = Vector3(1.5385616284595862,1.5385616284595862,1.5385616284595862)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine101" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine101" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine102" type="Node3D" parent="Landscape" ]
+position = Vector3(-160.96611908591524,0,-78.35609901133174)
+scale = Vector3(1.000736573981002,1.000736573981002,1.000736573981002)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine102" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine102" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine103" type="Node3D" parent="Landscape" ]
+position = Vector3(-149.52760266040335,0,82.90539179580367)
+scale = Vector3(1.4426209174136522,1.4426209174136522,1.4426209174136522)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine103" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine103" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine104" type="Node3D" parent="Landscape" ]
+position = Vector3(-123.94500473845493,0,114.8059009682465)
+scale = Vector3(1.187425760169133,1.187425760169133,1.187425760169133)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine104" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine104" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine105" type="Node3D" parent="Landscape" ]
+position = Vector3(-187.12564473770394,0,112.63611576516428)
+scale = Vector3(0.9738949968694297,0.9738949968694297,0.9738949968694297)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine105" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine105" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine106" type="Node3D" parent="Landscape" ]
+position = Vector3(14.616076983247398,0,199.57851613033043)
+scale = Vector3(1.0940726113465238,1.0940726113465238,1.0940726113465238)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine106" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine106" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine107" type="Node3D" parent="Landscape" ]
+position = Vector3(148.8134660973019,0,157.22404775700883)
+scale = Vector3(1.4861423163242657,1.4861423163242657,1.4861423163242657)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine107" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine107" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine108" type="Node3D" parent="Landscape" ]
+position = Vector3(102.93194053067182,0,-184.23886926930763)
+scale = Vector3(1.1502601375247985,1.1502601375247985,1.1502601375247985)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine108" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine108" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0
+
+[node name="Pine109" type="Node3D" parent="Landscape" ]
+position = Vector3(45.15553909936325,0,-174.00764236406442)
+scale = Vector3(0.8341164462983237,0.8341164462983237,0.8341164462983237)
+
+[node name="Trunk" type="MeshInstance3D" parent="Landscape/Pine109" ]
+position = Vector3(0,3.5,0)
+mesh = SubResource("R40")
+visibility_range_end = 240.0
+cast_shadow = 0
+
+[node name="Crown" type="MeshInstance3D" parent="Landscape/Pine109" ]
+position = Vector3(0,0,0)
+mesh = ExtResource("PineCrown")
+material_override = SubResource("R9")
+visibility_range_end = 270.0
+cast_shadow = 0

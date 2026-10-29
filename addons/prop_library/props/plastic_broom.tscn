@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/plastic_broom/plastic_broom.gltf" id="1_236ed"]
+
+[node name="PlasticBroom" type="Node3D" unique_id=198937678]
+metadata/asset_id = "plastic_broom"
+
+[node name="Model" type="Node3D" parent="." unique_id=711528621 instance=ExtResource("1_236ed")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.053248e-05, 0.00014635688, 0.24468347)

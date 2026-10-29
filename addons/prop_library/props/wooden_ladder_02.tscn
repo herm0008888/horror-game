@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_ladder_02/wooden_ladder_02.gltf" id="1_5rv87"]
+
+[node name="WoodenLadder02" type="Node3D" unique_id=1326340775]
+metadata/asset_id = "wooden_ladder_02"
+
+[node name="Model" type="Node3D" parent="." unique_id=100504504 instance=ExtResource("1_5rv87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.042334795, 0.0016156017, 0.0030415952)

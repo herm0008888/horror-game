@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/handsaw_wood/handsaw_wood.gltf" id="1_3eej8"]
+
+[node name="HandsawWood" type="Node3D" unique_id=195958869]
+metadata/asset_id = "handsaw_wood"
+
+[node name="Model" type="Node3D" parent="." unique_id=2092109945 instance=ExtResource("1_3eej8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000118572265, 0.08493, -0.2297428)

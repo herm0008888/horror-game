@@ -17,6 +17,7 @@ var release: float = 0.0
 var face_mesh: MeshInstance3D
 var threat_index: int = -1
 var scream_index: int = -1
+var bite: float = 0.0
 func speed_factor(hunting: bool) -> float:
  return .93 + .12 * maxf(0,sin(phase)) if hunting else .82 + .16 * maxf(0,sin(phase))
 func animate(delta: float, moving: bool, hunting: bool, figure: Node3D, skeleton: Skeleton3D, bones: Dictionary, rest: Dictionary) -> void:
@@ -33,12 +34,15 @@ func animate(delta: float, moving: bool, hunting: bool, figure: Node3D, skeleton
  spasm = glitch_intensity if spasm_left>.085 else 0.0
  release = glitch_intensity if spasm_left>0 and spasm_left<=.085 else 0.0
  var stepped_phase:float = floor(phase*3.0)/3.0 if hunting else phase
+ # Brief open/snap cycles, independent of footsteps.
+ var bite_cycle:=fposmod(elapsed,1.65)
+ bite=chase_blend*smoothstep(.12,.32,bite_cycle)*(1.0-smoothstep(.47,.57,bite_cycle))
  var stride := sin(stepped_phase)
  var hitch := pow(maxf(0,sin(phase+.5)),4)
  var side := -1.0 if spasm_number%2==0 else 1.0
- head_offset = Vector3(-.10-.12*chase_blend+.16*spasm-.12*release,side*.11*spasm,neck_twist*(1-.5*chase_blend)+side*.20*spasm-side*.07*release)
+ head_offset = Vector3(-.10-.12*chase_blend+.16*spasm-.12*release-.10*bite,side*.11*spasm,neck_twist*(1-.5*chase_blend)+side*.20*spasm-side*.07*release)
  figure.position.x = side*.014*spasm
- figure.position.y = -.018-hitch*limp_depth*moving_blend-.055*chase_blend
+ figure.position.y = -.018-hitch*limp_depth*moving_blend-.055*chase_blend+sin(phase*2.0)*.018*chase_blend
  figure.rotation.z = .025+stride*.014*moving_blend+side*.025*spasm
  if not is_instance_valid(face_mesh):
   face_mesh=figure.find_child("TheHollowVisitor_Mesh",true,false) as MeshInstance3D
@@ -47,16 +51,16 @@ func animate(delta: float, moving: bool, hunting: bool, figure: Node3D, skeleton
    scream_index=face_mesh.find_blend_shape_by_name("Scream")
  if face_mesh:
   if threat_index>=0: face_mesh.set_blend_shape_value(threat_index,.12+.75*chase_blend+.10*spasm)
-  if scream_index>=0: face_mesh.set_blend_shape_value(scream_index,chase_blend*(.08+.13*hitch)+.09*release)
+  if scream_index>=0: face_mesh.set_blend_shape_value(scream_index,clampf(chase_blend*(.08+.13*hitch)+.09*release+.68*bite,0.0,.85))
  if not skeleton: return
- var reach := chase_blend*.10
+ var reach := chase_blend*(.22+.13*bite)
  var poses := {
   "Head": Quaternion.from_euler(head_offset),
   "Spine": Quaternion.from_euler(Vector3(-body_hunch-.22*chase_blend-.08*release,side*.065*spasm,-.035)),
   "ArmLeft": Quaternion.from_euler(Vector3(-.08-reach+stride*.075*moving_blend,.02,.075)),
   "ArmRight": Quaternion.from_euler(Vector3(.025-reach*.65-stride*.055*moving_blend,-.02,-.06)),
-  "ForearmLeft": Quaternion.from_euler(Vector3(-.04-.06*chase_blend-.04*spasm,0,.015)),
-  "ForearmRight": Quaternion.from_euler(Vector3(-.03-.08*chase_blend+.03*release,0,-.015)),
+  "ForearmLeft": Quaternion.from_euler(Vector3(-.01-.025*chase_blend-.012*spasm,0,0)),
+  "ForearmRight": Quaternion.from_euler(Vector3(-.01-.025*chase_blend+.01*release,0,0)),
   "LegLeft": Quaternion.from_euler(Vector3(stride*lerpf(.17,.28,chase_blend)*moving_blend,0,0)),
   "LegRight": Quaternion.from_euler(Vector3(-stride*lerpf(.12,.23,chase_blend)*moving_blend-.025,0,0))
  }

@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/russian_food_cans_01/russian_food_cans_01.gltf" id="1_hw7ip"]
+
+[node name="RussianFoodCans01" type="Node3D" unique_id=861773278]
+metadata/asset_id = "russian_food_cans_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1337797824 instance=ExtResource("1_hw7ip")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.001925163, 0, 0)

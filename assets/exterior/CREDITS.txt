@@ -1,0 +1,9 @@
+Powered by Poly Haven
+Tree Small 02: https://polyhaven.com/a/tree_small_02
+Forest Floor: https://polyhaven.com/a/forest_floor
+License: CC0. Tree simplified in Blender for real-time use.
+
+Full-grown fir: https://polyhaven.com/a/fir_tree_01
+Ground: https://polyhaven.com/a/brown_mud_rocks_01 and https://polyhaven.com/a/forest_ground_04
+Roof: https://polyhaven.com/a/roof_slates_02
+All CC0, tree variant C simplified for real-time rendering.

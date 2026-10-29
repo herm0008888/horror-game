@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/metal_trash_can/metal_trash_can.gltf" id="1_bbiew"]
+
+[node name="MetalTrashCan" type="Node3D" unique_id=445106768]
+metadata/asset_id = "metal_trash_can"
+
+[node name="Model" type="Node3D" parent="." unique_id=96428668 instance=ExtResource("1_bbiew")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.096351385, -6.17357e-05, 8.940697e-08)

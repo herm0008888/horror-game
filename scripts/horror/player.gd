@@ -106,4 +106,3 @@ func acquire_flashlight() -> void:
 	has_flashlight = true
 	torch.visible = true
 	held_torch.visible = true
-

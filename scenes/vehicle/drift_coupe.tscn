@@ -1,0 +1,166 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/vehicle/coupe_body_visual.tscn" id="E1"]
+
+[ext_resource type="PackedScene" path="res://scenes/vehicle/wheel_visual.tscn" id="E2"]
+
+[ext_resource type="Script" path="res://scripts/vehicle/drift_car.gd" id="E3"]
+
+[ext_resource type="AudioStream" path="res://assets/audio/engine.wav" id="E4"]
+
+[ext_resource type="AudioStream" path="res://assets/audio/tires.wav" id="E5"]
+
+[ext_resource type="Texture2D" path="res://assets/textures/smoke.png" id="SmokeTexture"]
+
+[sub_resource type="PhysicsMaterial" id="R6"]
+friction = 0.35
+bounce = 0.12
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(1.75,0.62,4.2)
+
+[sub_resource type="StandardMaterial3D" id="R8"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.8,0.83,0.85,0.55)
+albedo_texture = ExtResource("SmokeTexture")
+billboard_mode = 1
+no_depth_test = false
+proximity_fade_enabled = true
+proximity_fade_distance = 0.4
+
+[sub_resource type="QuadMesh" id="R9"]
+material = SubResource("R8")
+size = Vector2(0.65,0.65)
+
+[sub_resource type="ParticleProcessMaterial" id="R10"]
+direction = Vector3(0,1,0)
+spread = 65.0
+initial_velocity_min = 0.3
+initial_velocity_max = 1.4
+gravity = Vector3(0,0.3,0)
+scale_min = 0.5
+scale_max = 1.8
+damping_min = 0.5
+damping_max = 1.0
+color = Color(0.8,0.83,0.85,0.6)
+
+[node name="DriftCoupe" type="RigidBody3D" ]
+mass = 1280.0
+physics_material_override = SubResource("R6")
+center_of_mass_mode = 1
+center_of_mass = Vector3(0,-0.22,0)
+continuous_cd = true
+contact_monitor = true
+max_contacts_reported = 4
+linear_damp = 0.03
+angular_damp = 0.7
+script = ExtResource("E3")
+
+[node name="BodyCollision" type="CollisionShape3D" parent="." ]
+position = Vector3(0,0.22,0)
+shape = SubResource("R7")
+
+[node name="Visual" type="Node3D" parent="." ]
+
+
+[node name="Body" parent="Visual" instance=ExtResource("E1") ]
+
+
+[node name="Suspension" type="Node3D" parent="." ]
+
+
+[node name="FrontLeft" type="RayCast3D" parent="Suspension" ]
+position = Vector3(-0.91,0.1,-1.35)
+target_position = Vector3(0,-1.2,0)
+collision_mask = 1
+
+[node name="Wheel" type="Node3D" parent="Suspension/FrontLeft" ]
+position = Vector3(0,-0.38,0)
+
+[node name="Mesh" parent="Suspension/FrontLeft/Wheel" instance=ExtResource("E2") ]
+
+
+[node name="FrontRight" type="RayCast3D" parent="Suspension" ]
+position = Vector3(0.91,0.1,-1.35)
+target_position = Vector3(0,-1.2,0)
+collision_mask = 1
+
+[node name="Wheel" type="Node3D" parent="Suspension/FrontRight" ]
+position = Vector3(0,-0.38,0)
+
+[node name="Mesh" parent="Suspension/FrontRight/Wheel" instance=ExtResource("E2") ]
+
+
+[node name="RearLeft" type="RayCast3D" parent="Suspension" ]
+position = Vector3(-0.91,0.1,1.39)
+target_position = Vector3(0,-1.2,0)
+collision_mask = 1
+
+[node name="Wheel" type="Node3D" parent="Suspension/RearLeft" ]
+position = Vector3(0,-0.38,0)
+
+[node name="Mesh" parent="Suspension/RearLeft/Wheel" instance=ExtResource("E2") ]
+
+
+[node name="RearRight" type="RayCast3D" parent="Suspension" ]
+position = Vector3(0.91,0.1,1.39)
+target_position = Vector3(0,-1.2,0)
+collision_mask = 1
+
+[node name="Wheel" type="Node3D" parent="Suspension/RearRight" ]
+position = Vector3(0,-0.38,0)
+
+[node name="Mesh" parent="Suspension/RearRight/Wheel" instance=ExtResource("E2") ]
+
+
+[node name="Effects" type="Node3D" parent="." ]
+
+
+[node name="SmokeLeft" type="GPUParticles3D" parent="Effects" ]
+position = Vector3(-0.91,-0.35,1.39)
+emitting = false
+amount = 40
+lifetime = 1.6
+process_material = SubResource("R10")
+draw_pass_1 = SubResource("R9")
+
+[node name="SmokeRight" type="GPUParticles3D" parent="Effects" ]
+position = Vector3(0.91,-0.35,1.39)
+emitting = false
+amount = 40
+lifetime = 1.6
+process_material = SubResource("R10")
+draw_pass_1 = SubResource("R9")
+
+[node name="HeadlightLeft" type="SpotLight3D" parent="Effects" ]
+position = Vector3(-0.6,0.38,-2.05)
+light_color = Color(0.75,0.86,1,1)
+light_energy = 4.0
+spot_range = 38.0
+spot_angle = 29.0
+spot_attenuation = 1.2
+shadow_enabled = false
+
+[node name="HeadlightRight" type="SpotLight3D" parent="Effects" ]
+position = Vector3(0.6,0.38,-2.05)
+light_color = Color(0.75,0.86,1,1)
+light_energy = 4.0
+spot_range = 38.0
+spot_angle = 29.0
+spot_attenuation = 1.2
+shadow_enabled = false
+
+[node name="Engine" type="AudioStreamPlayer3D" parent="." ]
+stream = ExtResource("E4")
+max_db = 0.0
+volume_db = -15.0
+unit_size = 8.0
+max_distance = 80.0
+
+[node name="Tires" type="AudioStreamPlayer3D" parent="." ]
+stream = ExtResource("E5")
+volume_db = -60.0
+unit_size = 8.0
+max_distance = 60.0

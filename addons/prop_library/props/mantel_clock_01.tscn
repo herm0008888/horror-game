@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/mantel_clock_01/mantel_clock_01.gltf" id="1_7448t"]
+
+[node name="MantelClock01" type="Node3D" unique_id=536460255]
+metadata/asset_id = "mantel_clock_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1772280908 instance=ExtResource("1_7448t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00047052762, 0)

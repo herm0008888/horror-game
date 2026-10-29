@@ -301,6 +301,7 @@ size = Vector3(0.15068297, 0.018, 0.052532017)
 [node name="FrontStore" type="Node3D" unique_id=732953160]
 
 [node name="WoodenBookshelfWorn" type="StaticBody3D" parent="." unique_id=1288859613]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 0, 13.45)
 metadata/source = "https://polyhaven.com/a/wooden_bookshelf_worn"
 metadata/dimensions = Vector3(1.3317087, 2, 0.56342953)
@@ -319,6 +320,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_m2b5a")
 
 [node name="CardboardBox01" type="Node3D" parent="." unique_id=383104778]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 0.38085082, 13.599999)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.24910855, 0.22, 0.33204108)
@@ -336,6 +338,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_l83bj")
 
 [node name="@Node3D@98" type="Node3D" parent="." unique_id=351211430]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 0.6518543, 13.599999)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.24910855, 0.22, 0.33204108)
@@ -353,6 +356,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_l83bj")
 
 [node name="@Node3D@99" type="Node3D" parent="." unique_id=1868388013]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 1.195606, 13.599999)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.24910855, 0.22, 0.33204108)
@@ -370,6 +374,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_l83bj")
 
 [node name="@Node3D@100" type="Node3D" parent="." unique_id=653713110]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.52, 1.5706104, 13.599999)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.24910855, 0.22, 0.33204108)
@@ -387,6 +392,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_l83bj")
 
 [node name="WoodenCrate01" type="StaticBody3D" parent="." unique_id=585418998 instance=ExtResource("Storage_0")]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9961947, 0, -0.08715574, 0, 1, 0, 0.08715574, 0, 0.9961947, 3.9, 0, 15.25)
 metadata/source = "https://polyhaven.com/a/wooden_crate_01"
 metadata/dimensions = Vector3(1.534323, 0.65, 0.7603147)
@@ -395,6 +401,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="WoodenCrate02" type="StaticBody3D" parent="." unique_id=1609657905 instance=ExtResource("Storage_1")]
+metadata/_edit_group_ = true
 transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 3.9, 0.6274162, 15.25)
 metadata/source = "https://polyhaven.com/a/wooden_crate_02"
 metadata/dimensions = Vector3(0.46757036, 0.41000003, 1.0306907)
@@ -403,6 +410,7 @@ metadata/support_y = 0.6274162
 metadata/interactive_storage = true
 
 [node name="VintageSuitcase" type="StaticBody3D" parent="." unique_id=2055233833]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, 1.65, 0, 15.55)
 metadata/source = "https://polyhaven.com/a/vintage_suitcase"
 metadata/dimensions = Vector3(1.1327124, 0.39999998, 0.16846159)
@@ -427,6 +435,7 @@ lod_bias = 0.7
 mesh = ExtResource("16_3fs2f")
 
 [node name="PaintedWoodenBench" type="StaticBody3D" parent="." unique_id=1597717204]
+metadata/_edit_group_ = true
 transform = Transform3D(0.22495104, 0, -0.97437006, 0, 1, 0, 0.97437006, 0, 0.22495104, 3.84, 0, 13.5)
 metadata/source = "https://polyhaven.com/a/painted_wooden_bench"
 metadata/dimensions = Vector3(1.1134729, 0.85, 0.4746044)
@@ -445,6 +454,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0)
 shape = SubResource("BoxShape3D_iph53")
 
 [node name="MetalToolbox" type="StaticBody3D" parent="." unique_id=1671718253 instance=ExtResource("Storage_2")]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 4.4, 0, 14.37)
 metadata/source = "https://polyhaven.com/a/metal_toolbox"
 metadata/dimensions = Vector3(0.33420026, 0.29000002, 0.24423482)
@@ -453,6 +463,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="@StaticBody3D@105" type="StaticBody3D" parent="." unique_id=1129062258]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 0, 15.4)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.5661558, 0.5, 0.75463885)
@@ -472,6 +483,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("BoxShape3D_n186e")
 
 [node name="@StaticBody3D@107" type="StaticBody3D" parent="." unique_id=1687668438]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9848077, 0, 0.17364818, 0, 1, 0, -0.17364818, 0, 0.9848077, 0.55, 0.5, 15.4)
 metadata/source = "https://polyhaven.com/a/cardboard_box_01"
 metadata/dimensions = Vector3(0.35101658, 0.31, 0.46787608)
@@ -491,6 +503,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.155, 0)
 shape = SubResource("BoxShape3D_u1td0")
 
 [node name="Trashbag" type="Node3D" parent="." unique_id=414094576]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.65, 0, 15.6)
 metadata/source = "https://polyhaven.com/a/trashbag"
 metadata/dimensions = Vector3(0.25714746, 0.28, 0.225409)
@@ -507,6 +520,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_wrda7")
 
 [node name="WoodenBucket01" type="StaticBody3D" parent="." unique_id=1488494803]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4, 0, 12.6)
 metadata/source = "https://polyhaven.com/a/wooden_bucket_01"
 metadata/dimensions = Vector3(0.20688988, 0.31, 0.1929366)

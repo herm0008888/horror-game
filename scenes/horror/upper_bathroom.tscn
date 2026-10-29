@@ -579,6 +579,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_0irjk")
 
 [node name="PaintedWoodenCabinet" type="StaticBody3D" parent="." unique_id=2038632978 instance=ExtResource("2_tq05e")]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.5, 3.4, 2.55)
 metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet"
 metadata/dimensions = Vector3(1.2, 0.9, 0.6)
@@ -587,6 +588,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="WoodenBowl01" type="Node3D" parent="." unique_id=1217203008]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 4.31, 2.55)
 metadata/source = "https://polyhaven.com/a/wooden_bowl_01"
 metadata/asset_id = "wooden_bowl_01"
@@ -601,6 +603,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_qwgrw")
 
 [node name="OrnateMirror01" type="Node3D" parent="." unique_id=1995045185]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.16, 4.65, 2.55)
 metadata/source = "https://polyhaven.com/a/ornate_mirror_01"
 metadata/asset_id = "ornate_mirror_01"
@@ -670,6 +673,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16499999, 0)
 shape = SubResource("BoxShape3D_wbysq")
 
 [node name="PlasticBroom" type="Node3D" parent="." unique_id=1743317]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9563048, 0, 0.2923717, 0, 1, 0, -0.2923717, 0, 0.9563048, 11.6, 3.4, 0.6)
 metadata/source = "https://polyhaven.com/a/plastic_broom"
 metadata/asset_id = "plastic_broom"
@@ -778,6 +782,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.105000004, 0)
 shape = SubResource("BoxShape3D_gpfe8")
 
 [node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=597260716]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.83, 4.8, 1.8)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/asset_id = "hanging_picture_frame_02"

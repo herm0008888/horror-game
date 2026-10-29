@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/caged_hanging_light/caged_hanging_light.gltf" id="1_jjna6"]
+
+[node name="CagedHangingLight" type="Node3D" unique_id=1266840008]
+metadata/asset_id = "caged_hanging_light"
+
+[node name="Model" type="Node3D" parent="." unique_id=1464139783 instance=ExtResource("1_jjna6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0006211996, 0.75009656, 2.3201108e-05)

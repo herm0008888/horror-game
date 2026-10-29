@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/trashbag/trashbag.gltf" id="1_trlp7"]
+
+[node name="Trashbag" type="Node3D" unique_id=1708106117]
+metadata/asset_id = "trashbag"
+
+[node name="Model" type="Node3D" parent="." unique_id=1749782637 instance=ExtResource("1_trlp7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0035645664, 0.0014541671, 0.00837332)

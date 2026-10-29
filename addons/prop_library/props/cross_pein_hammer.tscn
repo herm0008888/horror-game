@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/cross_pein_hammer/cross_pein_hammer.gltf" id="1_43oty"]
+
+[node name="CrossPeinHammer" type="Node3D" unique_id=1285246687]
+metadata/asset_id = "cross_pein_hammer"
+
+[node name="Model" type="Node3D" parent="." unique_id=1723469282 instance=ExtResource("1_43oty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0051674806, 0.12320222, -0.0023210905)

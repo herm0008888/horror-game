@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/ornate_mirror_01/ornate_mirror_01.gltf" id="1_fwyuk"]
+
+[node name="OrnateMirror01" type="Node3D" unique_id=1196892741]
+metadata/asset_id = "ornate_mirror_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1138329550 instance=ExtResource("1_fwyuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4109544, -0.01326744)

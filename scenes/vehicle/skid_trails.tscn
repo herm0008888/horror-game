@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/skid_trails.gd" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="Rubber"]
+albedo_color = Color(0.022,0.025,0.027,1)
+roughness = 0.96
+
+[sub_resource type="PlaneMesh" id="Strip"]
+material = SubResource("Rubber")
+size = Vector2(1,1)
+
+[sub_resource type="MultiMesh" id="Trails"]
+transform_format = 1
+mesh = SubResource("Strip")
+
+[node name="SkidTrails" type="MultiMeshInstance3D"]
+cast_shadow = 0
+multimesh = SubResource("Trails")
+script = ExtResource("1")

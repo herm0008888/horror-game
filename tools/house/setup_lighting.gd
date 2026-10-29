@@ -21,7 +21,19 @@ func run() -> void:
 	var horror := normal.duplicate() as Environment
 	horror.background_color=Color(0.003,0.004,0.007)
 	horror.ambient_light_color=Color(0.72,0.75,0.80)
-	horror.ambient_light_energy=0.36
+	horror.ambient_light_energy=0.30
+	horror.fog_enabled=true
+	horror.fog_mode=Environment.FOG_MODE_DEPTH
+	horror.fog_light_color=Color(0.008,0.012,0.014)
+	horror.fog_light_energy=0.2
+	horror.fog_density=0.88
+	horror.fog_depth_begin=3.5
+	horror.fog_depth_end=15.0
+	horror.fog_sun_scatter=0.0
+	horror.adjustment_enabled=true
+	horror.adjustment_brightness=0.98
+	horror.adjustment_contrast=1.08
+	horror.adjustment_saturation=0.82
 	ResourceSaver.save(horror,"res://assets/house_materials/horror_lighting.tres")
 	normal=load("res://assets/house_materials/normal_lighting.tres")
 	horror=load("res://assets/house_materials/horror_lighting.tres")

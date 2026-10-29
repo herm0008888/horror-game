@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/carved_wooden_plate/carved_wooden_plate.gltf" id="1_o3hgt"]
+
+[node name="CarvedWoodenPlate" type="Node3D" unique_id=541281907]
+metadata/asset_id = "carved_wooden_plate"
+
+[node name="Model" type="Node3D" parent="." unique_id=2067723210 instance=ExtResource("1_o3hgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0015681237, 0.0018553033, 0.0076919794)

@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/vintage_oil_lamp/vintage_oil_lamp.gltf" id="1_fyrel"]
+
+[node name="VintageOilLamp" type="Node3D" unique_id=945374275]
+metadata/asset_id = "vintage_oil_lamp"
+
+[node name="Model" type="Node3D" parent="." unique_id=451515579 instance=ExtResource("1_fyrel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 1.8228679e-08, 2.2351742e-08)

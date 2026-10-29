@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wine_bottles_01/wine_bottles_01.gltf" id="1_hts6m"]
+
+[node name="WineBottles01" type="Node3D" unique_id=1459411201]
+metadata/asset_id = "wine_bottles_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1679323781 instance=ExtResource("1_hts6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3021302, 5.820766e-10, -1.1112541e-05)

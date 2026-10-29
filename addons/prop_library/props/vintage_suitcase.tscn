@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/vintage_suitcase/vintage_suitcase.gltf" id="1_oyhog"]
+
+[node name="VintageSuitcase" type="Node3D" unique_id=1807808592]
+metadata/asset_id = "vintage_suitcase"
+
+[node name="Model" type="Node3D" parent="." unique_id=1402414231 instance=ExtResource("1_oyhog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0007213354, 0.000105650026, 0.009232663)

@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/bleach_bottle/bleach_bottle.gltf" id="1_vlfgw"]
+
+[node name="BleachBottle" type="Node3D" unique_id=151780410]
+metadata/asset_id = "bleach_bottle"
+
+[node name="Model" type="Node3D" parent="." unique_id=868771778 instance=ExtResource("1_vlfgw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6077032e-08, 0, 0)

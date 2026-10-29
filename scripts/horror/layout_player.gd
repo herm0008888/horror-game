@@ -14,22 +14,13 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if caught: return
 	if (event.is_action_pressed("drop_item") or (event is InputEventKey and event.pressed and event.physical_keycode==KEY_Q)) and not event.is_echo():
+		if has_node("PlayerFeel/PickupController"):$PlayerFeel/PickupController.cancel()
 		drop_held_item()
 		get_viewport().set_input_as_handled()
 		return
-	if (event.is_action_pressed("interact") or (event is InputEventKey and event.pressed and event.physical_keycode==KEY_E)) and not event.is_echo():
-		var excluded: Array[RID]=[get_rid()]
-		if has_node("ToolController") and is_instance_valid($ToolController.grabbed): excluded.append($ToolController.grabbed.get_rid())
-		var ray := PhysicsRayQueryParameters3D.create(camera.global_position,camera.global_position-camera.global_basis.z*2.6,1,excluded)
-		var hit := get_world_3d().direct_space_state.intersect_ray(ray)
-		if not hit.is_empty() and hit.collider.has_method("interact"):
-			hit.collider.interact()
-			get_viewport().set_input_as_handled()
-			return
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotation.y -= event.relative.x * 0.0024
 		pitch = clampf(pitch - event.relative.y * 0.0024, -1.4, 1.4)
-		camera.rotation.x = pitch
 	if event.is_action_pressed("release_mouse"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED else Input.MOUSE_MODE_CAPTURED
 	if event is InputEventMouseButton and event.pressed:
@@ -53,11 +44,13 @@ func _physics_process(delta: float) -> void:
 	var height: float = 0.95 if crouched else 1.7
 	if not is_equal_approx(capsule.shape.height,height): capsule.shape.height=height
 	capsule.position.y = height * 0.5 + 0.01
-	camera.position.y = lerpf(camera.position.y, 0.8 if crouched else 1.6, minf(1, delta * 15))
 	var input := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	var direction := global_basis * Vector3(input.x, 0, input.y)
-	velocity.x = direction.x * (1.5 if crouched else 3.0)
-	velocity.z = direction.z * (1.5 if crouched else 3.0)
+	var carrying_large: bool=has_node("ToolController") and is_instance_valid($ToolController.grabbed) and $ToolController.grabbed_large
+	var speed: float=1.5 if crouched else (2.25 if carrying_large else 3.0)
+	var acceleration: float=15.0 if direction.length()>.01 else 20.0
+	velocity.x=move_toward(velocity.x,direction.x*speed,delta*acceleration)
+	velocity.z=move_toward(velocity.z,direction.z*speed,delta*acceleration)
 	velocity.y = -0.5 if is_on_floor() else velocity.y - 20 * delta
 	move_and_slide()
 	for i in range(get_slide_collision_count()):
@@ -73,6 +66,7 @@ func acquire_flashlight(enabled: bool=true) -> bool:
 func capture(enemy: Node3D) -> void:
 	if caught: return
 	caught=true
+	if has_node("PlayerFeel/PickupController"):$PlayerFeel/PickupController.cancel()
 	if has_node("ToolController"): $ToolController.on_capture()
 	velocity=Vector3.ZERO
 	$Camera/FlashlightRig.set_switched_on(false)

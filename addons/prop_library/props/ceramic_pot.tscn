@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/ceramic_pot/ceramic_pot.gltf" id="1_6og4c"]
+
+[node name="CeramicPot" type="Node3D" unique_id=1599024796]
+metadata/asset_id = "ceramic_pot"
+
+[node name="Model" type="Node3D" parent="." unique_id=1758632457 instance=ExtResource("1_6og4c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 0.00088176713, -0.0003578663)

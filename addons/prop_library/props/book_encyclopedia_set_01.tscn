@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/book_encyclopedia_set_01/book_encyclopedia_set_01.gltf" id="1_utcnk"]
+
+[node name="BookEncyclopediaSet01" type="Node3D" unique_id=17256203]
+metadata/asset_id = "book_encyclopedia_set_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=2018940433 instance=ExtResource("1_utcnk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25633225, 1.1795664e-08, -0.019461282)

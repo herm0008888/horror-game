@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/small_oil_can_01/small_oil_can_01.gltf" id="1_pcnpt"]
+
+[node name="SmallOilCan01" type="Node3D" unique_id=787889104]
+metadata/asset_id = "small_oil_can_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=1347842762 instance=ExtResource("1_pcnpt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.042320587, -4.23193e-06, 4.8428774e-08)

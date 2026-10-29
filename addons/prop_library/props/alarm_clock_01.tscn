@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/alarm_clock_01/alarm_clock_01.gltf" id="1_4wa6c"]
+
+[node name="AlarmClock01" type="Node3D" unique_id=1280675097]
+metadata/asset_id = "alarm_clock_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=279628506 instance=ExtResource("1_4wa6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0012277961, -0.00913159)

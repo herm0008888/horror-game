@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/hanging_picture_frame_02/hanging_picture_frame_02.gltf" id="1_bo85h"]
+
+[node name="HangingPictureFrame02" type="Node3D" unique_id=1061250102]
+metadata/asset_id = "hanging_picture_frame_02"
+
+[node name="Model" type="Node3D" parent="." unique_id=864496589 instance=ExtResource("1_bo85h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0003001392, 0.27864644, -0.018572286)

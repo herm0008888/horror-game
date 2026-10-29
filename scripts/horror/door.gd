@@ -8,6 +8,7 @@ func interact() -> void:
 func set_open(value: bool) -> void:
 	if value == opened: return
 	opened = value
+	get_tree().call_group("dynamic_navigation","request_update")
 	if motion: motion.kill()
 	motion = create_tween()
 	motion.tween_property($Hinge, "rotation:y", deg_to_rad(open_angle) if opened else 0.0, 1.1).set_trans(Tween.TRANS_SINE)

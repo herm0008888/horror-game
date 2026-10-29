@@ -1,263 +1,7 @@
-[gd_scene format=4]
+[gd_scene format=3 uid="uid://cuokaqwypa4qb"]
 
-[ext_resource type="ArrayMesh" path="res://assets/horror/visitor_complete.res" id="UnifiedVisitor"]
-
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visitor_black_hair.png" id="1_563wt"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_face_albedo.png" id="2_teiaf"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_face_normal.png" id="3_o0ujo"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_eye_albedo.png" id="4_4cxim"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_eye_roughness.png" id="5_h5an6"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_tongue_albedo.png" id="6_qgcdj"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_tongue_normal.png" id="7_s6ufn"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_visceral_teeth_albedo.png" id="8_1sydc"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_anatomy_skin_albedo.png" id="9_pc76n"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitation_anatomy_gown_albedo.png" id="10_xfomi"]
-[ext_resource type="Shader" path="res://assets/horror/psx.gdshader" id="11_mj10k"]
-[ext_resource type="Shader" path="res://assets/horror/visceral_pbr.gdshader" id="12_qh8ee"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_face_normal.png" id="13_2e8wx"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_face_roughness.png" id="14_loknu"]
-[ext_resource type="Texture2D" path="res://assets/horror/visitor_face_ashen.png" id="15_jlgaw"]
-[ext_resource type="Shader" path="res://assets/horror/mouth_interior.gdshader" id="16_l6jgc"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_eye_roughness.png" id="17_yoo82"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_eye_albedo.png" id="18_75utb"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_tongue_normal.png" id="19_bdxk2"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_tongue_roughness.png" id="20_t2aii"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_tongue_albedo.png" id="21_heuu1"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_teeth_roughness.png" id="22_sxmh8"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_teeth_albedo.png" id="23_jlbvy"]
-[ext_resource type="Texture2D" path="res://assets/horror/anatomy_skin_roughness.png" id="24_50vc0"]
-[ext_resource type="Texture2D" path="res://assets/horror/anatomy_skin_albedo.png" id="25_ggtxv"]
-[ext_resource type="Texture2D" path="res://assets/horror/visceral_cloth_roughness.png" id="26_iowgw"]
-[ext_resource type="Texture2D" path="res://assets/horror/anatomy_gown_albedo.png" id="27_krnsw"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yto8x"]
-resource_name = "Hair | wet black strands.009"
-cull_mode = 2
-albedo_texture = ExtResource("1_563wt")
-roughness = 0.9
-texture_filter = 2
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kfo8w"]
-resource_name = "VisceralFace | pores and wet blood"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("2_teiaf")
-roughness = 0.9
-normal_enabled = true
-normal_scale = 0.45
-normal_texture = ExtResource("3_o0ujo")
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5yty"]
-resource_name = "MouthInterior | sculpted throat"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_color = Color(0.24009366, 0.07016479, 0.11207495, 1)
-roughness = 0.9
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_frbuf"]
-resource_name = "WetEye | veined cornea"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("4_4cxim")
-metallic_texture = ExtResource("5_h5an6")
-metallic_texture_channel = 2
-roughness_texture = ExtResource("5_h5an6")
-roughness_texture_channel = 1
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b6gmn"]
-resource_name = "WetTongue | bloody folded muscle"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("6_qgcdj")
-roughness = 0.9
-normal_enabled = true
-normal_scale = 0.45
-normal_texture = ExtResource("7_s6ufn")
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_muion"]
-resource_name = "RottenTeeth | crooked enamel"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("8_1sydc")
-roughness = 0.9
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8bse8"]
-resource_name = "VisceralBody | continuous aged anatomy"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("9_pc76n")
-roughness = 0.92
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ojyyu"]
-resource_name = "VisceralCloth | aged burial gown"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("10_xfomi")
-roughness = 0.92
-metadata/_gltf_primary_texture_coord = 0
-
-[sub_resource type="Skin" id="Skin_gqhiw"]
-resource_name = "Skin"
-bind_count = 12
-bind/0/name = &"Root"
-bind/0/bone = -1
-bind/0/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
-bind/1/name = &"LegLeft"
-bind/1/bone = -1
-bind/1/pose = Transform3D(0.9997063, -0.016932558, -0.017343141, -0.017343067, -0.99956656, -0.023799203, -0.016932692, 0.024092995, -0.99956644, 0.11631263, 0.9378509, -0.02434789)
-bind/2/name = &"LegRight"
-bind/2/bone = -1
-bind/2/pose = Transform3D(0.9997063, 0.016932558, 0.017343141, 0.017343067, -0.99956656, -0.023799203, 0.016932692, 0.024092995, -0.99956644, -0.11631263, 0.9378509, -0.02434789)
-bind/3/name = &"Spine"
-bind/3/bone = -1
-bind/3/pose = Transform3D(1, 0, 0, 0, 0.98000985, -0.19894937, 0, 0.19894937, 0.9800098, 0, -0.88200885, -0.17905442)
-bind/4/name = &"ArmLeft"
-bind/4/bone = -1
-bind/4/pose = Transform3D(0.91054296, -0.2765087, -0.3073399, -0.30733895, -0.94995844, -0.055880707, -0.2765064, 0.14533792, -0.94995964, 0.5880614, 1.301024, -0.25099432)
-bind/5/name = &"ForearmLeft"
-bind/5/bone = -1
-bind/5/pose = Transform3D(0.9860794, -0.10998073, -0.12471444, -0.124713466, -0.9852432, -0.11723285, -0.10997869, 0.13115296, -0.98524433, 0.4304203, 1.0389706, -0.18318197)
-bind/6/name = &"ArmRight"
-bind/6/bone = -1
-bind/6/pose = Transform3D(0.92299426, 0.2590206, 0.28458863, 0.28458843, -0.9572523, -0.051743556, 0.25901997, 0.12874936, -0.9572527, -0.56517714, 1.3160926, -0.2234956)
-bind/7/name = &"ForearmRight"
-bind/7/bone = -1
-bind/7/pose = Transform3D(0.9860787, 0.10998066, 0.12471433, 0.124714084, -0.9852429, -0.117231734, 0.109980196, 0.13115299, -0.98524314, -0.42712066, 1.0094126, -0.1792479)
-bind/8/name = &"Head"
-bind/8/bone = -1
-bind/8/pose = Transform3D(1, 0, 0, 0, 0.98621154, -0.16548987, 0, 0.16548987, 0.9862115, 0, -1.4543885, -0.11983892)
-bind/9/name = &"EyeLeft"
-bind/9/bone = -1
-bind/9/pose = Transform3D(1, 0, 0, 0, 5.960465e-08, -1, 0, 1.0000001, 5.960465e-08, -0.11333334, -0.23500013, -1.9061112)
-bind/10/name = &"EyeRight"
-bind/10/bone = -1
-bind/10/pose = Transform3D(1, 0, 0, 0, -7.4505806e-08, -1, 0, 1, 2.9802322e-08, 0.10277778, -0.23499988, -1.8950001)
-bind/11/name = &"Tongue"
-bind/11/bone = -1
-bind/11/pose = Transform3D(1, 0, 0, 0, -0.5010363, -0.8654263, 0, 0.86542636, -0.5010363, 0, 0.7911818, -1.2867523)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_cqbq6"]
-render_priority = 0
-shader = ExtResource("11_mj10k")
-shader_parameter/surface_texture = ExtResource("1_563wt")
-shader_parameter/tint = Color(1, 1, 1, 1)
-shader_parameter/tiling = null
-shader_parameter/emission_strength = null
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5krbt"]
-render_priority = 0
-shader = ExtResource("12_qh8ee")
-shader_parameter/surface_texture = ExtResource("15_jlgaw")
-shader_parameter/detail_normal = ExtResource("13_2e8wx")
-shader_parameter/roughness_texture = ExtResource("14_loknu")
-shader_parameter/tint = null
-shader_parameter/use_texture = true
-shader_parameter/use_normal = true
-shader_parameter/use_roughness = true
-shader_parameter/body_mode = null
-shader_parameter/normal_strength = 0.48
-shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = 0.88
-shader_parameter/roughness_min = 0.88
-shader_parameter/specular_value = 0.12
-shader_parameter/coat = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_vmlec"]
-render_priority = 0
-shader = ExtResource("16_l6jgc")
-shader_parameter/tint = Color(0.24009366, 0.07016479, 0.11207495, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_wdplv"]
-render_priority = 0
-shader = ExtResource("12_qh8ee")
-shader_parameter/surface_texture = ExtResource("18_75utb")
-shader_parameter/roughness_texture = ExtResource("17_yoo82")
-shader_parameter/tint = null
-shader_parameter/use_texture = true
-shader_parameter/use_normal = false
-shader_parameter/use_roughness = true
-shader_parameter/body_mode = null
-shader_parameter/normal_strength = null
-shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = null
-shader_parameter/roughness_min = null
-shader_parameter/specular_value = 0.65
-shader_parameter/coat = 0.85
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_nspt3"]
-render_priority = 0
-shader = ExtResource("12_qh8ee")
-shader_parameter/surface_texture = ExtResource("21_heuu1")
-shader_parameter/detail_normal = ExtResource("19_bdxk2")
-shader_parameter/roughness_texture = ExtResource("20_t2aii")
-shader_parameter/tint = null
-shader_parameter/use_texture = true
-shader_parameter/use_normal = true
-shader_parameter/use_roughness = true
-shader_parameter/body_mode = null
-shader_parameter/normal_strength = 0.5
-shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = 0.7
-shader_parameter/roughness_min = 0.7
-shader_parameter/specular_value = 0.18
-shader_parameter/coat = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_bxtu1"]
-render_priority = 0
-shader = ExtResource("12_qh8ee")
-shader_parameter/surface_texture = ExtResource("23_jlbvy")
-shader_parameter/roughness_texture = ExtResource("22_sxmh8")
-shader_parameter/tint = null
-shader_parameter/use_texture = true
-shader_parameter/use_normal = false
-shader_parameter/use_roughness = true
-shader_parameter/body_mode = null
-shader_parameter/normal_strength = null
-shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = 0.78
-shader_parameter/roughness_min = 0.78
-shader_parameter/specular_value = 0.15
-shader_parameter/coat = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6hqnl"]
-render_priority = 0
-shader = ExtResource("12_qh8ee")
-shader_parameter/surface_texture = ExtResource("25_ggtxv")
-shader_parameter/roughness_texture = ExtResource("24_50vc0")
-shader_parameter/tint = Color(1, 1, 1, 1)
-shader_parameter/use_texture = true
-shader_parameter/use_normal = false
-shader_parameter/use_roughness = true
-shader_parameter/body_mode = false
-shader_parameter/normal_strength = null
-shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = 0.94
-shader_parameter/roughness_min = 0.9
-shader_parameter/specular_value = 0.1
-shader_parameter/coat = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_o76m5"]
-render_priority = 0
-shader = ExtResource("12_qh8ee")
-shader_parameter/surface_texture = ExtResource("27_krnsw")
-shader_parameter/roughness_texture = ExtResource("26_iowgw")
-shader_parameter/tint = null
-shader_parameter/use_texture = true
-shader_parameter/use_normal = false
-shader_parameter/use_roughness = true
-shader_parameter/body_mode = null
-shader_parameter/normal_strength = null
-shader_parameter/normal_tiling = null
-shader_parameter/roughness_value = 0.96
-shader_parameter/roughness_min = 0.96
-shader_parameter/specular_value = 0.06
-shader_parameter/coat = 0.0
+[ext_resource type="Skin" path="res://assets/horror/visitor_straight_arms_skin.tres" id="StraightArmSkin"]
+[ext_resource type="ArrayMesh" path="res://assets/horror/visitor_straight_arms.res" id="UnifiedVisitor"]
 
 [node name="Hollow_Visitor_Emaciated_006" type="Node3D" unique_id=778320435]
 
@@ -294,32 +38,32 @@ bones/3/rotation = Quaternion(-0.0999756, 0, 0, 0.9949899)
 bones/3/scale = Vector3(1, 0.99999994, 1)
 bones/4/name = "ArmLeft"
 bones/4/parent = 3
-bones/4/rest = Transform3D(0.9105404, -0.3073391, -0.27650666, -0.2098356, -0.91985035, 0.33142632, -0.35620493, -0.24375667, -0.90205246, -0.205, 0.52132106, 0.12113806)
+bones/4/rest = Transform3D(0.9532255, -0.09724836, -0.28618866, -0.006631732, -0.95333, 0.30185765, -0.30218738, -0.28584045, -0.9093833, -0.205, 0.52132094, 0.12113805)
 bones/4/enabled = true
-bones/4/position = Vector3(-0.205, 0.52132106, 0.12113806)
-bones/4/rotation = Quaternion(0.96597695, -0.1338477, -0.16374937, -0.14886053)
-bones/4/scale = Vector3(0.99999833, 0.99999964, 0.999999)
+bones/4/position = Vector3(-0.205, 0.52132094, 0.12113805)
+bones/4/rotation = Quaternion(0.9767214, -0.026588973, -0.15059976, -0.15042624)
+bones/4/scale = Vector3(1, 1, 1)
 bones/5/name = "ForearmLeft"
 bones/5/parent = 4
-bones/5/rest = Transform3D(0.9666054, 0.19490023, 0.16639683, -0.19161488, 0.98081946, -0.03573369, -0.17016974, 0.0026562698, 0.98541117, -6.519258e-09, 0.3579106, -1.9092113e-08)
+bones/5/rest = Transform3D(0.9848546, 1.8626451e-09, 0.17338246, 1.8626451e-09, 1.0000001, 7.450581e-09, -0.17338246, -2.2351742e-08, 0.98485464, 0, 0.34303904, -1.4901161e-08)
 bones/5/enabled = true
-bones/5/position = Vector3(-6.519258e-09, 0.3579106, -1.9092113e-08)
-bones/5/rotation = Quaternion(0.009679092, 0.08485707, -0.09745038, 0.991569)
-bones/5/scale = Vector3(1, 0.99999994, 1)
+bones/5/position = Vector3(0, 0.34303904, -1.4901161e-08)
+bones/5/rotation = Quaternion(-1.0722946e-08, 0.08702135, 1.8715474e-09, 0.99620646)
+bones/5/scale = Vector3(1, 1, 1)
 bones/6/name = "ArmRight"
 bones/6/parent = 3
-bones/6/rest = Transform3D(0.9229936, 0.28458855, 0.25902006, 0.19722383, -0.92782235, 0.31662038, 0.33043107, -0.24115384, -0.91250175, 0.205, 0.52132106, 0.12113806)
+bones/6/rest = Transform3D(0.95978, 0.09253379, 0.26506597, 0.010141797, -0.9549348, 0.29664254, 0.2805702, -0.28202325, -0.9174656, 0.205, 0.52132094, 0.12113805)
 bones/6/enabled = true
-bones/6/position = Vector3(0.205, 0.52132106, 0.12113806)
-bones/6/rotation = Quaternion(0.9699637, 0.12418312, 0.15192614, -0.14376163)
-bones/6/scale = Vector3(0.9999995, 1, 0.99999964)
+bones/6/position = Vector3(0.205, 0.52132094, 0.12113805)
+bones/6/rotation = Quaternion(0.9787978, 0.026224924, 0.13936388, -0.14780013)
+bones/6/scale = Vector3(1, 1, 1)
 bones/7/name = "ForearmRight"
 bones/7/parent = 6
-bones/7/rest = Transform3D(0.97412384, -0.17345026, -0.14490587, 0.16889434, 0.9846839, -0.043267563, 0.15019128, 0.017674185, 0.98849887, 6.216578e-08, 0.386523, 2.6542693e-08)
+bones/7/rest = Transform3D(0.98832184, 5.5879354e-08, -0.15238026, -3.3527613e-08, 0.99999994, 4.4703484e-08, 0.15238035, 7.450581e-09, 0.9883218, 2.9802322e-08, 0.37300122, 0)
 bones/7/enabled = true
-bones/7/position = Vector3(6.216578e-08, 0.386523, 2.6542693e-08)
-bones/7/rotation = Quaternion(0.015336792, -0.07426508, 0.08615552, 0.9933915)
-bones/7/scale = Vector3(1, 0.9999998, 0.9999999)
+bones/7/position = Vector3(2.9802322e-08, 0.37300122, 0)
+bones/7/rotation = Quaternion(7.0699346e-10, -0.076413594, -1.6758783e-08, 0.9970762)
+bones/7/scale = Vector3(1, 1, 1)
 bones/8/name = "Head"
 bones/8/parent = 3
 bones/8/rest = Transform3D(1, 0, 0, 0, 0.999421, -0.03402446, 0, 0.03402446, 0.999421, 0, 0.5674602, -0.009800091)
@@ -351,7 +95,7 @@ bones/11/scale = Vector3(1, 1, 0.99999994)
 
 [node name="TheHollowVisitor_Mesh" type="MeshInstance3D" parent="TheHollowVisitor_Rig/Skeleton3D" unique_id=823085195]
 mesh = ExtResource("UnifiedVisitor")
-skin = SubResource("Skin_gqhiw")
+skin = ExtResource("StraightArmSkin")
 skeleton = NodePath("..")
 blend_shapes/Scream = 0.0
-
+blend_shapes/Threat = 0.0

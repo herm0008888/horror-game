@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_barrels_01/wooden_barrels_01.gltf" id="1_nsijq"]
+
+[node name="WoodenBarrels01" type="Node3D" unique_id=2071224453]
+metadata/asset_id = "wooden_barrels_01"
+
+[node name="Model" type="Node3D" parent="." unique_id=2087068303 instance=ExtResource("1_nsijq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11203265, 0.039903995, 0.26033533)

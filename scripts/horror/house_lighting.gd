@@ -11,7 +11,6 @@ var elapsed: float = 0.0
 @onready var environment: WorldEnvironment = get_node(environment_node)
 func _ready() -> void:
 	horror_environment=horror_environment.duplicate()
-	horror_environment.ambient_light_energy*=0.65
 	set_normal_lighting(normal_lighting)
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode==KEY_L:

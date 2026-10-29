@@ -1,0 +1,31 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/horror/house_atmosphere.gd" id="Script"]
+[ext_resource type="AudioStream" path="res://assets/horror/ambience.wav" id="Tone"]
+[ext_resource type="AudioStream" path="res://assets/horror/creak.wav" id="Creak"]
+[node name="HouseAtmosphere" type="Node3D"]
+script = ExtResource("Script")
+[node name="RoomTone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Tone")
+volume_db = -29.0
+[node name="CreakTimer" type="Timer" parent="."]
+one_shot = true
+wait_time = 15.0
+[node name="Creaks" type="Node3D" parent="."]
+[node name="BasementPipes" type="AudioStreamPlayer3D" parent="Creaks"]
+position = Vector3(8,-1.1,3)
+stream = ExtResource("Creak")
+volume_db = -19.0
+unit_size = 2.0
+max_distance = 12.0
+[node name="UpperJoists" type="AudioStreamPlayer3D" parent="Creaks"]
+position = Vector3(12,5.6,13)
+stream = ExtResource("Creak")
+volume_db = -21.0
+unit_size = 2.0
+max_distance = 12.0
+[node name="StairTimbers" type="AudioStreamPlayer3D" parent="Creaks"]
+position = Vector3(1,2.4,7)
+stream = ExtResource("Creak")
+volume_db = -21.0
+unit_size = 2.0
+max_distance = 12.0

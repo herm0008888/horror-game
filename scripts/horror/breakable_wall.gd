@@ -89,6 +89,7 @@ func strike(impulse: Vector3) -> void:
 			piece.get_node("Mesh").scale=Vector3.ONE*.992
 		return
 	broken=true
+	get_tree().call_group("dynamic_navigation","request_update")
 	get_node("Mesh").hide()
 	collision_layer=0
 	var collision=get_node_or_null("Collision")
@@ -104,4 +105,4 @@ func strike(impulse: Vector3) -> void:
 		piece.freeze=false;piece.sleeping=false
 		piece.apply_central_impulse((impulse.normalized()*2.2+Vector3.UP*.12)*piece.mass)
 		piece.apply_torque_impulse(Vector3(rng.randf_range(-.3,.3),rng.randf_range(-.3,.3),rng.randf_range(-.3,.3))*piece.mass)
-	get_tree().call_group("horror_listener","hear_noise",global_position,12.0)
+	get_tree().call_group("horror_listener","hear_noise",global_position,35.0)

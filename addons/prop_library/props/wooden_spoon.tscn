@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_spoon/wooden_spoon.gltf" id="1_dxw4x"]
+
+[node name="WoodenSpoon" type="Node3D" unique_id=1103000887]
+metadata/asset_id = "wooden_spoon"
+
+[node name="Model" type="Node3D" parent="." unique_id=817729512 instance=ExtResource("1_dxw4x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00039736554, 0.016030679, 0.054943174)

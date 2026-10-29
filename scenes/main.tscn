@@ -1,0 +1,89 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/dockyard.tscn" id="E1"]
+
+[ext_resource type="PackedScene" path="res://scenes/vehicle/drift_coupe.tscn" id="E2"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/speedometer.tscn" id="E3"]
+
+[ext_resource type="Script" path="res://scripts/camera/chase_camera.gd" id="E4"]
+
+[ext_resource type="Script" path="res://scripts/world/game.gd" id="E5"]
+
+[ext_resource type="PackedScene" path="res://scenes/vehicle/skid_trails.tscn" id="Trails"]
+
+[ext_resource type="Texture2D" path="res://assets/textures/industrial_sunset.hdr" id="HDRISky"]
+
+[ext_resource type="Script" path="res://scripts/world/render_budget.gd" id="RenderBudget"]
+
+[sub_resource type="PanoramaSkyMaterial" id="R6"]
+panorama = ExtResource("HDRISky")
+
+[sub_resource type="Sky" id="R7"]
+sky_material = SubResource("R6")
+
+[sub_resource type="Environment" id="R8"]
+background_mode = 2
+sky = SubResource("R7")
+ambient_light_source = 2
+ambient_light_color = Color(0.49,0.65,0.8,1)
+ambient_light_energy = 0.55
+reflected_light_source = 2
+background_energy_multiplier = 0.65
+tonemap_mode = 2
+tonemap_exposure = 1.05
+ssao_enabled = false
+ssao_radius = 1.5
+ssao_intensity = 1.3
+glow_enabled = true
+glow_intensity = 0.5
+fog_enabled = true
+fog_light_color = Color(0.44,0.51,0.56,1)
+fog_density = 0.0009
+fog_sky_affect = 0.2
+
+[node name="DriftDockyard" type="Node3D" ]
+script = ExtResource("E5")
+
+[node name="Environment" type="WorldEnvironment" parent="." ]
+environment = SubResource("R8")
+
+[node name="EveningSun" type="DirectionalLight3D" parent="." ]
+rotation_degrees = Vector3(-18,-38,0)
+light_color = Color(1,0.76,0.49,1)
+light_energy = 1.5
+shadow_enabled = true
+directional_shadow_max_distance = 110.0
+directional_shadow_mode = 1
+
+[node name="Circuit" parent="." instance=ExtResource("E1") ]
+
+
+[node name="Spawn" type="Marker3D" parent="." ]
+position = Vector3(69,0.64,20)
+rotation_degrees = Vector3(0,12,0)
+
+[node name="Car" parent="." instance=ExtResource("E2") node_paths=PackedStringArray("spawn")]
+position = Vector3(69,0.64,20)
+rotation_degrees = Vector3(0,12,0)
+spawn = NodePath("../Spawn")
+
+[node name="ChaseCamera" type="Camera3D" parent="." node_paths=PackedStringArray("target")]
+position = Vector3(71,3.8,28)
+current = true
+far = 650.0
+script = ExtResource("E4")
+target = NodePath("../Car")
+
+[node name="HUD" type="CanvasLayer" parent="." ]
+
+
+[node name="Speedometer" parent="HUD" instance=ExtResource("E3") node_paths=PackedStringArray("car")]
+car = NodePath("../../Car")
+
+[node name="SkidTrails" parent="." node_paths=PackedStringArray("car") instance=ExtResource("Trails")]
+car = NodePath("../Car")
+
+
+[node name="RenderBudget" type="Node" parent="."]
+script = ExtResource("RenderBudget")

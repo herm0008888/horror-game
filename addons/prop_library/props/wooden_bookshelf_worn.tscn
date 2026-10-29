@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/house_library/wooden_bookshelf_worn/wooden_bookshelf_worn.gltf" id="1_bfb7x"]
+
+[node name="WoodenBookshelfWorn" type="Node3D" unique_id=1120783393]
+metadata/asset_id = "wooden_bookshelf_worn"
+
+[node name="Model" type="Node3D" parent="." unique_id=253465392 instance=ExtResource("1_bfb7x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.9604645e-08, 0)

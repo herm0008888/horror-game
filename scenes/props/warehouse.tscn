@@ -1,0 +1,224 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/warehouse.res" id="1_amf7h"]
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(42, 10, 22)
+
+[node name="Warehouse" type="Node3D" unique_id=1393560390]
+
+[node name="Building" type="StaticBody3D" parent="." unique_id=1311771452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+
+[node name="Collision" type="CollisionShape3D" parent="Building" unique_id=1252222997]
+shape = SubResource("R6")
+
+[node name="Roof" type="Node3D" parent="." unique_id=278796484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.15, 0)
+
+[node name="Plinth" type="Node3D" parent="." unique_id=395766580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -11.08)
+
+[node name="Rib-20" type="Node3D" parent="." unique_id=1589622711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 5.5, -11.08)
+
+[node name="Rib-18" type="Node3D" parent="." unique_id=627354484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 5.5, -11.08)
+
+[node name="Rib-16" type="Node3D" parent="." unique_id=1448346355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 5.5, -11.08)
+
+[node name="Rib-14" type="Node3D" parent="." unique_id=1288054918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 5.5, -11.08)
+
+[node name="Rib-12" type="Node3D" parent="." unique_id=1527559879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 5.5, -11.08)
+
+[node name="Rib-10" type="Node3D" parent="." unique_id=1594439240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 5.5, -11.08)
+
+[node name="Rib-8" type="Node3D" parent="." unique_id=1886904156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 5.5, -11.08)
+
+[node name="Rib-6" type="Node3D" parent="." unique_id=1565675951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 5.5, -11.08)
+
+[node name="Rib-4" type="Node3D" parent="." unique_id=1587794642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5.5, -11.08)
+
+[node name="Rib-2" type="Node3D" parent="." unique_id=1634947792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 5.5, -11.08)
+
+[node name="Rib0" type="Node3D" parent="." unique_id=733097666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -11.08)
+
+[node name="Rib2" type="Node3D" parent="." unique_id=1985468442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5.5, -11.08)
+
+[node name="Rib4" type="Node3D" parent="." unique_id=103940822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5.5, -11.08)
+
+[node name="Rib6" type="Node3D" parent="." unique_id=1703387369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5.5, -11.08)
+
+[node name="Rib8" type="Node3D" parent="." unique_id=56212287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 5.5, -11.08)
+
+[node name="Rib10" type="Node3D" parent="." unique_id=936664728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 5.5, -11.08)
+
+[node name="Rib12" type="Node3D" parent="." unique_id=361718354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 5.5, -11.08)
+
+[node name="Rib14" type="Node3D" parent="." unique_id=814464068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 5.5, -11.08)
+
+[node name="Rib16" type="Node3D" parent="." unique_id=2074131425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5.5, -11.08)
+
+[node name="Rib18" type="Node3D" parent="." unique_id=145741580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5.5, -11.08)
+
+[node name="Rib20" type="Node3D" parent="." unique_id=314769031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5.5, -11.08)
+
+[node name="Shutter0" type="Node3D" parent="." unique_id=620496464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2.6, -11.13)
+
+[node name="ShutterSlat0_0" type="Node3D" parent="." unique_id=232752468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.3, -11.19)
+
+[node name="ShutterSlat0_1" type="Node3D" parent="." unique_id=1084632137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.78, -11.19)
+
+[node name="ShutterSlat0_2" type="Node3D" parent="." unique_id=1482123426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1.26, -11.19)
+
+[node name="ShutterSlat0_3" type="Node3D" parent="." unique_id=1332837771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1.74, -11.19)
+
+[node name="ShutterSlat0_4" type="Node3D" parent="." unique_id=1359301712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2.22, -11.19)
+
+[node name="ShutterSlat0_5" type="Node3D" parent="." unique_id=474566071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2.7, -11.19)
+
+[node name="ShutterSlat0_6" type="Node3D" parent="." unique_id=1477330258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3.18, -11.19)
+
+[node name="ShutterSlat0_7" type="Node3D" parent="." unique_id=2061584311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3.66, -11.19)
+
+[node name="ShutterSlat0_8" type="Node3D" parent="." unique_id=1522618498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4.14, -11.19)
+
+[node name="ShutterSlat0_9" type="Node3D" parent="." unique_id=941285731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4.62, -11.19)
+
+[node name="Window0" type="Node3D" parent="." unique_id=582689602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.6, -11.15)
+
+[node name="Mullion0_-2" type="Node3D" parent="." unique_id=1496856009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 7.6, -11.2)
+
+[node name="Mullion0_0" type="Node3D" parent="." unique_id=439734704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.6, -11.2)
+
+[node name="Mullion0_2" type="Node3D" parent="." unique_id=265658168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 7.6, -11.2)
+
+[node name="Shutter1" type="Node3D" parent="." unique_id=270252686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, -11.13)
+
+[node name="ShutterSlat1_0" type="Node3D" parent="." unique_id=323568934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -11.19)
+
+[node name="ShutterSlat1_1" type="Node3D" parent="." unique_id=1105980364]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78, -11.19)
+
+[node name="ShutterSlat1_2" type="Node3D" parent="." unique_id=1109824343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.26, -11.19)
+
+[node name="ShutterSlat1_3" type="Node3D" parent="." unique_id=1569718093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74, -11.19)
+
+[node name="ShutterSlat1_4" type="Node3D" parent="." unique_id=1896914255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22, -11.19)
+
+[node name="ShutterSlat1_5" type="Node3D" parent="." unique_id=1406894530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7, -11.19)
+
+[node name="ShutterSlat1_6" type="Node3D" parent="." unique_id=1351841104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.18, -11.19)
+
+[node name="ShutterSlat1_7" type="Node3D" parent="." unique_id=1465671346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.66, -11.19)
+
+[node name="ShutterSlat1_8" type="Node3D" parent="." unique_id=503376017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.14, -11.19)
+
+[node name="ShutterSlat1_9" type="Node3D" parent="." unique_id=1307682164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.62, -11.19)
+
+[node name="Window1" type="Node3D" parent="." unique_id=1135827359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.6, -11.15)
+
+[node name="Mullion1_-2" type="Node3D" parent="." unique_id=887820622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7.6, -11.2)
+
+[node name="Mullion1_0" type="Node3D" parent="." unique_id=1361483641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.6, -11.2)
+
+[node name="Mullion1_2" type="Node3D" parent="." unique_id=596683378]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7.6, -11.2)
+
+[node name="Shutter2" type="Node3D" parent="." unique_id=638526511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2.6, -11.13)
+
+[node name="ShutterSlat2_0" type="Node3D" parent="." unique_id=309312843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0.3, -11.19)
+
+[node name="ShutterSlat2_1" type="Node3D" parent="." unique_id=1086438771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0.78, -11.19)
+
+[node name="ShutterSlat2_2" type="Node3D" parent="." unique_id=732239794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1.26, -11.19)
+
+[node name="ShutterSlat2_3" type="Node3D" parent="." unique_id=251654018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1.74, -11.19)
+
+[node name="ShutterSlat2_4" type="Node3D" parent="." unique_id=1949209728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2.22, -11.19)
+
+[node name="ShutterSlat2_5" type="Node3D" parent="." unique_id=836526630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2.7, -11.19)
+
+[node name="ShutterSlat2_6" type="Node3D" parent="." unique_id=1920277750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 3.18, -11.19)
+
+[node name="ShutterSlat2_7" type="Node3D" parent="." unique_id=1985785771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 3.66, -11.19)
+
+[node name="ShutterSlat2_8" type="Node3D" parent="." unique_id=2026830079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.14, -11.19)
+
+[node name="ShutterSlat2_9" type="Node3D" parent="." unique_id=1146641833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.62, -11.19)
+
+[node name="Window2" type="Node3D" parent="." unique_id=1120266737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 7.6, -11.15)
+
+[node name="Mullion2_-2" type="Node3D" parent="." unique_id=664227032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 7.6, -11.2)
+
+[node name="Mullion2_0" type="Node3D" parent="." unique_id=472989189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 7.6, -11.2)
+
+[node name="Mullion2_2" type="Node3D" parent="." unique_id=2059225380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 7.6, -11.2)
+
+[node name="RainGutter" type="Node3D" parent="." unique_id=2067345909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.8, -11.5)
+
+[node name="BakedVisual" type="MeshInstance3D" parent="." unique_id=1396280503]
+mesh = ExtResource("1_amf7h")

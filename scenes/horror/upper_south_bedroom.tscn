@@ -968,6 +968,7 @@ metadata/_gltf_primary_texture_coord = 0
 [node name="SouthBedroom" type="Node3D" unique_id=1777742315]
 
 [node name="OldBedFrame" type="StaticBody3D" parent="." unique_id=824409767]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11, 3.4, 14.8)
 metadata/source = "https://polyhaven.com/a/old_bed_frame"
 metadata/asset_id = "old_bed_frame"
@@ -994,6 +995,7 @@ mesh = SubResource("BoxMesh_tiljr")
 shape = SubResource("BoxShape3D_5ekn8")
 
 [node name="PaintedWoodenNightstand" type="StaticBody3D" parent="." unique_id=1649892941 instance=ExtResource("10_h08r2")]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.5, 3.4, 15.4)
 metadata/source = "https://polyhaven.com/a/painted_wooden_nightstand"
 metadata/dimensions = Vector3(0.62, 0.62, 0.58)
@@ -1002,6 +1004,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="MantelClock01" type="Node3D" parent="." unique_id=66802129]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.5, 4.04, 15.4)
 metadata/source = "https://polyhaven.com/a/mantel_clock_01"
 metadata/asset_id = "mantel_clock_01"
@@ -1021,6 +1024,7 @@ visibility_range_end_margin = 2.0
 mesh = SubResource("ArrayMesh_eftoq")
 
 [node name="PaintedWoodenCabinet02" type="StaticBody3D" parent="." unique_id=1160752681 instance=ExtResource("19_sgker")]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 8.8, 3.4, 15.5)
 metadata/source = "https://polyhaven.com/a/painted_wooden_cabinet_02"
 metadata/dimensions = Vector3(1.3, 2.4, 0.5)
@@ -1029,6 +1033,7 @@ metadata/support_y = 0.0
 metadata/interactive_storage = true
 
 [node name="PaintedWoodenChair01" type="StaticBody3D" parent="." unique_id=1938852831]
+metadata/_edit_group_ = true
 transform = Transform3D(0.6293204, 0, -0.777146, 0, 1, 0, 0.777146, 0, 0.6293204, 13.8, 3.4, 13.6)
 metadata/source = "https://polyhaven.com/a/painted_wooden_chair_01"
 metadata/asset_id = "painted_wooden_chair_01"
@@ -1045,6 +1050,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.475, 0)
 shape = SubResource("BoxShape3D_50vb2")
 
 [node name="VintageSuitcase" type="StaticBody3D" parent="." unique_id=1037717138]
+metadata/_edit_group_ = true
 transform = Transform3D(0.9612617, 0, 0.27563736, 0, 1, 0, -0.27563736, 0, 0.9612617, 8.6, 3.4, 12.8)
 metadata/source = "https://polyhaven.com/a/vintage_suitcase"
 metadata/asset_id = "vintage_suitcase"
@@ -1067,6 +1073,7 @@ lod_bias = 0.7
 mesh = ExtResource("20_7eyc5")
 
 [node name="WoodenBookshelfWorn" type="StaticBody3D" parent="." unique_id=335746854]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 3.4, 15)
 metadata/source = "https://polyhaven.com/a/wooden_bookshelf_worn"
 metadata/asset_id = "wooden_bookshelf_worn"
@@ -1185,6 +1192,7 @@ lod_bias = 0.7
 mesh = SubResource("ArrayMesh_v6he8")
 
 [node name="BookEncyclopediaSet01" type="Node3D" parent="." unique_id=1143463090]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 3.780851, 15)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1203,6 +1211,7 @@ lod_bias = 0.7
 mesh = ExtResource("42_41278")
 
 [node name="@Node3D@78" type="Node3D" parent="." unique_id=1155524710]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 4.051854, 15)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1221,6 +1230,7 @@ lod_bias = 0.7
 mesh = ExtResource("44_a3gcn")
 
 [node name="@Node3D@79" type="Node3D" parent="." unique_id=2016228848]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 4.331969, 15)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1239,6 +1249,7 @@ lod_bias = 0.7
 mesh = ExtResource("46_pb220")
 
 [node name="@Node3D@80" type="Node3D" parent="." unique_id=461940305]
+metadata/_edit_group_ = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.5, 4.638253, 15)
 metadata/source = "https://polyhaven.com/a/book_encyclopedia_set_01"
 metadata/asset_id = "book_encyclopedia_set_01"
@@ -1257,6 +1268,7 @@ lod_bias = 0.7
 mesh = ExtResource("48_y6yfh")
 
 [node name="HangingPictureFrame02" type="Node3D" parent="." unique_id=1911331273]
+metadata/_edit_group_ = true
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12, 5, 15.84)
 metadata/source = "https://polyhaven.com/a/hanging_picture_frame_02"
 metadata/asset_id = "hanging_picture_frame_02"
@@ -1341,6 +1353,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, -3.7252903e-09)
 shape = SubResource("BoxShape3D_j6w6b")
 
 [node name="VintageCabinet01" type="StaticBody3D" parent="." unique_id=1974650007]
+metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2, 3.4, 12.6)
 metadata/source = "https://polyhaven.com/a/vintage_cabinet_01"
 metadata/asset_id = "vintage_cabinet_01"

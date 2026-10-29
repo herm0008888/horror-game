@@ -18,18 +18,22 @@ func _physics_process(_delta):
  var p=get_parent()
  if p.caught:
   clear();return
- var exclude:Array[RID]=[p.get_rid()]
- if p.has_node("ToolController") and is_instance_valid(p.get_node("ToolController").grabbed):exclude.append(p.get_node("ToolController").grabbed.get_rid())
- var ray=PhysicsRayQueryParameters3D.create(p.camera.global_position,p.camera.global_position-p.camera.global_basis.z*2.6,1,exclude)
+ var exclude:Array[RID]=p.get_node("ToolController").carry_exclusions() if p.has_node("ToolController") else [p.get_rid()]
+
+ var ray=PhysicsRayQueryParameters3D.create(p.camera.global_position,p.camera.global_position-p.camera.global_basis.z*2.6,49,exclude)
+ ray.collide_with_areas=true
+ ray.hit_from_inside=true
  var hit=p.get_world_3d().direct_space_state.intersect_ray(ray)
  var next:Node=null
  if not hit.is_empty():
   var body=hit.collider
-  var script=body.get_script()
-  if script:
-   var path:String=script.resource_path
-   if path.ends_with("loose_prop.gd") and body.grabbable:next=body
-   elif path.ends_with("sledge_pickup.gd") or path.ends_with("flashlight_pickup.gd"):next=body
+  var service=get_tree().get_first_node_in_group("prop_interaction")
+  var prop: Node3D=service.resolve(body) if service else null
+  if prop:
+   if service.should_highlight(prop):next=prop
+  elif body.get_script():
+   var path: String=body.get_script().resource_path
+   if path.ends_with("sledge_pickup.gd") or path.ends_with("flashlight_pickup.gd"):next=body
  if next==target:return
  clear();target=next
  if target:mark(target)

@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/wheel.res" id="1_wp8s5"]
+
+[node name="wheel" type="Node3D" unique_id=226485688]
+
+[node name="BakedVisual" type="MeshInstance3D" parent="." unique_id=2029159476]
+mesh = ExtResource("1_wp8s5")
